@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星露谷物品商店 - 全物品图谱</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #eef5ea;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: #2c2b28;
+            padding: 16px;
+        }
+        .app-container { max-width: 1600px; margin: 0 auto; }
+
+        /* 头部 */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            background: linear-gradient(135deg, #3d6830, #8bba6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .header p { color: #6b5e4a; margin-top: 4px; font-size: 0.9rem; }
+        .stats-bar {
+            display: flex; justify-content: center; gap: 14px;
+            margin-top: 8px; font-size: 0.8rem;
+            color: #5f724a; flex-wrap: wrap;
+        }
+        .stats-bar span { background: white; padding: 3px 14px; border-radius: 40px; }
+
+        /* 加载/错误 */
+        #loadingMsg, #errorMsg { text-align: center; padding: 60px 20px; font-size: 1.2rem; }
+        #loadingMsg { color: #6a8a5a; }
+        #errorMsg { color: #b5573a; }
+
+        /* 搜索 + 分类 */
+        .controls {
+            display: flex; flex-wrap: wrap; gap: 10px;
+            margin-bottom: 16px;
+            background: white;
+            padding: 10px 16px;
+            border-radius: 48px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            align-items: center;
+        }
+        .search-box {
+            flex: 1; min-width: 160px;
+            padding: 9px 16px;
+            border: 2px solid #dcd0bc;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            background: #faf8f0;
+            outline: none;
+        }
+        .search-box:focus { border-color: #88aa66; }
+        .category-bar {
+            display: flex; flex-wrap: wrap; gap: 5px;
+            max-height: 120px;
+            overflow-y: auto;
+        }
+        .cat-btn {
+            background: #f0ede5;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #4a5b3e;
+            white-space: nowrap;
+        }
+        .cat-btn.active {
+            background: #7c9f5e;
+            color: white;
+            box-shadow: 0 2px 8px rgba(99,139,67,0.3);
+        }
+        .cat-btn:hover:not(.active) { background: #e2dbc9; }
+
+        /* 购物车行 */
+        .cart-summary-bar {
+            display: flex; justify-content: flex-end; align-items: center;
+            gap: 12px; margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+        .cart-summary-bar .total-items { font-weight: 700; font-size: 0.95rem; color: #4a6739; }
+        .cart-summary-bar .total-price { font-weight: 800; font-size: 1.1rem; color: #bc6f1c; }
+        .cart-summary-bar .checkout-btn {
+            background: #578b34; color: white; border: none;
+            padding: 8px 20px; border-radius: 48px;
+            font-weight: bold; font-size: 0.9rem; cursor: pointer;
+            transition: 0.2s;
+        }
+        .cart-summary-bar .checkout-btn:hover { background: #3f6a24; }
+
+        /* 商品网格 */
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 14px;
+        }
+
+        /* 商品卡片 */
+        .item-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e9e0d0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .item-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+        }
+        .card-img {
+            background: #fdf6e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 8px 6px;
+            height: 100px;
+        }
+        .card-img img {
+            max-width: 64px;
+            max-height: 64px;
+            object-fit: contain;
+            image-rendering: crisp-edges;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.08));
+        }
+        .card-img .no-img { font-size: 2.4rem; opacity: 0.3; }
+        .card-info {
+            padding: 10px 12px 12px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .item-name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #3d2f1f;
+            margin-bottom: 2px;
+        }
+        .item-category {
+            font-size: 0.65rem;
+            color: #7e8d64;
+            background: #f0f5e8;
+            padding: 1px 8px;
+            border-radius: 40px;
+            display: inline-block;
+            margin: 2px 0;
+            width: fit-content;
+        }
+        .item-source {
+            font-size: 0.68rem;
+            color: #6a5a46;
+            margin: 2px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .price-area {
+            margin: 4px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+        }
+        .item-price {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #c57f1e;
+        }
+        .quality-select {
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border: 1px solid #d4c8aa;
+            border-radius: 30px;
+            background: #faf8f0;
+            color: #4a3f2c;
+            outline: none;
+        }
+        .quality-select:focus { border-color: #88aa66; }
+        .qty-controls {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin: 4px 0;
+        }
+        .qty-btn {
+            background: #eadece;
+            border: none;
+            width: 26px;
+            height: 26px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.15s;
+            color: #4e3e2c;
+        }
+        .qty-btn:hover { background: #d4bd93; }
+        .qty-input {
+            width: 46px;
+            text-align: center;
+            border: 1px solid #d4c8aa;
+            border-radius: 30px;
+            padding: 3px 0;
+            font-size: 0.8rem;
+            background: white;
+            outline: none;
+        }
+        .qty-input:focus { border-color: #88aa66; }
+        .subtotal {
+            font-size: 0.75rem;
+            color: #b1620c;
+            font-weight: 600;
+        }
+
+        /* 购物车弹窗 */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); backdrop-filter: blur(3px);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: #fffef5;
+            max-width: 92%; width: 580px;
+            max-height: 85vh; overflow-y: auto;
+            border-radius: 36px; padding: 22px 24px;
+            box-shadow: 0 30px 40px rgba(0,0,0,0.2);
+        }
+        .modal-content.wide { width: 800px; }
+        .modal-close {
+            float: right;
+            background: #ddd2bb; border: none;
+            border-radius: 60px; font-size: 1.3rem;
+            width: 34px; height: 34px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .modal-img { text-align: center; margin: 8px 0; }
+        .modal-img img { max-width: 80px; max-height: 80px; }
+        .modal-body { margin: 10px 0; }
+        .modal-body p { margin: 4px 0; font-size: 0.85rem; }
+
+        /* 结账表格 */
+        table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        th { background: #efe3cf; padding: 6px 8px; text-align: left; }
+        td { padding: 5px 8px; border-bottom: 1px solid #f0e2cf; }
+        .checkout-summary {
+            background: #efe3cf; border-radius: 20px; padding: 14px; margin-top: 12px;
+        }
+
+        /* 详情弹窗 */
+        .modal-gift-section {
+            background: #f6f2e6; border-radius: 24px; padding: 12px; margin-top: 10px;
+        }
+        .modal-gift-section h4 { margin-bottom: 6px; font-size: 0.9rem; }
+        .villager-tags {
+            display: flex; flex-wrap: wrap; gap: 4px;
+        }
+        .villager-tag {
+            background: white; padding: 2px 8px; border-radius: 40px;
+            font-size: 0.7rem; font-weight: 500;
+        }
+        .vlove { background: #fde6e6; color: #b33; }
+        .vlike { background: #fef0d5; color: #b87a1a; }
+        .vneutral { background: #efefef; color: #777; }
+        .vdislike { background: #dfecd7; color: #5f7a48; }
+        .vhate { background: #d4c9b8; color: #5f4e3a; }
+
+        .detail-add-area {
+            display: flex; gap: 10px; align-items: center;
+            flex-wrap: wrap; margin-top: 12px;
+        }
+        .detail-add-area select, .detail-add-area input {
+            padding: 6px 10px; border: 1px solid #d4c8aa;
+            border-radius: 30px; font-size: 0.85rem;
+            background: #faf8f0; outline: none;
+        }
+        .detail-add-btn {
+            background: #e6d5b8; border: none;
+            padding: 7px 18px; border-radius: 40px;
+            font-weight: bold; font-size: 0.85rem;
+            color: #4e3e2c; cursor: pointer;
+            transition: 0.2s;
+        }
+        .detail-add-btn:hover { background: #d4bd93; }
+
+        footer {
+            text-align: center; margin-top: 30px;
+            font-size: 0.7rem; color: #b9ab92;
+        }
+        @media (max-width:600px) {
+            .items-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <div class="header">
+        <h1>🌾 星露谷 · 全物品图谱 🌻</h1>
+        <p>查看所有物品售价 & 村民喜好 · 交互式购买</p>
+        <div class="stats-bar">
+            <span id="statItems">总物品: --</span>
+            <span id="statLoves">❤️ 最爱: --</span>
+            <span id="statHates">💔 讨厌: --</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <input type="text" class="search-box" id="searchBox" placeholder="🔍 搜索物品名称...">
+        <div class="category-bar" id="categoryFilter"></div>
+    </div>
+
+    <div class="cart-summary-bar">
+        <span class="total-items" id="cartTotalItems">🧺 购物车: 0 件</span>
+        <span class="total-price" id="cartTotalPrice">💰 0 G</span>
+        <button class="checkout-btn" id="checkoutBtn">✨ 结账明细 ✨</button>
+        <button class="checkout-btn" id="clearCartBtn" style="background:#9a8a7a;">🗑️ 清空</button>
+    </div>
+
+    <div id="loadingMsg">🌱 正在加载星露谷商品数据...</div>
+    <div id="errorMsg" style="display:none;"></div>
+
+    <div class="items-grid" id="itemsGrid"></div>
+    <footer>⭐ 数据来源: 星露谷中文维基百科 · 图片版权归 ConcernedApe 所有</footer>
+</div>
+
+<script>
+// ============== 全局状态 ==============
+let itemsData = [];
+let categories = [];
+let activeCategory = '全部';
+let activeSearch = '';
+
+// 购物车: { itemId, name, quality, quantity, price, category, image, gifting }
+let cartItems = [];
+
+const CATEGORY_ORDER = [
+    "作物", "动物", "果树", "工匠制品", "家具", "墙纸", "地板",
+    "矿物", "渔具", "武器", "帽子", "鞋类", "戒指", "菜品",
+    "农场工具", "古物", "怪物战利品", "书", "季节采集物"
+];
+
+const QUALITY_LABELS = ["普通", "银星", "金星", "铱星"];
+
+// ============== 数据加载 ==============
+async function loadData() {
+    const loadingEl = document.getElementById('loadingMsg');
+    const errorEl = document.getElementById('errorMsg');
+    try {
+        // 优先加载完整版本
+        let resp = await fetch('items_complete.json');
+        if (!resp.ok) throw new Error('items_complete.json 不存在');
+        itemsData = await resp.json();
+    } catch(e) {
+        try {
+            // 回退到前端简化版
+            let resp = await fetch('items_for_frontend.json');
+            if (!resp.ok) throw new Error('items_for_frontend.json 也不存在');
+            itemsData = await resp.json();
+        } catch(e2) {
+            try {
+                let resp = await fetch('items_zh.json');
+                if (!resp.ok) throw new Error('items_zh.json 不存在');
+                itemsData = await resp.json();
+                itemsData = itemsData.map(item => {
+                    if (!item.gifting) item.gifting = { love:[], like:[], neutral:[], dislike:[], hate:[] };
+                    if (!item.qualities) item.qualities = {};
+                    return item;
+                });
+            } catch(e3) {
+                errorEl.textContent = '❌ 无法加载物品数据。请先运行数据生成脚本。';
+                errorEl.style.display = 'block';
+                loadingEl.style.display = 'none';
+                return;
+            }
+        }
+    }
+    loadingEl.style.display = 'none';
+
+    // 确保 gifting 字段存在
+    itemsData.forEach(item => {
+        if (!item.gifting) item.gifting = { love:[], like:[], neutral:[], dislike:[], hate:[] };
+        if (!item.qualities) item.qualities = {};
+        if (item.has_quality === undefined) {
+            item.has_quality = Object.keys(item.qualities).length > 0;
+        }
+    });
+
+    // 提取分类并按指定顺序排列
+    const catSet = new Set(itemsData.map(i => i.category).filter(Boolean));
+    categories = CATEGORY_ORDER.filter(c => catSet.has(c));
+    // 添加不在顺序中的分类
+    catSet.forEach(c => { if (!CATEGORY_ORDER.includes(c) && !categories.includes(c)) categories.push(c); });
+
+    // 更新统计信息
+    const totalLoves = itemsData.reduce((s,i) => s + (i.gifting?.love?.length || 0), 0);
+    const totalHates = itemsData.reduce((s,i) => s + (i.gifting?.hate?.length || 0), 0);
+    document.getElementById('statItems').textContent = `📦 总物品: ${itemsData.length}`;
+    document.getElementById('statLoves').textContent = `❤️ 最爱总数: ${totalLoves}`;
+    document.getElementById('statHates').textContent = `💔 讨厌总数: ${totalHates}`;
+
+    initUI();
+}
+
+// ============== UI 初始化 ==============
+function initUI() {
+    renderCategories();
+    renderItemsGrid();
+    updateCartBar();
+
+    document.getElementById('searchBox').addEventListener('input', (e) => {
+        activeSearch = e.target.value.trim().toLowerCase();
+        renderItemsGrid();
+    });
+    document.getElementById('checkoutBtn').addEventListener('click', checkout);
+    document.getElementById('clearCartBtn').addEventListener('click', clearCart);
+}
+
+function clearCart() {
+    if (cartItems.length === 0) return;
+    if (!confirm('确定要清空购物车吗？')) return;
+    cartItems = [];
+    updateCartBar();
+    // 重置所有数量输入
+    document.querySelectorAll('.qty-input').forEach(el => { el.value = 0; });
+    document.querySelectorAll('.subtotal').forEach(el => { el.textContent = ''; });
+    showToast('🗑️ 购物车已清空');
+}
+
+function renderCategories() {
+    const container = document.getElementById('categoryFilter');
+    container.innerHTML = '';
+    const allBtn = document.createElement('button');
+    allBtn.className = `cat-btn ${activeCategory === '全部' ? 'active' : ''}`;
+    allBtn.textContent = '🌿 全部';
+    allBtn.dataset.cat = '全部';
+    allBtn.addEventListener('click', () => { activeCategory = '全部'; renderCategories(); renderItemsGrid(); });
+    container.appendChild(allBtn);
+    categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = `cat-btn ${activeCategory === cat ? 'active' : ''}`;
+        btn.textContent = cat;
+        btn.dataset.cat = cat;
+        btn.addEventListener('click', () => { activeCategory = cat; renderCategories(); renderItemsGrid(); });
+        container.appendChild(btn);
+    });
+}
+
+function getItemPrice(item, quality) {
+    if (item.has_quality && item.qualities && quality && item.qualities[quality] !== undefined) {
+        return item.qualities[quality];
+    }
+    if (item.price !== undefined && item.price !== null) {
+        return item.price;
+    }
+    // 如果没有价格字段但有 qualities，取第一个品质的价格
+    if (item.qualities && Object.keys(item.qualities).length > 0) {
+        const firstQ = Object.values(item.qualities)[0];
+        if (typeof firstQ === 'number') return firstQ;
+    }
+    return 0;
+}
+
+function getQualityKeys(item) {
+    if (item.has_quality && item.qualities && Object.keys(item.qualities).length > 0) {
+        return Object.keys(item.qualities);
+    }
+    return [];
+}
+
+function getCartKey(itemId, quality) {
+    return `${itemId}_${quality || ''}`;
+}
+
+function getCartItem(itemId, quality) {
+    const key = getCartKey(itemId, quality);
+    return cartItems.find(c => getCartKey(c.itemId, c.quality) === key);
+}
+
+function renderItemsGrid() {
+    const grid = document.getElementById('itemsGrid');
+    let filtered = itemsData;
+    if (activeCategory !== '全部') {
+        filtered = filtered.filter(i => i.category === activeCategory);
+    }
+    if (activeSearch) {
+        filtered = filtered.filter(i => i.name.toLowerCase().includes(activeSearch));
+    }
+    if (filtered.length === 0) {
+        grid.innerHTML = '<div style="text-align:center;padding:40px;color:#8a7a62;grid-column:1/-1;">✨ 没有匹配的物品 ✨</div>';
+        return;
+    }
+    grid.innerHTML = '';
+    filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'item-card';
+        card.dataset.itemId = item.id;
+
+        // 品质
+        const qualityKeys = getQualityKeys(item);
+        const hasQuality = qualityKeys.length > 0;
+        const defaultQuality = hasQuality ? qualityKeys[0] : null;
+        const defaultPrice = getItemPrice(item, defaultQuality);
+
+        // 当前购物车中该物品的数量
+        const cartEntry = getCartItem(item.id, defaultQuality || '');
+        const initQty = cartEntry ? cartEntry.quantity : 0;
+
+        let qualityOptions = '';
+        if (hasQuality) {
+            qualityOptions = qualityKeys.map(q =>
+                `<option value="${q}" ${q === defaultQuality ? 'selected' : ''}>${q} - ${item.qualities[q]} G</option>`
+            ).join('');
+        }
+
+        card.innerHTML = `
+            <div class="card-img">
+                ${item.image ? `<img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'">`
+                             : `<div class="no-img">📦</div>`}
+            </div>
+            <div class="card-info">
+                <div class="item-name">${item.name}</div>
+                <span class="item-category">${item.category || ''}</span>
+                ${item.source ? `<div class="item-source">📌 ${item.source}</div>` : ''}
+                <div class="price-area">
+                    <span class="item-price">💰 ${defaultPrice} G</span>
+                    ${hasQuality ? `
+                        <select class="quality-select" data-item-id="${item.id}">
+                            ${qualityOptions}
+                        </select>
+                    ` : ''}
+                </div>
+                <div class="qty-controls">
+                    <button class="qty-btn qty-minus" data-item-id="${item.id}">−</button>
+                    <input type="number" class="qty-input" data-item-id="${item.id}" value="${initQty}" min="0" max="999">
+                    <button class="qty-btn qty-plus" data-item-id="${item.id}">+</button>
+                    <span class="subtotal" data-item-id="${item.id}">${initQty > 0 ? `小计: ${initQty * defaultPrice} G` : ''}</span>
+                </div>
+            </div>
+        `;
+        card.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+            showItemDetail(item);
+        });
+
+        // 品质变更
+        const qs = card.querySelector('.quality-select');
+        if (qs) {
+            qs.addEventListener('change', (e) => {
+                e.stopPropagation();
+                updateCardPriceQuantity(item);
+            });
+        }
+
+        // 数量 + / - / input
+        const minusBtn = card.querySelector('.qty-minus');
+        const plusBtn = card.querySelector('.qty-plus');
+        const qtyInput = card.querySelector('.qty-input');
+
+        minusBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            let val = parseInt(qtyInput.value) || 0;
+            if (val > 0) {
+                val--;
+                qtyInput.value = val;
+                updateCardPriceQuantity(item);
+            }
+        });
+        plusBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            let val = parseInt(qtyInput.value) || 0;
+            if (val < 999) {
+                val++;
+                qtyInput.value = val;
+                updateCardPriceQuantity(item);
+            }
+        });
+        qtyInput.addEventListener('input', (e) => {
+            e.stopPropagation();
+            let val = parseInt(qtyInput.value) || 0;
+            if (val < 0) val = 0;
+            if (val > 999) val = 999;
+            qtyInput.value = val;
+            updateCardPriceQuantity(item);
+        });
+
+        grid.appendChild(card);
+    });
+}
+
+function updateCardPriceQuantity(item) {
+    const card = document.querySelector(`.item-card[data-item-id="${item.id}"]`);
+    if (!card) return;
+    const qs = card.querySelector('.quality-select');
+    const quality = qs ? qs.value : '';
+    const price = getItemPrice(item, quality);
+
+    // 更新显示价格
+    const priceEl = card.querySelector('.item-price');
+    priceEl.textContent = `💰 ${price} G`;
+
+    // 更新小计
+    const qtyInput = card.querySelector('.qty-input');
+    const qty = parseInt(qtyInput.value) || 0;
+    const subtotalEl = card.querySelector('.subtotal');
+    subtotalEl.textContent = qty > 0 ? `小计: ${qty * price} G` : '';
+
+    // 更新购物车
+    // 先移除该物品所有品质的旧条目
+    const keysToRemove = cartItems.map((c, idx) => c.itemId === item.id ? idx : -1).filter(i => i >= 0);
+    // 倒序删除
+    for (let i = keysToRemove.length - 1; i >= 0; i--) {
+        cartItems.splice(keysToRemove[i], 1);
+    }
+
+    if (qty > 0) {
+        cartItems.push({
+            itemId: item.id,
+            name: item.name,
+            quality: quality,
+            quantity: qty,
+            price: price,
+            category: item.category,
+            image: item.image || '',
+            gifting: item.gifting || { love:[], like:[], neutral:[], dislike:[], hate:[] }
+        });
+    }
+    updateCartBar();
+}
+
+// ============== 购物车栏 ==============
+function updateCartBar() {
+    const totalItems = cartItems.reduce((s, c) => s + c.quantity, 0);
+    const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
+    document.getElementById('cartTotalItems').textContent = `🧺 购物车: ${totalItems} 件`;
+    document.getElementById('cartTotalPrice').textContent = `💰 ${totalPrice} G`;
+}
+
+// ============== 物品详情弹窗 ==============
+function showItemDetail(item) {
+    const g = item.gifting || {};
+    const qualityKeys = getQualityKeys(item);
+    const hasQuality = qualityKeys.length > 0;
+    const defaultQuality = hasQuality ? qualityKeys[0] : '';
+    const defaultPrice = getItemPrice(item, defaultQuality);
+
+    let qualityOpts = '';
+    if (hasQuality) {
+        qualityOpts = qualityKeys.map(q =>
+            `<option value="${q}" ${q === defaultQuality ? 'selected' : ''}>${q} - ${item.qualities[q]} G</option>`
+        ).join('');
+    }
+
+    const modal = document.createElement('div');
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+        <div class="modal-content">
+            <button class="modal-close">✖</button>
+            <h2 style="color:#3d2f1f;">${item.name}</h2>
+            <div class="modal-img">${item.image ? `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'">` : '<div style="font-size:3rem;">📦</div>'}</div>
+            <div class="modal-body">
+                <p><strong>💰 售价:</strong> <span id="modalPrice">${defaultPrice}</span> G
+                    ${hasQuality ? ` <select id="modalQuality">${qualityOpts}</select>` : ''}
+                </p>
+                <p><strong>🏷️ 分类:</strong> ${item.category || '未知'}</p>
+                ${item.source ? `<p><strong>📌 来源:</strong> ${item.source}</p>` : ''}
+                ${item.description ? `<p><em>${item.description}</em></p>` : ''}
+            </div>
+            <div class="detail-add-area">
+                <label>数量:</label>
+                <button class="qty-btn" id="modalQtyMinus">−</button>
+                <input type="number" id="modalQty" value="1" min="1" max="999" style="width:50px;text-align:center;padding:4px 6px;border:1px solid #d4c8aa;border-radius:30px;">
+                <button class="qty-btn" id="modalQtyPlus">+</button>
+                <button class="detail-add-btn" id="modalAddBtn">🛒 加入购物车</button>
+                <span id="modalSubtotal" style="font-weight:600;color:#b1620c;"></span>
+            </div>
+            <div class="modal-gift-section">
+                <h4>🎁 村民赠送反应</h4>
+                ${renderGiftDetail(g)}
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    // 品质变化更新价格
+    const mQuality = modal.querySelector('#modalQuality');
+    const mPrice = modal.querySelector('#modalPrice');
+    const mQty = modal.querySelector('#modalQty');
+    const mSubtotal = modal.querySelector('#modalSubtotal');
+
+    function updateModalPrice() {
+        const q = mQuality ? mQuality.value : '';
+        const p = getItemPrice(item, q);
+        if (mPrice) mPrice.textContent = p;
+        const qty = parseInt(mQty.value) || 1;
+        mSubtotal.textContent = `小计: ${qty * p} G`;
+    }
+
+    if (mQuality) {
+        mQuality.addEventListener('change', updateModalPrice);
+    }
+    modal.querySelector('#modalQtyMinus').addEventListener('click', () => {
+        let v = parseInt(mQty.value) || 1;
+        if (v > 1) { v--; mQty.value = v; updateModalPrice(); }
+    });
+    modal.querySelector('#modalQtyPlus').addEventListener('click', () => {
+        let v = parseInt(mQty.value) || 1;
+        if (v < 999) { v++; mQty.value = v; updateModalPrice(); }
+    });
+    mQty.addEventListener('input', updateModalPrice);
+    updateModalPrice();
+
+    modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+
+    modal.querySelector('#modalAddBtn').addEventListener('click', () => {
+        const quality = mQuality ? mQuality.value : '';
+        const qty = parseInt(mQty.value) || 1;
+        const price = getItemPrice(item, quality);
+
+        // 找购物车中相同物品+品质的条目
+        const idx = cartItems.findIndex(c => c.itemId === item.id && c.quality === quality);
+        if (idx >= 0) {
+            cartItems[idx].quantity += qty;
+            cartItems[idx].price = price;
+        } else {
+            cartItems.push({
+                itemId: item.id,
+                name: item.name,
+                quality: quality,
+                quantity: qty,
+                price: price,
+                category: item.category,
+                image: item.image || '',
+                gifting: item.gifting || { love:[], like:[], neutral:[], dislike:[], hate:[] }
+            });
+        }
+        updateCartBar();
+        // 更新卡片显示
+        const card = document.querySelector(`.item-card[data-item-id="${item.id}"]`);
+        if (card) {
+            const qs = card.querySelector('.quality-select');
+            const qtyInput = card.querySelector('.qty-input');
+            if (qs && quality) qs.value = quality;
+            // 重新计算该物品在购物车中的总量
+            const cartTotal = cartItems
+                .filter(c => c.itemId === item.id)
+                .reduce((sum, c) => sum + c.quantity, 0);
+            if (qtyInput) qtyInput.value = cartTotal;
+            updateCardPriceQuantity(item);
+        }
+        modal.remove();
+        showToast(`✅ ${item.name} ×${qty} 已加入购物车`);
+    });
+}
+
+function renderGiftDetail(g) {
+    const levels = [
+        { key: 'love', label: '❤️ 最爱', cls: 'vlove' },
+        { key: 'like', label: '👍 喜欢', cls: 'vlike' },
+        { key: 'neutral', label: '➖ 一般', cls: 'vneutral' },
+        { key: 'dislike', label: '👎 不喜欢', cls: 'vdislike' },
+        { key: 'hate', label: '💔 讨厌', cls: 'vhate' }
+    ];
+    let html = '';
+    let hasData = false;
+    for (const lv of levels) {
+        const names = g[lv.key] || [];
+        if (!names.length) continue;
+        hasData = true;
+        html += `<div style="margin:4px 0;"><strong>${lv.label}</strong> <div class="villager-tags">` +
+            names.map(n => `<span class="villager-tag ${lv.cls}">${n}</span>`).join('') +
+            `</div></div>`;
+    }
+    return html || '<p style="color:#aaa;">暂无赠送数据</p>';
+}
+
+// ============== 结账 ==============
+function checkout() {
+    if (cartItems.length === 0) { alert('购物车还是空的！'); return; }
+    const totalQty = cartItems.reduce((s, c) => s + c.quantity, 0);
+    const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
+    let totalLoves = 0, totalHates = 0;
+
+    let rows = '';
+    let idx = 1;
+    for (const c of cartItems) {
+        if (c.quantity <= 0) continue;
+        const subtotal = c.price * c.quantity;
+        const loveCount = c.gifting?.love?.length || 0;
+        const hateCount = c.gifting?.hate?.length || 0;
+        totalLoves += loveCount * c.quantity;
+        totalHates += hateCount * c.quantity;
+        const qualStr = c.quality ? ` (${c.quality})` : '';
+        rows += `<tr>
+            <td>${idx++}</td>
+            <td>${c.name}${qualStr}</td>
+            <td>${c.quantity}</td>
+            <td>${c.price} G</td>
+            <td>${subtotal} G</td>
+            <td>❤️${loveCount}</td>
+            <td>💔${hateCount}</td>
+        </tr>`;
+    }
+
+    const modal = document.createElement('div');
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+        <div class="modal-content wide">
+            <button class="modal-close">✖</button>
+            <h2 style="color:#4f6d38;">🧾 订单明细</h2>
+            <div style="max-height:45vh;overflow-y:auto;margin:10px 0;border-radius:12px;">
+                <table>
+                    <thead><tr>
+                        <th>#</th><th>商品</th><th>数量</th><th>单价</th><th>小计</th><th>最爱</th><th>讨厌</th>
+                    </tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>
+            </div>
+            <div class="checkout-summary">
+                <div style="display:flex;justify-content:space-between;font-size:1.1rem;">
+                    <span>📦 ${totalQty} 件</span>
+                    <span class="total-price" style="font-weight:800;font-size:1.3rem;color:#bc6f1c;">💎 ${totalPrice} G</span>
+                </div>
+                <div style="margin-top:6px;font-size:0.85rem;color:#4f5a3c;">
+                    ❤️ 最爱总频次: ${totalLoves} · 💔 讨厌总频次: ${totalHates}
+                </div>
+            </div>
+            <button id="confirmCheckout" style="background:#578b34;color:white;border:none;width:100%;margin-top:14px;padding:12px;border-radius:60px;font-weight:bold;font-size:1rem;cursor:pointer;">✅ 确认结账</button>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
+    modal.addEventListener('click', (e) => { if(e.target===modal) modal.remove(); });
+    modal.querySelector('#confirmCheckout').addEventListener('click', () => {
+        cartItems = [];
+        updateCartBar();
+        // 重置所有数量输入
+        document.querySelectorAll('.qty-input').forEach(el => { el.value = 0; });
+        document.querySelectorAll('.subtotal').forEach(el => { el.textContent = ''; });
+        modal.remove();
+        showToast('🎉 结账成功！');
+    });
+}
+
+function showToast(msg) {
+    const el = document.createElement('div');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#4a6b3c;color:white;padding:10px 20px;border-radius:40px;z-index:9999;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 2000);
+}
+
+// ============== 启动 ==============
+document.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body>
+</html>

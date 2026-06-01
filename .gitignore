@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Logs / text artifacts
+*.log
+*.txt
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Generated data cache (keep json but not scrap artifacts)
+*_checkpoint.json
+*_progress.log
