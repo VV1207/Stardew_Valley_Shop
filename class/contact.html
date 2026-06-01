@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   联系我
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="page-title">
+   <h1>
+    联系我
+   </h1>
+  </header>
+  <nav class="nav">
+   <div class="container">
+    <a href="index.php">
+     首页
+    </a>
+    <a href="about.html">
+     个人简介
+    </a>
+    <a href="blog.html">
+     学习笔记
+    </a>
+    <a href="gallery.html">
+     作品展示
+    </a>
+    <a href="contact.html">
+     联系我
+    </a>
+   </div>
+  </nav>
+  <main class="container card">
+   <h2>
+    给我留言
+   </h2>
+   <p>
+    这是后续 PHP + MySQL 动态功能的预留位置。现在先用 HTML 表单完成页面结构。
+   </p>
+   <form class="contact-form">
+    <label>
+     姓名：
+    </label>
+    <input name="username" placeholder="请输入姓名" type="text"/>
+    <label>
+     邮箱：
+    </label>
+    <input name="email" placeholder="请输入邮箱" type="email"/>
+    <label>
+     留言内容：
+    </label>
+    <textarea name="message" placeholder="请输入留言内容" rows="5"></textarea>
+    <button type="submit">
+     提交
+    </button>
+    <button class="secondary" type="reset">
+     重置
+    </button>
+   </form>
+   <p class="note">
+    说明：现在点击提交不会真正保存。后续学习 PHP/MySQL 后，可以把留言保存到数据库。
+   </p>
+  </main>
+  <footer class="footer">
+   <p>
+    © 2026 我的学习博客 | 数据库与 Web 开发课程示范
+   </p>
+  </footer>
+ </body>
+</html>
+
