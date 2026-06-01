@@ -44,6 +44,14 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.05);
             border-left: 6px solid #8bba6b;
         }
+        .section.new-feature {
+            border-left-color: #c57f1e;
+            background: linear-gradient(135deg, #fffef5, #fff);
+        }
+        .section.new-feature h2 { color: #9b6a22; }
+        .section.new-feature h2 .tag {
+            background: #f5ecdc; color: #9b6a22;
+        }
         .section h2 {
             font-size: 1.4rem; color: #3d5a2a;
             margin-bottom: 14px;
@@ -53,6 +61,16 @@
             background: #eef5ea; color: #578b34;
             font-size: 0.7rem; padding: 2px 10px; border-radius: 40px;
             font-weight: 400;
+        }
+        .section h2 .hot {
+            background: #ffefe0; color: #c57f1e;
+            font-size: 0.7rem; padding: 2px 10px; border-radius: 40px;
+            font-weight: 400;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
         }
 
         /* 线框图 */
@@ -76,9 +94,10 @@
             text-align: center;
             border: 2px dashed #b7cf9a;
             border-radius: 20px;
-            padding: 20px 16px;
+            padding: 16px 16px;
             margin-bottom: 16px;
             background: #f4f9ee;
+            position: relative;
         }
         .wf-header .wf-title {
             font-size: 1.2rem; font-weight: bold; color: #3d6830;
@@ -90,6 +109,26 @@
             border: 1px dashed #b0c69a;
             padding: 2px 16px; border-radius: 40px;
             font-size: 0.7rem; color: #6a7a52;
+        }
+        /* 右上角用户信息 */
+        .wf-user-info {
+            position: absolute;
+            top: 8px; right: 12px;
+            display: flex; align-items: center; gap: 6px;
+            border: 2px solid #c8a86a;
+            border-radius: 40px;
+            padding: 4px 12px;
+            background: #fef9ef;
+            font-size: 0.7rem;
+        }
+        .wf-user-info .avatar {
+            width: 24px; height: 24px;
+            background: #c8a86a; border-radius: 60px;
+        }
+        .wf-user-info .unread {
+            background: #c57f1e; color: white;
+            width: 14px; height: 14px; border-radius: 60px;
+            font-size: 0.5rem; display: flex; align-items: center; justify-content: center;
         }
 
         .wf-controls {
@@ -179,6 +218,13 @@
             font-size: 0.65rem; font-weight: 600;
             margin: 2px 2px 2px 0;
         }
+        .comp-card .badge-hot {
+            display: inline-block;
+            background: #ffefe0; color: #c57f1e;
+            padding: 1px 8px; border-radius: 40px;
+            font-size: 0.65rem; font-weight: 600;
+            margin: 2px 2px 2px 0;
+        }
 
         /* 交互流程 */
         .flow-list {
@@ -191,6 +237,11 @@
             font-size: 0.85rem; font-weight: 500;
             color: #3d5a2a;
             border: 1px solid #c8ddb0;
+        }
+        .flow-step.highlight {
+            background: #ffefe0;
+            border-color: #e0b87a;
+            color: #8a5f1a;
         }
         .flow-arrow { color: #b0c69a; font-size: 1.2rem; }
 
@@ -221,11 +272,179 @@
         .file-tree .file { color: #5a4f3a; }
         .file-tree .comment { color: #999; font-style: italic; }
 
+        /* 新增功能展示：登录框 / 配送选择 / 村民选择 */
+        .demo-block {
+            border: 2px solid #e6d8be;
+            border-radius: 24px;
+            padding: 20px;
+            background: #fcfaf5;
+            margin: 16px 0;
+        }
+        .demo-block h4 {
+            font-size: 1rem; color: #6b5a3a;
+            margin-bottom: 12px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .demo-block h4 .step-num {
+            background: #c8a86a; color: white;
+            width: 22px; height: 22px; border-radius: 60px;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.8rem;
+        }
+        .demo-row {
+            display: flex; gap: 16px; flex-wrap: wrap;
+        }
+        .demo-item {
+            flex: 1; min-width: 200px;
+        }
+        .demo-item label {
+            display: block; font-size: 0.75rem; color: #6a5a46;
+            margin-bottom: 4px;
+        }
+        .demo-item input, .demo-item select {
+            width: 100%;
+            border: 2px dashed #daceba;
+            border-radius: 40px;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            background: #fefcf7;
+        }
+        .demo-item input::placeholder { color: #c0b49a; }
+        .demo-btn {
+            border: 2px solid #578b34;
+            background: #eef5ea;
+            color: #3d5a2a;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: default;
+            display: inline-block;
+            margin-top: 8px;
+        }
+        .demo-btn.primary {
+            background: #578b34; color: white;
+        }
+        .demo-btn.warning {
+            background: #c57f1e; color: white;
+            border-color: #c57f1e;
+        }
+
+        .villager-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 8px;
+            margin: 10px 0;
+        }
+        .villager-item {
+            border: 2px dashed #daceba;
+            border-radius: 16px;
+            padding: 8px 4px;
+            text-align: center;
+            background: #fefcf7;
+            font-size: 0.6rem;
+            color: #6a5a46;
+        }
+        .villager-item .v-avatar {
+            width: 30px; height: 30px;
+            background: #eaddc8; border-radius: 60px;
+            margin: 0 auto 4px;
+        }
+        .villager-item.selected {
+            border-color: #c8a86a;
+            background: #fef9ef;
+        }
+        .villager-item.selected .v-avatar {
+            background: #c8a86a;
+        }
+
+        .login-modal-demo {
+            border: 2px solid #c8a86a;
+            border-radius: 24px;
+            padding: 28px;
+            background: #fffef5;
+            max-width: 380px;
+            margin: 16px auto;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .login-modal-demo h3 {
+            color: #3d6830; font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+        .login-modal-demo .logo-icon {
+            font-size: 2.5rem; margin-bottom: 8px;
+        }
+        .login-modal-demo .input-group {
+            margin: 10px 0;
+        }
+        .login-modal-demo .input-group input {
+            width: 100%;
+            border: 2px solid #e6decb;
+            border-radius: 40px;
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            background: #fcfaf5;
+        }
+        .login-modal-demo .input-group label {
+            display: block;
+            text-align: left;
+            font-size: 0.75rem;
+            color: #6a5a46;
+            margin-bottom: 2px;
+            margin-left: 8px;
+        }
+        .login-modal-demo .hint {
+            font-size: 0.65rem; color: #b0a690;
+            margin-top: 2px;
+            margin-left: 8px;
+            text-align: left;
+        }
+
+        .delivery-panel {
+            border: 2px dashed #d0c4aa;
+            border-radius: 24px;
+            padding: 20px;
+            background: #fcfaf5;
+            margin: 16px 0;
+        }
+        .delivery-options {
+            display: flex; gap: 16px; margin: 12px 0;
+        }
+        .delivery-option {
+            flex: 1;
+            border: 2px dashed #daceba;
+            border-radius: 20px;
+            padding: 20px 16px;
+            text-align: center;
+            background: #fefcf7;
+            cursor: default;
+        }
+        .delivery-option .icon { font-size: 1.6rem; }
+        .delivery-option .d-title { font-weight: 600; font-size: 0.9rem; margin: 6px 0; }
+        .delivery-option .d-desc { font-size: 0.7rem; color: #8a7a62; }
+        .delivery-option.selected {
+            border-color: #c8a86a;
+            background: #fef9ef;
+        }
+        .delivery-option.selected .icon { transform: scale(1.1); }
+
         footer {
             text-align: center; margin-top: 30px;
             font-size: 0.8rem; color: #b9ab92;
             padding: 20px;
         }
+
+        /* 新功能独有的额外盒子 */
+        .new-dot {
+            display: inline-block;
+            width: 8px; height: 8px;
+            background: #c57f1e;
+            border-radius: 60px;
+            margin-right: 4px;
+            animation: pulse 1.5s infinite;
+        }
+
         @media (max-width:600px) {
             body { padding: 14px; }
             .section { padding: 16px; }
@@ -238,20 +457,113 @@
     <!-- 文档头部 -->
     <div class="doc-header">
         <h1>🎨 星露谷全物品图谱商店</h1>
-        <div class="sub">UI 设计草图 · 交互流程 · 组件说明</div>
+        <div class="sub">UI 设计草图 · 交互流程 · 组件说明 · <span style="color:#c57f1e;font-weight:600;">v2.0 新增 登录 & 配送</span></div>
         <div class="meta">
-            <span>📅 版本: v1.0</span>
-            <span>🎯 分类: 购物 / 数据展示</span>
+            <span>📅 版本: v2.0</span>
+            <span>🎯 分类: 购物 / 数据展示 / <strong style="color:#c57f1e;">登录</strong> / <strong style="color:#c57f1e;">配送</strong></span>
             <span>💻 技术: 纯 HTML + CSS + JavaScript</span>
         </div>
     </div>
 
-    <!-- 1. 页面布局线框图 -->
+    <!-- ========== [NEW] 新增功能概览 ========== -->
+    <div class="section new-feature">
+        <h2>✨ v2.0 新增功能 <span class="hot">HOT</span></h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;">
+            <div style="background:#fcfaf5;border-radius:20px;padding:16px;border-left:4px solid #c8a86a;">
+                <div style="font-size:1.8rem;">🔐</div>
+                <h3 style="font-size:0.95rem;color:#6b5a3a;margin:6px 0;">登录系统</h3>
+                <p style="font-size:0.8rem;color:#5a4f3a;">
+                    首次打开弹登录窗口 → 填写用户名、住址(默认鹈鹕镇事务中心)、联系电话 → 登录后右上角显示用户信息。
+                </p>
+            </div>
+            <div style="background:#fcfaf5;border-radius:20px;padding:16px;border-left:4px solid #c8a86a;">
+                <div style="font-size:1.8rem;">🚚</div>
+                <h3 style="font-size:0.95rem;color:#6b5a3a;margin:6px 0;">配送系统</h3>
+                <p style="font-size:0.8rem;color:#5a4f3a;">
+                    结账弹窗新增"自提 / 配送"选项 → 选择配送时弹出村民选择面板 → 选一位村民帮忙配送 → 送达地址为登录时填写的住址。
+                </p>
+            </div>
+            <div style="background:#fcfaf5;border-radius:20px;padding:16px;border-left:4px solid #c8a86a;">
+                <div style="font-size:1.8rem;">👥</div>
+                <h3 style="font-size:0.95rem;color:#6b5a3a;margin:6px 0;">村民配送员</h3>
+                <p style="font-size:0.8rem;color:#5a4f3a;">
+                    游戏内全部可互动村民均可选择，每位村民配送不同风格的对话反馈，增加趣味性。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== [NEW] 新增组件说明 ========== -->
+    <div class="section new-feature">
+        <h2>🧩 v2.0 新增组件 <span class="hot">+4</span></h2>
+        <div class="comp-grid">
+            <div class="comp-card" style="border-left:4px solid #c8a86a;">
+                <h3>🔐 登录弹窗</h3>
+                <p>
+                    首次访问页面时自动弹出（若 localStorage 无用户信息）。<br>
+                    <strong>表单字段：</strong>
+                </p>
+                <ul style="font-size:0.82rem;color:#5a4f3a;list-style:none;padding:0;">
+                    <li>👤 用户名（必填）</li>
+                    <li>🏠 住址（选填，默认 "鹈鹕镇事务中心"）</li>
+                    <li>📞 联系电话（必填）</li>
+                </ul>
+                <p style="margin-top:6px;">提交后存入 localStorage，页面右上角显示欢迎信息。</p>
+                <span class="badge-hot">localStorage</span><span class="badge-hot">表单验证</span>
+            </div>
+            <div class="comp-card" style="border-left:4px solid #c8a86a;">
+                <h3>👤 用户信息栏</h3>
+                <p>
+                    登录后在页面右上角固定显示。<br>
+                    <strong>展示内容：</strong>头像图标 + 用户名 + 住址缩写。<br>
+                    鼠标悬停可查看完整信息（住址、电话）。<br>
+                    点击可弹出"退出登录"确认。
+                </p>
+                <span class="badge-hot">固定定位</span><span class="badge-hot">hover卡片</span>
+            </div>
+            <div class="comp-card" style="border-left:4px solid #c8a86a;">
+                <h3>🚚 配送方式选择</h3>
+                <p>
+                    结账弹窗底部新增配送方式切换。<br>
+                    <strong>两个选项：</strong>
+                </p>
+                <ul style="font-size:0.82rem;color:#5a4f3a;list-style:none;padding:0;">
+                    <li>🏪 自提 — 免费，到店取货</li>
+                    <li>🏠 配送 — 选择村民 + 配送到住址</li>
+                </ul>
+                <span class="badge-hot">单选切换</span><span class="badge-hot">联动村民</span>
+            </div>
+            <div class="comp-card" style="border-left:4px solid #c8a86a;">
+                <h3>👥 村民配送员选择</h3>
+                <p>
+                    选择"配送"后展开村民网格面板。<br>
+                    <strong>支持特性：</strong>
+                </p>
+                <ul style="font-size:0.82rem;color:#5a4f3a;list-style:none;padding:0;">
+                    <li>所有村民头像 + 姓名展示</li>
+                    <li>点击选中村民（高亮）</li>
+                    <li>选中后显示配送地址（用户住址）</li>
+                    <li>村民会显示一句趣味配送寄语</li>
+                </ul>
+                <span class="badge-hot">网格选择</span><span class="badge-hot">配送寄语</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 1. 页面布局线框图（更新版） ========== -->
     <div class="section">
-        <h2>📐 页面布局总览 <span class="tag">Wireframe</span></h2>
+        <h2>📐 页面布局总览 <span class="tag">Wireframe</span> <span class="hot">更新了右上角用户栏</span></h2>
         <div class="wireframe">
-            <!-- 头部 -->
+            <!-- 头部（含右上角用户信息） -->
             <div class="wf-header">
+                <!-- 右上角用户信息 -->
+                <div class="wf-user-info">
+                    <div class="avatar"></div>
+                    <span>🐱 陈小薇</span>
+                    <span style="color:#b0a690;font-size:0.6rem;">🏠 鹈鹕镇</span>
+                    <div class="unread">✓</div>
+                </div>
+
                 <div class="wf-title">🌾 星露谷 · 全物品图谱商店 🌻</div>
                 <p style="font-size:0.7rem;color:#8a7a62;margin-top:2px;">查看所有物品售价 & 村民喜好 · 交互式购买</p>
                 <div class="wf-bar">
@@ -299,9 +611,168 @@
         </div>
     </div>
 
-    <!-- 2. 组件说明 -->
+    <!-- ========== [NEW] 登录流程演示 ========== -->
+    <div class="section new-feature">
+        <h2>🔐 登录流程演示 <span class="hot">NEW</span></h2>
+
+        <div class="demo-block">
+            <h4><span class="step-num">1</span> 登录弹窗（首次打开页面时自动弹出）</h4>
+            <div class="login-modal-demo">
+                <div class="logo-icon">🌾</div>
+                <h3>欢迎来到星露谷商店</h3>
+                <p style="font-size:0.75rem;color:#8a7a62;margin-bottom:16px;">请填写您的信息以开始购物</p>
+
+                <div class="input-group">
+                    <label>👤 用户名</label>
+                    <input type="text" placeholder="请输入用户名" value="陈小薇" readonly style="border-style:solid;background:#f4f9ee;">
+                </div>
+                <div class="input-group">
+                    <label>🏠 住址 <span style="color:#b0a690;font-weight:400;">（选填，默认"鹈鹕镇事务中心"）</span></label>
+                    <input type="text" placeholder="鹈鹕镇事务中心" value="鹈鹕镇柳巷2号" readonly style="border-style:solid;background:#f4f9ee;">
+                </div>
+                <div class="input-group">
+                    <label>📞 联系电话</label>
+                    <input type="tel" placeholder="请输入联系电话" value="138-8888-6666" readonly style="border-style:solid;background:#f4f9ee;">
+                </div>
+                <div class="hint">💡 信息仅保存在本地浏览器</div>
+                <div style="margin-top:16px;">
+                    <span class="demo-btn primary">✅ 登录</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4><span class="step-num">2</span> 登录后效果 — 右上角用户信息展示</h4>
+            <div style="border:2px dashed #d0c4aa;border-radius:20px;padding:20px;background:#fcfaf5;text-align:right;position:relative;min-height:100px;">
+                <!-- 模拟右上角 -->
+                <div style="display:inline-flex;align-items:center;gap:10px;border:2px solid #c8a86a;border-radius:40px;padding:6px 16px;background:#fef9ef;">
+                    <div style="width:28px;height:28px;border-radius:60px;background:#c8a86a;display:flex;align-items:center;justify-content:center;font-size:0.9rem;">🐱</div>
+                    <div style="text-align:left;">
+                        <div style="font-weight:600;font-size:0.85rem;">陈小薇</div>
+                        <div style="font-size:0.6rem;color:#b0a690;">🏠 鹈鹕镇柳巷2号</div>
+                    </div>
+                    <div style="background:#c57f1e;color:white;width:16px;height:16px;border-radius:60px;display:flex;align-items:center;justify-content:center;font-size:0.5rem;">✓</div>
+                </div>
+                <!-- hover卡片 -->
+                <div style="position:absolute;right:20px;top:70px;background:white;border-radius:16px;padding:14px 18px;box-shadow:0 8px 30px rgba(0,0,0,0.12);border:1px solid #e6decb;width:220px;text-align:left;font-size:0.75rem;">
+                    <div style="font-weight:600;margin-bottom:6px;">👤 用户信息</div>
+                    <div>用户名：陈小薇</div>
+                    <div>🏠 住址：鹈鹕镇柳巷2号</div>
+                    <div>📞 电话：138-8888-6666</div>
+                    <hr style="margin:6px 0;border-color:#eee;">
+                    <div style="color:#c57f1e;cursor:default;">🚪 退出登录</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== [NEW] 配送流程演示 ========== -->
+    <div class="section new-feature">
+        <h2>🚚 配送流程演示 <span class="hot">NEW</span></h2>
+
+        <div class="demo-block">
+            <h4><span class="step-num">1</span> 结账弹窗 — 配送方式选择</h4>
+            <div style="border:2px solid #e6d8be;border-radius:24px;padding:24px;background:white;max-width:500px;margin:0 auto;">
+                <h4 style="font-size:1rem;color:#3d5a2a;margin-bottom:16px;text-align:center;">🧾 订单确认</h4>
+                <table style="width:100%;font-size:0.75rem;border-collapse:collapse;">
+                    <tr><th style="text-align:left;padding:4px;border-bottom:1px solid #eee;">商品</th><th style="text-align:center;padding:4px;border-bottom:1px solid #eee;">数量</th><th style="text-align:right;padding:4px;border-bottom:1px solid #eee;">小计</th></tr>
+                    <tr><td style="padding:4px;">蓝爵花</td><td style="text-align:center;padding:4px;">5</td><td style="text-align:right;padding:4px;">250 G</td></tr>
+                    <tr><td style="padding:4px;">奶酪</td><td style="text-align:center;padding:4px;">2</td><td style="text-align:right;padding:4px;">460 G</td></tr>
+                    <tr><td style="padding:4px;">上古水果</td><td style="text-align:center;padding:4px;">1</td><td style="text-align:right;padding:4px;">1100 G</td></tr>
+                </table>
+                <hr style="margin:8px 0;border-color:#eee;">
+                <div style="display:flex;justify-content:space-between;font-weight:600;font-size:0.9rem;">
+                    <span>💰 总计</span><span style="color:#c57f1e;">1,810 G</span>
+                </div>
+
+                <!-- 配送方式 -->
+                <div style="margin-top:16px;">
+                    <div style="font-size:0.8rem;font-weight:600;margin-bottom:8px;">📦 配送方式</div>
+                    <div class="delivery-options" style="gap:10px;">
+                        <div class="delivery-option selected" style="padding:12px;">
+                            <div class="icon">🏪</div>
+                            <div class="d-title">自提</div>
+                            <div class="d-desc">免费，到店取货</div>
+                        </div>
+                        <div class="delivery-option" style="padding:12px;">
+                            <div class="icon">🚚</div>
+                            <div class="d-title">配送</div>
+                            <div class="d-desc">挑选村民配送</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align:center;margin-top:16px;">
+                    <span class="demo-btn primary">✅ 确认下单</span>
+                    <span class="demo-btn" style="margin-left:8px;">❌ 取消</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4><span class="step-num">2</span> 选择配送 → 展开村民选择面板</h4>
+            <div style="border:2px solid #e6d8be;border-radius:24px;padding:24px;background:white;max-width:550px;margin:0 auto;">
+                <h4 style="font-size:0.9rem;color:#6b5a3a;margin-bottom:12px;">👥 请选择一位村民为您配送</h4>
+                <div class="villager-grid">
+                    <div class="villager-item"><div class="v-avatar"></div>亚力克斯</div>
+                    <div class="villager-item"><div class="v-avatar"></div>艾利欧特</div>
+                    <div class="villager-item"><div class="v-avatar"></div>哈维</div>
+                    <div class="villager-item"><div class="v-avatar"></div>山姆</div>
+                    <div class="villager-item"><div class="v-avatar"></div>塞巴斯蒂安</div>
+                    <div class="villager-item"><div class="v-avatar"></div>谢恩</div>
+                    <div class="villager-item selected"><div class="v-avatar"></div>阿比盖尔</div>
+                    <div class="villager-item"><div class="v-avatar"></div>艾米丽</div>
+                    <div class="villager-item"><div class="v-avatar"></div>海莉</div>
+                    <div class="villager-item"><div class="v-avatar"></div>莉亚</div>
+                    <div class="villager-item"><div class="v-avatar"></div>玛鲁</div>
+                    <div class="villager-item"><div class="v-avatar"></div>潘妮</div>
+                    <div class="villager-item"><div class="v-avatar"></div>卡罗琳</div>
+                    <div class="villager-item"><div class="v-avatar"></div>克林特</div>
+                    <div class="villager-item"><div class="v-avatar"></div>德米特里厄斯</div>
+                    <div class="villager-item"><div class="v-avatar"></div>矮人</div>
+                </div>
+
+                <!-- 已选中反馈 -->
+                <div style="margin-top:12px;padding:12px;background:#fef9ef;border-radius:16px;border:1px solid #e6d8be;">
+                    <div style="display:flex;align-items:center;gap:12px;">
+                        <div style="width:36px;height:36px;border-radius:60px;background:#c8a86a;display:flex;align-items:center;justify-content:center;font-size:1rem;">💜</div>
+                        <div>
+                            <div style="font-weight:600;font-size:0.85rem;">阿比盖尔</div>
+                            <div style="font-size:0.7rem;color:#8a7a62;">"包在我身上！你买的东西我会用最快的速度送到！"</div>
+                            <div style="font-size:0.65rem;color:#b0a690;margin-top:2px;">🚚 配送至：鹈鹕镇柳巷2号</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px;">
+                    <span class="demo-btn primary">✅ 确认配送</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-block">
+            <h4><span class="step-num">3</span> 配送动画（下单后提示）</h4>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+                <div style="flex:1;min-width:200px;background:#f4f9ee;border-radius:20px;padding:20px;text-align:center;border:1px solid #c8ddb0;">
+                    <div style="font-size:2rem;">🎉</div>
+                    <div style="font-weight:600;font-size:0.9rem;margin:6px 0;">下单成功！</div>
+                    <div style="font-size:0.75rem;color:#6a5a46;">🏪 自提</div>
+                    <div style="font-size:0.7rem;color:#b0a690;">请到店取货，感谢您的惠顾！</div>
+                </div>
+                <div style="flex:1;min-width:200px;background:#fef9ef;border-radius:20px;padding:20px;text-align:center;border:1px solid #e0b87a;">
+                    <div style="font-size:2rem;">🚚</div>
+                    <div style="font-weight:600;font-size:0.9rem;margin:6px 0;">配送中！</div>
+                    <div style="font-size:0.75rem;color:#6a5a46;">👤 配送员：阿比盖尔</div>
+                    <div style="font-size:0.7rem;color:#8a7a62;">🏠 送至：鹈鹕镇柳巷2号</div>
+                    <div style="font-size:0.65rem;color:#b0a690;margin-top:4px;">预计30分钟内送达</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== 2. 原有组件说明（保留不动） ========== -->
     <div class="section">
-        <h2>🧩 组件清单 <span class="tag">Components</span></h2>
+        <h2>🧩 组件清单 <span class="tag">Components</span> <span class="hot">新增4个+3个更新</span></h2>
         <div class="comp-grid">
             <div class="comp-card">
                 <h3>📌 统计状态栏</h3>
@@ -325,7 +796,7 @@
             </div>
             <div class="comp-card">
                 <h3>⭐ 星级选择器</h3>
-                <p>仅对有 <code>has_quality</code> 的物品（作物、季节采集物）显示。选项：普通/银星/金星/铱星，切换时价格联动更新。</p>
+                <p>仅对有 <code>has_quality</code> 的物品显示。选项：普通/银星/金星/铱星，切换时价格联动更新。</p>
                 <span class="badge">品质价格</span><span class="badge">联动</span>
             </div>
             <div class="comp-card">
@@ -343,30 +814,51 @@
                 <p>点击卡片打开。展示完整信息（品质选择、添加数量 + 加入购物车）、村民赠送喜好表。</p>
                 <span class="badge">模态框</span><span class="badge">5级好感</span>
             </div>
-            <div class="comp-card">
-                <h3>🧾 结账弹窗</h3>
-                <p>表格展示购物车所有条目：序号、商品、数量、单价、小计、最爱数、讨厌数。底部汇总总额。</p>
-                <span class="badge">表格明细</span><span class="badge">确认清空</span>
+            <div class="comp-card" style="border-left:4px solid #c8a86a;">
+                <h3>🧾 🔄 结账弹窗 <span class="badge-hot">UPGRADED</span></h3>
+                <p>
+                    <strong>新增内容：</strong>底部增加配送方式选择 —— 
+                    "🏪 自提" / "🚚 配送"。选择配送后展开村民选择面板。
+                    确认下单时整合配送信息。
+                </p>
+                <span class="badge-hot">配送选择</span><span class="badge-hot">村民联动</span>
             </div>
             <div class="comp-card">
                 <h3>📢 Toast 提示</h3>
-                <p>底部弹出短暂提示：成功加入购物车 / 结账成功 / 清空购物车。2秒自动消失。</p>
+                <p>底部弹出短暂提示。新增配送相关提示："已选择 XX 配送"、"配送员已出发！"等。</p>
                 <span class="badge">通知</span><span class="badge">2s消失</span>
             </div>
         </div>
     </div>
 
-    <!-- 3. 交互流程 -->
+    <!-- ========== 3. 交互流程（更新版） ========== -->
     <div class="section">
-        <h2>🔄 用户交互流程 <span class="tag">UX Flow</span></h2>
+        <h2>🔄 用户交互流程 <span class="tag">UX Flow</span> <span class="hot">新增登录+配送流程</span></h2>
+
+        <!-- 0: 登录流程（新增） -->
+        <div style="margin-bottom:12px;">
+            <div class="flow-list">
+                <span class="flow-step highlight">🔐 首次打开页面</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step highlight">检测 localStorage → 未登录</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step highlight">弹出登录弹窗</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step highlight">填写 用户名 / 住址 / 电话</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step highlight">提交 → 存入 localStorage</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step highlight">右上角显示用户信息</span>
+            </div>
+        </div>
+
+        <!-- 原有的流程 -->
         <div class="flow-list">
-            <span class="flow-step">🌱 打开页面</span>
-            <span class="flow-arrow">→</span>
-            <span class="flow-step">加载 items_data.js（374 件物品）</span>
+            <span class="flow-step">🌱 加载 items_data.js</span>
             <span class="flow-arrow">→</span>
             <span class="flow-step">渲染分类按钮 + 商品网格</span>
         </div>
-        <div style="height:10px;"></div>
+        <div style="height:8px;"></div>
         <div class="flow-list">
             <span class="flow-step">🔍 搜索 / 点分类</span>
             <span class="flow-arrow">→</span>
@@ -374,15 +866,15 @@
             <span class="flow-arrow">→</span>
             <span class="flow-step">重新渲染网格</span>
         </div>
-        <div style="height:10px;"></div>
+        <div style="height:8px;"></div>
         <div class="flow-list">
             <span class="flow-step">🖱️ 调整数量 +/-</span>
             <span class="flow-arrow">→</span>
             <span class="flow-step">更新购物车数组</span>
             <span class="flow-arrow">→</span>
-            <span class="flow-step">同步小计显示 + 购物车栏</span>
+            <span class="flow-step">同步小计 + 购物车栏</span>
         </div>
-        <div style="height:10px;"></div>
+        <div style="height:8px;"></div>
         <div class="flow-list">
             <span class="flow-step">⭐ 切换品质</span>
             <span class="flow-arrow">→</span>
@@ -390,7 +882,7 @@
             <span class="flow-arrow">→</span>
             <span class="flow-step">联动小计 + 购物车价格</span>
         </div>
-        <div style="height:10px;"></div>
+        <div style="height:8px;"></div>
         <div class="flow-list">
             <span class="flow-step">📦 点击商品卡片</span>
             <span class="flow-arrow">→</span>
@@ -398,19 +890,27 @@
             <span class="flow-arrow">→</span>
             <span class="flow-step">查看村民喜好 + 加入购物车</span>
         </div>
-        <div style="height:10px;"></div>
+
+        <!-- 结账+配送流程（更新） -->
+        <div style="height:8px;"></div>
         <div class="flow-list">
             <span class="flow-step">✨ 点击结账</span>
             <span class="flow-arrow">→</span>
             <span class="flow-step">打开订单明细弹窗</span>
             <span class="flow-arrow">→</span>
-            <span class="flow-step">确认 → 清空购物车 → 提示</span>
+            <span class="flow-step highlight">选择 自提 / 配送</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step highlight">若配送 → 选择村民</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step highlight">确认 → 显示配送信息</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">清空购物车 → 提示</span>
         </div>
     </div>
 
-    <!-- 4. 色彩方案 -->
+    <!-- ========== 4. 色彩方案（保留，新增配送相关色） ========== -->
     <div class="section">
-        <h2>🎨 色彩方案 <span class="tag">Color Palette</span></h2>
+        <h2>🎨 色彩方案 <span class="tag">Color Palette</span> <span class="hot">+2 新色</span></h2>
         <div class="swatch-list">
             <div class="swatch"><div class="dot" style="background:#eef5ea;"></div><div class="info">页面背景 <span class="hex">#EEF5EA</span></div></div>
             <div class="swatch"><div class="dot" style="background:#3d6830;"></div><div class="info">标题绿色（深） <span class="hex">#3D6830</span></div></div>
@@ -422,35 +922,40 @@
             <div class="swatch"><div class="dot" style="background:#eadece;"></div><div class="info">数量按钮 <span class="hex">#EADECE</span></div></div>
             <div class="swatch"><div class="dot" style="background:#fffef5;"></div><div class="info">弹窗背景 <span class="hex">#FFFEF5</span></div></div>
             <div class="swatch"><div class="dot" style="background:#6b5e4a;"></div><div class="info">文字主色 <span class="hex">#6B5E4A</span></div></div>
+            <!-- 新增 -->
+            <div class="swatch"><div class="dot" style="background:#c8a86a;"></div><div class="info">金色边框/用户栏 <span class="hex">#C8A86A</span> <span class="badge-hot">NEW</span></div></div>
+            <div class="swatch"><div class="dot" style="background:#fef9ef;"></div><div class="info">用户/配送面板背景 <span class="hex">#FEF9EF</span> <span class="badge-hot">NEW</span></div></div>
         </div>
     </div>
 
-    <!-- 5. 数据流 -->
+    <!-- ========== 5. 数据流（更新版） ========== -->
     <div class="section">
-        <h2>💾 数据架构 <span class="tag">Data Flow</span></h2>
+        <h2>💾 数据架构 <span class="tag">Data Flow</span> <span class="hot">新增 user + delivery</span></h2>
         <div class="file-tree">
-            <span class="dir">items_data.js</span> &nbsp;<span class="comment">// 全局变量 window.ITEMS_DATA (374 items)</span><br>
+            <span class="dir">ITEMS_DATA (全局)</span> &nbsp;<span class="comment">// 374 items</span><br>
             │<br>
-            ├── <span class="dir">item {</span><br>
-            │&nbsp;&nbsp;&nbsp; id, name, category, price, has_quality,<br>
-            │&nbsp;&nbsp;&nbsp; qualities: { 普通, 银星, 金星, 铱星 },<br>
-            │&nbsp;&nbsp;&nbsp; image, source, description,<br>
-            │&nbsp;&nbsp;&nbsp; gifting: { love[], like[], neutral[], dislike[], hate[] }<br>
-            │&nbsp;&nbsp; }<br>
+            ├── <span class="dir">item { id, name, category, price, has_quality, qualities, image, ... }</span><br>
             │<br>
-            ├── <span class="dir">categories[]</span> &nbsp;<span class="comment">// 19 个分类</span><br>
+            ├── <span class="dir">USER_INFO (localStorage)</span> &nbsp;<span class="comment highlight" style="background:#ffefe0;">// 新增</span><br>
+            │&nbsp;&nbsp; { username, address, phone }<br>
+            │&nbsp;&nbsp; address 默认 "鹈鹕镇事务中心"<br>
             │<br>
-            ├── <span class="dir">cartItems[]</span> &nbsp;<span class="comment">// 购物车状态（运行时）</span><br>
+            ├── <span class="dir">cartItems[] (运行时状态)</span><br>
             │&nbsp;&nbsp; { itemId, name, quality, quantity, price, ... }<br>
             │<br>
-            └── <span class="dir">render()</span> &nbsp;<span class="comment">// 根据 filteredItems 绘制网格</span>
+            ├── <span class="dir">delivery (运行时状态)</span> &nbsp;<span class="comment highlight" style="background:#ffefe0;">// 新增</span><br>
+            │&nbsp;&nbsp; { mode: 'pickup' | 'delivery', villager: '阿比盖尔' }<br>
+            │<br>
+            └── <span class="dir">VILLAGERS (常量)</span> &nbsp;<span class="comment highlight" style="background:#ffefe0;">// 新增</span><br>
+            &nbsp;&nbsp;&nbsp; ['亚力克斯','艾利欧特','哈维','山姆','塞巴斯蒂安','谢恩',<br>
+            &nbsp;&nbsp;&nbsp;  '阿比盖尔','艾米丽','海莉','莉亚','玛鲁','潘妮', ... 共30+位]
         </div>
         <div style="margin-top:12px;background:#f4f9ee;padding:12px 16px;border-radius:20px;">
-            <p style="font-size:0.85rem;"><strong>状态管理：</strong>纯前端 JS 对象维护，无后端依赖。数据以 <code><script src="items_data.js"></code> 方式嵌入，无需 fetch 请求。</p>
+            <p style="font-size:0.85rem;"><strong>状态管理：</strong>纯前端 JS + localStorage。用户信息持久化存储，购物车和配送选项为运行时内存状态。</p>
         </div>
     </div>
 
-    <!-- 6. 响应式断点 -->
+    <!-- ========== 6. 响应式布局（保留不动） ========== -->
     <div class="section">
         <h2>📱 响应式布局 <span class="tag">Responsive</span></h2>
         <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;">
@@ -469,27 +974,84 @@
                 <div style="font-weight:600;margin:4px 0;">分类标签</div>
                 <div style="font-size:0.8rem;color:#6a5a46;">水平滚动 + 换行，最大高度 120px 可滚动</div>
             </div>
+            <div style="background:#faf8f0;padding:16px;border-radius:20px;text-align:center;border-left:4px solid #c8a86a;">
+                <div style="font-size:2rem;">🔐</div>
+                <div style="font-weight:600;margin:4px 0;">登录弹窗</div>
+                <div style="font-size:0.8rem;color:#6a5a46;">移动端全屏遮罩 + 居中卡片，最大宽度 380px</div>
+            </div>
+            <div style="background:#faf8f0;padding:16px;border-radius:20px;text-align:center;border-left:4px solid #c8a86a;">
+                <div style="font-size:2rem;">🚚</div>
+                <div style="font-weight:600;margin:4px 0;">村民选择网格</div>
+                <div style="font-size:0.8rem;color:#6a5a46;">Grid: <code>repeat(auto-fill, minmax(72px, 1fr))</code>，移动端可横向滚动</div>
+            </div>
         </div>
     </div>
 
-    <!-- 7. 文件结构 -->
+    <!-- ========== 7. 文件结构 ========== -->
     <div class="section">
         <h2>📁 网站源码文件结构 <span class="tag">Source Code Structure</span></h2>
         <div class="file-tree">
-            <span class="dir">Stardew_Valley_Website/</span> &nbsp;<span class="comment"><-- 整理后源码文件夹</span><br>
+            <span class="dir">Stardew_Valley_Website/</span><br>
             │<br>
-            ├── <span class="file">index.html</span> &nbsp;<span class="comment">// 主页面（完整 UI + 交互逻辑）</span><br>
-            ├── <span class="file">items_data.js</span> &nbsp;<span class="comment">// 物品数据（374 条，含价格/品质/分类/赠送）</span><br>
-            ├── <span class="dir">images/</span> &nbsp;<span class="comment">// 物品图片文件夹</span><br>
+            ├── <span class="file">index.html</span> &nbsp;<span class="comment">// 主页面（含登录 + 配送逻辑）</span><br>
+            ├── <span class="file">items_data.js</span> &nbsp;<span class="comment">// 374 条物品数据</span><br>
+            ├── <span class="dir">images/</span> &nbsp;<span class="comment">// 物品图片</span><br>
             │&nbsp;&nbsp; └── *.png<br>
-            └── <span class="file">README.md</span> &nbsp;<span class="comment">// 项目说明（可选）</span>
+            └── <span class="file">README.md</span> &nbsp;<span class="comment">// 项目说明</span>
+        </div>
+    </div>
+
+    <!-- ========== [NEW] 附录：全体村民名单 ========== -->
+    <div class="section new-feature">
+        <h2>👥 附录：村民配送员名单 <span class="tag">Villager List</span></h2>
+        <p style="font-size:0.85rem;color:#5a4f3a;margin-bottom:12px;">以下为可选择的配送村民（共 <strong>35 位</strong>），覆盖星露谷所有可互动NPC。</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px;">
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 亚力克斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 艾利欧特</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 哈维</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 山姆</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 塞巴斯蒂安</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 谢恩</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 阿比盖尔</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 艾米丽</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 海莉</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 莉亚</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 玛鲁</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 潘妮</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 卡罗琳</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 克林特</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 德米特里厄斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 矮人</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 艾芙琳</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 乔治</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 格斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 贾斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 乔迪</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 肯特</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 刘易斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 莱纳斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 玛妮</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 潘姆</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 皮埃尔</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 罗宾</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 桑迪</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 文森特</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 威利</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 法师</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 科罗布斯</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 雷欧</span>
+            <span style="background:#f4f9ee;padding:4px 12px;border-radius:20px;font-size:0.75rem;">👤 皮皮</span>
+        </div>
+        <div style="margin-top:10px;background:#fef9ef;border-radius:16px;padding:12px 16px;font-size:0.75rem;color:#6a5a46;">
+            💡 每位村民选中后会显示一句独特的配送寄语（例如阿比盖尔："包在我身上！"、威利："今天的海风很适合送货..."等），增加交互趣味性。
         </div>
     </div>
 
 </div>
 
 <footer>
-    🎨 星露谷全物品图谱商店 · 设计草图 · v1.0
+    🎨 星露谷全物品图谱商店 · 设计草图 · v2.0（新增 登录 🔐 + 配送 🚚）
+    <br>网页制作：陈薇羽 · 联系方式：1152629204@qq.com
 </footer>
 </body>
 </html>
