@@ -1,0 +1,6 @@
+{
+    "phpserver.port": 3000,
+    "phpserver.browser": "chrome",
+    "phpserver.phpPath": "C:\\php\\php.exe",
+    "phpserver.relativePath": "."
+}
