@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星尔玛配送服务 - 星露谷物语</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(160deg, #faf8f2 0%, #f0ebe1 100%);
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        /* 用户栏 */
+        .user-bar {
+            max-width: 960px;
+            margin: 0 auto 8px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .user-info {
+            position: relative;
+            cursor: pointer;
+        }
+        .user-info .user-avatar {
+            background: #ece3d5;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #3d2f1f;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .user-info .user-avatar:hover { background: #e0d5c4; }
+        .user-info .user-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 48px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+            z-index: 200;
+        }
+        .user-info.dropdown-open .user-dropdown { display: block; }
+        .user-dropdown h4 { margin-bottom: 10px; color: #3d2f1f; font-size: 0.95rem; }
+        .user-dropdown p { font-size: 0.8rem; margin: 4px 0; color: #5a4a32; }
+        .logout-btn {
+            margin-top: 12px;
+            background: #e8ddd0;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .logout-btn:hover { background: #d4c7b6; }
+
+        /* 容器 */
+        .delivery-container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 32px 28px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+        }
+        .delivery-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .delivery-title h1 {
+            font-size: 1.6rem;
+            color: #3d2f1f;
+            margin-bottom: 4px;
+        }
+        .delivery-title p {
+            font-size: 0.85rem;
+            color: #7a6b5a;
+        }
+
+        /* 选项卡 */
+        .option-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .option-tab {
+            flex: 1;
+            text-align: center;
+            padding: 16px 10px;
+            background: #f6f3ee;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+        .option-tab.active {
+            background: #f0f7ea;
+            border-color: #578b34;
+        }
+        .option-tab .tab-icon { font-size: 1.8rem; margin-bottom: 4px; }
+        .option-tab .tab-label { font-weight: 700; color: #3d2f1f; font-size: 0.95rem; }
+        .option-tab .tab-desc { font-size: 0.75rem; color: #7a6b5a; }
+
+        /* 面板 */
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        /* 自提结果 */
+        .pickup-result {
+            text-align: center;
+            padding: 28px 10px;
+        }
+        .pickup-icon { font-size: 3rem; margin-bottom: 8px; }
+        .pickup-msg { font-size: 1rem; color: #3d2f1f; margin-bottom: 18px; }
+        .order-box {
+            display: inline-block;
+            background: #f6faf2;
+            padding: 14px 36px;
+            border-radius: 60px;
+            margin-bottom: 12px;
+        }
+        .order-label { font-size: 0.8rem; color: #7a6b5a; }
+        .order-number {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #3d6830;
+            letter-spacing: 3px;
+        }
+        .timer { font-size: 0.9rem; color: #7a6b5a; }
+
+        /* 配送面板 */
+        .delivery-panel-header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .delivery-panel-header h3 { font-size: 1.1rem; color: #3d2f1f; }
+        .delivery-panel-header p { font-size: 0.8rem; color: #7a6b5a; }
+
+        /* 寄语 */
+        .delivery-message {
+            background: #f6faf2;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .delivery-message .msg-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #eef5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .delivery-message .msg-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .delivery-message .msg-text {
+            font-size: 0.88rem;
+            color: #3d2f1f;
+            line-height: 1.5;
+            margin-bottom: 4px;
+        }
+        .delivery-message .msg-author {
+            font-size: 0.75rem;
+            color: #7a6b5a;
+            font-weight: 600;
+        }
+
+        /* 村民网格 */
+        .villager-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin: 14px 0;
+        }
+        .villager-card {
+            background: #faf8f5;
+            border-radius: 20px;
+            padding: 14px 8px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+        .villager-card:hover {
+            border-color: #b8d0a0;
+            background: #f4f8ee;
+        }
+        .villager-card.selected {
+            border-color: #578b34;
+            background: #eef8e6;
+            box-shadow: 0 0 0 3px rgba(87, 139, 52, 0.2);
+        }
+        .villager-card .villager-avatar {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 6px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #eef5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+        .villager-card .villager-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .villager-card .villager-name {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #3d2f1f;
+        }
+
+        /* 确认按钮 */
+        .confirm-btn {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 14px;
+            background: #578b34;
+            color: white;
+            border: none;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .confirm-btn:hover { background: #3f6a24; }
+        .confirm-btn:disabled {
+            background: #c4c4b8;
+            cursor: not-allowed;
+        }
+
+        /* 结果弹窗 */
+        .result-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .result-box {
+            background: white;
+            border-radius: 36px;
+            padding: 32px;
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .result-box .result-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+        .result-box h2 {
+            font-size: 1.3rem;
+            color: #3d2f1f;
+            margin-bottom: 16px;
+        }
+        .result-box .result-detail {
+            background: #f6faf2;
+            border-radius: 12px;
+            padding: 14px;
+            margin: 12px 0;
+            text-align: left;
+        }
+        .result-box .result-detail p {
+            font-size: 0.85rem;
+            color: #4a3f2c;
+            margin: 4px 0;
+        }
+        .result-box .result-detail strong {
+            color: #3d6830;
+        }
+        .result-box .back-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 28px;
+            background: #578b34;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .result-box .back-btn:hover { background: #3f6a24; }
+
+        .result-villager-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 4px;
+            object-fit: cover;
+        }
+        .result-villager-emoji {
+            font-size: 1.3rem;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+
+        /* 地址输入 */
+        .address-section {
+            margin: 14px 0;
+        }
+        .address-section label {
+            display: block;
+            font-weight: 600;
+            color: #3d2f1f;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        .address-section input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 40px;
+            border: 2px solid #dcd5c8;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            outline: none;
+        }
+        .address-section input:focus {
+            border-color: #578b34;
+        }
+        .address-section input::placeholder {
+            color: #b5aa99;
+        }
+    </style>
+</head>
+<body>
+    <!-- 用户信息栏 -->
+    <div class="user-bar" id="userBar"></div>
+
+    <div class="delivery-container">
+        <div class="delivery-title">
+            <h1>📦 配送服务</h1>
+            <p>选择取货方式，让星尔玛为您送达</p>
+        </div>
+
+        <!-- 选项卡 -->
+        <div class="option-tabs">
+            <div class="option-tab active" id="tabPickup" onclick="switchTab('pickup')">
+                <div class="tab-icon">🏪</div>
+                <div class="tab-label">到店自提</div>
+                <div class="tab-desc">5分钟后可领取</div>
+            </div>
+            <div class="option-tab" id="tabDelivery" onclick="switchTab('delivery')">
+                <div class="tab-icon">🚚</div>
+                <div class="tab-label">村民配送</div>
+                <div class="tab-desc">由村民为您送达</div>
+            </div>
+        </div>
+
+        <!-- 自提面板 -->
+        <div class="panel active" id="panelPickup">
+            <div class="pickup-result">
+                <div class="pickup-icon">🏪</div>
+                <div class="pickup-msg">
+                    您的商品正在 <strong>星尔玛</strong> 打包中！<br>
+                    请在 <strong>5分钟</strong> 后前来领取。
+                </div>
+                <div class="order-box">
+                    <div class="order-label">📋 订单号</div>
+                    <div class="order-number" id="pickupOrder"></div>
+                </div>
+                <div class="timer">⏰ 预计可取时间：<span id="pickupTime"></span></div>
+            </div>
+        </div>
+
+        <!-- 配送面板 -->
+        <div class="panel" id="panelDelivery">
+            <div class="delivery-panel-header">
+                <h3>👤 选择配送村民</h3>
+                <p>点击选中一位村民作为您的配送员</p>
+            </div>
+
+            <!-- 趣味寄语 -->
+            <div class="delivery-message" id="deliveryMessage">
+                <div class="msg-icon">💬</div>
+                <div>
+                    <div class="msg-text">"放心吧，我一定会把东西安全送到的！"</div>
+                    <div class="msg-author">— 选择一位村民开始吧</div>
+                </div>
+            </div>
+
+            <!-- 村民网格 -->
+            <div class="villager-grid" id="villagerGrid"></div>
+
+            <!-- 配送地址 -->
+            <div class="address-section">
+                <label>📍 配送地址</label>
+                <input type="text" id="deliveryAddress" placeholder="输入配送地址...">
+            </div>
+
+            <!-- 确认配送 -->
+            <button class="confirm-btn" id="confirmDelivery" disabled onclick="confirmDelivery()">
+                确认配送
+            </button>
+        </div>
+    </div>
+
+    <script src="items_data.js"></script>
+    <script>
+        // ======== 村民数据 ========
+        const VILLAGERS = [
+            { name: "Alex",      img: "images/Alex.png",      msg: "包在我身上！跑外卖正好锻炼体能，就当日常体能训练了，短跑配送速度没人比得过我！" },
+            { name: "Abigail",   img: "images/Abigail.png",    msg: "送外卖？刚好顺路往墓地那边晃一圈，就当出门冒险跑腿啦！路上要是撞见幽灵我还能顺手拔剑，保证准时送到！" },
+            { name: "Caroline",  img: "images/Caroline.png",   msg: "正好离开杂货店出门散心，在后山逛完顺路帮你送过去，野外绕小路能节省不少时间。" },
+            { name: "Clint",     img: "images/Clint.png",      msg: "好…… 好的！放下手头打铁的活就去，出门走动也好，要是路上偶遇艾米丽那就再好不过了。（局促小声）" },
+            { name: "Demetrius", img: "images/Demetrius.png",  msg: "没问题，我会用科学的方式计算最佳配送路线。" },
+            { name: "Dwarf",     img: "images/Dwarf.png",      msg: "难得出矿井透气，顺路跑腿，要是送货路上能捡到小块矿石，就算额外酬劳啦！" },
+            { name: "Elliott",   img: "images/Elliott.png",    msg: "乐意效劳，漫步沿途风物，伴着海风帮你配送，旅途亦是浪漫，定会妥善保管商品。" },
+            { name: "Emily",     img: "images/Emily.png",      msg: "当然没问题啦！外出走动刚好吸收自然灵气，路上我会带着好心情，稳稳当当把商品送到你的手上哦！" },
+            { name: "Evelyn",    img: "images/Evelyn.png",     msg: "好孩子交给奶奶啦，我慢慢散步过去，顺便给你带一盆漂亮的郁金香装点房间。" },
+            { name: "George",    img: "images/George.png",     msg: "哼，看在你平日里还算懂事，我慢慢挪过去送，别指望我走太快，浪费力气的活儿。" },
+            { name: "Gil",       img: "images/Gil.png",        msg: "我虽然年纪大了，但送个东西还是没问题的，正好出门转转。" },
+            { name: "Gunther",   img: "images/Gunther.png",    msg: "博物馆的工作可以稍后再处理，帮你送一趟正好活动活动筋骨。" },
+            { name: "Gus",       img: "images/Gus.png",        msg: "没问题，后厨暂时空闲我就帮你跑一趟，我懂食材怎么保存，保温、防洒我最在行。" },
+            { name: "Haley",     img: "images/Haley.png",      msg: "啊…… 还要跑一趟？行吧，就当出门采风拍照了。别把东西弄得脏兮兮的，弄脏我的鞋子可不行，我尽量快点。" },
+            { name: "Harvey",    img: "images/Harvey.png",     msg: "没问题，我抽空出诊间隙帮你送，路上我会注意慢行避免颠簸，防止你的东西被损坏了。" },
+            { name: "Jas",       img: "images/Jas.png",        msg: "我会小心捧着东西慢慢走，不会跑跳洒掉的~顺路经过牧场还能顺路看看小鸡嘿嘿。" },
+            { name: "Jodi",      img: "images/Jodi.png",       msg: "可以呀，收拾完家务刚好出门采买，顺路帮忙给你送过去，出门活动活动也能放松下紧绷的神经。" },
+            { name: "Kent",      img: "images/Kent.png",       msg: "我去吧，常年赶路已经习惯长途奔波，路况我都留心记着了，稳妥送达。" },
+            { name: "Krobus",    img: "images/Krobus.png",     msg: "…… 我从地底暗道穿行，避开日光赶路，地下通道连通各处，能悄无声息快速把外卖送到。" },
+            { name: "Leo",       img: "images/Leo.png",        msg: "丛林小路我全都认识，树林里赶路很快！我会用宽大树叶包住外卖，不让雨水、尘土弄脏。不过镇上密密麻麻的房子我不太熟，我会慢慢问路过去的。" },
+            { name: "Leah",      img: "images/Leah.png",       msg: "林间顺路，正好离开小屋走走。我走小路更快，不会磕碰商品，放心交给我吧。" },
+            { name: "Lewis",     img: "images/Lewis.png",      msg: "既然需要帮忙，我公务间隙代为配送，身为镇长帮镇民分忧理所应当，严守配送时限。" },
+            { name: "Linus",     img: "images/Linus.png",      msg: "自然之路四通八达，我穿行山林小径送餐，不受大路拥堵困扰，安稳送达。" },
+            { name: "Marlon",    img: "images/Marlon.png",     msg: "冒险者公会成员送货，路上就算遇到麻烦也能轻松摆平。" },
+            { name: "Marnie",    img: "images/Marnie.png",     msg: "照料完牲畜就出门，牧场周边路况熟悉，短途配送轻轻松松。" },
+            { name: "Maru",      img: "images/Maru.png",       msg: "没问题，我算好路程和耗时，规划最优路线，效率拉满，精准准时送达，顺便在路上琢磨下新零件。" },
+            { name: "Morris",    img: "images/Morris.png",     msg: "Joja集团的配送标准，高效、专业——尽管这是为竞争对手服务……" },
+            { name: "Mr. Qi",    img: "images/Mr._Qi.png",     msg: "你引起了我的兴趣。我会用特殊的方式将物品送达，考验你耐心的同时也考验我的效率。" },
+            { name: "Pam",       img: "images/Pam.png",        msg: "大巴歇班空档帮你跑一趟，我开车送最快，就是别指望我全程小心翼翼，送完这单正好顺路去星尔玛喝一杯。" },
+            { name: "Penny",     img: "images/Penny.png",      msg: "好、好的，我抽空过去送，送完还要回去辅导孩子们功课。" },
+            { name: "Pierre",    img: "images/Pierre.png",     msg: "可以帮忙，不过下次要是有农副产品货源可得优先找我进货！保证准时送达！。" },
+            { name: "Robin",     img: "images/Robin.png",      msg: "收完工顺路跑腿！常年跑遍全镇建房，每条街巷我门儿清，配送路线不在话下。" },
+            { name: "Sam",       img: "images/Sam.png",        msg: "可以啊！刚好不想闷在家里练吉他，跑腿摸鱼刚刚好，路上碰见文森特说不定还顺路捎带他玩会儿！" },
+            { name: "Sandy",     img: "images/Sandy.png",      msg: "亲爱的没问题！我抽空关一小会儿店铺，从沙漠去往山谷送餐，难得离开荒漠逛逛小镇呢。" },
+            { name: "Sebastian", img: "images/Sebastian.png",  msg: "…… 行。等傍晚骑机车顺路跑一趟，骑车比走路快，天黑前能送完。" },
+            { name: "Shane",     img: "images/Shane.png",      msg: "啧，行吧。送完我就回牧场喂小鸡，别指望我多闲聊，东西我安全送到就是。" },
+            { name: "Vincent",   img: "images/Vincent.png",    msg: "交给我！我和小伙伴赛跑超厉害，跑起来飞快！（小声补充）要是送完能拿一小块小点心当奖励就太棒啦~" },
+            { name: "Willy",     img: "images/Willy.png",      msg: "小事一桩！划小船顺路沿岸配送，近海航线熟得很，水上送单速度稳，海鲜餐品放我这儿最合适！" },
+            { name: "Wizard",    img: "images/Wizard.png",     msg: "我用传送门帮你瞬间送过去，比任何配送员都快，凡人赶路太慢了。" }
+        ];
+
+        // ======== 随机订单号 ========
+        function generateOrderNumber() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let result = '';
+            for (let i = 0; i < 10; i++) {
+                result += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return result;
+        }
+
+        // ======== 自提时间 ========
+        function getPickupTime() {
+            const now = new Date();
+            now.setMinutes(now.getMinutes() + 5);
+            return now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // ======== 登录检查 ========
+        function checkLogin() {
+            const userData = localStorage.getItem('stardew_user');
+            if (!userData) {
+                window.location.href = 'login.html';
+                return null;
+            }
+            return JSON.parse(userData);
+        }
+
+        const user = checkLogin();
+        if (!user) throw new Error('未登录');
+
+        // 初始化自提订单
+        document.getElementById('pickupOrder').textContent = generateOrderNumber();
+        document.getElementById('pickupTime').textContent = getPickupTime();
+
+        // 初始化地址
+        document.getElementById('deliveryAddress').value = user.address || '鹈鹕镇事务中心';
+
+        // ======== 用户信息栏 ========
+        function initUserBar() {
+            const bar = document.getElementById('userBar');
+            bar.innerHTML = `
+                <div class="user-info" id="userInfoDropdown">
+                    <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                    <div class="user-dropdown">
+                        <h4>📋 登录信息</h4>
+                        <p><strong>👤 用户名:</strong> ${user.username}</p>
+                        <p><strong>🏠 住址:</strong> ${user.address}</p>
+                        <p><strong>📧 邮箱:</strong> ${user.email || '未填写'}</p>
+                        <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                    </div>
+                </div>
+            `;
+            var avatarBtn = document.getElementById('userAvatarBtn');
+            var dropdownWrap = document.getElementById('userInfoDropdown');
+            avatarBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                dropdownWrap.classList.toggle('dropdown-open');
+            });
+            document.addEventListener('click', function() {
+                dropdownWrap.classList.remove('dropdown-open');
+            });
+            dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+        }
+
+        function logout() {
+            localStorage.removeItem('stardew_user');
+            window.location.href = 'login.html';
+        }
+
+        initUserBar();
+
+        // ======== 选项卡切换 ========
+        function switchTab(tab) {
+            document.getElementById('tabPickup').classList.toggle('active', tab === 'pickup');
+            document.getElementById('tabDelivery').classList.toggle('active', tab === 'delivery');
+            document.getElementById('panelPickup').classList.toggle('active', tab === 'pickup');
+            document.getElementById('panelDelivery').classList.toggle('active', tab === 'delivery');
+        }
+
+        // ======== 村民网格 ========
+        let selectedVillager = null;
+
+        function getVillagerAvatarHTML(v) {
+            if (v.img) {
+                return `<img src="${v.img}" alt="${v.name}" onerror="this.style.display='none'">`;
+            }
+            return '⛏️';
+        }
+
+        function renderVillagerGrid() {
+            const grid = document.getElementById('villagerGrid');
+            grid.innerHTML = '';
+            VILLAGERS.forEach(v => {
+                const card = document.createElement('div');
+                card.className = 'villager-card';
+                card.innerHTML = `
+                    <div class="villager-avatar">${getVillagerAvatarHTML(v)}</div>
+                    <div class="villager-name">${v.name}</div>
+                `;
+                card.onclick = () => selectVillager(v, card);
+                grid.appendChild(card);
+            });
+        }
+
+        function selectVillager(villager, card) {
+            // 清除旧选择
+            document.querySelectorAll('.villager-card.selected').forEach(el => el.classList.remove('selected'));
+            card.classList.add('selected');
+            selectedVillager = villager;
+
+            const avatarHTML = villager.img
+                ? `<img src="${villager.img}" alt="${villager.name}">`
+                : '⛏️';
+
+            // 更新寄语
+            document.getElementById('deliveryMessage').innerHTML = `
+                <div class="msg-icon">${avatarHTML}</div>
+                <div>
+                    <div class="msg-text">"${villager.msg}"</div>
+                    <div class="msg-author">— ${villager.name}</div>
+                </div>
+            `;
+
+            // 启用确认按钮
+            document.getElementById('confirmDelivery').disabled = false;
+        }
+
+        renderVillagerGrid();
+
+        // ======== 确认配送 ========
+        function confirmDelivery() {
+            if (!selectedVillager) return;
+            const address = document.getElementById('deliveryAddress').value.trim();
+            if (!address) {
+                alert('请填写配送地址！');
+                return;
+            }
+
+            const orderNum = generateOrderNumber();
+
+            const avatarHTML = selectedVillager.img
+                ? `<img src="${selectedVillager.img}" alt="${selectedVillager.name}" class="result-villager-img">`
+                : `<span class="result-villager-emoji">⛏️</span>`;
+
+            // 显示结果弹窗
+            const overlay = document.createElement('div');
+            overlay.className = 'result-overlay';
+            overlay.innerHTML = `
+                <div class="result-box">
+                    <div class="result-icon">🚚</div>
+                    <h2>配送已确认！</h2>
+                    <div class="result-detail">
+                        <p>📋 <strong>订单号:</strong> ${orderNum}</p>
+                        <p>👤 <strong>配送员:</strong> ${avatarHTML} ${selectedVillager.name}</p>
+                        <p>📍 <strong>配送地址:</strong> ${address}</p>
+                        <p>💬 <strong>寄语:</strong> "${selectedVillager.msg}"</p>
+                        <p>⏱️ <strong>预计送达:</strong> ${getDeliveryTime()}</p>
+                    </div>
+                    <button class="back-btn" onclick="window.location.href='index.html'">返回商店</button>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+
+        function getDeliveryTime() {
+            const now = new Date();
+            now.setMinutes(now.getMinutes() + 15);
+            return now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+        }
+    </script>
+</body>
+</html>
