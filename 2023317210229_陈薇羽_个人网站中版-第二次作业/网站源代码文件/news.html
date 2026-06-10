@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星闻露谷 · 星露谷新闻资讯</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-banner">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🌾 星尔玛</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">🏠 商店首页</a>
+            <a href="news.html" class="nav-link active">📰 星闻露谷</a>
+            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        </div>
+        <div class="user-bar" id="userBar"></div>
+    </nav>
+
+    <div class="header">
+        <h1>📰 星闻露谷</h1>
+        <p>鹈鹕镇的大小事 · 最新资讯一手掌握</p>
+    </div>
+</div>
+
+<div class="news-container">
+    <!-- 左侧分类导航 -->
+    <div class="news-sidebar" id="newsSidebar">
+        <div class="news-sidebar-title">📬 新闻栏目</div>
+        <div class="news-sidebar-list">
+            <div class="news-sidebar-item active" data-column="pelican">
+                <span class="news-sidebar-icon">🐦</span>
+                <span class="news-sidebar-label">鹈鹕日报</span>
+            </div>
+            <div class="news-sidebar-item" data-column="living">
+                <span class="news-sidebar-icon">🏡</span>
+                <span class="news-sidebar-label">离地而居</span>
+            </div>
+            <div class="news-sidebar-item" data-column="queen">
+                <span class="news-sidebar-icon">👑</span>
+                <span class="news-sidebar-label">酱料女皇</span>
+            </div>
+        </div>
+        <div class="news-sidebar-footer">
+            <p>📅 星露谷历<br>不定期出版</p>
+        </div>
+    </div>
+
+    <!-- 右侧新闻展示区 -->
+    <div class="news-main">
+        <!-- 鹈鹕日报 -->
+        <div class="news-column" id="col-pelican">
+            <div class="news-column-header">
+                <h2>🐦 鹈鹕日报</h2>
+                <span class="news-column-motto">镇民身边的新鲜事</span>
+            </div>
+            <div class="news-card">
+                <div class="news-card-badge">最新</div>
+                <h3 class="news-card-title">🌱 春季播种季到来！皮埃尔小店推出新作物种子</h3>
+                <div class="news-card-meta">📅 春季 1 日 · 来自 镇政府</div>
+                <p class="news-card-summary">新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。防风草、绿豆、草莓……赶紧来选购吧！</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">🎣 威利的钓鱼大赛即将开幕</h3>
+                <div class="news-card-meta">📅 夏季 1 日 · 来自 鱼店</div>
+                <p class="news-card-summary">一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">🍄 秘密森林发现新品种蘑菇</h3>
+                <div class="news-card-meta">📅 春季 15 日 · 来自 科学研究所</div>
+                <p class="news-card-summary">据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p>
+            </div>
+            <div class="news-card placeholder-card">
+                <span>📬 更多新闻即将刊登……</span>
+            </div>
+        </div>
+
+        <!-- 离地而居 -->
+        <div class="news-column" id="col-living" style="display:none;">
+            <div class="news-column-header">
+                <h2>🏡 离地而居</h2>
+                <span class="news-column-motto">农场生活 · DIY 小贴士</span>
+            </div>
+            <div class="news-card">
+                <div class="news-card-badge">推荐</div>
+                <h3 class="news-card-title">🧺 春季作物布局指南：让你的农场产值翻倍</h3>
+                <div class="news-card-meta">📅 春季 3 日 · 来自 农场主联盟</div>
+                <p class="news-card-summary">合理的作物布局可以极大提升农场收益。本文介绍了"3×3高效种植区"的布局方式，以及如何利用洒水器最大化种植效率。</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">🐄 新手畜牧入门：鸡舍 vs 畜棚，先建哪个？</h3>
+                <div class="news-card-meta">📅 春季 10 日 · 来自 玛妮的牧场</div>
+                <p class="news-card-summary">对于刚开始发展畜牧业的农场主来说，先建鸡舍还是畜棚？玛妮为你分析两种选择的优缺点及回本周期。</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">⚒️ 升级你的工具：铜、铁、金的顺序建议</h3>
+                <div class="news-card-meta">📅 夏季 8 日 · 来自 克林特的铁匠铺</div>
+                <p class="news-card-summary">工具升级是提升农场效率的关键。到底应该先升级哪个工具？铜→铁→金的路线怎么走最划算？铁匠克林特为你一一解答。</p>
+            </div>
+            <div class="news-card placeholder-card">
+                <span>📬 更多生活技巧即将刊登……</span>
+            </div>
+        </div>
+
+        <!-- 酱料女皇 -->
+        <div class="news-column" id="col-queen" style="display:none;">
+            <div class="news-column-header">
+                <h2>👑 酱料女皇</h2>
+                <span class="news-column-motto">每周三 · 美食烹饪时间</span>
+            </div>
+            <div class="news-card">
+                <div class="news-card-badge">🔥 本周热推</div>
+                <h3 class="news-card-title">🥘 春季限定食谱：防风草炖菜 + 野山葵酱</h3>
+                <div class="news-card-meta">📅 春季 7 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">本周酱料女皇带来两道春季限定料理！利用新鲜的防风草和野山葵，简单几步就能做出一道温暖身心的春季炖菜。</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">🍰 草莓蛋糕 —— 春季最甜蜜的礼物</h3>
+                <div class="news-card-meta">📅 春季 14 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">用新采摘的草莓制作一款松软香甜的草莓蛋糕，送给心仪的村民，好感度大幅提升！食谱大公开。</p>
+            </div>
+            <div class="news-card">
+                <h3 class="news-card-title">🧀 工匠制品入门：奶酪、蛋黄酱与果酱的制作技巧</h3>
+                <div class="news-card-meta">📅 夏季 5 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">有了农场的产出，如何加工成更高价值的工匠制品？奶酪、蛋黄酱、果酱、腌菜……每种产品的配方与收益详解。</p>
+            </div>
+            <div class="news-card placeholder-card">
+                <span>📬 更多食谱即将刊登……</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ============== 用户登录信息 ==============
+function initUserBar() {
+    const bar = document.getElementById('userBar');
+    const userData = localStorage.getItem('stardew_user');
+    if (userData) {
+        const user = JSON.parse(userData);
+        bar.innerHTML = `
+            <div class="user-info" id="userInfoDropdown">
+                <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                <div class="user-dropdown">
+                    <h4>📋 登录信息</h4>
+                    <p><strong>👤 用户名:</strong> ${user.username}</p>
+                    <p><strong>🏠 住址:</strong> ${user.address}</p>
+                    <p><strong>📧 邮箱:</strong> ${user.email || user.phone || '未填写'}</p>
+                    <p><strong>🕐 登录时间:</strong> ${new Date(user.loginTime).toLocaleString('zh-CN')}</p>
+                    <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                </div>
+            </div>
+        `;
+        var avatarBtn = document.getElementById('userAvatarBtn');
+        var dropdownWrap = document.getElementById('userInfoDropdown');
+        avatarBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownWrap.classList.toggle('dropdown-open');
+        });
+        document.addEventListener('click', function() {
+            dropdownWrap.classList.remove('dropdown-open');
+        });
+        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    } else {
+        bar.innerHTML = `<a href="login.html" class="login-link">🔑 登录</a>`;
+    }
+}
+
+function logout() {
+    if (confirm('确定要退出登录吗？')) {
+        localStorage.removeItem('stardew_user');
+        initUserBar();
+        showToast('👋 已退出登录');
+    }
+}
+
+function showToast(msg) {
+    const el = document.createElement('div');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#4a6b3c;color:white;padding:10px 20px;border-radius:40px;z-index:9999;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 2000);
+}
+
+// ============== 侧栏切换 ==============
+document.addEventListener('DOMContentLoaded', () => {
+    initUserBar();
+
+    const sidebarItems = document.querySelectorAll('.news-sidebar-item');
+    const columns = {
+        pelican: document.getElementById('col-pelican'),
+        living: document.getElementById('col-living'),
+        queen: document.getElementById('col-queen')
+    };
+
+    sidebarItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // 更新侧栏高亮
+            sidebarItems.forEach(si => si.classList.remove('active'));
+            item.classList.add('active');
+
+            // 切换显示对应栏目
+            const col = item.dataset.column;
+            Object.keys(columns).forEach(key => {
+                columns[key].style.display = key === col ? 'block' : 'none';
+            });
+        });
+    });
+});
+</script>
+
+<footer style="text-align:center;margin-top:40px;padding:20px 16px;border-top:1px solid #d0dcc8;font-size:0.85rem;color:#6b5e4a;">
+    <table style="margin:0 auto;border-collapse:collapse;">
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">📰 星闻露谷 · 所有新闻纯属虚构</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">灵感来自星露谷物语</td>
+        </tr>
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">网页制作：陈薇羽</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">联系方式：1152629204@qq.com ⭐</td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

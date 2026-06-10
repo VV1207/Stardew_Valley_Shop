@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星露谷 · 用户登录</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { display: flex; align-items: center; justify-content: center; }
+        footer { position: fixed; bottom: 16px; left: 0; right: 0; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="avatar">🌾</div>
+            <h1>欢迎来到星露谷</h1>
+            <p>请填写你的个人信息以开始购物之旅</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="form-group" id="nameGroup">
+                <label>👤 用户名 <span class="required">*</span></label>
+                <input type="text" id="username" placeholder="请输入你的名字" maxlength="20" autocomplete="off">
+                <div class="error-msg">请输入用户名</div>
+            </div>
+
+            <div class="form-group" id="addressGroup">
+                <label>🏠 住址 <span class="hint">（选填，默认鹈鹕镇事务中心）</span></label>
+                <input type="text" id="address" placeholder="鹈鹕镇事务中心" maxlength="50" autocomplete="off">
+            </div>
+
+            <div class="form-group" id="emailGroup">
+                <label>📧 邮箱 <span class="required">*</span></label>
+                <input type="email" id="email" placeholder="example@email.com" maxlength="50" autocomplete="off">
+                <div class="error-msg">请输入正确的邮箱地址</div>
+            </div>
+
+            <button type="submit" class="submit-btn">🌻 确认登录</button>
+        </form>
+
+        <div class="back-link">
+            <a href="index.html">← 返回商店首页</a>
+        </div>
+    </div>
+
+    <footer>
+        ⭐ 数据来源: 星露谷中文维基百科 · 图片版权归 ConcernedApe 所有 ⭐<br>
+        网页制作：陈薇羽 · 联系方式：1152629204@qq.com
+    </footer>
+
+    <script defer src="fonts/bitmap-font.js"></script>
+    <script>
+        // 如果已登录，跳转回首页
+        const existingUser = localStorage.getItem('stardew_user');
+        if (existingUser) {
+            window.location.href = 'index.html';
+        }
+
+        const form = document.getElementById('loginForm');
+        const usernameInput = document.getElementById('username');
+        const addressInput = document.getElementById('address');
+        const emailInput = document.getElementById('email');
+
+        // 验证邮箱格式
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function showError(groupId, show) {
+            var group = document.getElementById(groupId);
+            if (show) {
+                group.classList.add('error');
+            } else {
+                group.classList.remove('error');
+            }
+        }
+
+        // 实时清除错误状态
+        usernameInput.addEventListener('input', function() { showError('nameGroup', false); });
+        emailInput.addEventListener('input', function() {
+            if (isValidEmail(this.value.trim())) {
+                showError('emailGroup', false);
+            }
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var valid = true;
+
+            // 验证用户名
+            var username = usernameInput.value.trim();
+            if (!username) {
+                showError('nameGroup', true);
+                valid = false;
+            }
+
+            // 验证邮箱
+            var email = emailInput.value.trim();
+            if (!email || !isValidEmail(email)) {
+                showError('emailGroup', true);
+                valid = false;
+            }
+
+            if (!valid) return;
+
+            // 住址默认值
+            var address = addressInput.value.trim() || '鹈鹕镇事务中心';
+
+            // 保存到 localStorage
+            var userData = {
+                username: username,
+                address: address,
+                email: email,
+                loginTime: new Date().toISOString()
+            };
+            localStorage.setItem('stardew_user', JSON.stringify(userData));
+
+            // 跳转回首页
+            window.location.href = 'index.html';
+        });
+
+        // 初始化星露谷位图字体
+        if (typeof StardewFont !== 'undefined') {
+            document.addEventListener('DOMContentLoaded', function() {
+                StardewFont.load('fonts/Chinese.fnt', 'fonts/Chinese_0.png');
+            });
+        }
+    </script>
+</body>
+</html>

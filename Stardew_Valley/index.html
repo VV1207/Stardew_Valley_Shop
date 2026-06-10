@@ -9,19 +9,18 @@
 <body>
 <script defer src="items_data.js"></script>
 
-<!-- 导航栏 -->
-<nav class="top-nav">
-    <div class="nav-brand">🌾 星尔玛</div>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link active">🏠 商店首页</a>
-        <a href="delivery.html" class="nav-link">📦 配送服务</a>
-    </div>
-</nav>
+<div class="top-banner">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand">🌾 星尔玛</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link active">🏠 商店首页</a>
+            <a href="news.html" class="nav-link">📰 星闻露谷</a>
+            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        </div>
+        <div class="user-bar" id="userBar"></div>
+    </nav>
 
-<!-- 用户信息栏 -->
-<div class="user-bar" id="userBar"></div>
-
-<div class="app-container">
     <div class="header">
         <h1>🌾 星露谷 · 全物品图谱商店 🌻</h1>
         <p>查看所有物品售价 & 村民喜好 · 交互式购买</p>
@@ -31,23 +30,47 @@
             <span id="statHates">💔 讨厌: --</span>
         </div>
     </div>
+</div>
 
-    <div class="controls">
-        <input type="text" class="search-box" id="searchBox" placeholder="🔍 搜索物品名称...">
-        <div class="category-bar" id="categoryFilter"></div>
+<div class="app-container">
+
+    <div class="main-content">
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 搜索物品名称...">
+            <div class="category-bar" id="categoryFilter"></div>
+        </div>
+
+        <div class="cart-summary-bar">
+            <span class="total-items" id="cartTotalItems">🧺 购物车: 0 件</span>
+            <span class="total-price" id="cartTotalPrice">💰 0 G</span>
+            <button class="checkout-btn" id="checkoutBtn">✨ 结账明细 ✨</button>
+            <button class="checkout-btn" id="clearCartBtn" style="background:#9a8a7a;">🗑️ 清空</button>
+        </div>
+
+        <div id="loadingMsg">🌱 正在加载星露谷商品数据...</div>
+        <div id="errorMsg" style="display:none;"></div>
+
+        <div class="items-grid" id="itemsGrid"></div>
     </div>
 
-    <div class="cart-summary-bar">
-        <span class="total-items" id="cartTotalItems">🧺 购物车: 0 件</span>
-        <span class="total-price" id="cartTotalPrice">💰 0 G</span>
-        <button class="checkout-btn" id="checkoutBtn">✨ 结账明细 ✨</button>
-        <button class="checkout-btn" id="clearCartBtn" style="background:#9a8a7a;">🗑️ 清空</button>
+    <!-- 右侧购物车边栏 -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-sidebar-header">
+            <h3>🛒 购物车</h3>
+            <span class="cart-sidebar-count" id="sidebarCount">0 件</span>
+        </div>
+        <div class="cart-sidebar-body" id="sidebarBody">
+            <div class="cart-sidebar-empty">🛍️ 购物车还是空的</div>
+        </div>
+        <div class="cart-sidebar-footer">
+            <div class="cart-sidebar-total">
+                <span>合计:</span>
+                <span class="cart-sidebar-price" id="sidebarTotalPrice">0 G</span>
+            </div>
+            <button class="checkout-btn" id="sidebarCheckoutBtn" style="width:100%;">✨ 结账</button>
+        </div>
     </div>
 
-    <div id="loadingMsg">🌱 正在加载星露谷商品数据...</div>
-    <div id="errorMsg" style="display:none;"></div>
-
-    <div class="items-grid" id="itemsGrid"></div>
 </div>
 
 <script>
@@ -62,12 +85,36 @@ let cartItems = [];
 
 const CATEGORY_ORDER = [
     "作物", "动物", "果树", "工匠制品", "家具", "墙纸", "地板",
-    "矿物", "渔具", "武器", "帽子", "鞋类", "戒指", "菜品",
-    "农场工具", "古物", "怪物战利品", "书", "季节采集物"
+    "矿物", "渔具", "武器", "帽子", "鞋类", "戒指", "菜肴",
+    "农场工具", "古物", "怪物战利品", "书", "采集物", "鱼类",
+    "饰品", "服装", "种子", "其他"
 ];
 
 const QUALITY_LABELS = ["普通", "银星", "金星", "铱星"];
 
+// ============== 收藏功能 ==============
+function getFavorites() {
+    const favs = localStorage.getItem('stardew_favorites');
+    return favs ? JSON.parse(favs) : [];
+}
+
+function saveFavorites(favs) {
+    localStorage.setItem('stardew_favorites', JSON.stringify(favs));
+}
+
+function toggleFavorite(itemId) {
+    const favs = getFavorites();
+    const idx = favs.indexOf(itemId);
+    if (idx >= 0) {
+        favs.splice(idx, 1);
+        showToast('💔 已取消收藏');
+    } else {
+        favs.push(itemId);
+        showToast('❤️ 已收藏');
+    }
+    saveFavorites(favs);
+    return favs.includes(itemId);
+}
 // ============== 数据加载 ==============
 function loadData() {
     const loadingEl = document.getElementById('loadingMsg');
@@ -97,7 +144,7 @@ function loadData() {
     const catSet = new Set(itemsData.map(i => i.category).filter(Boolean));
     categories = CATEGORY_ORDER.filter(c => catSet.has(c));
     // 添加不在顺序中的分类
-    catSet.forEach(c => { if (!CATEGORY_ORDER.includes(c) && !categories.includes(c)) categories.push(c); });
+    catSet.forEach(c => { if (!CATEGORY_ORDER.includes(c) && !categories.includes(c) && c !== '采集' && c !== '农场用具') categories.push(c); });
 
     // 更新统计信息
     const totalLoves = itemsData.reduce((s,i) => s + (i.gifting?.love?.length || 0), 0);
@@ -121,6 +168,7 @@ function initUI() {
     });
     document.getElementById('checkoutBtn').addEventListener('click', checkout);
     document.getElementById('clearCartBtn').addEventListener('click', clearCart);
+    document.getElementById('sidebarCheckoutBtn').addEventListener('click', checkout);
 }
 
 function clearCart() {
@@ -220,10 +268,15 @@ function renderItemsGrid() {
             ).join('');
         }
 
+        // 检查收藏状态
+        const favorites = getFavorites();
+        const isFav = favorites.includes(item.id);
+
         card.innerHTML = `
             <div class="card-img">
                 ${item.image ? `<img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.style.display='none'">`
                              : `<div class="no-img">📦</div>`}
+                <button class="fav-btn ${isFav ? 'fav-active' : ''}" data-item-id="${item.id}" title="${isFav ? '取消收藏' : '收藏'}">${isFav ? '❤️' : '🤍'}</button>
             </div>
             <div class="card-info">
                 <div class="item-name">${item.name}</div>
@@ -292,6 +345,18 @@ function renderItemsGrid() {
         });
 
         grid.appendChild(card);
+
+        // 收藏按钮事件
+        const favBtn = card.querySelector('.fav-btn');
+        if (favBtn) {
+            favBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isNowFav = toggleFavorite(item.id);
+                favBtn.textContent = isNowFav ? '❤️' : '🤍';
+                favBtn.className = `fav-btn ${isNowFav ? 'fav-active' : ''}`;
+                favBtn.title = isNowFav ? '取消收藏' : '收藏';
+            });
+        }
     });
 }
 
@@ -341,6 +406,79 @@ function updateCartBar() {
     const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
     document.getElementById('cartTotalItems').textContent = `🧺 购物车: ${totalItems} 件`;
     document.getElementById('cartTotalPrice').textContent = `💰 ${totalPrice} G`;
+    renderCartSidebar();
+}
+
+// ============== 购物车右侧边栏 ==============
+function renderCartSidebar() {
+    const body = document.getElementById('sidebarBody');
+    const countEl = document.getElementById('sidebarCount');
+    const totalPriceEl = document.getElementById('sidebarTotalPrice');
+
+    const totalItems = cartItems.reduce((s, c) => s + c.quantity, 0);
+    const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
+
+    countEl.textContent = `${totalItems} 件`;
+    totalPriceEl.textContent = `${totalPrice} G`;
+
+    if (cartItems.length === 0) {
+        body.innerHTML = `<div class="cart-sidebar-empty">🛍️ 购物车还是空的</div>`;
+        return;
+    }
+
+    let html = '';
+    cartItems.forEach((item, idx) => {
+        const subtotal = item.price * item.quantity;
+        const qualStr = item.quality ? ` (${item.quality})` : '';
+        html += `
+            <div class="sidebar-item" data-cart-idx="${idx}">
+                <div class="sidebar-item-img">
+                    ${item.image ? `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'">` : '📦'}
+                </div>
+                <div class="sidebar-item-info">
+                    <div class="sidebar-item-name">${item.name}${qualStr}</div>
+                    <div class="sidebar-item-price">${item.price} G × ${item.quantity}</div>
+                    <div class="sidebar-item-subtotal">💰 ${subtotal} G</div>
+                </div>
+                <button class="sidebar-item-remove" data-cart-idx="${idx}" title="移除此商品">✕</button>
+            </div>
+        `;
+    });
+
+    body.innerHTML = html;
+
+    // 给每个删除按钮绑定事件
+    body.querySelectorAll('.sidebar-item-remove').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const idx = parseInt(btn.dataset.cartIdx);
+            const removed = cartItems[idx];
+            if (!removed) return;
+            cartItems.splice(idx, 1);
+
+            // 重置对应卡片上的数量输入
+            const card = document.querySelector(`.item-card[data-item-id="${removed.itemId}"]`);
+            if (card) {
+                const qtyInput = card.querySelector('.qty-input');
+                const qs = card.querySelector('.quality-select');
+                // 检查是否还有该物品其他品质的条目
+                const otherEntries = cartItems.filter(c => c.itemId === removed.itemId);
+                if (otherEntries.length === 0) {
+                    // 没有该物品的任何条目了，重置输入
+                    if (qtyInput) qtyInput.value = 0;
+                    if (qs) {
+                        // 触发重新计算
+                        updateCardPriceQuantity(removed);
+                    } else {
+                        updateCardPriceQuantity(removed);
+                    }
+                }
+            }
+
+            updateCartBar();
+            showToast(`🗑️ 已移除 ${removed.name}`);
+        });
+    });
 }
 
 // ============== 物品详情弹窗 ==============
@@ -540,6 +678,20 @@ function checkout() {
     modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
     modal.addEventListener('click', (e) => { if(e.target===modal) modal.remove(); });
     modal.querySelector('#confirmCheckout').addEventListener('click', () => {
+        // 保存订单历史
+        const order = {
+            orderId: 'ORD' + Date.now(),
+            date: new Date().toISOString(),
+            items: JSON.parse(JSON.stringify(cartItems)),
+            totalQty: totalQty,
+            totalPrice: totalPrice,
+            totalLoves: totalLoves,
+            totalHates: totalHates
+        };
+        const orders = JSON.parse(localStorage.getItem('stardew_orders') || '[]');
+        orders.push(order);
+        localStorage.setItem('stardew_orders', JSON.stringify(orders));
+
         cartItems = [];
         updateCartBar();
         // 重置所有数量输入
@@ -567,7 +719,7 @@ function initUserBar() {
     if (userData) {
         const user = JSON.parse(userData);
         bar.innerHTML = `
-            <div class="user-info" id="userInfoDropdown">
+        <div class="user-info" id="userInfoDropdown">
                 <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
                 <div class="user-dropdown">
                     <h4>📋 登录信息</h4>
@@ -575,27 +727,14 @@ function initUserBar() {
                     <p><strong>🏠 住址:</strong> ${user.address}</p>
                     <p><strong>📧 邮箱:</strong> ${user.email || user.phone || '未填写'}</p>
                     <p><strong>🕐 登录时间:</strong> ${new Date(user.loginTime).toLocaleString('zh-CN')}</p>
+                    <a href="profile.html" class="profile-link">👤 个人中心</a>
                     <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
                 </div>
             </div>
         `;
 
-        // 点击头像切换下拉框
-        var avatarBtn = document.getElementById('userAvatarBtn');
-        var dropdownWrap = document.getElementById('userInfoDropdown');
-        avatarBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            dropdownWrap.classList.toggle('dropdown-open');
-        });
-
-        // 点击页面其他地方关闭下拉框
-        document.addEventListener('click', function() {
-            dropdownWrap.classList.remove('dropdown-open');
-        });
-        // 阻止下拉框内部点击冒泡
-        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
+        // 鼠标悬停显示下拉框（移出后自动隐藏，由 CSS :hover 控制）
+        // 不需要额外 JS 事件 —— 纯 CSS 悬停即可
     } else {
         bar.innerHTML = `<a href="login.html" class="login-link">🔑 登录</a>`;
     }

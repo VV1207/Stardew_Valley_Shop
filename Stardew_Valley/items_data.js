@@ -1,4 +1,4 @@
-// 星露谷全物品数据 - 自动生成
+﻿// 星露谷全物品数据 - 自动生成
 window.ITEMS_DATA = [
   {
     "id": 1,
@@ -418,46 +418,10 @@ window.ITEMS_DATA = [
     "image": "images/Corn.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Pierre"
-      ]
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "hate": ["Pierre"]
     }
   },
   {
@@ -934,46 +898,10 @@ window.ITEMS_DATA = [
     },
     "image": "images/Pumpkin.png",
     "gifting": {
-      "love": [
-        "Abigail",
-        "Krobus",
-        "Willy"
-      ],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Wizard",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "love": ["Abigail", "Willy", "Krobus"],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -1519,7 +1447,7 @@ window.ITEMS_DATA = [
     "id": 28,
     "name": "仙人掌果子",
     "name_en": "Cactus_Fruit",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 75,
     "has_quality": true,
     "qualities": {
@@ -1708,28 +1636,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 37,
-  //   "name": "棕色大鸡蛋",
-  //   "name_en": "Large_Brown_Egg",
-  //   "category": "工匠制品",
-  //   "price": 95,
-  //   "has_quality": true,
-  //   "qualities": {
-  //     "普通": 95,
-  //     "银星": 118,
-  //     "金星": 142,
-  //     "铱星": 190
-  //   },
-  //   "image": "images/Large_Brown_Egg.png",
-  //   "gifting": {
-  //     "love": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-  //     "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-  //     "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy"],
-  //     "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-  //     "hate": ["Sebastian"]
-  //   }
-  // },
+  {
+    "id": 37,
+    "name": "雏菊发卡",
+    "name_en": "Daisy",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Daisy.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 38,
     "name": "齐瓜",
@@ -1902,19 +1825,19 @@ window.ITEMS_DATA = [
       "金星": 210,
       "铱星": 280
     },
-    "image": "images/24px-Poppy.png",
+    "image": "images/Poppy.png",
     "gifting": {
-      "love": [],
+      "love": ["Penny"],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
     }
   },
   {
     "id": 43,
     "name": "夏季亮片",
-    "name_en": "Summer Spangle",
+    "name_en": "Summer_Spangle",
     "category": "作物",
     "price": 90,
     "has_quality": true,
@@ -1924,12 +1847,12 @@ window.ITEMS_DATA = [
       "金星": 135,
       "铱星": 180
     },
-    "image": "images/24px-Summer_Spangle.png",
+    "image": "images/Summer_Spangle.png",
     "gifting": {
-      "love": [],
-      "like": [],
+      "love": ["Caroline"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sebastian", "George", "Clint"],
       "hate": []
     }
   },
@@ -1946,12 +1869,12 @@ window.ITEMS_DATA = [
       "金星": 120,
       "铱星": 160
     },
-    "image": "images/24px-Sunflower.png",
+    "image": "images/Sunflower.png",
     "gifting": {
-      "love": [],
-      "like": [],
+      "love": ["Haley"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sebastian", "George", "Clint"],
       "hate": []
     }
   },
@@ -2131,40 +2054,45 @@ window.ITEMS_DATA = [
       "hate": ["Sebastian"]
     }
   },
-  // {
-  //   "id": 53,
-  //   "name": "大白色鸡蛋",
-  //   "name_en": "Large White Egg",
-  //   "category": "动物",
-  //   "price": 75,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 53,
-  //   "name": "大白色鸡蛋",
-  //   "name_en": "Large White Egg",
-  //   "category": "动物",
-  //   "price": 75,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 53,
+    "name": "美洲大树莓",
+    "name_en": "Salmonberry.png",
+    "category": "采集物",
+    "price": 5,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Salmonberry.png",
+    "gifting": {
+      "love": [],
+      "like": ["Shane", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "neutral": [],
+      "dislike": ["Sam", "Alex", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "George", "Jas", "Vincent", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "hate": ["Harvey", "Elliott", "Caroline", "Evelyn"]
+    }
+  },
+  {
+    "id": 53,
+    "name": "鲷鱼",
+    "name_en": "Bream",
+    "category": "动物",
+    "price": 45,
+    "has_quality": true,
+    "qualities": {
+      "普通": 45,
+      "银星": 56,
+      "金星": 67,
+      "铱星": 90
+    },
+    "image": "images/Bream.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
   {
     "id": 55,
     "name": "大鸡蛋",
@@ -2561,23 +2489,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 73,
-  //   "name": "腌鱼籽",
-  //   "name_en": "Aged_Roe",
-  //   "category": "工匠制品",
-  //   "price":60,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Aged_Roe.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": ["Sebastian", "Jas", "Vincent"]
-  //   }
-  // },
+  {
+    "id": 73,
+    "name": "稻草人",
+    "name_en": "Scarecrow",
+    "category": "农场工具",
+    "price":100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Scarecrow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 74,
     "name": "啤酒",
@@ -2690,110 +2618,40 @@ window.ITEMS_DATA = [
       "hate": ["Sebastian", "Jas", "Vincent"]
     }
   },
-  // {
-  //   "id": 80,
-  //   "name": "水果干",
-  //   "name_en": "Dried Fruit",
-  //   "category": "工匠制品",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Dried_Fruit.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Shane",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": [
-  //       "Jas",
-  //       "Sebastian",
-  //       "Vincent"
-  //     ]
-  //   }
-  // },
-  // {
-  //   "id": 81,
-  //   "name": "蘑菇干",
-  //   "name_en": "Dried Mushrooms",
-  //   "category": "工匠制品",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Dried_Mushrooms.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jodi",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Linus",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Shane",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": [
-  //       "Jas",
-  //       "Sebastian",
-  //       "Vincent"
-  //     ]
-  //   }
-  // },
+  {
+    "id": 80,
+    "name": "樱桃树苗",
+    "name_en": "Cherry_Sapling",
+    "category": "果树",
+    "price": 3400,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cherry_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 81,
+    "name": "防雨帽",
+    "name_en": "Sou'wester",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sou'wester.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 82,
     "name": "鸭蛋黄酱",
@@ -3052,110 +2910,40 @@ window.ITEMS_DATA = [
       "hate": ["Sebastian", "Jas", "Vincent"]
     }
   },
-  // {
-  //   "id": 96,
-  //   "name": "鱼子",
-  //   "name_en": "Roe",
-  //   "category": "工匠制品",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Roe.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jas",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Linus",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Sebastian",
-  //       "Shane",
-  //       "Vincent",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 97,
-  //   "name": "熏鱼",
-  //   "name_en": "Smoked Fish",
-  //   "category": "工匠制品",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Smoked_Fish.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Shane",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": [
-  //       "Jas",
-  //       "Sebastian",
-  //       "Vincent"
-  //     ]
-  //   }
-  // },
+  {
+    "id": 96,
+    "name": "大葱",
+    "name_en": "Spring_Onion",
+    "category": "采集物",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Spring_Onion.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Leah", "Linus"],
+      "neutral": [],
+      "dislike": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 97,
+    "name": "木围栏",
+    "name_en": "Wood_Fence",
+    "category": "工匠制品",
+    "price": 1,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Wood_Fence.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
   {
     "id": 98,
     "name": "松露油",
@@ -3190,60 +2978,23 @@ window.ITEMS_DATA = [
       "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"]
     }
   },
-  // {
-  //   "id": 100,
-  //   "name": "果酒",
-  //   "name_en": "Wine",
-  //   "category": "工匠制品",
-  //   "price": 400,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Wine.png",
-  //   "gifting": {
-  //     "love": [
-  //       "Harvey",
-  //       "Leah"
-  //     ],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Lewis",
-  //       "Linus",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Shane",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": [
-  //       "Jas",
-  //       "Leo",
-  //       "Penny",
-  //       "Sebastian",
-  //       "Vincent"
-  //     ]
-  //   }
-  // },
+  {
+    "id": 100,
+    "name": "三重冕",
+    "name_en": "Tiara",
+    "category": "帽子",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tiara.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 101,
     "name": "宝箱",
@@ -3278,125 +3029,125 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 103,
-  //   "name": "床",
-  //   "name_en": "Single_Bed",
-  //   "category": "家具",
-  //   "price": 500,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Single_Bed.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 104,
-  //   "name": "椅子",
-  //   "name_en": "Oak_Chair",
-  //   "category": "家具",
-  //   "price": 350,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Oak_Chair.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 105,
-  //   "name": "桌子",
-  //   "name_en": "Table",
-  //   "category": "家具",
-  //   "price": 350,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Vegetable_Medley.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 106,
-  //   "name": "灯",
-  //   "name_en": "Lamp",
-  //   "category": "家具",
-  //   "price": 200,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 107,
-  //   "name": "地毯",
-  //   "name_en": "Rug",
-  //   "category": "家具",
-  //   "price": 200,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 108,
-  //   "name": "电视机",
-  //   "name_en": "TV",
-  //   "category": "家具",
-  //   "price": 750,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/24px-Ancient_Doll.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 109,
-  //   "name": "炉灶",
-  //   "name_en": "Stove",
-  //   "category": "家具",
-  //   "price": 2000,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 103,
+    "name": "眼罩",
+    "name_en": "Eye_Patch",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Eye_Patch.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 104,
+    "name": "土地神帽",
+    "name_en": "Gnome's_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Gnome's_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 105,
+    "name": "波尔卡蝴蝶结",
+    "name_en": "Polka_Bow",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Polka_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 106,
+    "name": "幸运蝴蝶结",
+    "name_en": "Lucky_Bow",
+    "category": "帽子",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Lucky_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 107,
+    "name": "凉帽",
+    "name_en": "Cool_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cool_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 108,
+    "name": "老伙计帽",
+    "name_en": "Good_Ol'_Cap",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Good_Ol'_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 109,
+    "name": "水手帽",
+    "name_en": "Sailor's_Cap",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sailor's_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 110,
     "name": "迷你冰箱",
@@ -3414,244 +3165,244 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 111,
-  //   "name": "沙发",
-  //   "name_en": "Sofa",
-  //   "category": "家具",
-  //   "price": 1000,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 112,
-  //   "name": "梳妆台",
-  //   "name_en": "Dresser",
-  //   "category": "家具",
-  //   "price": 2000,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 113,
-  //   "name": "书架",
-  //   "name_en": "Bookshelf",
-  //   "category": "家具",
-  //   "price": 800,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 114,
-  //   "name": "茶几",
-  //   "name_en": "End Table",
-  //   "category": "家具",
-  //   "price": 250,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 115,
-  //   "name": "盆栽",
-  //   "name_en": "Potted Plant",
-  //   "category": "家具",
-  //   "price": 200,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 116,
-  //   "name": "窗户",
-  //   "name_en": "Window",
-  //   "category": "家具",
-  //   "price": 300,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 117,
-  //   "name": "墙饰",
-  //   "name_en": "Wall Decoration",
-  //   "category": "家具",
-  //   "price": 150,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 118,
-  //   "name": "鱼缸",
-  //   "name_en": "Fish Tank",
-  //   "category": "家具",
-  //   "price": 2000,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 119,
-  //   "name": "蜡烛",
-  //   "name_en": "Candle",
-  //   "category": "家具",
-  //   "price": 50,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 120,
-  //   "name": "素色墙纸",
-  //   "name_en": "Wallpaper (Plain)",
-  //   "category": "墙纸",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 121,
-  //   "name": "碎花墙纸",
-  //   "name_en": "Wallpaper (Floral)",
-  //   "category": "墙纸",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 122,
-  //   "name": "条纹墙纸",
-  //   "name_en": "Wallpaper (Striped)",
-  //   "category": "墙纸",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 123,
-  //   "name": "格子墙纸",
-  //   "name_en": "Wallpaper (Plaid)",
-  //   "category": "墙纸",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 124,
-  //   "name": "砖纹墙纸",
-  //   "name_en": "Wallpaper (Brick)",
-  //   "category": "墙纸",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 111,
+    "name": "司机帽",
+    "name_en": "Trucker_Hat",
+    "category": "帽子",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Trucker_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 112,
+    "name": "蝴蝶结",
+    "name_en": "Butterfly_Bow",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Butterfly_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 113,
+    "name": "热带风小发卡",
+    "name_en": "Tropiclip",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tropiclip.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 114,
+    "name": "精美蝴蝶结",
+    "name_en": "Delicate_Bow",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Delicate_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 115,
+    "name": "护耳",
+    "name_en": "Earmuffs",
+    "category": "帽子",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Earmuffs.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 116,
+    "name": "小鸡面具",
+    "name_en": "Chicken_Mask",
+    "category": "帽子",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Chicken_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 117,
+    "name": "哥布林面具",
+    "name_en": "Goblin_Mask",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Goblin_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 118,
+    "name": "紫红小帽",
+    "name_en": "Fish Tank",
+    "category": "帽子",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Plum_Chapeau.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 119,
+    "name": "蓝色软帽",
+    "name_en": "Blue_Bonnet",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blue_Bonnet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 120,
+    "name": "大檐帽",
+    "name_en": "Official_Cap",
+    "category": "墙纸",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Official_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 121,
+    "name": "墨西哥帽",
+    "name_en": "Sombrero",
+    "category": "帽子",
+    "price": 25000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sombrero.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 122,
+    "name": "圆顶礼帽",
+    "name_en": "Bowler_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bowler_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 123,
+    "name": "免疫指环",
+    "name_en": "Immunity_Band",
+    "category": "戒指",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Immunity_Band.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 124,
+    "name": "吸魂戒指",
+    "name_en": "Soul_Sapper_Ring",
+    "category": "戒指",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Soul_Sapper_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 125,
     "name": "木地板",
@@ -3669,108 +3420,108 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 126,
-  //   "name": "石地板",
-  //   "name_en": "Stone Floor",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 127,
-  //   "name": "水晶地板",
-  //   "name_en": "Crystal Floor",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 128,
-  //   "name": "砖地板",
-  //   "name_en": "Brick Floor",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 129,
-  //   "name": "小路",
-  //   "name_en": "Path",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 130,
-  //   "name": "卵石路",
-  //   "name_en": "Cobblestone Path",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
-  // {
-  //   "id": 131,
-  //   "name": "踏石路",
-  //   "name_en": "Stepping Stone Path",
-  //   "category": "地板",
-  //   "price": 100,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 126,
+    "name": "保护戒指",
+    "name_en": "Protection_Ring",
+    "category": "戒指",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Protection_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 127,
+    "name": "蟹壳戒指",
+    "name_en": "Crabshell_Ring",
+    "category": "戒指",
+    "price": 15000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Crabshell_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 128,
+    "name": "结婚戒指",
+    "name_en": "Wedding_Ring",
+    "category": "戒指",
+    "price": 100000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Wedding_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 129,
+    "name": "红宝石戒指",
+    "name_en": "Ruby_Ring",
+    "category": "戒指",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Ruby_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 130,
+    "name": "绿宝石戒指",
+    "name_en": "Emerald_Ring",
+    "category": "戒指",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Emerald_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 131,
+    "name": "翡翠戒指",
+    "name_en": "Jade_Ring",
+    "category": "戒指",
+    "price": 2500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Jade_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 132,
     "name": "钻石",
@@ -3941,23 +3692,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 142,
-  //   "name": "火石英",
-  //   "name_en": "Fire Quartz",
-  //   "category": "矿物",
-  //   "price": 120,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 142,
+    "name": "海蓝宝石戒指",
+    "name_en": "Aquamarine_Ring",
+    "category": "戒指",
+    "price": 2500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Aquamarine_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 143,
     "name": "石英",
@@ -4026,58 +3777,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 147,
-  //   "name": "装饰旋转亮片",
-  //   "name_en": "Dressed Spinner",
-  //   "category": "渔具",
-  //   "price": 500,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Dressed_Spinner.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jas",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Linus",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Sebastian",
-  //       "Shane",
-  //       "Vincent",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 147,
+    "name": "黄水晶戒指",
+    "name_en": "Topaz_Ring",
+    "category": "戒指",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Topaz_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 148,
     "name": "铅制浮标",
@@ -4112,58 +3828,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 150,
-  //   "name": "声纳浮标",
-  //   "name_en": "Sonar Bobber",
-  //   "category": "渔具",
-  //   "price": 300,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "images/Sonar_Bobber.png",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [
-  //       "Abigail",
-  //       "Alex",
-  //       "Caroline",
-  //       "Clint",
-  //       "Demetrius",
-  //       "Dwarf",
-  //       "Elliott",
-  //       "Emily",
-  //       "Evelyn",
-  //       "George",
-  //       "Gus",
-  //       "Haley",
-  //       "Harvey",
-  //       "Jas",
-  //       "Jodi",
-  //       "Kent",
-  //       "Krobus",
-  //       "Leah",
-  //       "Leo",
-  //       "Lewis",
-  //       "Linus",
-  //       "Marnie",
-  //       "Maru",
-  //       "Pam",
-  //       "Penny",
-  //       "Pierre",
-  //       "Robin",
-  //       "Sam",
-  //       "Sandy",
-  //       "Sebastian",
-  //       "Shane",
-  //       "Vincent",
-  //       "Willy",
-  //       "Wizard"
-  //     ],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 150,
+    "name": "紫水晶戒指",
+    "name_en": "Amethyst_Ring",
+    "category": "戒指",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Amethyst_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 151,
     "name": "挑战鱼饵",
@@ -4725,23 +4406,23 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
-  // {
-  //   "id": 185,
-  //   "name": "矿工头盔",
-  //   "name_en": "Miner's Helmet",
-  //   "category": "帽子",
-  //   "price": 1500,
-  //   "has_quality": false,
-  //   "qualities": {},
-  //   "image": "",
-  //   "gifting": {
-  //     "love": [],
-  //     "like": [],
-  //     "neutral": [],
-  //     "dislike": [],
-  //     "hate": []
-  //   }
-  // },
+  {
+    "id": 185,
+    "name": "点唱机戒指",
+    "name_en": "Jukebox_Ring",
+    "category": "戒指",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Jukebox_Ring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
   {
     "id": 186,
     "name": "骷髅面具",
@@ -5102,12 +4783,12 @@ window.ITEMS_DATA = [
   {
     "id": 208,
     "name": "凤凰戒指",
-    "name_en": "Phoenix Ring",
+    "name_en": "Phoenix_Ring",
     "category": "戒指",
-    "price": 5000,
+    "price": 20000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Phoenix_Ring.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5119,12 +4800,12 @@ window.ITEMS_DATA = [
   {
     "id": 209,
     "name": "热咖啡戒指",
-    "name_en": "Hot Java Ring",
+    "name_en": "Hot_Java_Ring",
     "category": "戒指",
-    "price": 2500,
+    "price": 10000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Hot_Java_Ring.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5135,13 +4816,13 @@ window.ITEMS_DATA = [
   },
   {
     "id": 210,
-    "name": "发光石戒指",
-    "name_en": "Glowstone Ring",
+    "name": "辉石戒指",
+    "name_en": "Glowstone_Ring",
     "category": "戒指",
-    "price": 2000,
+    "price": 10000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Glowstone_Ring.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5153,12 +4834,12 @@ window.ITEMS_DATA = [
   {
     "id": 211,
     "name": "由巴之戒",
-    "name_en": "Ring of Yoba",
+    "name_en": "Ring_of_Yoba",
     "category": "戒指",
-    "price": 1500,
+    "price": 75000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Ring_of_Yoba.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5187,12 +4868,12 @@ window.ITEMS_DATA = [
   {
     "id": 213,
     "name": "结实戒指",
-    "name_en": "Sturdy Ring",
+    "name_en": "Sturdy_Ring",
     "category": "戒指",
-    "price": 1500,
+    "price": 75000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Sturdy_Ring.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5204,12 +4885,12 @@ window.ITEMS_DATA = [
   {
     "id": 214,
     "name": "荆棘戒指",
-    "name_en": "Thorns Ring",
+    "name_en": "Thorns_Ring",
     "category": "戒指",
-    "price": 1500,
+    "price": 25000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Thorns_Ring.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -5221,264 +4902,85 @@ window.ITEMS_DATA = [
   {
     "id": 215,
     "name": "煎鸡蛋",
-    "name_en": "Fried Egg",
-    "category": "菜品",
+    "name_en": "Fried_Egg",
+    "category": "菜肴",
     "price": 35,
     "has_quality": false,
     "qualities": {},
     "image": "images/Fried_Egg.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Leah"
-      ],
-      "neutral": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard"
-      ],
-      "dislike": [],
+      "like": [],
+      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": ["Leah"],
       "hate": []
     }
   },
   {
     "id": 216,
-    "name": "欧姆蛋",
+    "name": "煎蛋卷",
     "name_en": "Omelet",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 125,
     "has_quality": false,
     "qualities": {},
     "image": "images/Omelet.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Sebastian"
-      ]
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": ["Sebastian"]
     }
   },
   {
     "id": 217,
     "name": "沙拉",
     "name_en": "Salad",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 110,
     "has_quality": false,
     "qualities": {},
     "image": "images/Salad.png",
     "gifting": {
-      "love": [
-        "Leah"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Leah"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
     "id": 218,
     "name": "乳酪花椰菜",
-    "name_en": "Cheese Cauliflower",
-    "category": "菜品",
+    "name_en": "Cheese_Cauliflower",
+    "category": "菜肴",
     "price": 300,
     "has_quality": false,
     "qualities": {},
     "image": "images/Cheese_Cauliflower.png",
     "gifting": {
-      "love": [
-        "Maru"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Maru"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
     "id": 219,
     "name": "烤鱼",
-    "name_en": "Baked Fish",
-    "category": "菜品",
+    "name_en": "Baked_Fish",
+    "category": "菜肴",
     "price": 100,
     "has_quality": false,
     "qualities": {},
     "image": "images/Baked_Fish.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard",
-        "Krobus",
-        "Leo"
-      ],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Krobus", "Leo"],
       "hate": []
     }
   },
@@ -5486,7 +4988,7 @@ window.ITEMS_DATA = [
     "id": 220,
     "name": "防风草汤",
     "name_en": "Parsnip Soup",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 85,
     "has_quality": false,
     "qualities": {},
@@ -5540,7 +5042,7 @@ window.ITEMS_DATA = [
     "id": 221,
     "name": "混合蔬菜",
     "name_en": "Vegetable Medley",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 120,
     "has_quality": false,
     "qualities": {},
@@ -5593,7 +5095,7 @@ window.ITEMS_DATA = [
     "id": 222,
     "name": "完美早餐",
     "name_en": "Complete Breakfast",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 350,
     "has_quality": false,
     "qualities": {},
@@ -5647,7 +5149,7 @@ window.ITEMS_DATA = [
     "id": 223,
     "name": "炸鱿鱼",
     "name_en": "Fried Calamari",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 150,
     "has_quality": false,
     "qualities": {},
@@ -5700,7 +5202,7 @@ window.ITEMS_DATA = [
     "id": 224,
     "name": "奇怪的小面包",
     "name_en": "Strange Bun",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 75,
     "has_quality": false,
     "qualities": {},
@@ -5754,7 +5256,7 @@ window.ITEMS_DATA = [
     "id": 225,
     "name": "幸运午餐",
     "name_en": "Lucky Lunch",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 250,
     "has_quality": false,
     "qualities": {},
@@ -5806,7 +5308,7 @@ window.ITEMS_DATA = [
     "id": 226,
     "name": "炒蘑菇",
     "name_en": "Fried Mushroom",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -5859,61 +5361,24 @@ window.ITEMS_DATA = [
     "id": 227,
     "name": "披萨",
     "name_en": "Pizza",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 300,
     "has_quality": false,
     "qualities": {},
     "image": "images/Pizza.png",
     "gifting": {
-      "love": [
-        "Sam",
-        "Shane"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Vincent",
-        "Wizard",
-        "Elliott",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Sam", "Shane"],
+      "like": ["Alex", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Leah"
-      ]
+      "dislike": ["Harvey", "Elliott", "Willy", "Krobus", "Leo"],
+      "hate": ["Leah"]
     }
   },
   {
     "id": 228,
     "name": "豆类火锅",
     "name_en": "Bean Hotpot",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -5966,7 +5431,7 @@ window.ITEMS_DATA = [
     "id": 229,
     "name": "琉璃山药",
     "name_en": "Glazed Yams",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -6019,7 +5484,7 @@ window.ITEMS_DATA = [
     "id": 230,
     "name": "惊奇鲤鱼",
     "name_en": "Carp Surprise",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 150,
     "has_quality": false,
     "qualities": {},
@@ -6071,114 +5536,41 @@ window.ITEMS_DATA = [
     "id": 231,
     "name": "薯饼",
     "name_en": "Hashbrowns",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 120,
     "has_quality": false,
     "qualities": {},
     "image": "images/Hashbrowns.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Leah"
-      ]
+      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "hate": ["Leah"]
     }
   },
   {
     "id": 232,
     "name": "薄煎饼",
     "name_en": "Pancakes",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 80,
     "has_quality": false,
     "qualities": {},
     "image": "images/Pancakes.png",
     "gifting": {
-      "love": [
-        "Jodi"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Jodi"],
+      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Leah"
-      ]
+      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "hate": ["Leah"]
     }
   },
   {
     "id": 233,
     "name": "大黄派",
     "name_en": "Rhubarb Pie",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 400,
     "has_quality": false,
     "qualities": {},
@@ -6231,7 +5623,7 @@ window.ITEMS_DATA = [
     "id": 234,
     "name": "蔓越莓酱",
     "name_en": "Cranberry Sauce",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 120,
     "has_quality": false,
     "qualities": {},
@@ -6283,7 +5675,7 @@ window.ITEMS_DATA = [
     "id": 235,
     "name": "塞料面包",
     "name_en": "Stuffing",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 165,
     "has_quality": false,
     "qualities": {},
@@ -6336,7 +5728,7 @@ window.ITEMS_DATA = [
     "id": 236,
     "name": "卷心菜沙拉",
     "name_en": "Coleslaw",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -6389,7 +5781,7 @@ window.ITEMS_DATA = [
     "id": 237,
     "name": "秋日恩赐",
     "name_en": "Autumn's Bounty",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 350,
     "has_quality": false,
     "qualities": {},
@@ -6442,7 +5834,7 @@ window.ITEMS_DATA = [
     "id": 238,
     "name": "巧克力蛋糕",
     "name_en": "Chocolate Cake",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -6495,7 +5887,7 @@ window.ITEMS_DATA = [
     "id": 239,
     "name": "南瓜派",
     "name_en": "Pumpkin Pie",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 385,
     "has_quality": false,
     "qualities": {},
@@ -6548,7 +5940,7 @@ window.ITEMS_DATA = [
     "id": 240,
     "name": "鱼肉卷",
     "name_en": "Fish Taco",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 500,
     "has_quality": false,
     "qualities": {},
@@ -6602,7 +5994,7 @@ window.ITEMS_DATA = [
     "id": 241,
     "name": "香酥鲈鱼",
     "name_en": "Crispy Bass",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 150,
     "has_quality": false,
     "qualities": {},
@@ -6655,7 +6047,7 @@ window.ITEMS_DATA = [
     "id": 242,
     "name": "蛤蜊浓汤",
     "name_en": "Chowder",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 135,
     "has_quality": false,
     "qualities": {},
@@ -6706,53 +6098,17 @@ window.ITEMS_DATA = [
   {
     "id": 243,
     "name": "冰淇淋",
-    "name_en": "Ice Cream",
-    "category": "菜品",
+    "name_en": "Ice_Cream",
+    "category": "菜肴",
     "price": 120,
     "has_quality": false,
     "qualities": {},
     "image": "images/Ice_Cream.png",
     "gifting": {
-      "love": [
-        "Demetrius"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Dwarf",
-        "Elliott",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Emily",
-        "Harvey",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Demetrius"],
+      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Leah", "Emily", "Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
@@ -6760,7 +6116,7 @@ window.ITEMS_DATA = [
     "id": 244,
     "name": "蟹肉糕",
     "name_en": "Crab Cakes",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 250,
     "has_quality": false,
     "qualities": {},
@@ -6812,61 +6168,25 @@ window.ITEMS_DATA = [
   {
     "id": 245,
     "name": "清汤",
-    "name_en": "Algae Soup",
-    "category": "菜品",
-    "price": 100,
+    "name_en": "Pale_Broth",
+    "category": "菜肴",
+    "price": 150,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Algae_Soup.png",
+    "image": "images/Pale_Broth.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Penny",
-        "Willy"
-      ],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Kent"
-      ]
+      "dislike": ["Penny", "Willy", "Krobus", "Leo"],
+      "hate": []
     }
   },
   {
     "id": 246,
     "name": "南瓜汤",
     "name_en": "Pumpkin Soup",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 250,
     "has_quality": false,
     "qualities": {},
@@ -6919,7 +6239,7 @@ window.ITEMS_DATA = [
     "id": 247,
     "name": "冬阴功汤",
     "name_en": "Tom Kha Soup",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 250,
     "has_quality": false,
     "qualities": {},
@@ -6972,7 +6292,7 @@ window.ITEMS_DATA = [
     "id": 248,
     "name": "生鱼寿司",
     "name_en": "Maki Roll",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 220,
     "has_quality": false,
     "qualities": {},
@@ -7026,7 +6346,7 @@ window.ITEMS_DATA = [
     "id": 249,
     "name": "生鱼片",
     "name_en": "Sashimi",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 75,
     "has_quality": false,
     "qualities": {},
@@ -7081,7 +6401,7 @@ window.ITEMS_DATA = [
     "id": 250,
     "name": "墨西哥薄饼",
     "name_en": "Tortilla",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 50,
     "has_quality": false,
     "qualities": {},
@@ -7134,7 +6454,7 @@ window.ITEMS_DATA = [
     "id": 251,
     "name": "三倍浓缩咖啡",
     "name_en": "Triple Shot Espresso",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 450,
     "has_quality": false,
     "qualities": {},
@@ -7187,7 +6507,7 @@ window.ITEMS_DATA = [
     "id": 252,
     "name": "海泡布丁",
     "name_en": "Seafoam Pudding",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 300,
     "has_quality": false,
     "qualities": {},
@@ -7240,105 +6560,33 @@ window.ITEMS_DATA = [
     "id": 253,
     "name": "面包",
     "name_en": "Bread",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 60,
     "has_quality": false,
     "qualities": {},
     "image": "images/Bread.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Harvey"
-      ],
-      "neutral": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard"
-      ],
-      "dislike": [],
-      "hate": [
-        "Leah"
-      ]
+      "like": [],
+      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": ["Harvey"],
+      "hate": ["Leah"]
     }
   },
   {
     "id": 254,
     "name": "饼干",
     "name_en": "Cookie",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 140,
     "has_quality": false,
     "qualities": {},
     "image": "images/Cookie.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Willy"
-      ],
+      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Leah", "Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
@@ -7346,7 +6594,7 @@ window.ITEMS_DATA = [
     "id": 255,
     "name": "意大利面",
     "name_en": "Spaghetti",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 120,
     "has_quality": false,
     "qualities": {},
@@ -7399,7 +6647,7 @@ window.ITEMS_DATA = [
     "id": 256,
     "name": "帕尔玛茄子",
     "name_en": "Eggplant Parmesan",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -7450,54 +6698,18 @@ window.ITEMS_DATA = [
   },
   {
     "id": 257,
-    "name": "爆炒",
-    "name_en": "Stir Fry",
-    "category": "菜品",
-    "price": 200,
+    "name": "蔬菜什锦盖饭",
+    "name_en": "Stir_Fry",
+    "category": "菜肴",
+    "price": 335,
     "has_quality": false,
     "qualities": {},
     "image": "images/Stir_Fry.png",
     "gifting": {
-      "love": [
-        "Leah"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Leah"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
@@ -7505,7 +6717,7 @@ window.ITEMS_DATA = [
     "id": 258,
     "name": "蓝莓挞",
     "name_en": "Blueberry Tart",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 150,
     "has_quality": false,
     "qualities": {},
@@ -7558,7 +6770,7 @@ window.ITEMS_DATA = [
     "id": 259,
     "name": "三文鱼晚餐",
     "name_en": "Salmon Dinner",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 300,
     "has_quality": false,
     "qualities": {},
@@ -7612,7 +6824,7 @@ window.ITEMS_DATA = [
     "id": 260,
     "name": "龙虾浓汤",
     "name_en": "Lobster Bisque",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 500,
     "has_quality": false,
     "qualities": {},
@@ -7664,7 +6876,7 @@ window.ITEMS_DATA = [
     "id": 261,
     "name": "蜗牛沙拉",
     "name_en": "Escargot",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 175,
     "has_quality": false,
     "qualities": {},
@@ -7717,7 +6929,7 @@ window.ITEMS_DATA = [
     "id": 262,
     "name": "香辣鳗鱼",
     "name_en": "Spicy Eel",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 175,
     "has_quality": false,
     "qualities": {},
@@ -7771,7 +6983,7 @@ window.ITEMS_DATA = [
     "id": 263,
     "name": "超级餐",
     "name_en": "Super Meal",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 450,
     "has_quality": false,
     "qualities": {},
@@ -7824,7 +7036,7 @@ window.ITEMS_DATA = [
     "id": 264,
     "name": "矿工小吃",
     "name_en": "Miner's Treat",
-    "category": "菜品",
+    "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
@@ -8397,7 +7609,7 @@ window.ITEMS_DATA = [
     "id": 275,
     "name": "混合种子",
     "name_en": "Mixed Seeds",
-    "category": "农场工具",
+    "category": "种子",
     "price": 20,
     "has_quality": false,
     "qualities": {},
@@ -8449,7 +7661,7 @@ window.ITEMS_DATA = [
     "id": 276,
     "name": "混合花卉种子",
     "name_en": "Mixed Flower Seeds",
-    "category": "农场工具",
+    "category": "种子",
     "price": 30,
     "has_quality": false,
     "qualities": {},
@@ -8501,51 +7713,16 @@ window.ITEMS_DATA = [
     "id": 277,
     "name": "橡子",
     "name_en": "Acorn",
-    "category": "农场工具",
+    "category": "种子",
     "price": 20,
     "has_quality": false,
     "qualities": {},
     "image": "images/Acorn.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard"
-      ],
+      "like": [],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "hate": []
     }
   },
@@ -8553,7 +7730,7 @@ window.ITEMS_DATA = [
     "id": 278,
     "name": "枫树种子",
     "name_en": "Maple Seed",
-    "category": "农场工具",
+    "category": "种子",
     "price": 20,
     "has_quality": false,
     "qualities": {},
@@ -8605,7 +7782,7 @@ window.ITEMS_DATA = [
     "id": 279,
     "name": "松果",
     "name_en": "Pine Cone",
-    "category": "农场工具",
+    "category": "种子",
     "price": 20,
     "has_quality": false,
     "qualities": {},
@@ -8657,7 +7834,7 @@ window.ITEMS_DATA = [
     "id": 280,
     "name": "桃花心木种子",
     "name_en": "Mahogany Seed",
-    "category": "农场工具",
+    "category": "种子",
     "price": 50,
     "has_quality": false,
     "qualities": {},
@@ -8709,7 +7886,7 @@ window.ITEMS_DATA = [
     "id": 281,
     "name": "茶苗",
     "name_en": "Tea Sapling",
-    "category": "农场工具",
+    "category": "种子",
     "price": 500,
     "has_quality": false,
     "qualities": {},
@@ -8761,7 +7938,7 @@ window.ITEMS_DATA = [
     "id": 282,
     "name": "仙人掌种子",
     "name_en": "Cactus Seeds",
-    "category": "农场工具",
+    "category": "种子",
     "price": 150,
     "has_quality": false,
     "qualities": {},
@@ -8813,7 +7990,7 @@ window.ITEMS_DATA = [
     "id": 283,
     "name": "纤维种子",
     "name_en": "Fiber Seeds",
-    "category": "农场工具",
+    "category": "种子",
     "price": 25,
     "has_quality": false,
     "qualities": {},
@@ -11333,7 +10510,7 @@ window.ITEMS_DATA = [
     "id": 336,
     "name": "野山葵",
     "name_en": "Wild Horseradish",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 50,
     "has_quality": true,
     "qualities": {
@@ -11355,7 +10532,7 @@ window.ITEMS_DATA = [
     "id": 337,
     "name": "香料浆果",
     "name_en": "Spice Berry",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 80,
     "has_quality": true,
     "qualities": {
@@ -11377,7 +10554,7 @@ window.ITEMS_DATA = [
     "id": 338,
     "name": "大葱",
     "name_en": "Spring Onion",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 8,
     "has_quality": true,
     "qualities": {
@@ -11399,7 +10576,7 @@ window.ITEMS_DATA = [
     "id": 339,
     "name": "韭菜",
     "name_en": "Leek",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 60,
     "has_quality": true,
     "qualities": {
@@ -11421,7 +10598,7 @@ window.ITEMS_DATA = [
     "id": 340,
     "name": "蒲公英",
     "name_en": "Dandelion",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 40,
     "has_quality": true,
     "qualities": {
@@ -11443,7 +10620,7 @@ window.ITEMS_DATA = [
     "id": 341,
     "name": "美洲大树莓",
     "name_en": "Salmonberry",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 5,
     "has_quality": false,
     "qualities": {},
@@ -11460,7 +10637,7 @@ window.ITEMS_DATA = [
     "id": 342,
     "name": "羊肚菌",
     "name_en": "Morel",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 150,
     "has_quality": true,
     "qualities": {
@@ -11482,7 +10659,7 @@ window.ITEMS_DATA = [
     "id": 343,
     "name": "普通蘑菇",
     "name_en": "Common Mushroom",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 40,
     "has_quality": true,
     "qualities": {
@@ -11504,7 +10681,7 @@ window.ITEMS_DATA = [
     "id": 344,
     "name": "榛子",
     "name_en": "Hazelnut",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 90,
     "has_quality": true,
     "qualities": {
@@ -11526,7 +10703,7 @@ window.ITEMS_DATA = [
     "id": 345,
     "name": "野梅",
     "name_en": "Wild Plum",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 80,
     "has_quality": true,
     "qualities": {
@@ -11548,7 +10725,7 @@ window.ITEMS_DATA = [
     "id": 346,
     "name": "黑莓",
     "name_en": "Blackberry",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 20,
     "has_quality": true,
     "qualities": {
@@ -11557,12 +10734,12 @@ window.ITEMS_DATA = [
       "金星": 30,
       "铱星": 40
     },
-    "image": "images/Blackberry_Cobbler.png",
+    "image": "images/Blackberry.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
+      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "neutral": ["Sam", "Alex", "Sebastian", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "dislike": ["Haley", "Maru", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -11570,7 +10747,7 @@ window.ITEMS_DATA = [
     "id": 347,
     "name": "鸡油菌",
     "name_en": "Chanterelle",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 160,
     "has_quality": true,
     "qualities": {
@@ -11592,7 +10769,7 @@ window.ITEMS_DATA = [
     "id": 348,
     "name": "红蘑菇",
     "name_en": "Red Mushroom",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 75,
     "has_quality": true,
     "qualities": {
@@ -11614,7 +10791,7 @@ window.ITEMS_DATA = [
     "id": 349,
     "name": "紫蘑菇",
     "name_en": "Purple Mushroom",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 250,
     "has_quality": true,
     "qualities": {
@@ -11636,7 +10813,7 @@ window.ITEMS_DATA = [
     "id": 350,
     "name": "椰子",
     "name_en": "Coconut",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": true,
     "qualities": {
@@ -11658,7 +10835,7 @@ window.ITEMS_DATA = [
     "id": 351,
     "name": "珊瑚",
     "name_en": "Coral",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 80,
     "has_quality": false,
     "qualities": {},
@@ -11675,7 +10852,7 @@ window.ITEMS_DATA = [
     "id": 352,
     "name": "海胆",
     "name_en": "Sea Urchin",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 160,
     "has_quality": false,
     "qualities": {},
@@ -11692,7 +10869,7 @@ window.ITEMS_DATA = [
     "id": 353,
     "name": "雪山药",
     "name_en": "Snow Yam",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": true,
     "qualities": {
@@ -11713,8 +10890,8 @@ window.ITEMS_DATA = [
   {
     "id": 354,
     "name": "冬根",
-    "name_en": "Winter Root",
-    "category": "季节采集物",
+    "name_en": "Winter_Root",
+    "category": "采集物",
     "price": 70,
     "has_quality": true,
     "qualities": {
@@ -11723,7 +10900,7 @@ window.ITEMS_DATA = [
       "金星": 105,
       "铱星": 140
     },
-    "image": "",
+    "image": "Winter_Root.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -11736,7 +10913,7 @@ window.ITEMS_DATA = [
     "id": 355,
     "name": "水晶果",
     "name_en": "Crystal Fruit",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 150,
     "has_quality": true,
     "qualities": {
@@ -11758,7 +10935,7 @@ window.ITEMS_DATA = [
     "id": 356,
     "name": "冬青树",
     "name_en": "Holly",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 80,
     "has_quality": false,
     "qualities": {},
@@ -11775,7 +10952,7 @@ window.ITEMS_DATA = [
     "id": 357,
     "name": "姜",
     "name_en": "Ginger",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 160,
     "has_quality": true,
     "qualities": {
@@ -11797,7 +10974,7 @@ window.ITEMS_DATA = [
     "id": 358,
     "name": "熔岩菇",
     "name_en": "Magma Cap",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 400,
     "has_quality": true,
     "qualities": {
@@ -11819,7 +10996,7 @@ window.ITEMS_DATA = [
     "id": 359,
     "name": "彩虹贝壳",
     "name_en": "Rainbow Shell",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 300,
     "has_quality": false,
     "qualities": {},
@@ -11836,7 +11013,7 @@ window.ITEMS_DATA = [
     "id": 360,
     "name": "鹦鹉螺",
     "name_en": "Nautilus Shell",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 120,
     "has_quality": false,
     "qualities": {},
@@ -11853,7 +11030,7 @@ window.ITEMS_DATA = [
     "id": 361,
     "name": "贻贝",
     "name_en": "Mussel",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 30,
     "has_quality": false,
     "qualities": {},
@@ -11870,7 +11047,7 @@ window.ITEMS_DATA = [
     "id": 362,
     "name": "蛤",
     "name_en": "Clam",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 50,
     "has_quality": false,
     "qualities": {},
@@ -11887,7 +11064,7 @@ window.ITEMS_DATA = [
     "id": 363,
     "name": "鸟蛤",
     "name_en": "Cockle",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 50,
     "has_quality": false,
     "qualities": {},
@@ -11904,7 +11081,7 @@ window.ITEMS_DATA = [
     "id": 364,
     "name": "虾",
     "name_en": "Shrimp",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 60,
     "has_quality": false,
     "qualities": {},
@@ -11921,7 +11098,7 @@ window.ITEMS_DATA = [
     "id": 365,
     "name": "螃蟹",
     "name_en": "Crab",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -11938,7 +11115,7 @@ window.ITEMS_DATA = [
     "id": 366,
     "name": "龙虾",
     "name_en": "Lobster",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 120,
     "has_quality": false,
     "qualities": {},
@@ -11955,7 +11132,7 @@ window.ITEMS_DATA = [
     "id": 367,
     "name": "小龙虾",
     "name_en": "Crayfish",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 75,
     "has_quality": false,
     "qualities": {},
@@ -11972,7 +11149,7 @@ window.ITEMS_DATA = [
     "id": 368,
     "name": "玉黍螺",
     "name_en": "Periwinkle",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 20,
     "has_quality": false,
     "qualities": {},
@@ -11989,7 +11166,7 @@ window.ITEMS_DATA = [
     "id": 369,
     "name": "牡蛎",
     "name_en": "Oyster",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 40,
     "has_quality": false,
     "qualities": {},
@@ -12006,7 +11183,7 @@ window.ITEMS_DATA = [
     "id": 370,
     "name": "化石腿",
     "name_en": "Fossilized Leg",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -12023,7 +11200,7 @@ window.ITEMS_DATA = [
     "id": 371,
     "name": "化石肋骨",
     "name_en": "Fossilized Ribs",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -12040,7 +11217,7 @@ window.ITEMS_DATA = [
     "id": 372,
     "name": "化石头骨",
     "name_en": "Fossilized Skull",
-    "category": "季节采集物",
+    "category": "采集物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -12057,7 +11234,24 @@ window.ITEMS_DATA = [
     "id": 373,
     "name": "化石脊柱",
     "name_en": "Fossilized Spine",
-    "category": "季节采集物",
+    "category": "采集物",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    },
+  },
+  {
+    "id": 374,
+    "name": "化石尾巴",
+    "name_en": "Fossilized Tail",
+    "category": "采集物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
@@ -12072,13 +11266,13 @@ window.ITEMS_DATA = [
   },
   {
     "id": 374,
-    "name": "化石尾巴",
-    "name_en": "Fossilized Tail",
-    "category": "季节采集物",
-    "price": 100,
+    "name": "西瓜发卡",
+    "name_en": "Watermelon_Band",
+    "category": "帽子",
+    "price": 1000,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Watermelon_Band.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -12086,5 +11280,2182 @@ window.ITEMS_DATA = [
       "dislike": [],
       "hate": []
     }
-  }
+  },
+  {
+    "id": 374,
+    "name": "老鼠耳朵",
+    "name_en": "Mouse_Ears",
+    "category": "帽子",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mouse_Ears.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "猫耳",
+    "name_en": "Cat_Ears",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_Ears.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "牛仔女郎帽",
+    "name_en": "Cowgal_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cowgal_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "专业牛仔帽",
+    "name_en": "Cowpoke_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cowpoke_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "射手帽",
+    "name_en": "Archer's_Cap",
+    "category": "帽子",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Archer's_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "熊猫帽子",
+    "name_en": "Panda_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Panda_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蓝色牛仔帽",
+    "name_en": "Blue_Cowboy_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blue_Cowboy_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "红色牛仔帽",
+    "name_en": "Red_Cowboy_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Red_Cowboy_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "锥帽",
+    "name_en": "Cone_Hat",
+    "category": "帽子",
+    "price": 2500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cone_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "活的帽子",
+    "name_en": "Living_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Living_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "艾米丽的魔法帽",
+    "name_en": "Emily's_Magic_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Emily's_Magic_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蘑菇帽",
+    "name_en": "Mushroom_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mushroom_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "恐龙帽",
+    "name_en": "Dinosaur_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dinosaur_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "图腾面具",
+    "name_en": "Totem_Mask",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Totem_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "标志帽",
+    "name_en": "Logo_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Logo_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "可穿戴的矮人帽子",
+    "name_en": "Wearable_Dwarf_Helm",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Wearable_Dwarf_Helm.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "时尚帽",
+    "name_en": "Fashion_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fashion_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "南瓜面具",
+    "name_en": "Fashion_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fashion_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "骨发卡",
+    "name_en": "Hair_Bone",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Hair_Bone.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "护卫头盔",
+    "name_en": "Squire's_Helmet",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Squire's_Helmet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "斑点头巾",
+    "name_en": "Spotted_Headscarf",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Spotted_Headscarf.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "毛线帽",
+    "name_en": "Beanie",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Beanie.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "宽松毛线帽",
+    "name_en": "Floppy_Beanie",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Floppy_Beanie.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "钓鱼帽",
+    "name_en": "Fishing_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fishing_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "水滴鱼面具",
+    "name_en": "Blobfish_Mask",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blobfish_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "派对帽（红色）",
+    "name_en": "Party_Hat_(red)",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Party_Hat_(red).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "派对帽(蓝色）",
+    "name_en": "Party_Hat_(blue)",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Party_Hat_(blue).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "神秘帽",
+    "name_en": "Arcane_Hat",
+    "category": "帽子",
+    "price": 20000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Arcane_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "厨师帽",
+    "name_en": "Chef_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Chef_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "海盗帽",
+    "name_en": "Pirate_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pirate_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "平顶帽",
+    "name_en": "Flat_Topped_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Flat_Topped_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "优雅头巾",
+    "name_en": "Elegant_Turban",
+    "category": "帽子",
+    "price": 50000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Elegant_Turban.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "白色头巾",
+    "name_en": "White_Turban",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/White_Turban.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "垃圾帽",
+    "name_en": "Garbage_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Garbage_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "金色面具",
+    "name_en": "Golden_Mask_(hat)",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Golden_Mask_(hat).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "螺旋桨帽",
+    "name_en": "Propeller_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Propeller_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "新娘面纱",
+    "name_en": "Bridal_Veil",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bridal_Veil.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "女巫帽",
+    "name_en": "Witch_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Witch_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "陶盘（帽子）",
+    "name_en": "Copper_Pan_(hat)",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Copper_Pan_(hat).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "绿色头巾",
+    "name_en": "Green_Turban",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Green_Turban.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "魔法牛仔帽",
+    "name_en": "Magic_Cowboy_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Magic_Cowboy_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "魔法头巾",
+    "name_en": "Magic_Turban",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Magic_Turban.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "金色头盔",
+    "name_en": "Golden_Helmet",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Golden_Helmet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "豪华海盗帽",
+    "name_en": "Deluxe_Pirate_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Deluxe_Pirate_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "粉色蝴蝶结",
+    "name_en": "Pink_Bow",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pink_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "小帽子",
+    "name_en": "Small_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Small_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蓝鸟面具",
+    "name_en": "Bluebird_Mask",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bluebird_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "豪华牛仔帽",
+    "name_en": "Deluxe_Cowboy_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Deluxe_Cowboy_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "齐先生的帽子",
+    "name_en": "Mr._Qi's_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mr._Qi's_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "黑色牛仔帽",
+    "name_en": "Dark_Cowboy_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dark_Cowboy_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "防辐射护目镜",
+    "name_en": "Radioactive_Goggles",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Radioactive_Goggles.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "侠客帽",
+    "name_en": "Swashbuckler_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Swashbuckler_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "齐氏面具",
+    "name_en": "Qi_Mask",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Qi_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "星星头盔",
+    "name_en": "Star_Helmet",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Star_Helmet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "太阳镜",
+    "name_en": "Sunglasses",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sunglasses.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "护目镜",
+    "name_en": "Goggles",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Goggles.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "采集者帽",
+    "name_en": "Forager's_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Forager's_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "老虎帽",
+    "name_en": "Tiger_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tiger_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "？？？帽",
+    "name_en": "ConcernedApe_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/ConcernedApe_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "战士头盔",
+    "name_en": "Warrior_Helmet",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Warrior_Helmet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "阿比盖尔的蝴蝶结",
+    "name_en": "Abigail's_Bow",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Abigail's_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蓝色蝴蝶结",
+    "name_en": "Blue_Bow",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blue_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蓝丝带",
+    "name_en": "Blue_Ribbon",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blue_Ribbon.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "渔夫帽",
+    "name_en": "Bucket_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bucket_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "黑色棒球帽",
+    "name_en": "Dark_Ballcap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dark_Ballcap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "黑丝绒蝴蝶结",
+    "name_en": "Dark_Velvet_Bow",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dark_Velvet_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "吉尔的帽子",
+    "name_en": "Gil's_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Gil's_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "州长帽",
+    "name_en": "Governor's_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Governor's_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "无限之冠",
+    "name_en": "Infinity_Crown",
+    "category": "帽子",
+    "price": 20000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Infinity_Crown.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "小丑帽",
+    "name_en": "Jester_Hat",
+    "category": "帽子",
+    "price": 25000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Jester_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "Joja棒球帽",
+    "name_en": "Joja_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Joja_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "祝尼魔帽子",
+    "name_en": "Junimo_Hat",
+    "category": "帽子",
+    "price": 25000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Junimo_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "月桂花冠",
+    "name_en": "Laurel_Wreath_Crown",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Laurel_Wreath_Crown.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "小矮妖帽子",
+    "name_en": "Leprechaun_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Leprechaun_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "木乃伊头套",
+    "name_en": "Mummy_Mask",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mummy_Mask.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "盲盒帽",
+    "name_en": "Mystery_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mystery_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "报童帽",
+    "name_en": "Pageboy_Cap",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pageboy_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "纸帽子",
+    "name_en": "Paper_Hat",
+    "category": "帽子",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Paper_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "浣熊帽",
+    "name_en": "Raccoon_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Raccoon_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "红色菲斯帽",
+    "name_en": "Red_Fez",
+    "category": "帽子",
+    "price": 8000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Red_Fez.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "太空头盔",
+    "name_en": "Space_Helmet",
+    "category": "帽子",
+    "price": 20000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Space_Helmet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "棒球帽",
+    "name_en": "Sports_Cap",
+    "category": "帽子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sports_Cap.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "鱿鱼帽",
+    "name_en": "Squid_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Squid_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "三角帽",
+    "name_en": "Tricorn_Hat",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tricorn_Hat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "白色蝴蝶结",
+    "name_en": "White_Bow",
+    "category": "帽子",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/White_Bow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "运动鞋",
+    "name_en": "Sneakers",
+    "category": "鞋类",
+    "price": 500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sneakers.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "橡胶靴",
+    "name_en": "Rubber_Boots",
+    "category": "鞋类",
+    "price": 500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rubber_Boots.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "热能靴",
+    "name_en": "Thermal_Boots",
+    "category": "鞋类",
+    "price": 1500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Thermal_Boots.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "黑暗之靴",
+    "name_en": "Dark_Boots",
+    "category": "鞋类",
+    "price": 2500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dark_Boots.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "神怪之靴",
+    "name_en": "Genie_Shoes",
+    "category": "鞋类",
+    "price": 3500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Genie_Shoes.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "牛仔之靴",
+    "name_en": "Cowboy_Boots",
+    "category": "鞋类",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cowboy_Boots.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "矮精灵鞋子",
+    "name_en": "Leprechaun_Shoes",
+    "category": "鞋类",
+    "price": 1500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Leprechaun_Shoes.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "灰烬小丑鞋",
+    "name_en": "Cinderclown_Shoes",
+    "category": "鞋类",
+    "price": 5500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cinderclown_Shoes.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "美人鱼靴",
+    "name_en": "Mermaid_Boots",
+    "category": "鞋类",
+    "price": 6500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mermaid_Boots.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "蜥怪的爪子",
+    "name_en": "Basilisk_Paw",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Basilisk_Paw.png",
+    "gifting": {
+      "love": [],
+      "like": ["Abigail", "Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "仙女盒",
+    "name_en": "Fairy_Box",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fairy_Box.png",
+    "gifting": {
+      "love": ["Jas"],
+      "like": ["Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "青蛙蛋",
+    "name_en": "Green_Frog_Egg",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Green_Frog_Egg.png",
+    "gifting": {
+      "love": ["Sebastian", "Vincent"],
+      "like": ["Wizard"],
+      "neutral": ["Alex"],
+      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "寒冰法杖",
+    "name_en": "Ice_Rod",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Ice_Rod.png",
+    "gifting": {
+      "love": [],
+      "like": ["Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "黄金马刺",
+    "name_en": "Golden_Spur",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Golden_Spur.png",
+    "gifting": {
+      "love": [],
+      "like": ["Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "魔法发胶",
+    "name_en": "Magic_Hair_Gel",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Magic_Hair_Gel.png",
+    "gifting": {
+      "love": [],
+      "like": ["Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "魔法箭筒",
+    "name_en": "Magic_Quiver",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Magic_Quiver.png",
+    "gifting": {
+      "love": [],
+      "like": ["Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "鹦鹉蛋",
+    "name_en": "Parrot_Egg",
+    "category": "饰品",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Parrot_Egg.png",
+    "gifting": {
+      "love": ["Emily", "Leo"],
+      "like": ["Alex", "Wizard"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "艾米丽的魔法衣",
+    "name_en": "Shirt127",
+    "category": "服装",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Shirt127.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "夏威夷草裙",
+    "name_en": "Luau_Skirt",
+    "category": "服装",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Luau_Skirt.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "谜之上衣",
+    "name_en": "Mystery_Shirt",
+    "category": "服装",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mystery_Shirt.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "紧身裤",
+    "name_en": "Tight_Pants",
+    "category": "服装",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tight_Pants.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "麻哈脂鲤",
+    "name_en": "Dorado",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Dorado.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "珊瑚",
+    "name_en": "Coral",
+    "category": "采集物",
+    "price": 80,
+    "has_quality": true,
+    "qualities": {
+      "普通": 80,
+      "银星": 100,
+      "金星": 120,
+      "铱星": 160
+    },
+    "image": "images/Coral.png",
+    "gifting": {
+      "love": [],
+      "like": ["Evelyn"],
+      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [],
+      "hate": ["Harvey"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "炒鳗鱼",
+    "name_en": "Fried_Eel",
+    "category": "菜肴",
+    "price": 120,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fried_Eel.png",
+    "gifting": {
+      "love": ["Jodi"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Emily", "Krobus", "Leo"],
+      "hate": ["Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "鲑鱼",
+    "name_en": "Salmon",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Salmon.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "精炼石英",
+    "name_en": "Refined_Quartz",
+    "category": "矿物",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Refined_Quartz.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Clint"],
+      "dislike": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": ["Sam"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "鱿鱼",
+    "name_en": "Squid",
+    "category": "鱼类",
+    "price": 240,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Squid.png",
+    "gifting": {
+      "love": [],
+      "like": ["Elliott"],
+      "neutral": ["Sebastian", "Demetrius", "Willy", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn", "Pam"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "干草",
+    "name_en": "Hay",
+    "category": "作物",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Hay.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "大眼鱼",
+    "name_en": "Walleye",
+    "category": "鱼类",
+    "price": 105,
+    "has_quality": true,
+    "qualities": {
+      "普通": 105,
+      "银星": 131,
+      "金星": 157,
+      "铱星": 210
+    },
+    "image": "images/Walleye.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "冬根",
+    "name_en": "Winter_Root",
+    "category": "采集",
+    "price": 70,
+    "has_quality": true,
+    "qualities": {
+      "普通": 70,
+      "银星": 87,
+      "金星": 105,
+      "铱星": 140
+    },
+    "image": "images/Winter_Root.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Leah", "Linus"],
+      "neutral": ["Alex", "Maru", "Penny", "Emily", "Abigail", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Kent", "Pam", "Clint", "Sandy"],
+      "dislike": ["Sam", "Shane", "Elliott", "Sebastian", "Haley", "Pierre", "Caroline", "Jas", "Vincent", "Jodi", "Willy", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "晶球",
+    "name_en": "Geode",
+    "category": "矿物",
+    "price": 25,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Geode.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "五彩碎片",
+    "name_en": "Prismatic_Shard",
+    "category": "矿物",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Prismatic_Shard.png",
+    "gifting": {
+      "love": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Haley"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "粘土",
+    "name_en": "Clay",
+    "category": "矿物",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Clay.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": ["Sebastian", "Haley", "Abigail", "Marnie", "Evelyn", "George", "Jas", "Vincent"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "垃圾",
+    "name_en": "Trash_(item)",
+    "category": "其他",
+    "price": 0,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Trash_(item).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "草莓种子",
+    "name_en": "Trash_(item)",
+    "category": "种子",
+    "price": 0,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Trash_(item).png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "鳗鱼",
+    "name_en": "Eel",
+    "category": "鱼类",
+    "price": 85,
+    "has_quality": true,
+    "qualities": {
+      "普通": 85,
+      "银星": 106,
+      "金星": 127,
+      "铱星": 170
+    },
+    "image": "images/Eel.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "蟹笼",
+    "name_en": "Crab_Pot",
+    "category": "渔具",
+    "price": 1500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Crab_Pot.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "煤炭",
+    "name_en": "Coal",
+    "category": "矿物",
+    "price": 15,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Coal.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Clint"],
+      "dislike": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": ["Sam"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "大海参",
+    "name_en": "Super_Cucumber",
+    "category": "鱼类",
+    "price": 250,
+    "has_quality": true,
+    "qualities": {
+      "普通": 250,
+      "银星": 312,
+      "金星": 375,
+      "铱星": 500
+    },
+    "image": "images/Super_Cucumber.png",
+    "gifting": {
+      "love": ["Wizard"],
+      "like": [],
+      "neutral": ["Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Elliott", "Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 374,
+    "name": "马",
+    "name_en": "Horse",
+    "category": "动物",
+    "price": 10000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Horse.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 374,
+    "name": "树液采集器",
+    "name_en": "Tapper",
+    "category": "农场工具",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tapper.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
 ];
