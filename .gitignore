@@ -1,0 +1,14 @@
+# 第三方库
+phpMyAdmin/
+ueditor-dev-1.5.0/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo

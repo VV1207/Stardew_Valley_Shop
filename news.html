@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星闻露谷 · 星露谷新闻资讯</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== 新闻卡片 - 可点击标题 ===== */
+        .news-card-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .news-card-title a:hover {
+            color: #7c9f5e;
+            text-decoration: underline;
+        }
+
+        /* ===== 互动区域：点赞 + 留言 ===== */
+        .news-interact {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #f0e8da;
+            flex-wrap: wrap;
+        }
+        .like-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: 1px solid #e0d4b8;
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #8a6a4a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .like-btn:hover {
+            background: #fdf6e7;
+            border-color: #c9a04a;
+        }
+        .like-btn.liked {
+            background: #fce8d0;
+            border-color: #c57f1e;
+            color: #b55a0a;
+        }
+        .like-count {
+            font-weight: 700;
+            min-width: 12px;
+            text-align: center;
+        }
+        .comment-area {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .comment-input {
+            flex: 1;
+            min-width: 100px;
+            padding: 6px 12px;
+            border: 1px solid #dcd0bc;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            background: #faf8f0;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .comment-input:focus {
+            border-color: #88aa66;
+        }
+        .comment-submit {
+            background: #eadece;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #4e3e2c;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .comment-submit:hover {
+            background: #d4bd93;
+        }
+        .comment-toggle {
+            background: none;
+            border: none;
+            font-size: 0.72rem;
+            color: #9a8a7a;
+            cursor: pointer;
+            padding: 2px 8px;
+            border-radius: 30px;
+            transition: 0.15s;
+        }
+        .comment-toggle:hover {
+            background: #f0ede5;
+            color: #5a4f3e;
+        }
+        .comment-list {
+            width: 100%;
+            margin-top: 6px;
+            max-height: 180px;
+            overflow-y: auto;
+        }
+        .comment-item {
+            display: flex;
+            gap: 6px;
+            padding: 6px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #4a3f2c;
+            background: #faf8f0;
+            margin-bottom: 4px;
+            align-items: flex-start;
+        }
+        .comment-author {
+            font-weight: 700;
+            color: #7c9f5e;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .comment-text {
+            flex: 1;
+            word-break: break-word;
+        }
+        .comment-time {
+            font-size: 0.62rem;
+            color: #b9ab92;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .comment-empty {
+            text-align: center;
+            color: #b9ab92;
+            font-size: 0.72rem;
+            padding: 8px;
+        }
+
+        /* ===== 离地而居卡片（独立图文，不跳转） ===== */
+        .news-card-living {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .news-card-living .living-text {
+            flex: 1;
+            min-width: 0;
+        }
+        .news-card-living .living-img {
+            flex-shrink: 0;
+            width: 90px;
+            height: auto;
+            margin-top: 4px;
+            border-radius: 8px;
+            opacity: 0.85;
+            image-rendering: auto;
+        }
+        .news-card-living .living-img:hover {
+            opacity: 1;
+        }
+        .news-card-living .news-card-title {
+            cursor: default;
+        }
+        .news-card-living .news-card-title a {
+            cursor: default;
+            pointer-events: none;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ===== 春季小提示正文 ===== */
+        .living-tip {
+            background: #f8f6ee;
+            border-radius: 12px;
+            padding: 10px 14px;
+            margin: 8px 0 4px;
+            font-size: 0.82rem;
+            line-height: 1.7;
+            color: #3f3522;
+        }
+        .living-tip strong {
+            color: #6a8a3a;
+            font-weight: 700;
+        }
+        .living-tip p {
+            margin: 4px 0;
+        }
+        .living-tip .date-head {
+            font-weight: 700;
+            color: #b08830;
+            margin-right: 4px;
+        }
+        .living-dec-row {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin: 6px 0 2px;
+            align-items: center;
+        }
+        .living-dec-row img {
+            width: 18px;
+            height: 18px;
+            image-rendering: crisp-edges;
+            opacity: 0.55;
+        }
+
+        /* ===== 毕业特刊徽章 ===== */
+        .badge-graduation {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a04a, #e6c87a);
+            color: #3d2f1f;
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 3px 12px;
+            border-radius: 40px;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 6px rgba(200, 160, 50, 0.25);
+        }
+
+        /* ===== 装饰行（摘要内用） ===== */
+        .decoration-row {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin: 4px 0;
+            align-items: center;
+        }
+        .decoration-row img {
+            width: 18px;
+            height: 18px;
+            image-rendering: crisp-edges;
+            opacity: 0.6;
+        }
+
+        /* ===== 新闻详情模态框 ===== */
+        .news-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            overflow-y: auto;
+            padding: 30px 16px;
+            box-sizing: border-box;
+        }
+        .news-modal-overlay.open {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .news-modal-content {
+            background: white;
+            border-radius: 28px;
+            max-width: 800px;
+            width: 100%;
+            padding: 28px 30px;
+            border: 1px solid #e9e0d0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .news-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: #f0ede5;
+            border: none;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            z-index: 2;
+        }
+        .news-modal-close:hover {
+            background: #d4bd93;
+        }
+        .news-modal-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a04a, #e6c87a);
+            color: #3d2f1f;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 40px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .news-modal-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin: 8px 0 6px;
+            text-align: center;
+            background: linear-gradient(135deg, #8a6a2a, #c9a04a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .news-modal-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a7a5a;
+            margin-bottom: 16px;
+        }
+        .news-modal-meta {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #9a8a6a;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #e0d4b8;
+        }
+        .news-modal-meta span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .news-modal-hero {
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .news-modal-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .news-modal-body {
+            font-size: 0.92rem;
+            line-height: 1.9;
+            color: #4a3f2c;
+        }
+        .news-modal-body p {
+            text-indent: 2em;
+            margin: 12px 0;
+        }
+        .news-modal-body .first-paragraph {
+            text-indent: 0;
+        }
+        .news-modal-body .first-paragraph::first-letter {
+            font-size: 2.6em;
+            font-weight: 800;
+            float: left;
+            line-height: 1;
+            margin-right: 8px;
+            color: #c9a04a;
+            font-family: 'Georgia', serif;
+        }
+        .news-modal-divider {
+            text-align: center;
+            margin: 22px 0 14px;
+            color: #c9a04a;
+            font-size: 1rem;
+            letter-spacing: 6px;
+        }
+        .news-modal-quote {
+            position: relative;
+            background: linear-gradient(135deg, #f8f0dc, #fcf6e8);
+            border-left: 4px solid #c9a04a;
+            border-radius: 14px;
+            padding: 18px 22px 48px;
+            margin: 18px 0;
+            font-style: italic;
+            overflow: hidden;
+        }
+        .news-modal-quote p {
+            text-indent: 0 !important;
+        }
+        .news-modal-quote .quote-author {
+            text-align: right;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #8a7a5a;
+            margin-top: 10px;
+            font-style: normal;
+        }
+        .news-modal-quote .quote-bg-img {
+            position: absolute;
+            bottom: 6px;
+            left: 8px;
+            width: 120px;
+            height: auto;
+            z-index: 1;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+        .news-modal-quote p,
+        .news-modal-quote .quote-author {
+            position: relative;
+            z-index: 2;
+        }
+        .news-modal-slogan {
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #7c9f5e;
+            margin: 18px 0;
+        }
+        .news-modal-footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 2px solid #e0d4b8;
+            font-size: 0.82rem;
+            color: #8a7a5a;
+        }
+        .news-modal-footer .footer-slogan {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #6a8a3a;
+            margin: 8px 0 4px;
+        }
+        .news-modal-dec-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 6px 0;
+            align-items: center;
+        }
+        .news-modal-dec-row img {
+            width: 22px;
+            height: 22px;
+            image-rendering: crisp-edges;
+            opacity: 0.65;
+        }
+        /* 模态框内互动区 */
+        .news-modal-interact {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
+            padding: 16px 0 0;
+            border-top: 1px solid #f0e8da;
+            flex-wrap: wrap;
+        }
+        .news-modal-interact .like-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: 1px solid #e0d4b8;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8a6a4a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .news-modal-interact .like-btn:hover {
+            background: #fdf6e7;
+            border-color: #c9a04a;
+        }
+        .news-modal-interact .like-btn.liked {
+            background: #fce8d0;
+            border-color: #c57f1e;
+            color: #b55a0a;
+        }
+        .news-modal-interact .like-count {
+            font-weight: 700;
+            min-width: 16px;
+            text-align: center;
+        }
+        .news-modal-interact .comment-area {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .news-modal-interact .comment-input {
+            flex: 1;
+            min-width: 120px;
+            padding: 8px 14px;
+            border: 1px solid #dcd0bc;
+            border-radius: 40px;
+            font-size: 0.82rem;
+            background: #faf8f0;
+            outline: none;
+        }
+        .news-modal-interact .comment-input:focus {
+            border-color: #88aa66;
+        }
+        .news-modal-interact .comment-submit {
+            background: #eadece;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #4e3e2c;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .news-modal-interact .comment-submit:hover {
+            background: #d4bd93;
+        }
+        .news-modal-comment-list {
+            width: 100%;
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .news-modal-comment-item {
+            display: flex;
+            gap: 8px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            font-size: 0.82rem;
+            color: #4a3f2c;
+            background: #faf8f0;
+            margin-bottom: 6px;
+            align-items: flex-start;
+        }
+        .news-modal-comment-item .c-author {
+            font-weight: 700;
+            color: #7c9f5e;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-modal-comment-item .c-text {
+            flex: 1;
+            word-break: break-word;
+        }
+        .news-modal-comment-item .c-time {
+            font-size: 0.68rem;
+            color: #b9ab92;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-modal-comment-empty {
+            text-align: center;
+            color: #b9ab92;
+            font-size: 0.78rem;
+            padding: 12px;
+        }
+        /* 卡片标题可点击样式 */
+        .news-card-title[data-open-modal] {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+        .news-card-title[data-open-modal]::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #7c9f5e, #c9a04a);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        .news-card-title[data-open-modal]:hover::after {
+            width: 100%;
+        }
+        .news-card-title[data-open-modal]:hover {
+            color: #7c9f5e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-banner">
+    <nav class="top-nav">
+        <div class="nav-brand">🌾 星尔玛</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">🏠 商店首页</a>
+            <a href="news.html" class="nav-link active">📬 星闻露谷</a>
+            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        </div>
+        <div class="user-bar" id="userBar"></div>
+    </nav>
+
+    <div class="header">
+        <h1>📬 星闻露谷</h1>
+        <p>鹈鹕镇的大小事 · 最新资讯一手掌握</p>
+    </div>
+</div>
+
+<div class="news-container">
+    <!-- 左侧分类导航 -->
+    <div class="news-sidebar" id="newsSidebar">
+        <div class="news-sidebar-title">📬 新闻栏目</div>
+        <div class="news-sidebar-list">
+            <div class="news-sidebar-item active" data-column="pelican">
+                <span class="news-sidebar-icon">🐦</span>
+                <span class="news-sidebar-label">鹈鹕日报</span>
+            </div>
+            <div class="news-sidebar-item" data-column="living">
+                <span class="news-sidebar-icon">🏡</span>
+                <span class="news-sidebar-label">离地而居</span>
+            </div>
+            <div class="news-sidebar-item" data-column="queen">
+                <span class="news-sidebar-icon">👑</span>
+                <span class="news-sidebar-label">酱料女皇</span>
+            </div>
+        </div>
+        <div class="news-sidebar-footer">
+            <p>📅 星露谷历<br>不定期出版</p>
+        </div>
+    </div>
+
+    <!-- 右侧新闻展示区 -->
+    <div class="news-main">
+        <!-- ======== 鹈鹕日报 ======== -->
+        <div class="news-column" id="col-pelican">
+            <div class="news-column-header">
+                <h2>🐦 鹈鹕日报</h2>
+                <span class="news-column-motto">镇民身边的新鲜事</span>
+            </div>
+
+            <!-- ===== 毕业特刊卡片（标准新闻卡片样式） ===== -->
+            <div class="news-card" data-news-id="graduation2026">
+                <span class="badge-graduation">🎓 毕业特刊 · 2026</span>
+                <h3 class="news-card-title" data-open-modal="graduation2026">
+                    🌾 星露谷农业学院2026届毕业典礼圆满结束！
+                </h3>
+                <div class="news-card-meta">📅 夏季 8 日 · 来自 小红书-weida的农场</div>
+                <p class="news-card-summary">
+                    星露谷农业学院 2026 届毕业典礼在刘易斯的主持下盛大举行。尽管预报"90% 概率下雨"，但法师施法让现场阳光明媚。毕业生以农业、矿工、钓鱼三系为主力，矿工系创下平均下矿 300 层新纪录……刘易斯镇长误将证书颁给自己铜像？点击标题查看完整毕业特刊报道👇
+                </p>
+                <!-- 装饰行 -->
+                <div class="decoration-row">
+                    <img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Poppy.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Fairy_Rose.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Summer_Spangle.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Sunflower.png" alt="" onerror="this.style.display='none'">
+                </div>
+                <!-- 互动区域 -->
+                <div class="news-interact" data-news-id="graduation2026"></div>
+            </div>
+
+            <!-- ===== 普通新闻卡片 ===== -->
+            <div class="news-card" data-news-id="spring-seeds">
+<h3 class="news-card-title" data-open-modal="spring-seeds">🌱 春季播种季到来！皮埃尔小店推出新作物种子</h3>
+                <div class="news-card-meta">📅 春季 1 日 · 来自 镇政府</div>
+                <p class="news-card-summary">新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。防风草、绿豆、草莓……赶紧来选购吧！</p>
+                <div class="news-interact" data-news-id="spring-seeds"></div>
+            </div>
+
+            <div class="news-card" data-news-id="fishing-contest">
+<h3 class="news-card-title" data-open-modal="fishing-contest">🎣 威利的钓鱼大赛即将开幕</h3>
+                <div class="news-card-meta">📅 夏季 1 日 · 来自 鱼店</div>
+                <p class="news-card-summary">一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p>
+                <div class="news-interact" data-news-id="fishing-contest"></div>
+            </div>
+
+            <div class="news-card" data-news-id="secret-mushroom">
+<h3 class="news-card-title" data-open-modal="secret-mushroom">🍄 秘密森林发现新品种蘑菇</h3>
+                <div class="news-card-meta">📅 春季 15 日 · 来自 科学研究所</div>
+                <p class="news-card-summary">据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p>
+                <div class="news-interact" data-news-id="secret-mushroom"></div>
+            </div>
+
+            <div class="news-card placeholder-card">
+                <span>📬 更多新闻即将刊登……</span>
+            </div>
+        </div>
+
+        <!-- ======== 离地而居 ======== -->
+        <div class="news-column" id="col-living" style="display:none;">
+            <div class="news-column-header">
+                <h2>🏡 离地而居</h2>
+                <span class="news-column-motto">农场生活 · DIY 小贴士</span>
+            </div>
+
+            <!-- ★ 新 —— 春季小提示·上 -->
+            <div class="news-card news-card-living" data-news-id="spring-tips1">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#7c9f5e;color:#fff;">🌱 春季特辑</div>
+                    <h3 class="news-card-title"><a>🌿 【春季小提示 · 第一期】 </a></h3>
+                    <div class="news-card-meta">📅 年 1 春季 12 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 春季1日：</span>给所有新人一个提示：在等待第一次收成的同时，你可以去砍柴和收集野生牧草以挣取些额外收入！</p>
+                        <p><span class="date-head">🌤 春季4日：</span>给星露谷的居民一个提示。去查看下生长在小镇西南部的野葱，小镇的西南方是河川与大海交汇的地方。偶尔能找到一簇簇的野葱从泥土中冒出来。</p>
+                        <p><span class="date-head">🌤 春季8日：</span>接下来就说说篱笆吧。篱笆有助于抑制杂草的蔓延和保护你的庄稼。篱笆还可以让农民圈养他们的牲口。一般的木篱笆很快就会破损，但是石头、铁以及硬木做的篱笆可以用很久！</p>
+                        <p><span class="date-head">🌤 春季11日：</span>乌鸦会来捣乱？看来你需要一个稻草人！在你的农场设置一个稻草人，可以把乌鸦吓退到百里之外。一定要保护好珍贵的庄稼！还有一件事……你如果需要更大空间的背包来装道具的话，可以到当地的杂货店去看看。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Wood.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Spring_Onion.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Wood_Fence.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Scarecrow.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="spring-tips1"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 春季小提示·下 -->
+            <div class="news-card news-card-living" data-news-id="spring-tips2">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#7c9f5e;color:#fff;">🌱 春季特辑</div>
+                    <h3 class="news-card-title"><a>🌿 【春季小提示 · 第二期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 春季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 春季15日：</span>美莓成熟的季节到了！整个乡村的草丛中都布满了小巧而多汁的美莓，你可以随意采摘！把他们采摘下来出售，就可以挣到一笔额外的收入。</p>
+                        <p><span class="date-head">🌤 春季18日：</span>啊，清爽的雨……这是农民的最好朋友！下雨时，你就不用亲自去浇灌庄稼了。要充分利用这种天赐良机！</p>
+                        <p><span class="date-head">🌤 春季22日：</span>甩出你的鱼竿去钓条大肥鱼，钓到的鱼可以拿去卖！较闲时钓鱼可以挣取额外收入。鱼钩抛离陆地的距离决定了你能钓到什么样的鱼……其他影响因素还有地点、季节、时间以及天气！</p>
+                        <p><span class="date-head">🌤 春季25日：</span>果树需要一个季节的时间来生长，所以，要提前种下！如果你新种下的果树周围的没除草干净，果树的生长就会受到影响。当你的果树长成之后，只要是在成熟的季节，它就会每天为你结出可口的果子。你该开始谋划了！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Salmonberry.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Cauliflower.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Bream.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Cherry_Sapling.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="spring-tips2"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 夏季小提示·上 -->
+            <div class="news-card news-card-living" data-news-id="summer-tips1">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#e6a817;color:#fff;">☀️ 夏季特辑</div>
+                    <h3 class="news-card-title"><a>☀️ 【夏季小提示 · 第一期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 夏季 12 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 夏季1日：</span>夏天来了，可以种植各种各样新的农作物了！就拿啤酒花来说吧。它的藤蔓成长起来需要一段时间，不过，一旦长成，就每天都会结出丰硕的果实。所以祝你好运吧！</p>
+                        <p><span class="date-head">🌤 夏季4日：</span>下面这些鱼，你只有在夏天才能找到：麻哈脂鲤，可以在白天的森林河流中找到。虹鳟鱼，可以在白天的森林河流和山涧找到。河豚，可以下午时分的大海中找到。还有章鱼，可以在早晨的大海中找到。可以的话，就抓住它们！</p>
+                        <p><span class="date-head">🌤 夏季8日：</span>我们来说说玉米吧。这是一种非同寻常的农作物，因为它可以生长两季。没错，季节变迁的时候，很多农作物都会枯萎，可是玉米却能够继续生长。你可以在夏季和秋季种植玉米。那就快去行动起来，去种一些玉米吧！</p>
+                        <p><span class="date-head">🌤 夏季11日：</span>从明天开始，大量的贝壳和珊瑚会被冲到全世界的海滩上。我不是一位科学家，但是，我听说这和螃蟹的交配季节有关系。不管怎么样，你可以利用当地的海滩挣一笔大钱。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Hops.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Dorado.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Corn.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Coral.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="summer-tips1"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 夏季小提示·下 -->
+            <div class="news-card news-card-living" data-news-id="summer-tips2">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#e6a817;color:#fff;">☀️ 夏季特辑</div>
+                    <h3 class="news-card-title"><a>☀️ 【夏季小提示 · 第二期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 夏季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 夏季15日：</span>要在镇上做一次SPA？静静地躺在冒着热气的泉水中，放松自己，补充能量。啊……感觉真美好啊，不是吗？</p>
+                        <p><span class="date-head">🌤 夏季18日：</span>夏天肯定出现闪电风暴。如果你知道如何制作避雷针，那么你可以收集闪电来制作电池。这些电池可以出售或者用于加工其他物品！</p>
+                        <p><span class="date-head">🌤 夏季22日：</span>大多数小镇上的杂货店门口都张贴了季节历。时而看一下季节历，确实不错的，你可以了解到社区里的一些时事。同时，一定要看一下有么有招聘广告！</p>
+                        <p><span class="date-head">🌤 夏季25日：</span>秋天就快到了！毋庸置疑，秋天对于农民来说，是一个丰收的季节，所以，一定要存下一些钱来买新的种子哦。如果你还没更换过喷壶，那现在是一个好时机。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Battery_Pack.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Starfruit.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Summer_Spangle.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Poppy.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="summer-tips2"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 秋季小提示·上 -->
+            <div class="news-card news-card-living" data-news-id="autumn-tips1">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#d4781e;color:#fff;">🍂 秋季特辑</div>
+                    <h3 class="news-card-title"><a>🍂 【秋季小提示 · 第一期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 秋季 12 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 秋季1日：</span>我们来说说向日葵吧。当你收割向日葵的时候，你不仅获得漂亮的花朵，还可以获得一些种子。你可以再次种下这些种子或拿去卖。想想就有点小激动！</p>
+                        <p><span class="date-head">🌤 秋季4日：</span>如果你是一位小镇上的农民，那么，你迟早会被邀请去举办一场所谓的"农庄展"。具体来说，你需要展示9件最能突出你的才能的物品。尽量挑选出高质量、高价值的物品，而且种类一定要丰富。鱼、矿石、手工艺品、水果以及蔬菜都适合出展！</p>
+                        <p><span class="date-head">🌤 秋季8日：</span>黑莓成熟的季节到了！乡村的所有草丛中都布满了成熟的果实。你可以出去自己看看！</p>
+                        <p><span class="date-head">🌤 秋季11日：</span>鱼类聚焦：鲑鱼。秋天，鲑鱼会回到它们的产卵地进行产卵。所以河流里面会充斥着鲑鱼！只有秋天才会有垂钓到鲑鱼的机会，所以好好把握这个机遇吧。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Sunflower.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Blackberry.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Salmon.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Pumpkin.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="autumn-tips1"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 秋季小提示·下 -->
+            <div class="news-card news-card-living" data-news-id="autumn-tips2">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#d4781e;color:#fff;">🍂 秋季特辑</div>
+                    <h3 class="news-card-title"><a>🍂 【秋季小提示 · 第二期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 秋季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 秋季15日：</span>有树液采集器吗？聪明的采集者知道如何使用它们。你可以把它们固定到野生树上。枫树会流出枫糖浆，橡树会出树脂，松树会流出松焦油。糖浆是最珍贵的，不过，所有树上的产物都有其用途！</p>
+                        <p><span class="date-head">🌤 秋季18日：</span>冬天马上来了。确保你已经为动物们准备了充足的干草，因为动物们冬天是不会外出觅食的。第一场寒潮来临之后，你的牧草就不会再生长了。每个筒仓可以储存240片干草，所以你要好好计算一下，看看需不需要额外建造更多的筒仓哦！</p>
+                        <p><span class="date-head">🌤 秋季22日：</span>鱼类聚焦：鼓眼鱼。你可以在秋天和冬天雨夜找到这种鱼。任何淡水水域都有它们的身影。</p>
+                        <p><span class="date-head">🌤 秋季25日：</span>冬天马上就要来了……这就意味着你的农活可以告一段落了。冬天里，没有庄稼可以生长，除非你建造了温室。不过，你还是可以忙其他的事的！来年的冬天你会更忙碌。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Maple_Syrup.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Hay.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Walleye.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Winter_Root.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="autumn-tips2"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 冬季小提示·上 -->
+            <div class="news-card news-card-living" data-news-id="winter-tips1">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#5a8aaa;color:#fff;">❄️ 冬季特辑</div>
+                    <h3 class="news-card-title"><a>❄️ 【冬季小提示 · 第一期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 冬季 12 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 冬季1日：</span>冬天……此是整个世界都会安静下来的季节。现在是采矿、钓鱼以及聚会的大好时机。更换你的工具，为春天的耕种做好准备。或者，让当地的木匠为你的农场打造些木具。储备资源，更换工具，为来年做好充分的准备。</p>
+                        <p><span class="date-head">🌤 冬季4日：</span>想知道怎样才可以获得"精制石英"吗？你只需将一块普通的旧石英放入炉内。然后用一些煤炭来起火。</p>
+                        <p><span class="date-head">🌤 冬季8日：</span>砍柴时找到了一些树木的种子？你可以将种子种到地里，这样，一棵新的树就会长出来了。发挥你的创造性吧！</p>
+                        <p><span class="date-head">🌤 冬季11日：</span>下面这些鱼，你只有在冬天才能找到：墨鱼和蛇鳕鱼。墨鱼可以在夜晚的大海中抓到。蛇鳕鱼则出现在淡水湖中。当然，也有传言说还有一些非常稀有和奇特的鱼，只有在特别的季节中才会出现。但是我没有它们的相关资料。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Quartz.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Refined_Quartz.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Acorn.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Squid.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="winter-tips1"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 冬季小提示·下 -->
+            <div class="news-card news-card-living" data-news-id="winter-tips2">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#5a8aaa;color:#fff;">❄️ 冬季特辑</div>
+                    <h3 class="news-card-title"><a>❄️ 【冬季小提示 · 第二期】</a></h3>
+                    <div class="news-card-meta">📅 年 1 冬季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 冬季15日：</span>我们来说说晶球吧。晶球是中空的石头，通常含有珍贵的矿物。只需一点辛苦费，铁匠就可以帮你敲开它们。晶球也有很多种类，每种晶球都含有不同的矿物。不过，稀有的"混合晶球"则会含有所有种类的矿物。</p>
+                        <p><span class="date-head">🌤 冬季18日：</span>如果你想让某些人开心，你就得在他们生日的时候送上他们最喜欢的礼物！信我没错。</p>
+                        <p><span class="date-head">🌤 冬季22日：</span>你见过三根细小的棕色茎秆从地里冒出来吗？一般上很难发现。但你要是在该位置挖掘，就一定会找到些东西。不要问我个中原理。</p>
+                        <p><span class="date-head">🌤 冬季25日：</span>是否很想挖一挖你邻居的垃圾堆？嘿，如果你真有这种奇葩想法，那就确保在没有人看见的时候才去挖。如果被人发现，那就会恶心到邻居，影响邻里之间的友谊。除非对方跟你一样奇葩。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Geode.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Prismatic_Shard.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Clay.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Trash_(item).png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="winter-tips2"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 春季小提示·上（第二期） -->
+            <div class="news-card news-card-living" data-news-id="spring-tips3">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#7c9f5e;color:#fff;">🌱 春季特辑</div>
+                    <h3 class="news-card-title"><a>🌿 【春季小提示 · 第三期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 春季 12 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 春季1日：</span>新年到了。好好留意一下当地的杂货店中有没有什么新型种子。希望你已经在冬天时更换过工具，为新的一年做好了准备！</p>
+                        <p><span class="date-head">🌤 春季4日：</span>鱼类聚焦：鳗鱼。鳗鱼可以在春天和秋天雨夜从大海中抓到。</p>
+                        <p><span class="date-head">🌤 春季8日：</span>有厨房吗？烹饪是提升能力绝佳方式。很多菜肴不仅会赋予你能量，而且还可以临时提升你的技能、速度以及其它能力。是不是想想就有点小激动？</p>
+                        <p><span class="date-head">🌤 春季11日：</span>道具聚焦：蟹笼。经验丰富的垂钓者都懂得如何制作蟹笼。除了抓螃蟹外，蟹笼还可以用来抓取淡水湖和咸水湖中的各种水生生物。只要将蟹笼放入水中，并装入诱饵。第二天再回来，看看蟹笼中有没有捕获什么东西。如果想继续使用，那就得重新装入诱饵。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Strawberry_Seeds.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Eel.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Salad.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Crab_Pot.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="spring-tips3"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 春季小提示·下（第二期） -->
+            <div class="news-card news-card-living" data-news-id="spring-tips4">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#7c9f5e;color:#fff;">🌱 春季特辑</div>
+                    <h3 class="news-card-title"><a>🌿 【春季小提示 · 第四期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 春季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 春季18日：</span>我们来说说蜂蜜吧。顾名思义，蜂蜜就是蜜蜂产出的蜜糖。如果你的蜂房附近有鲜花开放，那么，你的蜜蜂会产出美味的蜂蜜。否则，你只能收获到"野蜂蜜"。厉害吧？</p>
+                        <p><span class="date-head">🌤 春季22日：</span>对于冒险者，我有个提示！不要忘记武器的特别攻击！宝剑可阻挡敌人的攻击，对付史莱姆很有用。棍棒可以敲击地面以震飞敌人……匕首可以用来施展瞬间三连击！出外行走要注意安全哦。</p>
+                        <p><span class="date-head">🌤 春季25日：</span>鹈鹕镇附近有个著名的冒险者公会。会长马龙制定了一个奖励计划来激励勇士前往当地的山洞中击杀怪物。冒险者杀死大量怪物之后，可以获得相应的强大道具。墙上张贴了海报，里面写了相关的详细信息。加油吧！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Honey.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Galaxy_Sword.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Green_Slime_Anim.gif" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="spring-tips4"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 夏季小提示·上（第二期） -->
+            <div class="news-card news-card-living" data-news-id="summer-tips3">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#e6a817;color:#fff;">☀️ 夏季特辑</div>
+                    <h3 class="news-card-title"><a>☀️ 【夏季小提示 · 第三期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 夏季 16 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 夏季1日：</span>听说有些人会守候在移动的火车旁以拾取车上掉下来的物品。啧啧……这年头的人为了免费物品真是什么事都干得出来！</p>
+                        <p><span class="date-head">🌤 夏季4日：</span>动物聚焦：猪。这一带的猪都受过专业训练，可以嗅找珍贵的松露。你只要放这些猪出去自由行动，然后耐心地等待就行了。收获到的松露可以加工做成油来卖。</p>
+                        <p><span class="date-head">🌤 夏季11日：</span>鱼类聚焦：超级海参。你可以在大海中找到这种珍贵的鱼。它只会在夏天和秋天的晚上出现。</p>
+                        <p><span class="date-head">🌤 夏季15日：</span>我知道这很难……但是，不要太担心你的马了！你可以把它们扔在任何地方，它们自己能够找到回家的路。它们是一种非常聪明和独立的动物！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Coal.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Truffle.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Super_Cucumber.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Horse.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="summer-tips3"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 夏季小提示·下（第二期） -->
+            <div class="news-card news-card-living" data-news-id="summer-tips4">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#e6a817;color:#fff;">☀️ 夏季特辑</div>
+                    <h3 class="news-card-title"><a>☀️ 【夏季小提示 · 第四期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 夏季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 夏季18日：</span>我想到一个主意……建一个野生果园！将树液采集器固定到这些树上，然后收集珍贵的糖浆。你不照做也没事！我毫不在乎。</p>
+                        <p><span class="date-head">🌤 夏季22日：</span>道具聚焦：酒桶。酒桶的经典用途就是制作葡萄酒。但是，你是否知道任何水果都可以做成酒？对啊。你还可以把蔬菜做成果汁呢。</p>
+                        <p><span class="date-head">🌤 夏季25日：</span>你手头上有日志不？别忘了时常查看一下自己的日志。你容易忘记的重要信息都记录在里面了。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Tapper.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Beer.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Cloth.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="summer-tips4"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 秋季小提示·上（第二期） -->
+            <div class="news-card news-card-living" data-news-id="autumn-tips3">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#d4781e;color:#fff;">🍂 秋季特辑</div>
+                    <h3 class="news-card-title"><a>🍂 【秋季小提示 · 第三期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 秋季 16 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 秋季1日：</span>如果你得到了"稀有种子"，现在就该把它种下了。传言说这种子需要一个季节来生长，但是，我已得到确切信息，实际上只要24天。传说它长成之后会结出全世界最甜的果子。</p>
+                        <p><span class="date-head">🌤 秋季4日：</span>有农民汇报说，当大片的花椰菜、甜瓜或者南瓜成熟时，会发生一些奇怪的事情。嗯。我是无法证实了。</p>
+                        <p><span class="date-head">🌤 秋季11日：</span>想结婚？那你就需要一个美人鱼吊坠。宝石海这边的每个人都知道赠送美人鱼吊坠代表什么意思。当你收到这样的吊坠时，情况就比较微妙了。每个地区好像都有自己的习俗，不过，这些习俗基本上都是和海滩或海洋有关系。</p>
+                        <p><span class="date-head">🌤 秋季15日：</span>道具聚焦：回收机。你在钓鱼的时候是否钓到过很多垃圾？在这个时代，已经不足为奇了。好吧，有了回收机，你就可以将这些垃圾转变成有用的东西。只要将你的垃圾放入回收机内，让它自行工作就行了。每一类型的垃圾可以变成不同种类的物品。</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Rare_Seed.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Melon.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Mermaid's_Pendant.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Recycling_Machine.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="autumn-tips3"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 秋季小提示·下（第二期） -->
+            <div class="news-card news-card-living" data-news-id="autumn-tips4">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#d4781e;color:#fff;">🍂 秋季特辑</div>
+                    <h3 class="news-card-title"><a>🍂 【秋季小提示 · 第四期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 秋季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 秋季18日：</span>鱼类聚焦：青花鱼。这种鱼可以在清早或者晚上找到。在秋天或者冬天的大海中寻找它吧。</p>
+                        <p><span class="date-head">🌤 秋季22日：</span>鱼类聚焦：木跃鱼、沙鱼以及蝎鲤。据说，林跃鱼只生存在丛林深处。沙鱼和蝎鲤只能在沙漠绿洲中找到。</p>
+                        <p><span class="date-head">🌤 秋季25日：</span>再过几天，芬吉尔共和国一带就要迎来万灵节了！你也许不知道有这么一个习俗：寻找黄金南瓜。如果你的镇上有个闹鬼迷宫，那么里面肯定藏有黄金南瓜。找到就能卖大钱哦！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Albacore.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Woodskip.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Golden_Pumpkin.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="autumn-tips4"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 冬季小提示·上（第二期） -->
+            <div class="news-card news-card-living" data-news-id="winter-tips3">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#5a8aaa;color:#fff;">❄️ 冬季特辑</div>
+                    <h3 class="news-card-title"><a>❄️ 【冬季小提示 · 第三期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 冬季 16 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 冬季1日：</span>各位，请听我一言。在你有小孩之前，务必先在家中建一个育儿室。小宝宝需要一张婴儿床！</p>
+                        <p><span class="date-head">🌤 冬季4日：</span>道具聚焦：宝石复制机。这一款神奇的机器可以无限制地复制各种宝石。只要将你想要复制的宝石放入机器内，让机器自行工作，过一段时间后，嘿嘿……财源滚滚来！</p>
+                        <p><span class="date-head">🌤 冬季8日：</span>如果你的畜棚中有成年动物，并且畜棚还有空间……那么它们就有几率产子。</p>
+                        <p><span class="date-head">🌤 冬季11日：</span>鱼类聚焦：鲶鱼。这是一种比较罕见的鱼，下雨时会出现。你会发现它们生存在小镇旁的河流中，以掉到水中的残羹剩饭为食。它们不喜欢炎热的天气，所以，在夏天时就别煞费苦心来钓它们了！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Single_Bed.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Crystalarium.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Brown_Chicken.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Catfish.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="winter-tips3"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <!-- ★ 新 —— 冬季小提示·下（第二期） -->
+            <div class="news-card news-card-living" data-news-id="winter-tips4">
+                <div class="living-text">
+                    <div class="news-card-badge" style="background:#5a8aaa;color:#fff;">❄️ 冬季特辑</div>
+                    <h3 class="news-card-title"><a>❄️ 【冬季小提示 · 第四期】</a></h3>
+                    <div class="news-card-meta">📅 年 2 冬季 26 日 · 来自 鹈鹕镇农业局</div>
+                    <div class="living-tip">
+                        <p><span class="date-head">🌤 冬季15日：</span>道具聚焦：虫箱。需要源源不断的诱饵？自己制作一个虫箱吧。只要把虫箱运作起来，那每天都能收获到一些诱饵。</p>
+                        <p><span class="date-head">🌤 冬季18日：</span>在层层积雪下方，春天的种子正在崭露头角，准备在阳光中绽放自己全新的生命。当春天再度来临的时候，你别太惊讶于农场的"惨状"，只要下点功夫清理一番就好了！</p>
+                        <p><span class="date-head">🌤 冬季22日：</span>如果你有一个淘金盘，那一定要多留意水中是否有发光耀眼的东西。水中经常会有珍贵的矿石出现，免费的哦！</p>
+                        <p><span class="date-head">🌤 冬季25日：</span>各位，我要宣布一件事情。我即将退休，这是最后一档离地生活节目。这段日子我过得很开心，我会想念你们的。哦，我已经告诉电视台，让他们明年开始进行重播。照顾好自己！</p>
+                    </div>
+                    <div class="living-dec-row">
+                        <img src="images/Worm_Bin.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Mixed_Seeds.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Iridium_Pan.png" alt="" onerror="this.style.display='none'">
+                        <span>✦</span>
+                        <img src="images/Kale.png" alt="" onerror="this.style.display='none'">
+                    </div>
+                    <div class="news-interact" data-news-id="winter-tips4"></div>
+                </div>
+                <img class="living-img" src="images/Livin'_Off_The_Land.png" alt="" onerror="this.style.display='none'">
+            </div>
+        </div>
+
+        <!-- ======== 酱料女皇 ======== -->
+        <div class="news-column" id="col-queen" style="display:none;">
+            <div class="news-column-header">
+                <h2>👑 酱料女皇</h2>
+                <span class="news-column-motto">每周三 · 美食烹饪时间</span>
+            </div>
+            <div class="news-card" data-news-id="spring-recipes">
+                <div class="news-card-badge">🔥 本周热推</div>
+<h3 class="news-card-title" data-open-modal="spring-recipes">🥘 春季限定食谱：防风草炖菜 + 野山葵酱</h3>
+                <div class="news-card-meta">📅 春季 7 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">本周酱料女皇带来两道春季限定料理！利用新鲜的防风草和野山葵，简单几步就能做出一道温暖身心的春季炖菜。</p>
+                <div class="news-interact" data-news-id="spring-recipes"></div>
+            </div>
+            <div class="news-card" data-news-id="strawberry-cake">
+<h3 class="news-card-title" data-open-modal="strawberry-cake">🍰 草莓蛋糕 —— 春季最甜蜜的礼物</h3>
+                <div class="news-card-meta">📅 春季 14 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">用新采摘的草莓制作一款松软香甜的草莓蛋糕，送给心仪的村民，好感度大幅提升！食谱大公开。</p>
+                <div class="news-interact" data-news-id="strawberry-cake"></div>
+            </div>
+            <div class="news-card" data-news-id="artisan-goods">
+<h3 class="news-card-title" data-open-modal="artisan-goods">🧀 工匠制品入门：奶酪、蛋黄酱与果酱的制作技巧</h3>
+                <div class="news-card-meta">📅 夏季 5 日 · 来自 酱料女皇节目组</div>
+                <p class="news-card-summary">有了农场的产出，如何加工成更高价值的工匠制品？奶酪、蛋黄酱、果酱、腌菜……每种产品的配方与收益详解。</p>
+                <div class="news-interact" data-news-id="artisan-goods"></div>
+            </div>
+            <div class="news-card placeholder-card">
+                <span>📬 更多食谱即将刊登……</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ============== 新闻数据库 ==============
+const NEWS_DB = {
+    'graduation2026': {
+        badge: '🎓 毕业特刊 · 2026',
+        title: '🎓 星露谷农业学院<br>2026 届毕业典礼圆满结束！',
+        subtitle: '—— 种地不止，挖矿不息！',
+        meta: ['📅 夏季 8 日', '· 来自 小红书-weida的农场'],
+        heroImg: 'images/news1（1）.png',
+        contentHtml: `
+            <p class="first-paragraph">星露谷农业学院 2026 届毕业典礼在刘易斯的主持下盛大举行。尽管天气预报显示"90% 概率下雨"，但得益于法师施法，现场阳光明媚（代价是沙漠矿洞下起了雨）。本届毕业生以农业系、矿工系和钓鱼系为主力军，矿工系学生则创下平均下矿深度 300 层的新纪录。</p>
+            <div class="news-modal-dec-row"><img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Clay.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Cave_Jelly.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Clam.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'"></div>
+            <p>典礼上，刘易斯身着珍藏多年的镶金边紫色燕尾服致辞："愿你们的未来像铱金洒水器一样高效，像五彩碎片一样耀眼！"而特邀校友谢恩的演讲更是引发阵阵笑声："记住孩子们……啊……Joja 公司不是唯一出路……我的鸡舍还缺人手……"</p>
+            <p>毕业仪式上出现了诸多令人难忘的瞬间：农业系毕业生挥舞着金色镰刀列队入场，矿工系戴着自制铱金安全帽接受表彰，钓鱼系则抬着他们引以为豪的传说之鱼标本绕场一周。最令人动容的是潘妮带领全体毕业生合唱校歌《星露谷之夜》，唱到"当月光洒满鹈鹕镇的海岸"时，连一向严肃的德米特里厄斯教授都偷偷抹了抹眼角。</p>
+            <div class="news-modal-divider">✦ ✦ ✦</div>
+            <p>不过典礼也出现了小插曲——刘易斯镇长误将"优秀毕业生"证书颁给了广场中央自己的铜像，引发全场善意的哄笑。毕业生们纷纷表示，虽然即将各奔东西，但"永远记得在星露谷挥洒汗水的日子"。</p>
+            <p>随着最后一枚烟花在夜空绽放，2026 届毕业生齐声喊出学院口号：</p>
+            <div class="news-modal-slogan">🌾 "种地不止，挖矿不息！" 🌾</div>
+            <div class="news-modal-divider">━ 镇长寄语 ━</div>
+            <div class="news-modal-quote">
+                <img class="quote-bg-img" src="images/news1（2）.png" alt="" onerror="this.style.display='none'">
+                <p>亲爱的星露谷农业学院 2026 届毕业生们：当你们第一次踏入这片土地时，手中握着的是生锈的锄头。今天，你们带着铱金级的专业素养即将启航。</p>
+                <p>这些年，你们在田里培育过巨大作物，在矿洞实验室养殖猎奇动物，在星露谷图书馆的油灯下撰写过论文。无论你们是选择继承祖传农场、加入 Joja 企业，还是像法师一样探索自然的未知，请记住：真正的毕业不是获得文凭，而是在每一个季节都播下希望的种子。</p>
+                <p>当你们疲惫时，母校的篝火永远为你们点燃。愿尤巴的祝福与你们同在！</p>
+                <div class="quote-author">—— 星露谷农业学院荣誉院长 / 你们永远的镇长 刘易斯</div>
+            </div>
+            <div class="news-modal-dec-row"><img src="images/24px-Poppy.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Summer_Spangle.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Blue_Jazz.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Fairy_Rose.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Sunflower.png" alt="" onerror="this.style.display='none'"></div>
+        `,
+        footerHtml: '<div class="footer-slogan">🌱 毕业快乐，农场主们！🌱</div><div>星露谷农业学院 · 2026 届 · 永远22岁</div>'
+    },
+    'spring-seeds': {
+        badge: '最新',
+        title: '🌱 春季播种季到来！皮埃尔小店推出新作物种子',
+        meta: ['📅 春季 1 日', '来自 镇政府'],
+        contentHtml: '<p>新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。今年的新品包括防风草、绿豆、草莓、花椰菜等多种作物。无论是新手农夫还是资深农场主，都能在这里找到适合自己农场的种子。</p><p>皮埃尔特别推荐今年的"草莓大礼包"——购买即送高品质肥料一袋。数量有限，售完即止！</p><p>另外，今年的春季作物节将提前到春季第 5 日举行，届时将评选"最大防风草"，冠军可获得 1000 金币奖金！</p>'
+    },
+    'fishing-contest': {
+        title: '🎣 威利的钓鱼大赛即将开幕',
+        meta: ['📅 夏季 1 日', '来自 鱼店'],
+        contentHtml: '<p>一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p><p>本次大赛由威利亲自裁判，比赛时间为上午 9 点至下午 5 点。参赛者需自备钓竿和鱼饵，在规定的海域进行钓鱼。评选标准为：总重量 + 稀有度综合评分。</p><p>威利透露，今年的神秘奖品是一把传说级别的鱼竿——"铱金钓竿"，据说能钓到深海中最稀有的鱼类。去年的冠军是一条重达 12.5 公斤的鲟鱼，今年能否有人打破纪录？让我们拭目以待！</p>'
+    },
+    'secret-mushroom': {
+        title: '🍄 秘密森林发现新品种蘑菇',
+        meta: ['📅 春季 15 日', '来自 科学研究所'],
+        contentHtml: '<p>据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p><p>德米特里厄斯表示，这种蘑菇呈现出奇特的蓝色荧光，在夜间尤为明显。初步分析显示，其含有一种特殊的活性成分，能够显著提升食用者的体能恢复速度。</p><p>不过，德米特里厄斯也提醒广大村民：在进一步研究完成之前，请勿自行采食，以免发生意外。研究所将在夏季到来前发布详细的安全食用指南。</p>'
+    },
+    'spring-recipes': {
+        badge: '🔥 本周热推',
+        title: '🥘 春季限定食谱：防风草炖菜 + 野山葵酱',
+        meta: ['📅 春季 7 日', '来自 酱料女皇节目组'],
+        contentHtml: '<p>本周酱料女皇带来两道春季限定料理！利用新鲜的防风草和野山葵，简单几步就能做出一道温暖身心的春季炖菜。</p><p><strong>🌿 防风草炖菜：</strong>将防风草、土豆、胡萝卜切块，加入高汤慢炖 2 小时。出锅前加入少许奶油和胡椒，香气扑鼻，最适合春季微凉的夜晚。</p><p><strong>🌶️ 野山葵酱：</strong>将新鲜野山葵磨碎，混合酸奶、柠檬汁和少许盐，搅拌均匀即可。这道酱料搭配烤鱼或烤肉都非常合适，清爽开胃。</p><p>两道料理的材料在皮埃尔的杂货店都能买到。赶快动手试试吧！</p>'
+    },
+    'strawberry-cake': {
+        title: '🍰 草莓蛋糕 —— 春季最甜蜜的礼物',
+        meta: ['📅 春季 14 日', '来自 酱料女皇节目组'],
+        contentHtml: '<p>用新采摘的草莓制作一款松软香甜的草莓蛋糕，送给心仪的村民，好感度大幅提升！食谱大公开。</p><p><strong>材料：</strong>草莓 6 颗、面粉 200g、鸡蛋 3 个、黄油 100g、糖 80g、牛奶 50ml、泡打粉 5g。</p><p><strong>步骤：</strong>① 黄油软化后加入糖打发；② 逐个加入鸡蛋搅拌均匀；③ 筛入面粉和泡打粉；④ 加入牛奶搅拌成面糊；⑤ 将草莓切半铺在模具底部；⑥ 倒入面糊，入烤箱 180°C 烘烤 35 分钟。</p><p>这款蛋糕制作简单，但效果惊人——几乎所有村民都对它爱不释手！尤其是送给玛鲁或潘妮，好感度直接拉满！</p>'
+    },
+    'artisan-goods': {
+        title: '🧀 工匠制品入门：奶酪、蛋黄酱与果酱的制作技巧',
+        meta: ['📅 夏季 5 日', '来自 酱料女皇节目组'],
+        contentHtml: '<p>有了农场的产出，如何加工成更高价值的工匠制品？奶酪、蛋黄酱、果酱、腌菜……每种产品的配方与收益详解。</p><p><strong>🧀 奶酪：</strong>牛奶 → 压酪机 → 奶酪。基础收益 200g/个，金质可达 300g。使用大壶牛奶制作更划算。</p><p><strong>🥚 蛋黄酱：</strong>鸡蛋 → 蛋黄酱机 → 蛋黄酱。基础收益 190g/瓶，金质可达 285g。鸭蛋制作的蛋黄酱价值更高。</p><p><strong>🍓 果酱：</strong>水果 → 罐头瓶 → 果酱/腌菜。草莓酱约 290g/瓶，蓝莓酱约 280g/瓶。使用高价值水果制作果酱的收益最显著。</p><p>提示：工匠制品的价值受原材料品质影响，建议使用金质或铱金级原料进行加工，以获得最大利润。</p>'
+    }
+};
+
+// ============== 新闻详情模态框 ==============
+function openNewsModal(newsId) {
+    const item = NEWS_DB[newsId];
+    const overlay = document.getElementById('newsModalOverlay');
+    const content = document.getElementById('newsModalContent');
+    if (!item || !overlay || !content) return;
+
+    const badgeHtml = item.badge ? '<div class="news-modal-badge">' + item.badge + '</div>' : '';
+    const subtitleHtml = item.subtitle ? '<div class="news-modal-subtitle">' + item.subtitle + '</div>' : '';
+    const metaHtml = item.meta ? '<div class="news-modal-meta">' + item.meta.map(function(m){ return '<span>' + m + '</span>'; }).join('') + '</div>' : '';
+    const heroHtml = item.heroImg ? '<div class="news-modal-hero"><img src="' + item.heroImg + '" alt="" onerror="this.style.display=\'none\'"></div>' : '';
+    const footerHtml = item.footerHtml ? '<div class="news-modal-footer">' + item.footerHtml + '</div>' : '';
+
+    const data = getInteractData();
+    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+    const user = getCurrentUser();
+    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+    const commentCount = nd.comments ? nd.comments.length : 0;
+
+    let interactHtml = '<div class="news-modal-interact" data-news-id="' + newsId + '">';
+    interactHtml += '<button class="' + likeClass + '" data-action="modal-like"><span>👍</span><span class="like-count">' + nd.likes + '</span><span>点赞</span></button>';
+    interactHtml += '<div class="comment-area"><input class="comment-input" placeholder="写下你的留言……" ' + (user ? '' : 'disabled title="请先登录"') + '><button class="comment-submit" data-action="modal-comment">💬 发送</button></div>';
+    interactHtml += '</div>';
+
+    // 评论列表
+    let commentsHtml = '<div class="news-modal-comment-list">';
+    if (nd.comments && nd.comments.length > 0) {
+        nd.comments.forEach(function(c) {
+            commentsHtml += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
+        });
+    } else {
+        commentsHtml += '<div class="news-modal-comment-empty">暂无留言，来说两句吧 😊</div>';
+    }
+    commentsHtml += '</div>';
+
+    content.innerHTML =
+        '<button class="news-modal-close" id="newsModalClose">✖</button>' +
+        badgeHtml +
+        '<h1 class="news-modal-title">' + item.title + '</h1>' +
+        subtitleHtml +
+        metaHtml +
+        heroHtml +
+        '<div class="news-modal-body">' + item.contentHtml + '</div>' +
+        footerHtml +
+        interactHtml +
+        commentsHtml;
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    // 绑定关闭事件
+    document.getElementById('newsModalClose').addEventListener('click', closeNewsModal);
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeNewsModal();
+    });
+
+    // 绑定模态框内互动事件
+    bindModalInteractEvents(newsId);
+}
+
+function closeNewsModal() {
+    var overlay = document.getElementById('newsModalOverlay');
+    if (overlay) overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    // 刷新列表中的互动区域
+    document.querySelectorAll('.news-interact').forEach(function(container) {
+        renderInteract(container);
+    });
+}
+
+function bindModalInteractEvents(newsId) {
+    var overlay = document.getElementById('newsModalOverlay');
+    if (!overlay) return;
+
+    overlay.querySelector('[data-action="modal-like"]').addEventListener('click', function() {
+        var user = getCurrentUser();
+        if (!user) { showToast('🔑 请先登录才能点赞'); return; }
+        var data = getInteractData();
+        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+        nd.liked = !nd.liked;
+        nd.likes += nd.liked ? 1 : -1;
+        if (nd.likes < 0) nd.likes = 0;
+        data[newsId] = nd;
+        saveInteractData(data);
+        // 更新按钮
+        var btn = overlay.querySelector('[data-action="modal-like"]');
+        btn.className = nd.liked ? 'like-btn liked' : 'like-btn';
+        btn.querySelector('.like-count').textContent = nd.likes;
+        showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
+    });
+
+    overlay.querySelector('[data-action="modal-comment"]').addEventListener('click', function() {
+        var user = getCurrentUser();
+        if (!user) { showToast('🔑 请先登录才能留言'); return; }
+        var input = overlay.querySelector('.news-modal-interact .comment-input');
+        var text = input.value.trim();
+        if (!text) { showToast('📝 请输入留言内容'); return; }
+        var data = getInteractData();
+        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+        if (!nd.comments) nd.comments = [];
+        nd.comments.push({ author: user.username, text: text, time: Date.now() });
+        data[newsId] = nd;
+        saveInteractData(data);
+        input.value = '';
+        // 更新评论列表
+        var list = overlay.querySelector('.news-modal-comment-list');
+        if (list) {
+            list.innerHTML = '';
+            nd.comments.forEach(function(c) {
+                list.innerHTML += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
+            });
+        }
+        showToast('✅ 留言发表成功');
+    });
+}
+
+// ============== 用户登录信息 ==============
+const STORAGE_KEY = 'stardew_news_interact';
+
+function getInteractData() {
+    try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch { return {}; }
+}
+
+function saveInteractData(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+
+function getCurrentUser() {
+    try {
+        const raw = localStorage.getItem('stardew_user');
+        return raw ? JSON.parse(raw) : null;
+    } catch { return null; }
+}
+
+function formatTime(ts) {
+    const d = new Date(ts);
+    const pad = n => String(n).padStart(2, '0');
+    return `${pad(d.getMonth()+1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+// ============== 渲染互动区域 ==============
+function renderInteract(container) {
+    const newsId = container.dataset.newsId;
+    const data = getInteractData();
+    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+    const user = getCurrentUser();
+    const username = user ? user.username : '匿名';
+
+    // 构建 HTML
+    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+    const commentCount = nd.comments ? nd.comments.length : 0;
+
+    let html = `
+        <button class="${likeClass}" data-action="like">
+            <span>👍</span>
+            <span class="like-count">${nd.likes}</span>
+            <span>点赞</span>
+        </button>
+        <div class="comment-area">
+            <input class="comment-input" placeholder="写下你的留言……" ${user ? '' : 'disabled title="请先登录"'}>
+            <button class="comment-submit" data-action="comment">💬 发送</button>
+        </div>
+        <button class="comment-toggle" data-action="toggle-comments">
+            💬 ${commentCount > 0 ? commentCount + ' 条留言' : '留言'}
+        </button>
+    `;
+
+    // 如果有评论，默认隐藏
+    let commentsHtml = '';
+    if (nd.comments && nd.comments.length > 0) {
+        commentsHtml = '<div class="comment-list" style="display:none;">';
+        nd.comments.forEach(c => {
+            commentsHtml += `
+                <div class="comment-item">
+                    <span class="comment-author">👤 ${c.author}</span>
+                    <span class="comment-text">${c.text}</span>
+                    <span class="comment-time">${formatTime(c.time)}</span>
+                </div>
+            `;
+        });
+        commentsHtml += '</div>';
+    } else {
+        commentsHtml = '<div class="comment-list" style="display:none;"><div class="comment-empty">暂无留言，来说两句吧 😊</div></div>';
+    }
+
+    container.innerHTML = html + commentsHtml;
+}
+
+// ============== 绑定互动事件 ==============
+function bindInteractEvents() {
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('[data-action]');
+        if (!target) return;
+        const action = target.dataset.action;
+        const container = target.closest('.news-interact');
+        if (!container) return;
+        const newsId = container.dataset.newsId;
+        const data = getInteractData();
+        const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+
+        if (action === 'like') {
+            const user = getCurrentUser();
+            if (!user) {
+                showToast('🔑 请先登录才能点赞');
+                return;
+            }
+            nd.liked = !nd.liked;
+            nd.likes += nd.liked ? 1 : -1;
+            if (nd.likes < 0) nd.likes = 0;
+            data[newsId] = nd;
+            saveInteractData(data);
+            renderInteract(container);
+            bindInteractEvents();
+            showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
+        }
+
+        else if (action === 'comment') {
+            const user = getCurrentUser();
+            if (!user) {
+                showToast('🔑 请先登录才能留言');
+                return;
+            }
+            const input = container.querySelector('.comment-input');
+            const text = input.value.trim();
+            if (!text) {
+                showToast('📝 请输入留言内容');
+                return;
+            }
+            if (!nd.comments) nd.comments = [];
+            nd.comments.push({ author: user.username, text: text, time: Date.now() });
+            data[newsId] = nd;
+            saveInteractData(data);
+            renderInteract(container);
+            bindInteractEvents();
+            input.value = '';
+            // 自动展开评论
+            const list = container.querySelector('.comment-list');
+            if (list) list.style.display = 'block';
+            const toggle = container.querySelector('[data-action="toggle-comments"]');
+            if (toggle) toggle.textContent = `💬 ${nd.comments.length} 条留言`;
+            showToast('✅ 留言发表成功');
+        }
+
+        else if (action === 'toggle-comments') {
+            const list = container.querySelector('.comment-list');
+            if (list) {
+                const isHidden = list.style.display === 'none' || !list.style.display;
+                list.style.display = isHidden ? 'block' : 'none';
+                const count = nd.comments ? nd.comments.length : 0;
+                target.textContent = isHidden
+                    ? `💬 ${count > 0 ? count + ' 条留言' : '留言 (收起)'}`
+                    : `💬 ${count > 0 ? count + ' 条留言' : '留言'}`;
+            }
+        }
+    });
+}
+
+// ============== Toast ==============
+function showToast(msg) {
+    const el = document.createElement('div');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#4a6b3c;color:white;padding:10px 20px;border-radius:40px;z-index:9999;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 2000);
+}
+
+// ============== 用户栏 ==============
+function initUserBar() {
+    const bar = document.getElementById('userBar');
+    const userData = localStorage.getItem('stardew_user');
+    if (userData) {
+        const user = JSON.parse(userData);
+        bar.innerHTML = `
+            <div class="user-info" id="userInfoDropdown">
+                <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                <div class="user-dropdown">
+                    <h4>📋 登录信息</h4>
+                    <p><strong>👤 用户名:</strong> ${user.username}</p>
+                    <p><strong>🏠 住址:</strong> ${user.address}</p>
+                    <p><strong>📧 邮箱:</strong> ${user.email || user.phone || '未填写'}</p>
+                    <p><strong>🕐 登录时间:</strong> ${new Date(user.loginTime).toLocaleString('zh-CN')}</p>
+                    <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                </div>
+            </div>
+        `;
+        var avatarBtn = document.getElementById('userAvatarBtn');
+        var dropdownWrap = document.getElementById('userInfoDropdown');
+        avatarBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownWrap.classList.toggle('dropdown-open');
+        });
+        document.addEventListener('click', function() {
+            dropdownWrap.classList.remove('dropdown-open');
+        });
+        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    } else {
+        bar.innerHTML = `<a href="login.html" class="login-link">🔑 登录</a>`;
+    }
+}
+
+function logout() {
+    if (confirm('确定要退出登录吗？')) {
+        localStorage.removeItem('stardew_user');
+        initUserBar();
+        showToast('👋 已退出登录');
+    }
+}
+
+// ============== 初始化 ==============
+document.addEventListener('DOMContentLoaded', () => {
+    initUserBar();
+
+    // 渲染所有互动区域
+    document.querySelectorAll('.news-interact').forEach(container => {
+        renderInteract(container);
+    });
+    bindInteractEvents();
+
+    // 侧栏切换
+    const sidebarItems = document.querySelectorAll('.news-sidebar-item');
+    const columns = {
+        pelican: document.getElementById('col-pelican'),
+        living: document.getElementById('col-living'),
+        queen: document.getElementById('col-queen')
+    };
+
+    sidebarItems.forEach(item => {
+        item.addEventListener('click', () => {
+            sidebarItems.forEach(si => si.classList.remove('active'));
+            item.classList.add('active');
+            const col = item.dataset.column;
+            Object.keys(columns).forEach(key => {
+                columns[key].style.display = key === col ? 'block' : 'none';
+            });
+        });
+    });
+
+    // 新闻标题或卡片点击打开模态框
+    document.addEventListener('click', function(e) {
+        // 忽略互动区域内的点击（点赞、留言等）
+        if (e.target.closest('.news-interact')) return;
+        // 忽略"离地而居"卡片（内容已内联展示）
+        if (e.target.closest('.news-card-living')) return;
+
+        // 优先检查标题点击
+        var titleEl = e.target.closest('[data-open-modal]');
+        if (titleEl) {
+            var newsId = titleEl.dataset.openModal;
+            if (newsId && NEWS_DB[newsId]) {
+                openNewsModal(newsId);
+            }
+            return;
+        }
+
+        // 检查整个卡片点击（仅限有 NEWS_DB 数据的卡片）
+        var cardEl = e.target.closest('.news-card[data-news-id]');
+        if (cardEl) {
+            var cardId = cardEl.dataset.newsId;
+            if (cardId && NEWS_DB[cardId]) {
+                openNewsModal(cardId);
+            }
+        }
+    });
+
+    // 离地而居板块排序：最新期数排在最前面
+    const livingOrder = [
+        'winter-tips4', 'winter-tips3',
+        'autumn-tips4', 'autumn-tips3',
+        'summer-tips4', 'summer-tips3',
+        'spring-tips4', 'spring-tips3',
+        'winter-tips2', 'winter-tips1',
+        'autumn-tips2', 'autumn-tips1',
+        'summer-tips2', 'summer-tips1',
+        'spring-tips2', 'spring-tips1'
+    ];
+    const livingCol = document.getElementById('col-living');
+    if (livingCol) {
+        livingOrder.forEach(id => {
+            const card = livingCol.querySelector(`[data-news-id="${id}"]`);
+            if (card) livingCol.appendChild(card);
+        });
+        // 移除占位卡片到最后
+        const placeholder = livingCol.querySelector('.placeholder-card');
+        if (placeholder) livingCol.appendChild(placeholder);
+    }
+});
+</script>
+
+<footer style="text-align:center;margin-top:40px;padding:20px 16px;border-top:1px solid #d0dcc8;font-size:0.85rem;color:#6b5e4a;">
+    <table style="margin:0 auto;border-collapse:collapse;">
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">📰 星闻露谷 · 所有新闻纯属虚构</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">灵感来自星露谷物语</td>
+        </tr>
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">网页制作：陈薇羽</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">联系方式：1152629204@qq.com ⭐</td>
+        </tr>
+    </table>
+</footer>
+
+<!-- 新闻详情模态框容器 -->
+<div class="news-modal-overlay" id="newsModalOverlay">
+    <div class="news-modal-content" id="newsModalContent">
+        <!-- 由 JS 动态填充 -->
+    </div>
+</div>
+
+</body>
+</html>

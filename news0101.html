@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情 · 星闻露谷</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ===== 详情页专用样式 ===== */
+        .detail-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .detail-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px 30px;
+            border: 1px solid #e9e0d0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        }
+        .detail-back {
+            display: inline-block;
+            margin-bottom: 16px;
+            padding: 8px 18px;
+            background: #f0ede5;
+            border-radius: 40px;
+            color: #4a3f2c;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .detail-back:hover {
+            background: #7c9f5e;
+            color: white;
+        }
+        .detail-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a04a, #e6c87a);
+            color: #3d2f1f;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 40px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .detail-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #2d1f0a;
+            line-height: 1.3;
+            margin: 8px 0 6px;
+            text-align: center;
+            background: linear-gradient(135deg, #8a6a2a, #c9a04a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .detail-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a7a5a;
+            margin-bottom: 16px;
+        }
+        .detail-meta {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #9a8a6a;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #e0d4b8;
+        }
+        .detail-meta span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .detail-hero {
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+        .detail-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .detail-corner-img {
+            position: absolute;
+            width: 80px;
+            height: auto;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+        .detail-corner-top-right {
+            top: 10px;
+            right: 10px;
+        }
+        .detail-corner-bottom-left {
+            bottom: 10px;
+            left: 10px;
+        }
+        .detail-corner-bottom-right {
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.5;
+        }
+        .detail-content {
+            font-size: 0.92rem;
+            line-height: 1.9;
+            color: #4a3f2c;
+        }
+        .detail-content p {
+            text-indent: 2em;
+            margin: 12px 0;
+        }
+        .detail-content .first-paragraph {
+            text-indent: 0;
+        }
+        .detail-content .first-paragraph::first-letter {
+            font-size: 2.6em;
+            font-weight: 800;
+            float: left;
+            line-height: 1;
+            margin-right: 8px;
+            color: #c9a04a;
+            font-family: 'Georgia', serif;
+        }
+        .detail-divider {
+            text-align: center;
+            margin: 22px 0 14px;
+            color: #c9a04a;
+            font-size: 1rem;
+            letter-spacing: 6px;
+        }
+        /* ===== 镇长寄语容器 ===== */
+        .detail-quote {
+            position: relative;
+            background: linear-gradient(135deg, #f8f0dc, #fcf6e8);
+            border-left: 4px solid #c9a04a;
+            border-radius: 14px;
+            padding: 18px 22px 48px;
+            margin: 18px 0;
+            font-style: italic;
+            overflow: hidden;
+        }
+        .detail-quote p {
+            text-indent: 0 !important;
+        }
+        .detail-quote .quote-author {
+            text-align: right;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #8a7a5a;
+            margin-top: 10px;
+            font-style: normal;
+        }
+        .detail-quote .quote-bg-img {
+            position: absolute;
+            bottom: 6px;
+            left: 8px;
+            width: 120px;
+            height: auto;
+            z-index: 1;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+        .detail-quote p,
+        .detail-quote .quote-author {
+            position: relative;
+            z-index: 2;
+        }
+        .detail-slogan {
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #7c9f5e;
+            margin: 18px 0;
+        }
+        .detail-footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 2px solid #e0d4b8;
+            font-size: 0.82rem;
+            color: #8a7a5a;
+        }
+        .detail-footer .footer-slogan {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #6a8a3a;
+            margin: 8px 0 4px;
+        }
+        .detail-dec-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 6px 0;
+            align-items: center;
+        }
+        .detail-dec-row img {
+            width: 22px;
+            height: 22px;
+            image-rendering: crisp-edges;
+            opacity: 0.65;
+        }
+        /* 互动 */
+        .detail-interact {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
+            padding: 16px 0 0;
+            border-top: 1px solid #f0e8da;
+            flex-wrap: wrap;
+        }
+        .detail-interact .like-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: 1px solid #e0d4b8;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8a6a4a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .detail-interact .like-btn:hover {
+            background: #fdf6e7;
+            border-color: #c9a04a;
+        }
+        .detail-interact .like-btn.liked {
+            background: #fce8d0;
+            border-color: #c57f1e;
+            color: #b55a0a;
+        }
+        .detail-interact .like-count {
+            font-weight: 700;
+            min-width: 16px;
+            text-align: center;
+        }
+        .detail-comment-area {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .detail-comment-area input {
+            flex: 1;
+            min-width: 120px;
+            padding: 8px 14px;
+            border: 1px solid #dcd0bc;
+            border-radius: 40px;
+            font-size: 0.82rem;
+            background: #faf8f0;
+            outline: none;
+        }
+        .detail-comment-area input:focus {
+            border-color: #88aa66;
+        }
+        .detail-comment-area button {
+            background: #eadece;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #4e3e2c;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .detail-comment-area button:hover {
+            background: #d4bd93;
+        }
+        .detail-comment-list {
+            width: 100%;
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .detail-comment-item {
+            display: flex;
+            gap: 8px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            font-size: 0.82rem;
+            color: #4a3f2c;
+            background: #faf8f0;
+            margin-bottom: 6px;
+            align-items: flex-start;
+        }
+        .detail-comment-item .author {
+            font-weight: 700;
+            color: #7c9f5e;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .detail-comment-item .text {
+            flex: 1;
+            word-break: break-word;
+        }
+        .detail-comment-item .time {
+            font-size: 0.68rem;
+            color: #b9ab92;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .detail-comment-empty {
+            text-align: center;
+            color: #b9ab92;
+            font-size: 0.78rem;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-banner">
+    <nav class="top-nav">
+        <div class="nav-brand">🌾 星尔玛</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">🏠 商店首页</a>
+            <a href="news.html" class="nav-link">📰 星闻露谷</a>
+            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        </div>
+        <div class="user-bar" id="userBar"></div>
+    </nav>
+    <div class="header">
+        <h1>📰 星闻露谷</h1>
+        <p>鹈鹕镇的大小事 · 最新资讯一手掌握</p>
+    </div>
+</div>
+
+<div class="news-container" style="max-width:1000px;margin:0 auto;">
+    <div class="news-main">
+        <div class="detail-container">
+            <div class="detail-card" id="detailCard">
+                <!-- 由 JS 动态填充 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ============== 新闻数据库 ==============
+const NEWS_DB = {
+    'graduation2026': {
+        badge: '🎓 毕业特刊 · 2026',
+        title: '🎓 星露谷农业学院<br>2026 届毕业典礼圆满结束！',
+        subtitle: '—— 种地不止，挖矿不息！',
+        meta: [
+            '📅 夏季 8 日',
+            '· 来自 小红书-weida的农场'
+        ],
+        heroImg: 'images/news1（1）.png',
+        contentHtml: `
+            <p class="first-paragraph">
+                星露谷农业学院 2026 届毕业典礼在刘易斯的主持下盛大举行。尽管天气预报显示"90% 概率下雨"，但得益于法师施法，现场阳光明媚（代价是沙漠矿洞下起了雨）。本届毕业生以农业系、矿工系和钓鱼系为主力军，矿工系学生则创下平均下矿深度 300 层的新纪录。
+            </p>
+
+            <div class="detail-dec-row">
+                <img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'">
+                <span>✦</span>
+                <img src="images/24px-Clay.png" alt="" onerror="this.style.display='none'">
+                <span>✦</span>
+                <img src="images/24px-Cave_Jelly.png" alt="" onerror="this.style.display='none'">
+                <span>✦</span>
+                <img src="images/24px-Clam.png" alt="" onerror="this.style.display='none'">
+                <span>✦</span>
+                <img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'">
+            </div>
+
+            <p>
+                典礼上，刘易斯身着珍藏多年的镶金边紫色燕尾服致辞："愿你们的未来像铱金洒水器一样高效，像五彩碎片一样耀眼！"而特邀校友谢恩的演讲更是引发阵阵笑声："记住孩子们……啊……Joja 公司不是唯一出路……我的鸡舍还缺人手……"
+            </p>
+
+            <p>
+                毕业仪式上出现了诸多令人难忘的瞬间：农业系毕业生挥舞着金色镰刀列队入场，矿工系戴着自制铱金安全帽接受表彰，钓鱼系则抬着他们引以为豪的传说之鱼标本绕场一周。最令人动容的是潘妮带领全体毕业生合唱校歌《星露谷之夜》，唱到"当月光洒满鹈鹕镇的海岸"时，连一向严肃的德米特里厄斯教授都偷偷抹了抹眼角。
+            </p>
+
+            <div class="detail-divider">✦ ✦ ✦</div>
+
+            <p>
+                不过典礼也出现了小插曲——刘易斯镇长误将"优秀毕业生"证书颁给了广场中央自己的铜像，引发全场善意的哄笑。毕业生们纷纷表示，虽然即将各奔东西，但"永远记得在星露谷挥洒汗水的日子"。
+            </p>
+
+            <p>
+                随着最后一枚烟花在夜空绽放，2026 届毕业生齐声喊出学院口号：
+            </p>
+
+            <div class="detail-slogan">🌾 "种地不止，挖矿不息！" 🌾</div>
+
+            <div class="detail-divider">━ 镇长寄语 ━</div>
+            <div class="detail-quote">
+                <img class="quote-bg-img" src="images/news1（2）.png" alt="" onerror="this.style.display='none'">
+                <p>
+                    亲爱的星露谷农业学院 2026 届毕业生们：当你们第一次踏入这片土地时，手中握着的是生锈的锄头。今天，你们带着铱金级的专业素养即将启航。
+                </p>
+                <p>
+                    这些年，你们在田里培育过巨大作物，在矿洞实验室养殖猎奇动物，在星露谷图书馆的油灯下撰写过论文。无论你们是选择继承祖传农场、加入 Joja 企业，还是像法师一样探索自然的未知，请记住：真正的毕业不是获得文凭，而是在每一个季节都播下希望的种子。
+                </p>
+                <p>
+                    当你们疲惫时，母校的篝火永远为你们点燃。愿尤巴的祝福与你们同在！
+                </p>
+                <div class="quote-author">
+                    —— 星露谷农业学院荣誉院长 / 你们永远的镇长 刘易斯
+                </div>
+            </div>
+
+            <div class="detail-dec-row">
+                <img src="images/24px-Poppy.png" alt="" onerror="this.style.display='none'">
+                <img src="images/24px-Summer_Spangle.png" alt="" onerror="this.style.display='none'">
+                <img src="images/24px-Blue_Jazz.png" alt="" onerror="this.style.display='none'">
+                <img src="images/24px-Fairy_Rose.png" alt="" onerror="this.style.display='none'">
+                <img src="images/24px-Sunflower.png" alt="" onerror="this.style.display='none'">
+            </div>
+        `,
+        footerHtml: `
+            <div class="footer-slogan">🌱 毕业快乐，农场主们！🌱</div>
+            <div>星露谷农业学院 · 2026 届 · 永远22岁</div>
+        `
+    },
+    'spring-seeds': {
+        badge: '最新',
+        title: '🌱 春季播种季到来！皮埃尔小店推出新作物种子',
+        meta: ['📅 春季 1 日', '来自 镇政府'],
+        contentHtml: `
+            <p>新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。今年的新品包括防风草、绿豆、草莓、花椰菜等多种作物。无论是新手农夫还是资深农场主，都能在这里找到适合自己农场的种子。</p>
+            <p>皮埃尔特别推荐今年的"草莓大礼包"——购买即送高品质肥料一袋。数量有限，售完即止！</p>
+            <p>另外，今年的春季作物节将提前到春季第 5 日举行，届时将评选"最大防风草"，冠军可获得 1000 金币奖金！</p>
+        `
+    },
+    'fishing-contest': {
+        title: '🎣 威利的钓鱼大赛即将开幕',
+        meta: ['📅 夏季 1 日', '来自 鱼店'],
+        contentHtml: `
+            <p>一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p>
+            <p>本次大赛由威利亲自裁判，比赛时间为上午 9 点至下午 5 点。参赛者需自备钓竿和鱼饵，在规定的海域进行钓鱼。评选标准为：总重量 + 稀有度综合评分。</p>
+            <p>威利透露，今年的神秘奖品是一把传说级别的鱼竿——"铱金钓竿"，据说能钓到深海中最稀有的鱼类。去年的冠军是一条重达 12.5 公斤的鲟鱼，今年能否有人打破纪录？让我们拭目以待！</p>
+        `
+    },
+    'secret-mushroom': {
+        title: '🍄 秘密森林发现新品种蘑菇',
+        meta: ['📅 春季 15 日', '来自 科学研究所'],
+        contentHtml: `
+            <p>据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p>
+            <p>德米特里厄斯表示，这种蘑菇呈现出奇特的蓝色荧光，在夜间尤为明显。初步分析显示，其含有一种特殊的活性成分，能够显著提升食用者的体能恢复速度。</p>
+            <p>不过，德米特里厄斯也提醒广大村民：在进一步研究完成之前，请勿自行采食，以免发生意外。研究所将在夏季到来前发布详细的安全食用指南。</p>
+        `
+    },
+    'crop-layout': {
+        badge: '推荐',
+        title: '🧺 春季作物布局指南：让你的农场产值翻倍',
+        meta: ['📅 春季 3 日', '来自 农场主联盟'],
+        contentHtml: `
+            <p>合理的作物布局可以极大提升农场收益。本文介绍了"3×3高效种植区"的布局方式，以及如何利用洒水器最大化种植效率。</p>
+            <p>首先，建议将农场划分为 9×9 的种植区块，每个区块中心放置一个优质洒水器，可以覆盖周边 24 块耕地。这样不仅节省了手动浇水的时间，还能确保作物得到均匀的水分。</p>
+            <p>其次，高价值作物应种植在靠近农场出口的位置，方便快速收割和销售。低价值作物可以安排在较远区域。</p>
+            <p>最后，别忘了在作物之间留出适当的行走通道——建议宽度为 1 格，方便日常照料。</p>
+        `
+    },
+    'livestock-guide': {
+        title: '🐄 新手畜牧入门：鸡舍 vs 畜棚，先建哪个？',
+        meta: ['📅 春季 10 日', '来自 玛妮的牧场'],
+        contentHtml: `
+            <p>对于刚开始发展畜牧业的农场主来说，先建鸡舍还是畜棚？玛妮为你分析两种选择的优缺点及回本周期。</p>
+            <p><strong>🐔 鸡舍：</strong>投资成本低（仅需 4000 金币），建造速度快。鸡每天产蛋，蛋黄酱是初期最稳定的收入来源之一。建议作为畜牧业的起点。</p>
+            <p><strong>🐄 畜棚：</strong>投资成本高（需 6000 金币），但长期收益更高。牛产奶可加工为奶酪，羊产毛可制成布料。适合有一定经济基础后的扩张。</p>
+            <p>玛妮的建议是：先建鸡舍积累资金，再逐步扩建畜棚。这样既能保证稳定的现金流，又能为后续发展打下基础。</p>
+        `
+    },
+    'tool-upgrade': {
+        title: '⚒️ 升级你的工具：铜、铁、金的顺序建议',
+        meta: ['📅 夏季 8 日', '来自 克林特的铁匠铺'],
+        contentHtml: `
+            <p>工具升级是提升农场效率的关键。到底应该先升级哪个工具？铜→铁→金的路线怎么走最划算？铁匠克林特为你一一解答。</p>
+            <p><strong>首选升级：</strong>水壶和镐子。升级水壶可以一次浇灌更多土地，大幅提升种植效率；升级镐子可以更快地开采矿石，加速资源积累。</p>
+            <p><strong>次选升级：</strong>斧头和锄头。斧头升级后可以砍伐更高级的木材，锄头升级后可以开垦更大面积的土地。</p>
+            <p><strong>最后升级：</strong>鱼竿和武器。鱼竿升级增加钓鱼成功率，武器升级提升战斗能力，这两项在初期优先级较低。</p>
+            <p>克林特的温馨提示：铜→铁升级成本较低，建议优先完成所有工具的铁级升级，再集中资源冲击金级。这样可以最大化性价比。</p>
+        `
+    },
+    'spring-recipes': {
+        badge: '🔥 本周热推',
+        title: '🥘 春季限定食谱：防风草炖菜 + 野山葵酱',
+        meta: ['📅 春季 7 日', '来自 酱料女皇节目组'],
+        contentHtml: `
+            <p>本周酱料女皇带来两道春季限定料理！利用新鲜的防风草和野山葵，简单几步就能做出一道温暖身心的春季炖菜。</p>
+            <p><strong>🌿 防风草炖菜：</strong>将防风草、土豆、胡萝卜切块，加入高汤慢炖 2 小时。出锅前加入少许奶油和胡椒，香气扑鼻，最适合春季微凉的夜晚。</p>
+            <p><strong>🌶️ 野山葵酱：</strong>将新鲜野山葵磨碎，混合酸奶、柠檬汁和少许盐，搅拌均匀即可。这道酱料搭配烤鱼或烤肉都非常合适，清爽开胃。</p>
+            <p>两道料理的材料在皮埃尔的杂货店都能买到。赶快动手试试吧！</p>
+        `
+    },
+    'strawberry-cake': {
+        title: '🍰 草莓蛋糕 —— 春季最甜蜜的礼物',
+        meta: ['📅 春季 14 日', '来自 酱料女皇节目组'],
+        contentHtml: `
+            <p>用新采摘的草莓制作一款松软香甜的草莓蛋糕，送给心仪的村民，好感度大幅提升！食谱大公开。</p>
+            <p><strong>材料：</strong>草莓 6 颗、面粉 200g、鸡蛋 3 个、黄油 100g、糖 80g、牛奶 50ml、泡打粉 5g。</p>
+            <p><strong>步骤：</strong>① 黄油软化后加入糖打发；② 逐个加入鸡蛋搅拌均匀；③ 筛入面粉和泡打粉；④ 加入牛奶搅拌成面糊；⑤ 将草莓切半铺在模具底部；⑥ 倒入面糊，入烤箱 180°C 烘烤 35 分钟。</p>
+            <p>这款蛋糕制作简单，但效果惊人——几乎所有村民都对它爱不释手！尤其是送给玛鲁或潘妮，好感度直接拉满！</p>
+        `
+    },
+    'artisan-goods': {
+        title: '🧀 工匠制品入门：奶酪、蛋黄酱与果酱的制作技巧',
+        meta: ['📅 夏季 5 日', '来自 酱料女皇节目组'],
+        contentHtml: `
+            <p>有了农场的产出，如何加工成更高价值的工匠制品？奶酪、蛋黄酱、果酱、腌菜……每种产品的配方与收益详解。</p>
+            <p><strong>🧀 奶酪：</strong>牛奶 → 压酪机 → 奶酪。基础收益 200g/个，金质可达 300g。使用大壶牛奶制作更划算。</p>
+            <p><strong>🥚 蛋黄酱：</strong>鸡蛋 → 蛋黄酱机 → 蛋黄酱。基础收益 190g/瓶，金质可达 285g。鸭蛋制作的蛋黄酱价值更高。</p>
+            <p><strong>🍓 果酱：</strong>水果 → 罐头瓶 → 果酱/腌菜。草莓酱约 290g/瓶，蓝莓酱约 280g/瓶。使用高价值水果制作果酱的收益最显著。</p>
+            <p>提示：工匠制品的价值受原材料品质影响，建议使用金质或铱金级原料进行加工，以获得最大利润。</p>
+        `
+    }
+};
+
+// ============== 数据持久化 ==============
+const STORAGE_KEY = 'stardew_news_interact';
+
+function getInteractData() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+    catch { return {}; }
+}
+function saveInteractData(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+}
+function getCurrentUser() {
+    try {
+        const raw = localStorage.getItem('stardew_user');
+        return raw ? JSON.parse(raw) : null;
+    } catch { return null; }
+}
+function formatTime(ts) {
+    const d = new Date(ts);
+    const pad = n => String(n).padStart(2, '0');
+    return `${pad(d.getMonth()+1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+// ============== 渲染详情 ==============
+function renderDetail(newsId) {
+    const item = NEWS_DB[newsId];
+    const card = document.getElementById('detailCard');
+    if (!item) {
+        card.innerHTML = `
+            <a href="news.html" class="detail-back">← 返回新闻列表</a>
+            <div style="text-align:center;padding:60px 20px;color:#b9ab92;">
+                <h2>📭 未找到该新闻</h2>
+                <p style="margin-top:12px;">该新闻可能已被删除或不存在。</p>
+            </div>
+        `;
+        return;
+    }
+
+    const heroHtml = item.heroImg ? `
+        <div class="detail-hero">
+            <img src="${item.heroImg}" alt=""
+                 onerror="this.style.display='none'">
+        </div>
+    ` : '';
+
+    const badgeHtml = item.badge ? `<div class="detail-badge">${item.badge}</div>` : '';
+    const subtitleHtml = item.subtitle ? `<div class="detail-subtitle">${item.subtitle}</div>` : '';
+    const metaHtml = item.meta ? `<div class="detail-meta">${item.meta.map(m => `<span>${m}</span>`).join('')}</div>` : '';
+    const footerHtml = item.footerHtml || '';
+
+    card.innerHTML = `
+        <a href="news.html" class="detail-back">← 返回新闻列表</a>
+        ${badgeHtml}
+        <h1 class="detail-title">${item.title}</h1>
+        ${subtitleHtml}
+        ${metaHtml}
+        ${heroHtml}
+        <div class="detail-content">${item.contentHtml}</div>
+        ${footerHtml ? `<div class="detail-footer">${footerHtml}</div>` : ''}
+        <div class="detail-interact" data-news-id="${newsId}"></div>
+    `;
+
+    // 渲染互动
+    renderDetailInteract();
+    bindDetailEvents();
+}
+
+// ============== 详情页互动区域 ==============
+function renderDetailInteract() {
+    const container = document.querySelector('.detail-interact');
+    if (!container) return;
+    const newsId = container.dataset.newsId;
+    const data = getInteractData();
+    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+    const user = getCurrentUser();
+    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+    const count = nd.comments ? nd.comments.length : 0;
+
+    let html = `
+        <button class="${likeClass}" data-action="like" data-nid="${newsId}">
+            <span>👍</span>
+            <span class="like-count">${nd.likes}</span>
+            <span>点赞</span>
+        </button>
+        <div class="detail-comment-area">
+            <input class="d-comment-input" placeholder="写下你的留言……" ${user ? '' : 'disabled title="请先登录"'}>
+            <button data-action="comment" data-nid="${newsId}">💬 发送</button>
+        </div>
+    `;
+
+    let commentsHtml = '<div class="detail-comment-list">';
+    if (nd.comments && nd.comments.length > 0) {
+        nd.comments.forEach(c => {
+            commentsHtml += `
+                <div class="detail-comment-item">
+                    <span class="author">👤 ${c.author}</span>
+                    <span class="text">${c.text}</span>
+                    <span class="time">${formatTime(c.time)}</span>
+                </div>
+            `;
+        });
+    } else {
+        commentsHtml += '<div class="detail-comment-empty">暂无留言，来说两句吧 😊</div>';
+    }
+    commentsHtml += '</div>';
+
+    container.innerHTML = html + commentsHtml;
+}
+
+function bindDetailEvents() {
+    document.addEventListener('click', function(e) {
+        const target = e.target.closest('[data-action]');
+        if (!target) return;
+        const nid = target.dataset.nid;
+        if (!nid) return;
+        const action = target.dataset.action;
+        const container = target.closest('.detail-interact');
+        if (!container) return;
+        const data = getInteractData();
+        const nd = data[nid] || { likes: 0, liked: false, comments: [] };
+
+        if (action === 'like') {
+            const user = getCurrentUser();
+            if (!user) { showToast('🔑 请先登录才能点赞'); return; }
+            nd.liked = !nd.liked;
+            nd.likes += nd.liked ? 1 : -1;
+            if (nd.likes < 0) nd.likes = 0;
+            data[nid] = nd;
+            saveInteractData(data);
+            renderDetailInteract();
+            bindDetailEvents();
+            showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
+        }
+
+        else if (action === 'comment') {
+            const user = getCurrentUser();
+            if (!user) { showToast('🔑 请先登录才能留言'); return; }
+            const input = container.querySelector('.d-comment-input');
+            const text = input.value.trim();
+            if (!text) { showToast('📝 请输入留言内容'); return; }
+            if (!nd.comments) nd.comments = [];
+            nd.comments.push({ author: user.username, text: text, time: Date.now() });
+            data[nid] = nd;
+            saveInteractData(data);
+            renderDetailInteract();
+            bindDetailEvents();
+            input.value = '';
+            showToast('✅ 留言发表成功');
+        }
+    });
+}
+
+// ============== Toast ==============
+function showToast(msg) {
+    const el = document.createElement('div');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#4a6b3c;color:white;padding:10px 20px;border-radius:40px;z-index:9999;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.2);';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 2000);
+}
+
+// ============== 用户栏 ==============
+function initUserBar() {
+    const bar = document.getElementById('userBar');
+    const userData = localStorage.getItem('stardew_user');
+    if (userData) {
+        const user = JSON.parse(userData);
+        bar.innerHTML = `
+            <div class="user-info" id="userInfoDropdown">
+                <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                <div class="user-dropdown">
+                    <h4>📋 登录信息</h4>
+                    <p><strong>👤 用户名:</strong> ${user.username}</p>
+                    <p><strong>🏠 住址:</strong> ${user.address}</p>
+                    <p><strong>📧 邮箱:</strong> ${user.email || user.phone || '未填写'}</p>
+                    <p><strong>🕐 登录时间:</strong> ${new Date(user.loginTime).toLocaleString('zh-CN')}</p>
+                    <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                </div>
+            </div>
+        `;
+        var avatarBtn = document.getElementById('userAvatarBtn');
+        var dropdownWrap = document.getElementById('userInfoDropdown');
+        avatarBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            dropdownWrap.classList.toggle('dropdown-open');
+        });
+        document.addEventListener('click', function() {
+            dropdownWrap.classList.remove('dropdown-open');
+        });
+        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    } else {
+        bar.innerHTML = `<a href="login.html" class="login-link">🔑 登录</a>`;
+    }
+}
+
+function logout() {
+    if (confirm('确定要退出登录吗？')) {
+        localStorage.removeItem('stardew_user');
+        initUserBar();
+        showToast('👋 已退出登录');
+    }
+}
+
+// ============== 初始化 ==============
+document.addEventListener('DOMContentLoaded', () => {
+    initUserBar();
+    const params = new URLSearchParams(window.location.search);
+    const newsId = params.get('id') || 'graduation2026';
+    renderDetail(newsId);
+});
+</script>
+
+<footer style="text-align:center;margin-top:40px;padding:20px 16px;border-top:1px solid #d0dcc8;font-size:0.85rem;color:#6b5e4a;">
+    <table style="margin:0 auto;border-collapse:collapse;">
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">📰 星闻露谷 · 所有新闻纯属虚构</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">灵感来自星露谷物语</td>
+        </tr>
+        <tr>
+            <td style="text-align:right;padding:2px 6px;white-space:nowrap;">网页制作：陈薇羽</td>
+            <td style="text-align:center;padding:2px 6px;white-space:nowrap;">·</td>
+            <td style="text-align:left;padding:2px 6px;white-space:nowrap;">联系方式：1152629204@qq.com ⭐</td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>
