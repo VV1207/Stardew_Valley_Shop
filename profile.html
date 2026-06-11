@@ -375,6 +375,49 @@
             color: #3d4f2f;
             font-style: italic;
         }
+
+        /* ===== 订单搜索 ===== */
+        .order-search-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .order-search-box input {
+            width: 100%;
+            padding: 12px 16px 12px 42px;
+            border: 2px solid #d4c8aa;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            background: #fff;
+            box-sizing: border-box;
+            transition: border-color 0.2s;
+        }
+        .order-search-box input:focus {
+            outline: none;
+            border-color: #7c9f5e;
+            box-shadow: 0 0 0 3px rgba(124,159,94,0.15);
+        }
+        .order-search-box .search-icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.1rem;
+            pointer-events: none;
+        }
+        .order-search-results {
+            margin-top: 10px;
+        }
+        .order-search-empty {
+            text-align: center;
+            padding: 20px;
+            color: #8a7a62;
+            font-size: 0.9rem;
+        }
+        .order-match-highlight {
+            background: #fff3b0;
+            padding: 0 2px;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
@@ -416,6 +459,10 @@
 
     <!-- 历史订单 -->
     <div class="profile-section" id="sectionOrders">
+        <div class="order-search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="orderSearchInput" placeholder="输入商品名称搜索历史订单...">
+        </div>
         <div id="ordersList"></div>
     </div>
 
@@ -768,10 +815,166 @@ function logout() {
     }
 }
 
+// ============== 订单搜索 ==============
+function initOrderSearch() {
+    const searchInput = document.getElementById('orderSearchInput');
+    if (!searchInput) return;
+
+    let debounceTimer = null;
+    searchInput.addEventListener('input', function() {
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(() => {
+            searchOrders(this.value.trim());
+        }, 200);
+    });
+}
+
+function searchOrders(keyword) {
+    const container = document.getElementById('ordersList');
+    const orders = JSON.parse(localStorage.getItem('stardew_orders') || '[]');
+    const reviews = JSON.parse(localStorage.getItem('stardew_order_reviews') || '{}');
+
+    if (orders.length === 0) {
+        container.innerHTML = '<div class="fav-empty">🛍️ 还没有历史订单<br><small>去商店选购商品并结账吧！</small></div>';
+        return;
+    }
+
+    const kw = keyword.toLowerCase();
+    let html = '';
+    let matchCount = 0;
+
+    for (let i = orders.length - 1; i >= 0; i--) {
+        const order = orders[i];
+        // 检查该订单是否有匹配的商品
+        let hasMatch = false;
+        if (kw) {
+            hasMatch = order.items.some(item => item.name.toLowerCase().includes(kw));
+        }
+
+        // 如果有搜索关键词但该订单不匹配，跳过
+        if (kw && !hasMatch) continue;
+        matchCount++;
+
+        const orderReview = reviews[order.orderId] || null;
+        const dateStr = new Date(order.date).toLocaleString('zh-CN');
+
+        let itemsHtml = '';
+        order.items.forEach(item => {
+            const qualStr = item.quality ? ` (${item.quality})` : '';
+            const imgHtml = item.image ? `<img src="${item.image}" alt="${item.name}" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:6px;border-radius:6px;background:#fdf6e7;" onerror="this.style.display='none'">` : '';
+
+            // 高亮匹配的商品名
+            let displayName = item.name;
+            if (kw) {
+                const idx = item.name.toLowerCase().indexOf(kw);
+                if (idx >= 0) {
+                    displayName = item.name.substring(0, idx) +
+                        '<span class="order-match-highlight">' +
+                        item.name.substring(idx, idx + kw.length) +
+                        '</span>' + item.name.substring(idx + kw.length);
+                }
+            }
+
+            itemsHtml += `
+                <div class="order-item-row">
+                    <span>${imgHtml}${displayName}${qualStr} × ${item.quantity}</span>
+                    <span>💰 ${item.price * item.quantity} G</span>
+                </div>
+            `;
+        });
+
+        // 评价区域
+        let reviewHtml = '';
+        if (orderReview) {
+            const stars = (n) => {
+                let s = '';
+                for (let j = 0; j < 5; j++) s += j < n ? '⭐' : '<span class="empty">☆</span>';
+                return s;
+            };
+            reviewHtml = `
+                <div class="existing-review">
+                    <div class="er-header">
+                        <span><strong>你的评价</strong></span>
+                        <span class="er-date">${new Date(orderReview.reviewDate).toLocaleString('zh-CN')}</span>
+                    </div>
+                    <div style="display:flex;gap:16px;flex-wrap:wrap;margin:6px 0;">
+                        <span>📦 收货服务: ${stars(orderReview.deliveryRating)}</span>
+                        <span>🏷️ 商品品质: ${stars(orderReview.qualityRating)}</span>
+                        <span>📧 综合评分: ${stars(orderReview.overallRating)}</span>
+                    </div>
+                    ${orderReview.comment ? `<div class="er-text">💬 "${orderReview.comment}"</div>` : ''}
+                    <button class="review-submit-btn" style="background:#9a8a7a;font-size:0.8rem;padding:4px 14px;margin-top:6px;" onclick="editReview('${order.orderId}')">✏️ 修改评价</button>
+                </div>
+            `;
+        } else {
+            reviewHtml = `
+                <div class="review-section" id="reviewForm_${order.orderId}">
+                    <h4>📝 评价此订单</h4>
+                    <div class="review-row">
+                        <div class="rating-group">
+                            <label>📦 收货服务</label>
+                            <div class="star-rating" data-group="delivery_${order.orderId}">
+                                <input type="radio" name="delivery_${order.orderId}" id="ds_${order.orderId}_5" value="5"><label for="ds_${order.orderId}_5">★</label>
+                                <input type="radio" name="delivery_${order.orderId}" id="ds_${order.orderId}_4" value="4"><label for="ds_${order.orderId}_4">★</label>
+                                <input type="radio" name="delivery_${order.orderId}" id="ds_${order.orderId}_3" value="3"><label for="ds_${order.orderId}_3">★</label>
+                                <input type="radio" name="delivery_${order.orderId}" id="ds_${order.orderId}_2" value="2"><label for="ds_${order.orderId}_2">★</label>
+                                <input type="radio" name="delivery_${order.orderId}" id="ds_${order.orderId}_1" value="1"><label for="ds_${order.orderId}_1">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-group">
+                            <label>🏷️ 商品品质</label>
+                            <div class="star-rating" data-group="quality_${order.orderId}">
+                                <input type="radio" name="quality_${order.orderId}" id="qs_${order.orderId}_5" value="5"><label for="qs_${order.orderId}_5">★</label>
+                                <input type="radio" name="quality_${order.orderId}" id="qs_${order.orderId}_4" value="4"><label for="qs_${order.orderId}_4">★</label>
+                                <input type="radio" name="quality_${order.orderId}" id="qs_${order.orderId}_3" value="3"><label for="qs_${order.orderId}_3">★</label>
+                                <input type="radio" name="quality_${order.orderId}" id="qs_${order.orderId}_2" value="2"><label for="qs_${order.orderId}_2">★</label>
+                                <input type="radio" name="quality_${order.orderId}" id="qs_${order.orderId}_1" value="1"><label for="qs_${order.orderId}_1">★</label>
+                            </div>
+                        </div>
+                        <div class="rating-group">
+                            <label>⭐ 综合评分</label>
+                            <div class="star-rating" data-group="overall_${order.orderId}">
+                                <input type="radio" name="overall_${order.orderId}" id="os_${order.orderId}_5" value="5"><label for="os_${order.orderId}_5">★</label>
+                                <input type="radio" name="overall_${order.orderId}" id="os_${order.orderId}_4" value="4"><label for="os_${order.orderId}_4">★</label>
+                                <input type="radio" name="overall_${order.orderId}" id="os_${order.orderId}_3" value="3"><label for="os_${order.orderId}_3">★</label>
+                                <input type="radio" name="overall_${order.orderId}" id="os_${order.orderId}_2" value="2"><label for="os_${order.orderId}_2">★</label>
+                                <input type="radio" name="overall_${order.orderId}" id="os_${order.orderId}_1" value="1"><label for="os_${order.orderId}_1">★</label>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea class="review-textarea" id="reviewComment_${order.orderId}" placeholder="写下你的购物体验（可选）..."></textarea>
+                    <button class="review-submit-btn" onclick="submitReview('${order.orderId}')">✅ 提交评价</button>
+                </div>
+            `;
+        }
+
+        html += `
+            <div class="order-card">
+                <div class="order-header">
+                    <span class="order-id">📋 ${order.orderId}</span>
+                    <span class="order-date">${dateStr}</span>
+                    <span class="order-total">💎 ${order.totalPrice} G</span>
+                </div>
+                <div class="order-items">${itemsHtml}</div>
+                ${reviewHtml}
+            </div>
+        `;
+    }
+
+    if (matchCount === 0) {
+        container.innerHTML = '<div class="order-search-empty">🔍 没有找到包含「' + keyword + '」的订单</div>';
+    } else if (kw) {
+        container.innerHTML = '<div class="order-search-empty" style="text-align:left;">📋 找到 ' + matchCount + ' 条包含「' + keyword + '」的订单</div>' + html;
+    } else {
+        container.innerHTML = html;
+    }
+}
+
 // ============== 启动 ==============
 document.addEventListener('DOMContentLoaded', () => {
     init();
     initUserBar();
+    initOrderSearch();
 });
 </script>
 </body>
