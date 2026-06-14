@@ -74,44 +74,9 @@ window.ITEMS_DATA = [
     "image": "images/Artichoke.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -418,10 +383,47 @@ window.ITEMS_DATA = [
     "image": "images/Corn.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
-      "hate": ["Pierre"]
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
+      "hate": [
+        "Pierre"
+      ]
     }
   },
   {
@@ -484,8 +486,8 @@ window.ITEMS_DATA = [
   {
     "id": 10,
     "name": "蕨菜",
-    "name_en": "Fiddlehead Fern",
-    "category": "作物",
+    "name_en": "Fiddlehead_Fern",
+    "category": "采集",
     "price": 90,
     "has_quality": true,
     "qualities": {
@@ -497,50 +499,15 @@ window.ITEMS_DATA = [
     "image": "images/Fiddlehead_Fern.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
   {
     "id": 11,
-    "name": "大蒜",
+    "name": "蒜",
     "name_en": "Garlic",
     "category": "作物",
     "price": 60,
@@ -727,44 +694,9 @@ window.ITEMS_DATA = [
     "image": "images/Kale.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -898,10 +830,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Pumpkin.png",
     "gifting": {
-      "love": ["Abigail", "Willy", "Krobus"],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"],
+      "love": [
+        "Abigail",
+        "Willy",
+        "Krobus"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -921,51 +890,16 @@ window.ITEMS_DATA = [
     "image": "images/Radish.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
   {
     "id": 19,
     "name": "红叶卷心菜",
-    "name_en": "Red Cabbage",
+    "name_en": "Red_Cabbage",
     "category": "作物",
     "price": 260,
     "has_quality": true,
@@ -978,44 +912,9 @@ window.ITEMS_DATA = [
     "image": "images/Red_Cabbage.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -1321,46 +1220,10 @@ window.ITEMS_DATA = [
     },
     "image": "images/Yam.png",
     "gifting": {
-      "love": [
-        "Linus"
-      ],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Willy",
-        "Wizard",
-        "Abigail",
-        "Haley",
-        "Jas",
-        "Sam",
-        "Vincent"
-      ],
+      "love": ["Linus"],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -1434,12 +1297,12 @@ window.ITEMS_DATA = [
       "金星": 75,
       "铱星": 100
     },
-    "image": "images/Blueberry_Tart.png",
+    "image": "images/Blueberry.png",
     "gifting": {
-      "love": [],
-      "like": [],
+      "love": ["Haley"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
@@ -1458,10 +1321,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Cactus_Fruit.png",
     "gifting": {
-      "love": ["Sam", "Pam", "Linus"],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Lewis", "Robin", "Demetrius", "Jodi", "Kent", "Sandy"],
-      "neutral": ["Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "love": [
+        "Sam",
+        "Pam",
+        "Linus"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Sandy"
+      ],
+      "neutral": [
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1481,9 +1382,46 @@ window.ITEMS_DATA = [
     "image": "images/Cranberries.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1502,10 +1440,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Hot_Pepper.png",
     "gifting": {
-      "love": ["Shane", "Lewis"],
-      "like": ["Harvey", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "love": [
+        "Shane",
+        "Lewis"
+      ],
+      "like": [
+        "Harvey",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1524,10 +1500,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Melon.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1547,9 +1561,46 @@ window.ITEMS_DATA = [
     "image": "images/Starfruit.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1591,9 +1642,46 @@ window.ITEMS_DATA = [
     "image": "images/Ancient_Fruit.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1613,9 +1701,46 @@ window.ITEMS_DATA = [
     "image": "images/Rhubarb.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1632,7 +1757,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -1771,7 +1931,7 @@ window.ITEMS_DATA = [
   {
     "id": 40,
     "name": "蓝爵",
-    "name_en": "Blue Jazz",
+    "name_en": "Blue_Jazz",
     "category": "作物",
     "price": 50,
     "has_quality": true,
@@ -1781,12 +1941,12 @@ window.ITEMS_DATA = [
       "金星": 75,
       "铱星": 100
     },
-    "image": "images/24px-Blue_Jazz.png",
+    "image": "images/Blue_Jazz.png",
     "gifting": {
       "love": [],
-      "like": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Sebastian", "George", "Clint"],
       "hate": []
     }
   },
@@ -1827,11 +1987,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Poppy.png",
     "gifting": {
-      "love": ["Penny"],
+      "love": [
+        "Penny"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -1849,10 +2045,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Summer_Spangle.png",
     "gifting": {
-      "love": ["Caroline"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Caroline"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sebastian", "George", "Clint"],
+      "dislike": [
+        "Sebastian",
+        "George",
+        "Clint"
+      ],
       "hate": []
     }
   },
@@ -1871,10 +2104,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Sunflower.png",
     "gifting": {
-      "love": ["Haley"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Haley"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sebastian", "George", "Clint"],
+      "dislike": [
+        "Sebastian",
+        "George",
+        "Clint"
+      ],
       "hate": []
     }
   },
@@ -1893,10 +2163,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Tulip.png",
     "gifting": {
-      "love": ["Evelyn"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Evelyn"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sebastian", "George", "Clint"],
+      "dislike": [
+        "Sebastian",
+        "George",
+        "Clint"
+      ],
       "hate": []
     }
   },
@@ -1918,7 +2225,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -1938,15 +2280,53 @@ window.ITEMS_DATA = [
     "image": "images/Brown_Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
     "id": 48,
-    "name": "鸡蛋",
+    "name": "蛋",
     "name_en": "Egg",
     "category": "工匠制品",
     "price": 50,
@@ -1960,10 +2340,48 @@ window.ITEMS_DATA = [
     "image": "images/Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -1982,10 +2400,48 @@ window.ITEMS_DATA = [
     "image": "images/Duck_Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -2003,11 +2459,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Void_Egg.png",
     "gifting": {
-      "love": ["Sebastian", "Krobus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"],
+      "love": [
+        "Sebastian",
+        "Krobus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Leah"]
+      "hate": [
+        "Leah"
+      ]
     }
   },
   {
@@ -2026,10 +2519,48 @@ window.ITEMS_DATA = [
     "image": "images/Golden_Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -2048,10 +2579,47 @@ window.ITEMS_DATA = [
     "image": "images/Large_Brown_Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -2065,14 +2633,51 @@ window.ITEMS_DATA = [
     "image": "images/Salmonberry.png",
     "gifting": {
       "love": [],
-      "like": ["Shane", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "like": [
+        "Shane",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Alex", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "George", "Jas", "Vincent", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "hate": ["Harvey", "Elliott", "Caroline", "Evelyn"]
+      "dislike": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "George",
+        "Jas",
+        "Vincent",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Harvey",
+        "Elliott",
+        "Caroline",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 53,
+    "id": 54,
     "name": "鲷鱼",
     "name_en": "Bream",
     "category": "动物",
@@ -2088,9 +2693,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -2109,10 +2751,47 @@ window.ITEMS_DATA = [
     "image": "images/Large_Egg.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -2131,10 +2810,48 @@ window.ITEMS_DATA = [
     "image": "images/Milk.png",
     "gifting": {
       "love": [],
-      "like": ["Leah", "Penny", "Pierre", "Marnie", "Robin", "Evelyn", "Jas", "Vincent", "Jodi", "Pam", "Linus"],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Maru", "Emily", "Abigail", "Caroline", "Demetrius", "George", "Willy", "Gus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Elliott", "Haley", "Lewis", "Wizard"],
-      "hate": ["Kent"]
+      "like": [
+        "Leah",
+        "Penny",
+        "Pierre",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Pam",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Demetrius",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Elliott",
+        "Haley",
+        "Lewis",
+        "Wizard"
+      ],
+      "hate": [
+        "Kent"
+      ]
     }
   },
   {
@@ -2153,10 +2870,48 @@ window.ITEMS_DATA = [
     "image": "images/Large_Milk.png",
     "gifting": {
       "love": [],
-      "like": ["Leah", "Penny", "Pierre", "Marnie", "Robin", "Evelyn", "Jas", "Vincent", "Jodi", "Pam", "Linus"],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Maru", "Emily", "Abigail", "Caroline", "Demetrius", "George", "Willy", "Gus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Elliott", "Haley", "Lewis", "Wizard"],
-      "hate": ["Kent"]
+      "like": [
+        "Leah",
+        "Penny",
+        "Pierre",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Pam",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Demetrius",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Elliott",
+        "Haley",
+        "Lewis",
+        "Wizard"
+      ],
+      "hate": [
+        "Kent"
+      ]
     }
   },
   {
@@ -2175,10 +2930,48 @@ window.ITEMS_DATA = [
     "image": "images/Goat_Milk.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Leah", "Penny", "Pierre", "Marnie", "Robin", "Evelyn", "Jas", "Vincent", "Jodi", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Shane", "Alex", "Sebastian", "Maru", "Emily", "Abigail", "Caroline", "Demetrius", "George", "Willy", "Gus", "Clint", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Elliott", "Haley", "Lewis", "Wizard"],
-      "hate": ["Kent"]
+      "like": [
+        "Harvey",
+        "Leah",
+        "Penny",
+        "Pierre",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Demetrius",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Elliott",
+        "Haley",
+        "Lewis",
+        "Wizard"
+      ],
+      "hate": [
+        "Kent"
+      ]
     }
   },
   {
@@ -2197,10 +2990,48 @@ window.ITEMS_DATA = [
     "image": "images/Large_Goat_Milk.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Leah", "Penny", "Pierre", "Marnie", "Robin", "Evelyn", "Jas", "Vincent", "Jodi", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Shane", "Alex", "Sebastian", "Maru", "Emily", "Abigail", "Caroline", "Demetrius", "George", "Willy", "Gus", "Clint", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Elliott", "Haley", "Lewis", "Wizard"],
-      "hate": ["Kent"]
+      "like": [
+        "Harvey",
+        "Leah",
+        "Penny",
+        "Pierre",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Demetrius",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Elliott",
+        "Haley",
+        "Lewis",
+        "Wizard"
+      ],
+      "hate": [
+        "Kent"
+      ]
     }
   },
   {
@@ -2218,11 +3049,50 @@ window.ITEMS_DATA = [
     },
     "image": "images/Ostrich_Egg.png",
     "gifting": {
-      "love": ["Leo"],
-      "like": ["Sam", "Shane", "Alex", "Leah", "Pierre", "Marnie", "Demetrius", "Jodi", "Kent", "Linus"],
-      "neutral": ["Harvey", "Elliott", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Robin", "Evelyn", "George", "Willy", "Gus", "Clint", "Krobus", "Sandy"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent", "Pam", "Wizard", "Dwarf"],
-      "hate": ["Sebastian"]
+      "love": [
+        "Leo"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Pierre",
+        "Marnie",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Linus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Elliott",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Krobus",
+        "Sandy"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent",
+        "Pam",
+        "Wizard",
+        "Dwarf"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
@@ -2240,10 +3110,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Duck_Feather.png",
     "gifting": {
-      "love": ["Elliott", "Leo"],
-      "like": ["Harvey"],
-      "neutral": ["Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "dislike": ["Penny"],
+      "love": [
+        "Elliott",
+        "Leo"
+      ],
+      "like": [
+        "Harvey"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "dislike": [
+        "Penny"
+      ],
       "hate": []
     }
   },
@@ -2262,11 +3170,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Rabbit's_Foot.png",
     "gifting": {
-      "love": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Penny"]
+      "hate": [
+        "Penny"
+      ]
     }
   },
   {
@@ -2284,10 +3228,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Wool.png",
     "gifting": {
-      "love": ["Emily"],
-      "like": ["Sandy"],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Penny"],
+      "love": [
+        "Emily"
+      ],
+      "like": [
+        "Sandy"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Penny"
+      ],
       "hate": []
     }
   },
@@ -2306,11 +3288,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Truffle.png",
     "gifting": {
-      "love": ["Leah"],
-      "like": ["Gus"],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Leah"
+      ],
+      "like": [
+        "Gus"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "dislike": [],
-      "hate": ["Maru"]
+      "hate": [
+        "Maru"
+      ]
     }
   },
   {
@@ -2329,7 +3349,42 @@ window.ITEMS_DATA = [
     "image": "images/Apple.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2339,7 +3394,7 @@ window.ITEMS_DATA = [
     "id": 66,
     "name": "杏子",
     "name_en": "Apricot",
-    "category": "果树",
+    "category": "作物",
     "price": 50,
     "has_quality": true,
     "qualities": {
@@ -2351,7 +3406,42 @@ window.ITEMS_DATA = [
     "image": "images/Apricot.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2373,9 +3463,46 @@ window.ITEMS_DATA = [
     "image": "images/Banana.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -2395,7 +3522,42 @@ window.ITEMS_DATA = [
     "image": "images/Cherry.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2416,10 +3578,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Mango.png",
     "gifting": {
-      "love": ["Leo"],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "love": [
+        "Leo"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -2438,8 +3638,44 @@ window.ITEMS_DATA = [
     },
     "image": "images/Orange.png",
     "gifting": {
-      "love": ["Gus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Gus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2460,8 +3696,44 @@ window.ITEMS_DATA = [
     },
     "image": "images/Peach.png",
     "gifting": {
-      "love": ["Robin"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Robin"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2482,8 +3754,44 @@ window.ITEMS_DATA = [
     },
     "image": "images/Pomegranate.png",
     "gifting": {
-      "love": ["Elliott"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Elliott"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -2494,7 +3802,7 @@ window.ITEMS_DATA = [
     "name": "稻草人",
     "name_en": "Scarecrow",
     "category": "农场工具",
-    "price":100,
+    "price": 100,
     "has_quality": false,
     "qualities": {},
     "image": "images/Scarecrow.png",
@@ -2521,11 +3829,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Beer.png",
     "gifting": {
-      "love": ["Shane", "Pam"],
-      "like": ["Harvey", "Sam", "Alex", "Elliott", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "love": [
+        "Shane",
+        "Pam"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Penny", "Jas", "Vincent", "Leo"]
+      "hate": [
+        "Sebastian",
+        "Penny",
+        "Jas",
+        "Vincent",
+        "Leo"
+      ]
     }
   },
   {
@@ -2539,10 +3884,46 @@ window.ITEMS_DATA = [
     "image": "images/Caviar.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2561,10 +3942,47 @@ window.ITEMS_DATA = [
     "image": "images/Cheese.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Harvey"],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "dislike": [
+        "Harvey"
+      ],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2577,11 +3995,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Cloth.png",
     "gifting": {
-      "love": ["Emily"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2594,11 +4049,49 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Coffee.png",
     "gifting": {
-      "love": ["Harvey"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "neutral": ["Leo"],
+      "love": [
+        "Harvey"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Leo"
+      ],
       "dislike": [],
-      "hate": ["Jas", "Vincent"]
+      "hate": [
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2612,10 +4105,46 @@ window.ITEMS_DATA = [
     "image": "images/Dinosaur_Mayonnaise.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2631,7 +4160,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -2663,10 +4227,47 @@ window.ITEMS_DATA = [
     "image": "images/Duck_Mayonnaise.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Caroline"],
-      "hate": ["Sam", "Sebastian", "Jas", "Vincent"]
+      "dislike": [
+        "Caroline"
+      ],
+      "hate": [
+        "Sam",
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2684,11 +4285,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Goat_Cheese.png",
     "gifting": {
-      "love": ["Leah", "Robin"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Leah",
+        "Robin"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Harvey"],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "dislike": [
+        "Harvey"
+      ],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2701,11 +4340,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Green_Tea.png",
     "gifting": {
-      "love": ["Caroline", "Lewis"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Caroline",
+        "Lewis"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Jas", "Vincent"]
+      "hate": [
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2719,10 +4395,46 @@ window.ITEMS_DATA = [
     "image": "images/Honey.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Maru"]
+      "hate": [
+        "Sebastian",
+        "Maru"
+      ]
     }
   },
   {
@@ -2736,16 +4448,52 @@ window.ITEMS_DATA = [
     "image": "images/Juice.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
     "id": 87,
     "name": "枫糖浆",
-    "name_en": "Maple Syrup",
+    "name_en": "Maple_Syrup",
     "category": "工匠制品",
     "price": 200,
     "has_quality": false,
@@ -2753,9 +4501,45 @@ window.ITEMS_DATA = [
     "image": "images/Maple_Syrup.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Maru"],
+      "dislike": [
+        "Maru"
+      ],
       "hate": []
     }
   },
@@ -2775,10 +4559,47 @@ window.ITEMS_DATA = [
     "image": "images/Mayonnaise.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Caroline"],
-      "hate": ["Sam", "Sebastian", "Jas", "Vincent"]
+      "dislike": [
+        "Caroline"
+      ],
+      "hate": [
+        "Sam",
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2796,11 +4617,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Mead.png",
     "gifting": {
-      "love": ["Willy", "Pam"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Gus", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "love": [
+        "Willy",
+        "Pam"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Penny", "Jas", "Vincent", "Leo"]
+      "hate": [
+        "Sebastian",
+        "Penny",
+        "Jas",
+        "Vincent",
+        "Leo"
+      ]
     }
   },
   {
@@ -2815,8 +4673,44 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Haley"],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley"
+      ],
       "hate": []
     }
   },
@@ -2831,9 +4725,45 @@ window.ITEMS_DATA = [
     "image": "images/Oak_Resin.png",
     "gifting": {
       "love": [],
-      "like": ["Maru"],
+      "like": [
+        "Maru"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -2850,8 +4780,44 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Leo"]
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Leo"
+      ]
     }
   },
   {
@@ -2869,11 +4835,48 @@ window.ITEMS_DATA = [
     },
     "image": "images/Pale_Ale.png",
     "gifting": {
-      "love": ["Pam"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "love": [
+        "Pam"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Penny", "Jas", "Vincent", "Leo"]
+      "hate": [
+        "Sebastian",
+        "Penny",
+        "Jas",
+        "Vincent",
+        "Leo"
+      ]
     }
   },
   {
@@ -2887,9 +4890,45 @@ window.ITEMS_DATA = [
     "image": "images/Pine_Tar.png",
     "gifting": {
       "love": [],
-      "like": ["Maru"],
+      "like": [
+        "Maru"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -2903,11 +4942,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Raisins.png",
     "gifting": {
-      "love": ["Evelyn"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Evelyn"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2921,9 +4997,45 @@ window.ITEMS_DATA = [
     "image": "images/Spring_Onion.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Leah", "Linus"],
+      "like": [
+        "Harvey",
+        "Leah",
+        "Linus"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -2940,7 +5052,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -2954,11 +5101,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Truffle_Oil.png",
     "gifting": {
-      "love": ["Harvey"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Harvey"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Sebastian", "Jas", "Vincent"]
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -2971,11 +5155,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Void_Mayonnaise.png",
     "gifting": {
-      "love": ["Krobus"],
+      "love": [
+        "Krobus"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -3416,7 +5636,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3532,8 +5787,44 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Diamond.png",
     "gifting": {
-      "love": ["Maru", "Penny", "Marnie", "Evelyn", "Jodi", "Willy", "Gus", "Krobus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "George", "Jas", "Vincent", "Kent", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"],
+      "love": [
+        "Maru",
+        "Penny",
+        "Marnie",
+        "Evelyn",
+        "Jodi",
+        "Willy",
+        "Gus",
+        "Krobus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
       "dislike": [],
       "hate": []
@@ -3549,11 +5840,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Prismatic_Shard.png",
     "gifting": {
-      "love": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Haley"]
+      "hate": [
+        "Haley"
+      ]
     }
   },
   {
@@ -3566,10 +5893,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Aquamarine.png",
     "gifting": {
-      "love": ["Emily", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3583,10 +5947,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Emerald.png",
     "gifting": {
-      "love": ["Penny", "Emily", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Penny",
+        "Emily",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3600,10 +6001,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Jade.png",
     "gifting": {
-      "love": ["Emily", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3617,10 +6055,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Ruby.png",
     "gifting": {
-      "love": ["Emily", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3634,10 +6109,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Amethyst.png",
     "gifting": {
-      "love": ["Emily", "Abigail", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily",
+        "Abigail",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3651,10 +6163,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Topaz.png",
     "gifting": {
-      "love": ["Emily", "Clint", "Dwarf"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Wizard", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Emily",
+        "Clint",
+        "Dwarf"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3669,9 +6218,45 @@ window.ITEMS_DATA = [
     "image": "images/Earth_Crystal.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Pierre", "Linus"],
+      "dislike": [
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3685,10 +6270,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Frozen_Tear.png",
     "gifting": {
-      "love": ["Sebastian"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Sebastian"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Pierre", "Linus"],
+      "dislike": [
+        "Leah",
+        "Pierre",
+        "Linus"
+      ],
       "hate": []
     }
   },
@@ -3720,10 +6342,47 @@ window.ITEMS_DATA = [
     "image": "images/Quartz.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sebastian", "Maru", "Emily", "Abigail", "Marnie", "Robin", "Willy", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sebastian",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Marnie",
+        "Robin",
+        "Willy",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Leah", "Penny", "Pierre", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Pam", "Linus", "Clint"],
-      "hate": ["Shane", "Alex", "Elliott", "Caroline", "Lewis", "George", "Gus"]
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Pierre",
+        "Demetrius",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Clint"
+      ],
+      "hate": [
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Caroline",
+        "Lewis",
+        "George",
+        "Gus"
+      ]
     }
   },
   {
@@ -3739,7 +6398,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3756,7 +6450,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3773,7 +6502,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3807,7 +6571,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3824,7 +6623,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3859,7 +6693,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -3875,7 +6744,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3892,7 +6796,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -3910,7 +6849,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -3925,9 +6899,45 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Linus"],
+      "neutral": [
+        "Linus"
+      ],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -3961,7 +6971,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -4322,7 +7367,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 180,
+    "id": 179,
     "name": "软呢帽",
     "name_en": "Fedora",
     "category": "帽子",
@@ -4339,7 +7384,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "安全帽",
     "name_en": "Hard_Hat",
     "category": "帽子",
@@ -4356,7 +7401,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 182,
+    "id": 181,
     "name": "猎人帽",
     "name_en": "Hunter's_Cap",
     "category": "帽子",
@@ -4373,7 +7418,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 183,
+    "id": 182,
     "name": "骑士头盔",
     "name_en": "Knight's Helmet",
     "category": "帽子",
@@ -4390,7 +7435,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 184,
+    "id": 183,
     "name": "圣诞帽",
     "name_en": "Santa_Hat",
     "category": "帽子",
@@ -4407,7 +7452,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 185,
+    "id": 184,
     "name": "点唱机戒指",
     "name_en": "Jukebox_Ring",
     "category": "戒指",
@@ -4424,7 +7469,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "骷髅面具",
     "name_en": "Skeleton_Mask",
     "category": "帽子",
@@ -4441,7 +7486,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 187,
+    "id": 186,
     "name": "皮靴",
     "name_en": "Leather_Boots",
     "category": "鞋类",
@@ -4458,7 +7503,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 188,
+    "id": 187,
     "name": "工作靴",
     "name_en": "Work_Boots",
     "category": "鞋类",
@@ -4475,7 +7520,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 189,
+    "id": 188,
     "name": "战斗靴",
     "name_en": "Combat_Boots",
     "category": "鞋类",
@@ -4492,7 +7537,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 190,
+    "id": 189,
     "name": "冻土靴",
     "name_en": "Tundra_Boots",
     "category": "鞋类",
@@ -4509,7 +7554,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 191,
+    "id": 190,
     "name": "水晶鞋",
     "name_en": "Crystal_Shoes",
     "category": "鞋类",
@@ -4526,7 +7571,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 192,
+    "id": 191,
     "name": "太空靴",
     "name_en": "Space_Boots",
     "category": "鞋类",
@@ -4543,7 +7588,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 193,
+    "id": 192,
     "name": "蹈火者靴",
     "name_en": "Firewalker_Boots",
     "category": "鞋类",
@@ -4560,7 +7605,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 194,
+    "id": 193,
     "name": "龙鳞靴",
     "name_en": "Dragonscale_Boots",
     "category": "鞋类",
@@ -4577,7 +7622,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 195,
+    "id": 194,
     "name": "艾米丽的魔法靴",
     "name_en": "Emily's_ Magic_Boots",
     "category": "鞋类",
@@ -4594,7 +7639,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 197,
+    "id": 195,
     "name": "小型光辉戒指",
     "name_en": "Small_Glow_Ring",
     "category": "戒指",
@@ -4611,7 +7656,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 198,
+    "id": 196,
     "name": "光辉戒指",
     "name_en": "Glow_Ring",
     "category": "戒指",
@@ -4628,7 +7673,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 199,
+    "id": 197,
     "name": "小型磁铁戒指",
     "name_en": "Small_Magnet_Ring",
     "category": "戒指",
@@ -4645,7 +7690,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 200,
+    "id": 198,
     "name": "磁铁戒指",
     "name_en": "Magnet_Ring",
     "category": "戒指",
@@ -4662,7 +7707,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 201,
+    "id": 199,
     "name": "史莱姆克星戒指",
     "name_en": "Slime_Charmer_Ring",
     "category": "戒指",
@@ -4679,7 +7724,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 202,
+    "id": 200,
     "name": "战士戒指",
     "name_en": "Warrior_Ring",
     "category": "戒指",
@@ -4696,7 +7741,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 203,
+    "id": 201,
     "name": "吸血戒指",
     "name_en": "Vampire_Ring",
     "category": "戒指",
@@ -4713,7 +7758,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 204,
+    "id": 202,
     "name": "铱环",
     "name_en": "Iridium_Band",
     "category": "戒指",
@@ -4730,7 +7775,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 205,
+    "id": 203,
     "name": "窃贼戒指",
     "name_en": "Burglar's_Ring",
     "category": "戒指",
@@ -4747,7 +7792,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 206,
+    "id": 204,
     "name": "幸运戒指",
     "name_en": "Lucky_Ring",
     "category": "戒指",
@@ -4764,7 +7809,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 207,
+    "id": 205,
     "name": "燃烧弹戒指",
     "name_en": "Napalm_Ring",
     "category": "戒指",
@@ -4781,7 +7826,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 208,
+    "id": 206,
     "name": "凤凰戒指",
     "name_en": "Phoenix_Ring",
     "category": "戒指",
@@ -4798,7 +7843,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 209,
+    "id": 207,
     "name": "热咖啡戒指",
     "name_en": "Hot_Java_Ring",
     "category": "戒指",
@@ -4815,7 +7860,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 210,
+    "id": 208,
     "name": "辉石戒指",
     "name_en": "Glowstone_Ring",
     "category": "戒指",
@@ -4832,7 +7877,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 211,
+    "id": 209,
     "name": "由巴之戒",
     "name_en": "Ring_of_Yoba",
     "category": "戒指",
@@ -4849,7 +7894,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 212,
+    "id": 210,
     "name": "野蛮人戒指",
     "name_en": "Savage_Ring",
     "category": "戒指",
@@ -4866,7 +7911,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 213,
+    "id": 211,
     "name": "结实戒指",
     "name_en": "Sturdy_Ring",
     "category": "戒指",
@@ -4883,7 +7928,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 214,
+    "id": 212,
     "name": "荆棘戒指",
     "name_en": "Thorns_Ring",
     "category": "戒指",
@@ -4900,7 +7945,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 215,
+    "id": 213,
     "name": "煎鸡蛋",
     "name_en": "Fried_Egg",
     "category": "菜肴",
@@ -4911,13 +7956,49 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Leah"],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Leah"
+      ],
       "hate": []
     }
   },
   {
-    "id": 216,
+    "id": 214,
     "name": "煎蛋卷",
     "name_en": "Omelet",
     "category": "菜肴",
@@ -4927,14 +8008,51 @@ window.ITEMS_DATA = [
     "image": "images/Omelet.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
-      "hate": ["Sebastian"]
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
     }
   },
   {
-    "id": 217,
+    "id": 215,
     "name": "沙拉",
     "name_en": "Salad",
     "category": "菜肴",
@@ -4943,15 +8061,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Salad.png",
     "gifting": {
-      "love": ["Leah"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Leah"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 218,
+    "id": 216,
     "name": "乳酪花椰菜",
     "name_en": "Cheese_Cauliflower",
     "category": "菜肴",
@@ -4960,15 +8115,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Cheese_Cauliflower.png",
     "gifting": {
-      "love": ["Maru"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Maru"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 219,
+    "id": 217,
     "name": "烤鱼",
     "name_en": "Baked_Fish",
     "category": "菜肴",
@@ -4978,14 +8170,50 @@ window.ITEMS_DATA = [
     "image": "images/Baked_Fish.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 220,
+    "id": 218,
     "name": "防风草汤",
     "name_en": "Parsnip_Soup",
     "category": "菜肴",
@@ -4994,17 +8222,55 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Parsnip_Soup.png",
     "gifting": {
-      "love": ["Pam"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Pam"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
-      "hate": ["Pierre"]
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Pierre"
+      ]
     }
   },
   {
-    "id": 221,
-    "name": "混合蔬菜",
-    "name_en": "Vegetable Medley",
+    "id": 219,
+    "name": "蔬菜杂烩",
+    "name_en": "Vegetable_Medley",
     "category": "菜肴",
     "price": 120,
     "has_quality": false,
@@ -5012,52 +8278,53 @@ window.ITEMS_DATA = [
     "image": "images/Vegetable_Medley.png",
     "gifting": {
       "love": [
-        "Jodi",
         "Leah",
-        "Lewis"
+        "Lewis",
+        "Jodi"
       ],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
-        "Kent",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
         "Vincent",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 222,
+    "id": 220,
     "name": "完美早餐",
-    "name_en": "Complete Breakfast",
+    "name_en": "Complete_Breakfast",
     "category": "菜肴",
     "price": 350,
     "has_quality": false,
@@ -5068,48 +8335,49 @@ window.ITEMS_DATA = [
         "Alex"
       ],
       "like": [
-        "Abigail",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": [
         "Sebastian"
       ]
     }
   },
   {
-    "id": 223,
+    "id": 221,
     "name": "炸鱿鱼",
     "name_en": "Fried_Calamari",
     "category": "菜肴",
@@ -5118,19 +8386,56 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fried_Calamari.png",
     "gifting": {
-      "love": ["Pierre"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Pierre"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 224,
+    "id": 222,
     "name": "奇怪的小面包",
-    "name_en": "Strange Bun",
+    "name_en": "Strange_Bun",
     "category": "菜肴",
-    "price": 75,
+    "price": 225,
     "has_quality": false,
     "qualities": {},
     "image": "images/Strange_Bun.png",
@@ -5144,45 +8449,45 @@ window.ITEMS_DATA = [
       ],
       "dislike": [],
       "hate": [
-        "Abigail",
+        "Harvey",
+        "Sam",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Vincent",
         "Willy",
-        "Wizard"
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
       ]
     }
   },
   {
-    "id": 225,
+    "id": 223,
     "name": "幸运午餐",
-    "name_en": "Lucky Lunch",
+    "name_en": "Lucky_Lunch",
     "category": "菜肴",
     "price": 250,
     "has_quality": false,
@@ -5191,48 +8496,49 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 226,
+    "id": 224,
     "name": "炒蘑菇",
     "name_en": "Fried_Mushroom",
     "category": "菜肴",
@@ -5241,15 +8547,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fried_Mushroom.png",
     "gifting": {
-      "love": ["George"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "George"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 227,
+    "id": 225,
     "name": "披萨",
     "name_en": "Pizza",
     "category": "菜肴",
@@ -5258,70 +8601,108 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Pizza.png",
     "gifting": {
-      "love": ["Sam", "Shane"],
-      "like": ["Alex", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Sam",
+        "Shane"
+      ],
+      "like": [
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Elliott", "Willy", "Krobus", "Leo"],
-      "hate": ["Leah"]
+      "dislike": [
+        "Harvey",
+        "Elliott",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Leah"
+      ]
     }
   },
   {
-    "id": 228,
-    "name": "豆类火锅",
-    "name_en": "Bean Hotpot",
+    "id": 226,
+    "name": "萝卜沙拉",
+    "name_en": "Radish_Salad",
     "category": "菜肴",
-    "price": 100,
+    "price": 300,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Bean_Hotpot.png",
+    "image": "images/Radish_Salad.png",
     "gifting": {
-      "love": [
-        "Demetrius"
-      ],
+      "love": [],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 229,
+    "id": 227,
     "name": "琉璃山药",
-    "name_en": "Glazed Yams",
+    "name_en": "Glazed_Yams",
     "category": "菜肴",
     "price": 200,
     "has_quality": false,
@@ -5333,98 +8714,100 @@ window.ITEMS_DATA = [
         "Pam"
       ],
       "like": [
-        "Abigail",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
+        "Sebastian",
         "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
         "Leah",
-        "Linus",
-        "Marnie",
         "Maru",
         "Penny",
+        "Emily",
+        "Abigail",
         "Pierre",
+        "Caroline",
+        "Marnie",
         "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
         "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 230,
-    "name": "惊奇鲤鱼",
-    "name_en": "Carp Surprise",
+    "id": 228,
+    "name": "龙虾浓汤",
+    "name_en": "Lobster_Bisque",
     "category": "菜肴",
-    "price": 150,
+    "price": 205,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Carp_Surprise.png",
+    "image": "images/Lobster_Bisque.png",
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
         "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leah",
-        "Leo"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 231,
+    "id": 229,
     "name": "薯饼",
     "name_en": "Hashbrowns",
     "category": "菜肴",
@@ -5434,14 +8817,51 @@ window.ITEMS_DATA = [
     "image": "images/Hashbrowns.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
-      "hate": ["Leah"]
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Leah"
+      ]
     }
   },
   {
-    "id": 232,
+    "id": 230,
     "name": "薄煎饼",
     "name_en": "Pancakes",
     "category": "菜肴",
@@ -5450,15 +8870,53 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Pancakes.png",
     "gifting": {
-      "love": ["Jodi"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Jodi"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
-      "hate": ["Leah"]
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Leah"
+      ]
     }
   },
   {
-    "id": 233,
+    "id": 231,
     "name": "大黄派",
     "name_en": "Rhubarb_Pie",
     "category": "菜肴",
@@ -5467,17 +8925,54 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Rhubarb_Pie.png",
     "gifting": {
-      "love": ["Maru", "Jodi"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Maru",
+        "Jodi"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 234,
+    "id": 232,
     "name": "蔓越莓酱",
-    "name_en": "Cranberry Sauce",
+    "name_en": "Cranberry_Sauce",
     "category": "菜肴",
     "price": 120,
     "has_quality": false,
@@ -5486,48 +8981,49 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 235,
+    "id": 233,
     "name": "塞料面包",
     "name_en": "Stuffing",
     "category": "菜肴",
@@ -5540,102 +9036,104 @@ window.ITEMS_DATA = [
         "Evelyn"
       ],
       "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "George",
-        "Gus",
-        "Haley",
         "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 236,
+    "id": 234,
     "name": "卷心菜沙拉",
     "name_en": "Coleslaw",
     "category": "菜肴",
-    "price": 200,
+    "price": 345,
     "has_quality": false,
     "qualities": {},
     "image": "images/Coleslaw.png",
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": [
         "Gus"
       ]
     }
   },
   {
-    "id": 237,
+    "id": 235,
     "name": "秋日恩赐",
-    "name_en": "Autumn's Bounty",
+    "name_en": "Autumn's_Bounty",
     "category": "菜肴",
     "price": 350,
     "has_quality": false,
@@ -5646,47 +9144,48 @@ window.ITEMS_DATA = [
         "Lewis"
       ],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 238,
+    "id": 236,
     "name": "巧克力蛋糕",
     "name_en": "Chocolate Cake",
     "category": "菜肴",
@@ -5701,98 +9200,100 @@ window.ITEMS_DATA = [
         "Jodi"
       ],
       "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
         "Sam",
-        "Sandy",
-        "Sebastian",
         "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
         "Vincent",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 239,
-    "name": "南瓜派",
-    "name_en": "Pumpkin Pie",
+    "id": 237,
+    "name": "水果沙拉",
+    "name_en": "Fruit_Salad",
     "category": "菜肴",
-    "price": 385,
+    "price": 450,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Pumpkin_Pie.png",
+    "image": "images/Fruit_Salad.png",
     "gifting": {
       "love": [
-        "Marnie"
+        "Haley"
       ],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 240,
+    "id": 238,
     "name": "鳟鱼汤",
     "name_en": "Trout_Soup",
     "category": "菜肴",
@@ -5802,14 +9303,51 @@ window.ITEMS_DATA = [
     "image": "images/Trout_Soup.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
-      "hate": ["Evelyn"]
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 241,
+    "id": 239,
     "name": "香酥鲈鱼",
     "name_en": "Crispy Bass",
     "category": "菜肴",
@@ -5822,48 +9360,49 @@ window.ITEMS_DATA = [
         "Jodi"
       ],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
         "Vincent",
+        "Kent",
         "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
         "Krobus",
         "Leo"
       ],
-      "neutral": [],
-      "dislike": [],
       "hate": []
     }
   },
   {
-    "id": 242,
-    "name": "蛤蜊浓汤",
+    "id": 240,
+    "name": "海鲜杂烩汤",
     "name_en": "Chowder",
     "category": "菜肴",
     "price": 135,
@@ -5873,48 +9412,49 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
+        "Harvey",
+        "Sam",
+        "Shane",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
         "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
         "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
         "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
         "Krobus",
         "Leo"
       ],
-      "neutral": [],
-      "dislike": [],
       "hate": []
     }
   },
   {
-    "id": 243,
+    "id": 241,
     "name": "冰淇淋",
     "name_en": "Ice_Cream",
     "category": "菜肴",
@@ -5923,68 +9463,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Ice_Cream.png",
     "gifting": {
-      "love": ["Demetrius"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
-      "neutral": [],
-      "dislike": ["Harvey", "Leah", "Emily", "Willy", "Krobus", "Leo"],
-      "hate": []
-    }
-  },
-  {
-    "id": 244,
-    "name": "蟹肉糕",
-    "name_en": "Crab Cakes",
-    "category": "菜肴",
-    "price": 250,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/Crab_Cakes.png",
-    "gifting": {
       "love": [
-        "Elliott"
+        "Demetrius"
       ],
       "like": [
-        "Abigail",
+        "Sam",
+        "Shane",
         "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
         "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Emily",
+        "Lewis",
+        "Marnie",
+        "Robin",
         "Evelyn",
         "George",
-        "Gus",
-        "Haley",
-        "Harvey",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
+        "Linus",
+        "Clint",
         "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Harvey",
+        "Leah",
+        "Emily",
+        "Willy",
         "Krobus",
         "Leo"
       ],
-      "neutral": [],
-      "dislike": [],
       "hate": []
     }
   },
   {
-    "id": 245,
+    "id": 242,
     "name": "清汤",
     "name_en": "Pale_Broth",
     "category": "菜肴",
@@ -5994,122 +9518,52 @@ window.ITEMS_DATA = [
     "image": "images/Pale_Broth.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
-      "neutral": [],
-      "dislike": ["Penny", "Willy", "Krobus", "Leo"],
-      "hate": []
-    }
-  },
-  {
-    "id": 246,
-    "name": "南瓜汤",
-    "name_en": "Pumpkin Soup",
-    "category": "菜肴",
-    "price": 250,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/Pumpkin_Soup.png",
-    "gifting": {
-      "love": [
-        "Sebastian"
-      ],
       "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
         "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
         "Sam",
-        "Sandy",
         "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
-    }
-  },
-  {
-    "id": 247,
-    "name": "冬阴功汤",
-    "name_en": "Tom Kha Soup",
-    "category": "菜肴",
-    "price": 250,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/Tom_Kha_Soup.png",
-    "gifting": {
-      "love": [
-        "Elliott",
-        "Penny"
-      ],
-      "like": [
-        "Abigail",
         "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
+        "Elliott",
         "Sebastian",
-        "Shane",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
         "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [],
-      "dislike": [],
+      "dislike": [
+        "Penny",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 248,
+    "id": 243,
     "name": "生鱼寿司",
-    "name_en": "Maki Roll",
+    "name_en": "Maki_Roll",
     "category": "菜肴",
     "price": 220,
     "has_quality": false,
@@ -6118,42 +9572,43 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "George",
-        "Gus",
-        "Haley",
         "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
         "Jas",
+        "Vincent",
         "Jodi",
         "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
+        "Gus",
         "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
+        "Linus",
+        "Clint",
         "Wizard",
-        "Krobus",
-        "Leo"
+        "Dwarf",
+        "Sandy"
       ],
       "neutral": [
         "Willy"
       ],
-      "dislike": [],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": [
         "Emily",
         "Evelyn"
@@ -6161,62 +9616,24 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 249,
-    "name": "生鱼片",
-    "name_en": "Sashimi",
-    "category": "菜肴",
-    "price": 75,
+    "id": 244,
+    "name": "大麦粉",
+    "name_en": "Wheat_Flour",
+    "category": "工匠制品",
+    "price": 50,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Sashimi.png",
+    "image": "images/Wheat_Flour.png",
     "gifting": {
-      "love": [
-        "Sebastian"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo"
-      ],
-      "neutral": [
-        "Willy"
-      ],
+      "love": [],
+      "like": [],
+      "neutral": [],
       "dislike": [],
-      "hate": [
-        "Emily",
-        "Evelyn",
-        "Kent"
-      ]
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
     }
   },
   {
-    "id": 250,
+    "id": 245,
     "name": "墨西哥薄饼",
     "name_en": "Tortilla",
     "category": "菜肴",
@@ -6226,52 +9643,16 @@ window.ITEMS_DATA = [
     "image": "images/Tortilla.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Willy"
-      ],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Kent",
-        "Pierre"
-      ]
+      "dislike": ["Leah", "Willy", "Krobus", "Leo"],
+      "hate": ["Pierre", "Kent"]
     }
   },
   {
-    "id": 251,
+    "id": 246,
     "name": "三倍浓缩咖啡",
-    "name_en": "Triple Shot Espresso",
+    "name_en": "Triple_Shot_Espresso",
     "category": "菜肴",
     "price": 450,
     "has_quality": false,
@@ -6279,50 +9660,14 @@ window.ITEMS_DATA = [
     "image": "images/Triple_Shot_Espresso.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Wizard",
-        "Krobus",
-        "Willy"
-      ],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Jas",
-        "Leo",
-        "Vincent"
-      ]
+      "dislike": ["Willy", "Krobus"],
+      "hate": ["Jas", "Vincent", "Leo"]
     }
   },
   {
-    "id": 252,
+    "id": 247,
     "name": "海泡布丁",
     "name_en": "Seafoam Pudding",
     "category": "菜肴",
@@ -6375,7 +9720,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 253,
+    "id": 248,
     "name": "面包",
     "name_en": "Bread",
     "category": "菜肴",
@@ -6386,13 +9731,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Harvey"],
-      "hate": ["Leah"]
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey"
+      ],
+      "hate": [
+        "Leah"
+      ]
     }
   },
   {
-    "id": 254,
+    "id": 249,
     "name": "饼干",
     "name_en": "Cookie",
     "category": "菜肴",
@@ -6402,14 +9784,50 @@ window.ITEMS_DATA = [
     "image": "images/Cookie.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Leah", "Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Leah",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 255,
+    "id": 250,
     "name": "意大利面",
     "name_en": "Spaghetti",
     "category": "菜肴",
@@ -6462,60 +9880,24 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 256,
+    "id": 251,
     "name": "帕尔玛茄子",
-    "name_en": "Eggplant Parmesan",
+    "name_en": "Eggplant_Parmesan",
     "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
     "image": "images/Eggplant_Parmesan.png",
     "gifting": {
-      "love": [
-        "Jodi"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Jodi"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 257,
+    "id": 252,
     "name": "蔬菜什锦盖饭",
     "name_en": "Stir_Fry",
     "category": "菜肴",
@@ -6524,68 +9906,69 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Stir_Fry.png",
     "gifting": {
-      "love": ["Leah"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Leah"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 258,
-    "name": "蓝莓挞",
-    "name_en": "Blueberry Tart",
+    "id": 253,
+    "name": "蓝莓千层酥",
+    "name_en": "Blueberry_Tart",
     "category": "菜肴",
     "price": 150,
     "has_quality": false,
     "qualities": {},
     "image": "images/Blueberry_Tart.png",
     "gifting": {
-      "love": [
-        "Linus"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Harvey",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Linus"],
+      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 259,
+    "id": 254,
     "name": "三文鱼晚餐",
     "name_en": "Salmon Dinner",
     "category": "菜肴",
@@ -6639,59 +10022,29 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 260,
-    "name": "龙虾浓汤",
-    "name_en": "Lobster Bisque",
-    "category": "菜肴",
-    "price": 500,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/Lobster_Bisque.png",
+    "id": 255,
+    "name": "野山葵",
+    "name_en": "Wild_Horseradish",
+    "category": "采集物",
+    "price": 50,
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Wild_Horseradish.png",
     "gifting": {
-      "love": [],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard",
-        "Krobus",
-        "Leo"
-      ],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "love": ["Krobus"],
+      "like": ["Harvey", "Leah", "Caroline", "Linus"],
+      "neutral": ["Maru", "Penny", "Emily", "Demetrius", "Kent", "Sandy"],
+      "dislike": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Evelyn", "George", "Jodi", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Leo"],
+      "hate": ["Haley", "Jas", "Vincent"]
     }
   },
   {
-    "id": 261,
+    "id": 256,
     "name": "蜗牛沙拉",
     "name_en": "Escargot",
     "category": "菜肴",
@@ -6744,114 +10097,41 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 262,
+    "id": 257,
     "name": "香辣鳗鱼",
-    "name_en": "Spicy Eel",
+    "name_en": "Spicy_Eel",
     "category": "菜肴",
     "price": 175,
     "has_quality": false,
     "qualities": {},
     "image": "images/Spicy_Eel.png",
     "gifting": {
-      "love": [
-        "Abigail"
-      ],
-      "like": [
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Emily",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Abigail"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Evelyn"
-      ]
+      "dislike": ["Emily", "Willy", "Krobus", "Leo"],
+      "hate": ["Evelyn"]
     }
   },
   {
-    "id": 263,
-    "name": "超级餐",
-    "name_en": "Super Meal",
+    "id": 258,
+    "name": "黑莓脆皮饼",
+    "name_en": "Blackberry_Cobbler",
     "category": "菜肴",
-    "price": 450,
+    "price": 260,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Super_Meal.png",
+    "image": "images/Blackberry_Cobbler.png",
     "gifting": {
-      "love": [
-        "Harvey"
-      ],
-      "like": [
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Dwarf",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Leah",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Penny",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Wizard",
-        "Krobus",
-        "Leo",
-        "Willy"
-      ],
+      "love": ["Abigail"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 264,
+    "id": 259,
     "name": "矿工小吃",
     "name_en": "Miner's Treat",
     "category": "菜肴",
@@ -6904,7 +10184,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 265,
+    "id": 260,
     "name": "基础肥料",
     "name_en": "Basic Fertilizer",
     "category": "农场工具",
@@ -6956,7 +10236,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 266,
+    "id": 261,
     "name": "基础保湿土壤",
     "name_en": "Basic Retaining Soil",
     "category": "农场工具",
@@ -7008,7 +10288,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 267,
+    "id": 262,
     "name": "高级肥料",
     "name_en": "Deluxe Fertilizer",
     "category": "农场工具",
@@ -7060,7 +10340,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 268,
+    "id": 263,
     "name": "高级保湿土壤",
     "name_en": "Deluxe Retaining Soil",
     "category": "农场工具",
@@ -7112,7 +10392,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 269,
+    "id": 264,
     "name": "高级生长激素",
     "name_en": "Deluxe Speed-Gro",
     "category": "农场工具",
@@ -7164,7 +10444,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 270,
+    "id": 265,
     "name": "超速生长激素",
     "name_en": "Hyper Speed-Gro",
     "category": "农场工具",
@@ -7216,7 +10496,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 271,
+    "id": 266,
     "name": "优质肥料",
     "name_en": "Quality Fertilizer",
     "category": "农场工具",
@@ -7268,7 +10548,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 272,
+    "id": 267,
     "name": "优质保湿土壤",
     "name_en": "Quality Retaining Soil",
     "category": "农场工具",
@@ -7320,7 +10600,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 273,
+    "id": 268,
     "name": "生长激素",
     "name_en": "Speed-Gro",
     "category": "农场工具",
@@ -7372,7 +10652,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 274,
+    "id": 269,
     "name": "树肥",
     "name_en": "Tree Fertilizer",
     "category": "农场工具",
@@ -7424,7 +10704,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 275,
+    "id": 270,
     "name": "混合种子",
     "name_en": "Mixed_Seeds",
     "category": "种子",
@@ -7436,12 +10716,47 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 276,
+    "id": 271,
     "name": "混合花卉种子",
     "name_en": "Mixed Flower Seeds",
     "category": "种子",
@@ -7493,7 +10808,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 277,
+    "id": 272,
     "name": "橡子",
     "name_en": "Acorn",
     "category": "种子",
@@ -7505,12 +10820,47 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 278,
+    "id": 273,
     "name": "枫树种子",
     "name_en": "Maple Seed",
     "category": "种子",
@@ -7562,7 +10912,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 279,
+    "id": 274,
     "name": "松果",
     "name_en": "Pine Cone",
     "category": "种子",
@@ -7614,7 +10964,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 280,
+    "id": 275,
     "name": "桃花心木种子",
     "name_en": "Mahogany Seed",
     "category": "种子",
@@ -7666,7 +11016,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 281,
+    "id": 276,
     "name": "茶苗",
     "name_en": "Tea Sapling",
     "category": "种子",
@@ -7718,7 +11068,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 282,
+    "id": 277,
     "name": "仙人掌种子",
     "name_en": "Cactus Seeds",
     "category": "种子",
@@ -7770,7 +11120,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 283,
+    "id": 278,
     "name": "纤维种子",
     "name_en": "Fiber Seeds",
     "category": "种子",
@@ -7787,7 +11137,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 284,
+    "id": 279,
     "name": "古代玩偶",
     "name_en": "Ancient Doll",
     "category": "古物",
@@ -7840,7 +11190,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 285,
+    "id": 280,
     "name": "古代种子",
     "name_en": "Ancient Seed",
     "category": "古物",
@@ -7892,7 +11242,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 286,
+    "id": 281,
     "name": "箭头",
     "name_en": "Arrowhead",
     "category": "古物",
@@ -7944,7 +11294,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 287,
+    "id": 282,
     "name": "骨笛",
     "name_en": "Bone Flute",
     "category": "古物",
@@ -7996,7 +11346,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 288,
+    "id": 283,
     "name": "鸡雕像",
     "name_en": "Chicken Statue",
     "category": "古物",
@@ -8048,7 +11398,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 289,
+    "id": 284,
     "name": "咀嚼棒",
     "name_en": "Chewing Stick",
     "category": "古物",
@@ -8100,7 +11450,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 290,
+    "id": 285,
     "name": "矮人小工具",
     "name_en": "Dwarf Gadget",
     "category": "古物",
@@ -8153,7 +11503,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 291,
+    "id": 286,
     "name": "矮人头盔",
     "name_en": "Dwarvish Helm",
     "category": "古物",
@@ -8205,7 +11555,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 292,
+    "id": 287,
     "name": "矮人卷轴 I",
     "name_en": "Dwarf Scroll I",
     "category": "古物",
@@ -8257,7 +11607,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 293,
+    "id": 288,
     "name": "矮人卷轴 II",
     "name_en": "Dwarf Scroll II",
     "category": "古物",
@@ -8309,7 +11659,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 294,
+    "id": 289,
     "name": "矮人卷轴 III",
     "name_en": "Dwarf Scroll III",
     "category": "古物",
@@ -8361,7 +11711,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 295,
+    "id": 290,
     "name": "矮人卷轴 IV",
     "name_en": "Dwarf Scroll IV",
     "category": "古物",
@@ -8413,7 +11763,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 296,
+    "id": 291,
     "name": "精灵珠宝",
     "name_en": "Elvish Jewelry",
     "category": "古物",
@@ -8465,7 +11815,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 297,
+    "id": 292,
     "name": "玻璃碎片",
     "name_en": "Glass Shards",
     "category": "古物",
@@ -8517,7 +11867,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 298,
+    "id": 293,
     "name": "黄金面具",
     "name_en": "Golden Mask",
     "category": "古物",
@@ -8569,7 +11919,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 299,
+    "id": 294,
     "name": "黄金遗物",
     "name_en": "Golden Relic",
     "category": "古物",
@@ -8621,7 +11971,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 300,
+    "id": 295,
     "name": "装饰扇子",
     "name_en": "Ornamental Fan",
     "category": "古物",
@@ -8673,7 +12023,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 301,
+    "id": 296,
     "name": "生锈的勺子",
     "name_en": "Rusty Spoon",
     "category": "古物",
@@ -8725,7 +12075,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 302,
+    "id": 297,
     "name": "生锈的马刺",
     "name_en": "Rusty Spur",
     "category": "古物",
@@ -8777,7 +12127,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 303,
+    "id": 298,
     "name": "生锈的齿轮",
     "name_en": "Rusty Cog",
     "category": "古物",
@@ -8829,7 +12179,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 304,
+    "id": 299,
     "name": "稀有圆盘",
     "name_en": "Rare Disc",
     "category": "古物",
@@ -8881,7 +12231,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 305,
+    "id": 300,
     "name": "骷髅手部",
     "name_en": "Skeletal Hand",
     "category": "古物",
@@ -8933,7 +12283,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 306,
+    "id": 301,
     "name": "骷髅尾部",
     "name_en": "Skeletal Tail",
     "category": "古物",
@@ -8985,7 +12335,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 307,
+    "id": 302,
     "name": "两栖动物化石",
     "name_en": "Amphibian Fossil",
     "category": "古物",
@@ -9037,7 +12387,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 308,
+    "id": 303,
     "name": "棕榈化石",
     "name_en": "Palm Fossil",
     "category": "古物",
@@ -9089,7 +12439,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 309,
+    "id": 304,
     "name": "三叶虫",
     "name_en": "Trilobite",
     "category": "古物",
@@ -9141,7 +12491,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 310,
+    "id": 305,
     "name": "干海星",
     "name_en": "Dried Starfish",
     "category": "古物",
@@ -9193,7 +12543,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 311,
+    "id": 306,
     "name": "蛇头骨",
     "name_en": "Snake Skull",
     "category": "古物",
@@ -9210,7 +12560,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 312,
+    "id": 307,
     "name": "蛇脊椎",
     "name_en": "Snake Vertebrae",
     "category": "古物",
@@ -9227,7 +12577,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 313,
+    "id": 308,
     "name": "诡异玩偶(绿)",
     "name_en": "Strange Doll (green)",
     "category": "古物",
@@ -9280,7 +12630,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 314,
+    "id": 309,
     "name": "诡异玩偶(黄)",
     "name_en": "Strange Doll (yellow)",
     "category": "古物",
@@ -9333,7 +12683,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 315,
+    "id": 310,
     "name": "古代鼓",
     "name_en": "Ancient Drum",
     "category": "古物",
@@ -9385,7 +12735,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 316,
+    "id": 311,
     "name": "古剑",
     "name_en": "Ancient Sword",
     "category": "古物",
@@ -9437,7 +12787,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 317,
+    "id": 312,
     "name": "船锚",
     "name_en": "Anchor",
     "category": "古物",
@@ -9489,7 +12839,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 318,
+    "id": 313,
     "name": "碎双耳瓶",
     "name_en": "Chipped Amphora",
     "category": "古物",
@@ -9541,7 +12891,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 319,
+    "id": 314,
     "name": "鹦鹉螺化石",
     "name_en": "Nautilus Fossil",
     "category": "古物",
@@ -9593,7 +12943,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 320,
+    "id": 315,
     "name": "史前手斧",
     "name_en": "Prehistoric Handaxe",
     "category": "古物",
@@ -9645,7 +12995,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 321,
+    "id": 316,
     "name": "史前肩胛骨",
     "name_en": "Prehistoric Scapula",
     "category": "古物",
@@ -9697,7 +13047,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 322,
+    "id": 317,
     "name": "史前脊椎",
     "name_en": "Prehistoric Vertebra",
     "category": "古物",
@@ -9749,7 +13099,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 323,
+    "id": 318,
     "name": "史前肋骨",
     "name_en": "Prehistoric Rib",
     "category": "古物",
@@ -9801,7 +13151,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 324,
+    "id": 319,
     "name": "史前头骨",
     "name_en": "Prehistoric Skull",
     "category": "古物",
@@ -9853,7 +13203,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 325,
+    "id": 320,
     "name": "史前胫骨",
     "name_en": "Prehistoric Tibia",
     "category": "古物",
@@ -9905,7 +13255,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 326,
+    "id": 321,
     "name": "史前工具",
     "name_en": "Prehistoric Tool",
     "category": "古物",
@@ -9957,7 +13307,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 327,
+    "id": 322,
     "name": "蝙蝠翅膀",
     "name_en": "Bat Wing",
     "category": "怪物战利品",
@@ -10009,7 +13359,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 328,
+    "id": 323,
     "name": "虫肉",
     "name_en": "Bug Meat",
     "category": "怪物战利品",
@@ -10061,7 +13411,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 329,
+    "id": 324,
     "name": "太阳精华",
     "name_en": "Solar Essence",
     "category": "怪物战利品",
@@ -10115,7 +13465,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 330,
+    "id": 325,
     "name": "虚空精华",
     "name_en": "Void Essence",
     "category": "怪物战利品",
@@ -10169,7 +13519,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 331,
+    "id": 326,
     "name": "史莱姆泥",
     "name_en": "Slime",
     "category": "怪物战利品",
@@ -10222,7 +13572,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 332,
+    "id": 327,
     "name": "蜘蛛蛋",
     "name_en": "Spider Eggs",
     "category": "怪物战利品",
@@ -10239,7 +13589,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 333,
+    "id": 328,
     "name": "星辰之书",
     "name_en": "Book of Stars",
     "category": "书",
@@ -10256,7 +13606,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 334,
+    "id": 329,
     "name": "酱料女皇食谱",
     "name_en": "Queen of Sauce Cookbook",
     "category": "书",
@@ -10273,7 +13623,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 335,
+    "id": 330,
     "name": "星露谷物语年鉴",
     "name_en": "Stardew Valley Almanac",
     "category": "书",
@@ -10290,29 +13640,24 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 336,
-    "name": "野山葵",
-    "name_en": "Wild Horseradish",
-    "category": "采集物",
+    "id": 331,
+    "name": "糖",
+    "name_en": "Sugar",
+    "category": "工匠制品",
     "price": 50,
-    "has_quality": true,
-    "qualities": {
-      "普通": 50,
-      "银星": 62,
-      "金星": 75,
-      "铱星": 100
-    },
-    "image": "",
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sugar.png",
     "gifting": {
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": [],
-      "hate": []
+      "dislike": ["Abigail"],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
     }
   },
   {
-    "id": 337,
+    "id": 332,
     "name": "香料浆果",
     "name_en": "Spice Berry",
     "category": "采集物",
@@ -10334,7 +13679,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 338,
+    "id": 333,
     "name": "大葱",
     "name_en": "Spring Onion",
     "category": "采集物",
@@ -10356,7 +13701,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 339,
+    "id": 334,
     "name": "韭菜",
     "name_en": "Leek",
     "category": "采集物",
@@ -10378,7 +13723,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 340,
+    "id": 335,
     "name": "蒲公英",
     "name_en": "Dandelion",
     "category": "采集物",
@@ -10400,7 +13745,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 341,
+    "id": 336,
     "name": "美洲大树莓",
     "name_en": "Salmonberry",
     "category": "采集物",
@@ -10417,7 +13762,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 342,
+    "id": 337,
     "name": "羊肚菌",
     "name_en": "Morel",
     "category": "采集物",
@@ -10439,9 +13784,9 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 343,
+    "id": 338,
     "name": "普通蘑菇",
-    "name_en": "Common Mushroom",
+    "name_en": "Common_Mushroom",
     "category": "采集物",
     "price": 40,
     "has_quality": true,
@@ -10451,17 +13796,17 @@ window.ITEMS_DATA = [
       "金星": 60,
       "铱星": 80
     },
-    "image": "",
+    "image": "images/Common_Mushroom.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
+      "like": ["Harvey", "Leah", "Linus"],
+      "neutral": ["Alex", "Penny", "Emily", "Abigail", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Kent", "Gus", "Pam", "Clint", "Sandy"],
+      "dislike": ["Sam", "Shane", "Elliott", "Sebastian", "Haley", "Maru", "Pierre", "Caroline", "Jas", "Vincent", "Jodi", "Willy", "Wizard", "Dwarf", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 344,
+    "id": 339,
     "name": "榛子",
     "name_en": "Hazelnut",
     "category": "采集物",
@@ -10473,17 +13818,17 @@ window.ITEMS_DATA = [
       "金星": 135,
       "铱星": 180
     },
-    "image": "images/Roasted_Hazelnuts.png",
+    "image": "images/Hazelnuts.png",
     "gifting": {
-      "love": [],
-      "like": [],
+      "love": ["Kent"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 345,
+    "id": 340,
     "name": "野梅",
     "name_en": "Wild Plum",
     "category": "采集物",
@@ -10505,7 +13850,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 346,
+    "id": 341,
     "name": "黑莓",
     "name_en": "Blackberry",
     "category": "采集物",
@@ -10520,14 +13865,51 @@ window.ITEMS_DATA = [
     "image": "images/Blackberry.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Maru", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Maru",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
   {
-    "id": 347,
+    "id": 342,
     "name": "鸡油菌",
     "name_en": "Chanterelle",
     "category": "采集物",
@@ -10549,7 +13931,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 348,
+    "id": 343,
     "name": "红蘑菇",
     "name_en": "Red Mushroom",
     "category": "采集物",
@@ -10571,7 +13953,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 349,
+    "id": 344,
     "name": "紫蘑菇",
     "name_en": "Purple Mushroom",
     "category": "采集物",
@@ -10593,7 +13975,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 350,
+    "id": 345,
     "name": "椰子",
     "name_en": "Coconut",
     "category": "采集物",
@@ -10615,7 +13997,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 351,
+    "id": 346,
     "name": "珊瑚",
     "name_en": "Coral",
     "category": "采集物",
@@ -10632,7 +14014,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 352,
+    "id": 347,
     "name": "海胆",
     "name_en": "Sea Urchin",
     "category": "采集物",
@@ -10649,7 +14031,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 353,
+    "id": 348,
     "name": "雪山药",
     "name_en": "Snow Yam",
     "category": "采集物",
@@ -10671,29 +14053,24 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 354,
-    "name": "冬根",
-    "name_en": "Winter_Root",
-    "category": "采集物",
-    "price": 70,
-    "has_quality": true,
-    "qualities": {
-      "普通": 70,
-      "银星": 87,
-      "金星": 105,
-      "铱星": 140
-    },
-    "image": "Winter_Root.png",
+    "id": 349,
+    "name": "烤榛子",
+    "name_en": "Roasted_Hazelnuts",
+    "category": "菜肴",
+    "price": 270,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Roasted_Hazelnuts.png",
     "gifting": {
-      "love": [],
-      "like": [],
+      "love": ["Kent"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
   {
-    "id": 355,
+    "id": 350,
     "name": "水晶果",
     "name_en": "Crystal Fruit",
     "category": "采集物",
@@ -10715,7 +14092,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 356,
+    "id": 351,
     "name": "冬青树",
     "name_en": "Holly",
     "category": "采集物",
@@ -10732,7 +14109,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 357,
+    "id": 352,
     "name": "姜",
     "name_en": "Ginger",
     "category": "采集物",
@@ -10754,7 +14131,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 358,
+    "id": 353,
     "name": "熔岩菇",
     "name_en": "Magma Cap",
     "category": "采集物",
@@ -10776,7 +14153,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 359,
+    "id": 354,
     "name": "彩虹贝壳",
     "name_en": "Rainbow Shell",
     "category": "采集物",
@@ -10793,7 +14170,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 360,
+    "id": 355,
     "name": "鹦鹉螺",
     "name_en": "Nautilus Shell",
     "category": "采集物",
@@ -10810,7 +14187,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 361,
+    "id": 356,
     "name": "贻贝",
     "name_en": "Mussel",
     "category": "采集物",
@@ -10827,7 +14204,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 362,
+    "id": 357,
     "name": "蛤",
     "name_en": "Clam",
     "category": "采集物",
@@ -10844,7 +14221,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 363,
+    "id": 358,
     "name": "鸟蛤",
     "name_en": "Cockle",
     "category": "采集物",
@@ -10860,76 +14237,85 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
+  // {
+  //   "id": 359,
+  //   "name": "虾",
+  //   "name_en": "Shrimp",
+  //   "category": "采集物",
+  //   "price": 60,
+  //   "has_quality": false,
+  //   "qualities": {},
+  //   "image": "images/24px-Shrimp.png",
+  //   "gifting": {
+  //     "love": [],
+  //     "like": [],
+  //     "neutral": [],
+  //     "dislike": [],
+  //     "hate": []
+  //   }
+  // },
   {
-    "id": 364,
-    "name": "虾",
-    "name_en": "Shrimp",
-    "category": "采集物",
-    "price": 60,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Shrimp.png",
-    "gifting": {
-      "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
-    }
-  },
-  {
-    "id": 365,
+    "id": 360,
     "name": "螃蟹",
     "name_en": "Crab",
-    "category": "采集物",
+    "category": "鱼类",
     "price": 100,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Crab.png",
+    "has_quality": true,
+    "qualities": {
+      "普通":100,
+      "银星":125
+    },
+    "image": "images/Crab.png",
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
     }
   },
   {
-    "id": 366,
+    "id": 361,
     "name": "龙虾",
     "name_en": "Lobster",
-    "category": "采集物",
+    "category": "鱼类",
     "price": 120,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Lobster.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150
+    },
+    "image": "images/Lobster.png",
     "gifting": {
-      "love": [],
+      "love": ["Elliott"],
       "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "neutral": ["Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
     }
   },
   {
-    "id": 367,
+    "id": 362,
     "name": "小龙虾",
     "name_en": "Crayfish",
-    "category": "采集物",
+    "category": "鱼类",
     "price": 75,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Crayfish.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93
+    },
+    "image": "images/Crayfish.png",
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
     }
   },
   {
-    "id": 368,
+    "id": 363,
     "name": "玉黍螺",
     "name_en": "Periwinkle",
     "category": "采集物",
@@ -10946,7 +14332,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 369,
+    "id": 364,
     "name": "牡蛎",
     "name_en": "Oyster",
     "category": "采集物",
@@ -10963,7 +14349,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 370,
+    "id": 365,
     "name": "化石腿",
     "name_en": "Fossilized Leg",
     "category": "采集物",
@@ -10980,7 +14366,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 371,
+    "id": 366,
     "name": "化石肋骨",
     "name_en": "Fossilized Ribs",
     "category": "采集物",
@@ -10997,7 +14383,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 372,
+    "id": 367,
     "name": "化石头骨",
     "name_en": "Fossilized Skull",
     "category": "采集物",
@@ -11014,7 +14400,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 373,
+    "id": 368,
     "name": "化石脊柱",
     "name_en": "Fossilized Spine",
     "category": "采集物",
@@ -11028,10 +14414,10 @@ window.ITEMS_DATA = [
       "neutral": [],
       "dislike": [],
       "hate": []
-    },
+    }
   },
   {
-    "id": 374,
+    "id": 369,
     "name": "化石尾巴",
     "name_en": "Fossilized Tail",
     "category": "采集物",
@@ -11048,7 +14434,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 370,
     "name": "西瓜发卡",
     "name_en": "Watermelon_Band",
     "category": "帽子",
@@ -11065,7 +14451,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 371,
     "name": "老鼠耳朵",
     "name_en": "Mouse_Ears",
     "category": "帽子",
@@ -11082,7 +14468,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 372,
     "name": "猫耳",
     "name_en": "Cat_Ears",
     "category": "帽子",
@@ -11099,7 +14485,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 373,
     "name": "牛仔女郎帽",
     "name_en": "Cowgal_Hat",
     "category": "帽子",
@@ -11133,7 +14519,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 375,
     "name": "射手帽",
     "name_en": "Archer's_Cap",
     "category": "帽子",
@@ -11150,7 +14536,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 376,
     "name": "熊猫帽子",
     "name_en": "Panda_Hat",
     "category": "帽子",
@@ -11167,7 +14553,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 377,
     "name": "蓝色牛仔帽",
     "name_en": "Blue_Cowboy_Hat",
     "category": "帽子",
@@ -11184,7 +14570,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 378,
     "name": "红色牛仔帽",
     "name_en": "Red_Cowboy_Hat",
     "category": "帽子",
@@ -11201,7 +14587,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 379,
     "name": "锥帽",
     "name_en": "Cone_Hat",
     "category": "帽子",
@@ -11218,7 +14604,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 380,
     "name": "活的帽子",
     "name_en": "Living_Hat",
     "category": "帽子",
@@ -11235,7 +14621,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 381,
     "name": "艾米丽的魔法帽",
     "name_en": "Emily's_Magic_Hat",
     "category": "帽子",
@@ -11252,7 +14638,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 382,
     "name": "蘑菇帽",
     "name_en": "Mushroom_Cap",
     "category": "帽子",
@@ -11269,7 +14655,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 383,
     "name": "恐龙帽",
     "name_en": "Dinosaur_Hat",
     "category": "帽子",
@@ -11286,7 +14672,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 384,
     "name": "图腾面具",
     "name_en": "Totem_Mask",
     "category": "帽子",
@@ -11303,7 +14689,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 385,
     "name": "标志帽",
     "name_en": "Logo_Cap",
     "category": "帽子",
@@ -11320,7 +14706,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 386,
     "name": "可穿戴的矮人帽子",
     "name_en": "Wearable_Dwarf_Helm",
     "category": "帽子",
@@ -11337,7 +14723,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 387,
     "name": "时尚帽",
     "name_en": "Fashion_Hat",
     "category": "帽子",
@@ -11354,7 +14740,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 388,
     "name": "南瓜面具",
     "name_en": "Fashion_Hat",
     "category": "帽子",
@@ -11371,7 +14757,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 389,
     "name": "骨发卡",
     "name_en": "Hair_Bone",
     "category": "帽子",
@@ -11388,7 +14774,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 390,
     "name": "护卫头盔",
     "name_en": "Squire's_Helmet",
     "category": "帽子",
@@ -11405,7 +14791,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 391,
     "name": "斑点头巾",
     "name_en": "Spotted_Headscarf",
     "category": "帽子",
@@ -11422,7 +14808,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 392,
     "name": "毛线帽",
     "name_en": "Beanie",
     "category": "帽子",
@@ -11439,7 +14825,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 393,
     "name": "宽松毛线帽",
     "name_en": "Floppy_Beanie",
     "category": "帽子",
@@ -11456,7 +14842,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 394,
     "name": "钓鱼帽",
     "name_en": "Fishing_Hat",
     "category": "帽子",
@@ -11473,7 +14859,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 395,
     "name": "水滴鱼面具",
     "name_en": "Blobfish_Mask",
     "category": "帽子",
@@ -11490,7 +14876,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 396,
     "name": "派对帽（红色）",
     "name_en": "Party_Hat_(red)",
     "category": "帽子",
@@ -11507,7 +14893,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 397,
     "name": "派对帽(蓝色）",
     "name_en": "Party_Hat_(blue)",
     "category": "帽子",
@@ -11524,7 +14910,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 398,
     "name": "神秘帽",
     "name_en": "Arcane_Hat",
     "category": "帽子",
@@ -11541,7 +14927,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 399,
     "name": "厨师帽",
     "name_en": "Chef_Hat",
     "category": "帽子",
@@ -11558,7 +14944,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 400,
     "name": "海盗帽",
     "name_en": "Pirate_Hat",
     "category": "帽子",
@@ -11575,7 +14961,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 401,
     "name": "平顶帽",
     "name_en": "Flat_Topped_Hat",
     "category": "帽子",
@@ -11592,7 +14978,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 402,
     "name": "优雅头巾",
     "name_en": "Elegant_Turban",
     "category": "帽子",
@@ -11609,7 +14995,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 403,
     "name": "白色头巾",
     "name_en": "White_Turban",
     "category": "帽子",
@@ -11626,7 +15012,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 404,
     "name": "垃圾帽",
     "name_en": "Garbage_Hat",
     "category": "帽子",
@@ -11643,7 +15029,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 405,
     "name": "金色面具",
     "name_en": "Golden_Mask_(hat)",
     "category": "帽子",
@@ -11660,7 +15046,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 406,
     "name": "螺旋桨帽",
     "name_en": "Propeller_Hat",
     "category": "帽子",
@@ -11677,7 +15063,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 407,
     "name": "新娘面纱",
     "name_en": "Bridal_Veil",
     "category": "帽子",
@@ -11694,7 +15080,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 408,
     "name": "女巫帽",
     "name_en": "Witch_Hat",
     "category": "帽子",
@@ -11711,7 +15097,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 409,
     "name": "陶盘（帽子）",
     "name_en": "Copper_Pan_(hat)",
     "category": "帽子",
@@ -11728,7 +15114,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 410,
     "name": "绿色头巾",
     "name_en": "Green_Turban",
     "category": "帽子",
@@ -11745,7 +15131,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 411,
     "name": "魔法牛仔帽",
     "name_en": "Magic_Cowboy_Hat",
     "category": "帽子",
@@ -11762,7 +15148,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 412,
     "name": "魔法头巾",
     "name_en": "Magic_Turban",
     "category": "帽子",
@@ -11779,7 +15165,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 413,
     "name": "金色头盔",
     "name_en": "Golden_Helmet",
     "category": "帽子",
@@ -11796,7 +15182,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 414,
     "name": "豪华海盗帽",
     "name_en": "Deluxe_Pirate_Hat",
     "category": "帽子",
@@ -11813,7 +15199,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 415,
     "name": "粉色蝴蝶结",
     "name_en": "Pink_Bow",
     "category": "帽子",
@@ -11830,7 +15216,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 416,
     "name": "小帽子",
     "name_en": "Small_Cap",
     "category": "帽子",
@@ -11847,7 +15233,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 417,
     "name": "蓝鸟面具",
     "name_en": "Bluebird_Mask",
     "category": "帽子",
@@ -11864,7 +15250,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 418,
     "name": "豪华牛仔帽",
     "name_en": "Deluxe_Cowboy_Hat",
     "category": "帽子",
@@ -11881,7 +15267,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 419,
     "name": "齐先生的帽子",
     "name_en": "Mr._Qi's_Hat",
     "category": "帽子",
@@ -11898,7 +15284,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 420,
     "name": "黑色牛仔帽",
     "name_en": "Dark_Cowboy_Hat",
     "category": "帽子",
@@ -11915,7 +15301,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 421,
     "name": "防辐射护目镜",
     "name_en": "Radioactive_Goggles",
     "category": "帽子",
@@ -11932,7 +15318,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 422,
     "name": "侠客帽",
     "name_en": "Swashbuckler_Hat",
     "category": "帽子",
@@ -11949,7 +15335,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 423,
     "name": "齐氏面具",
     "name_en": "Qi_Mask",
     "category": "帽子",
@@ -11966,7 +15352,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 424,
     "name": "星星头盔",
     "name_en": "Star_Helmet",
     "category": "帽子",
@@ -11983,7 +15369,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 425,
     "name": "太阳镜",
     "name_en": "Sunglasses",
     "category": "帽子",
@@ -12000,7 +15386,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 426,
     "name": "护目镜",
     "name_en": "Goggles",
     "category": "帽子",
@@ -12017,7 +15403,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 427,
     "name": "采集者帽",
     "name_en": "Forager's_Hat",
     "category": "帽子",
@@ -12034,7 +15420,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 428,
     "name": "老虎帽",
     "name_en": "Tiger_Hat",
     "category": "帽子",
@@ -12051,7 +15437,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 429,
     "name": "？？？帽",
     "name_en": "ConcernedApe_Hat",
     "category": "帽子",
@@ -12068,7 +15454,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 430,
     "name": "战士头盔",
     "name_en": "Warrior_Helmet",
     "category": "帽子",
@@ -12085,7 +15471,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 431,
     "name": "阿比盖尔的蝴蝶结",
     "name_en": "Abigail's_Bow",
     "category": "帽子",
@@ -12102,7 +15488,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 432,
     "name": "蓝色蝴蝶结",
     "name_en": "Blue_Bow",
     "category": "帽子",
@@ -12119,7 +15505,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 433,
     "name": "蓝丝带",
     "name_en": "Blue_Ribbon",
     "category": "帽子",
@@ -12136,7 +15522,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 434,
     "name": "渔夫帽",
     "name_en": "Bucket_Hat",
     "category": "帽子",
@@ -12153,7 +15539,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 435,
     "name": "黑色棒球帽",
     "name_en": "Dark_Ballcap",
     "category": "帽子",
@@ -12170,7 +15556,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 436,
     "name": "黑丝绒蝴蝶结",
     "name_en": "Dark_Velvet_Bow",
     "category": "帽子",
@@ -12187,7 +15573,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 437,
     "name": "吉尔的帽子",
     "name_en": "Gil's_Hat",
     "category": "帽子",
@@ -12204,7 +15590,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 438,
     "name": "州长帽",
     "name_en": "Governor's_Hat",
     "category": "帽子",
@@ -12221,7 +15607,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 439,
     "name": "无限之冠",
     "name_en": "Infinity_Crown",
     "category": "帽子",
@@ -12238,7 +15624,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 440,
     "name": "小丑帽",
     "name_en": "Jester_Hat",
     "category": "帽子",
@@ -12255,7 +15641,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 441,
     "name": "Joja棒球帽",
     "name_en": "Joja_Cap",
     "category": "帽子",
@@ -12272,7 +15658,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 442,
     "name": "祝尼魔帽子",
     "name_en": "Junimo_Hat",
     "category": "帽子",
@@ -12289,7 +15675,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 443,
     "name": "月桂花冠",
     "name_en": "Laurel_Wreath_Crown",
     "category": "帽子",
@@ -12306,7 +15692,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 444,
     "name": "小矮妖帽子",
     "name_en": "Leprechaun_Hat",
     "category": "帽子",
@@ -12323,7 +15709,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 445,
     "name": "木乃伊头套",
     "name_en": "Mummy_Mask",
     "category": "帽子",
@@ -12340,7 +15726,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 446,
     "name": "盲盒帽",
     "name_en": "Mystery_Hat",
     "category": "帽子",
@@ -12357,7 +15743,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 447,
     "name": "报童帽",
     "name_en": "Pageboy_Cap",
     "category": "帽子",
@@ -12374,7 +15760,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 448,
     "name": "纸帽子",
     "name_en": "Paper_Hat",
     "category": "帽子",
@@ -12391,7 +15777,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 449,
     "name": "浣熊帽",
     "name_en": "Raccoon_Hat",
     "category": "帽子",
@@ -12408,7 +15794,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 450,
     "name": "红色菲斯帽",
     "name_en": "Red_Fez",
     "category": "帽子",
@@ -12425,7 +15811,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 451,
     "name": "太空头盔",
     "name_en": "Space_Helmet",
     "category": "帽子",
@@ -12442,7 +15828,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 452,
     "name": "棒球帽",
     "name_en": "Sports_Cap",
     "category": "帽子",
@@ -12459,7 +15845,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 453,
     "name": "鱿鱼帽",
     "name_en": "Squid_Hat",
     "category": "帽子",
@@ -12476,7 +15862,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 454,
     "name": "三角帽",
     "name_en": "Tricorn_Hat",
     "category": "帽子",
@@ -12493,7 +15879,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 455,
     "name": "白色蝴蝶结",
     "name_en": "White_Bow",
     "category": "帽子",
@@ -12510,7 +15896,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 456,
     "name": "运动鞋",
     "name_en": "Sneakers",
     "category": "鞋类",
@@ -12527,7 +15913,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 457,
     "name": "橡胶靴",
     "name_en": "Rubber_Boots",
     "category": "鞋类",
@@ -12544,7 +15930,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 458,
     "name": "热能靴",
     "name_en": "Thermal_Boots",
     "category": "鞋类",
@@ -12561,7 +15947,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 459,
     "name": "黑暗之靴",
     "name_en": "Dark_Boots",
     "category": "鞋类",
@@ -12578,7 +15964,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 460,
     "name": "神怪之靴",
     "name_en": "Genie_Shoes",
     "category": "鞋类",
@@ -12595,7 +15981,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 461,
     "name": "牛仔之靴",
     "name_en": "Cowboy_Boots",
     "category": "鞋类",
@@ -12612,7 +15998,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 462,
     "name": "矮精灵鞋子",
     "name_en": "Leprechaun_Shoes",
     "category": "鞋类",
@@ -12629,7 +16015,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 463,
     "name": "灰烬小丑鞋",
     "name_en": "Cinderclown_Shoes",
     "category": "鞋类",
@@ -12646,7 +16032,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 464,
     "name": "美人鱼靴",
     "name_en": "Mermaid_Boots",
     "category": "鞋类",
@@ -12663,7 +16049,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 465,
     "name": "蜥怪的爪子",
     "name_en": "Basilisk_Paw",
     "category": "饰品",
@@ -12673,14 +16059,50 @@ window.ITEMS_DATA = [
     "image": "images/Basilisk_Paw.png",
     "gifting": {
       "love": [],
-      "like": ["Abigail", "Wizard"],
+      "like": [
+        "Abigail",
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 466,
     "name": "仙女盒",
     "name_en": "Fairy_Box",
     "category": "饰品",
@@ -12689,15 +16111,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fairy_Box.png",
     "gifting": {
-      "love": ["Jas"],
-      "like": ["Wizard"],
+      "love": [
+        "Jas"
+      ],
+      "like": [
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 467,
     "name": "青蛙蛋",
     "name_en": "Green_Frog_Egg",
     "category": "饰品",
@@ -12706,15 +16165,53 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Green_Frog_Egg.png",
     "gifting": {
-      "love": ["Sebastian", "Vincent"],
-      "like": ["Wizard"],
-      "neutral": ["Alex"],
-      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Sebastian",
+        "Vincent"
+      ],
+      "like": [
+        "Wizard"
+      ],
+      "neutral": [
+        "Alex"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 468,
     "name": "寒冰法杖",
     "name_en": "Ice_Rod",
     "category": "饰品",
@@ -12724,14 +16221,50 @@ window.ITEMS_DATA = [
     "image": "images/Ice_Rod.png",
     "gifting": {
       "love": [],
-      "like": ["Wizard"],
+      "like": [
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 469,
     "name": "黄金马刺",
     "name_en": "Golden_Spur",
     "category": "饰品",
@@ -12741,14 +16274,50 @@ window.ITEMS_DATA = [
     "image": "images/Golden_Spur.png",
     "gifting": {
       "love": [],
-      "like": ["Wizard"],
+      "like": [
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 470,
     "name": "魔法发胶",
     "name_en": "Magic_Hair_Gel",
     "category": "饰品",
@@ -12758,14 +16327,50 @@ window.ITEMS_DATA = [
     "image": "images/Magic_Hair_Gel.png",
     "gifting": {
       "love": [],
-      "like": ["Wizard"],
+      "like": [
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 471,
     "name": "魔法箭筒",
     "name_en": "Magic_Quiver",
     "category": "饰品",
@@ -12775,14 +16380,50 @@ window.ITEMS_DATA = [
     "image": "images/Magic_Quiver.png",
     "gifting": {
       "love": [],
-      "like": ["Wizard"],
+      "like": [
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 472,
     "name": "鹦鹉蛋",
     "name_en": "Parrot_Egg",
     "category": "饰品",
@@ -12791,15 +16432,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Parrot_Egg.png",
     "gifting": {
-      "love": ["Emily", "Leo"],
-      "like": ["Alex", "Wizard"],
+      "love": [
+        "Emily",
+        "Leo"
+      ],
+      "like": [
+        "Alex",
+        "Wizard"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 473,
     "name": "艾米丽的魔法衣",
     "name_en": "Shirt127",
     "category": "服装",
@@ -12816,7 +16494,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 474,
     "name": "夏威夷草裙",
     "name_en": "Luau_Skirt",
     "category": "服装",
@@ -12833,7 +16511,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 475,
     "name": "谜之上衣",
     "name_en": "Mystery_Shirt",
     "category": "服装",
@@ -12850,7 +16528,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 476,
     "name": "紧身裤",
     "name_en": "Tight_Pants",
     "category": "服装",
@@ -12867,7 +16545,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 477,
     "name": "麻哈脂鲤",
     "name_en": "Dorado",
     "category": "鱼类",
@@ -12883,13 +16561,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 478,
     "name": "珊瑚",
     "name_en": "Coral",
     "category": "采集物",
@@ -12904,14 +16619,51 @@ window.ITEMS_DATA = [
     "image": "images/Coral.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "dislike": [],
-      "hate": ["Harvey"]
+      "hate": [
+        "Harvey"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 479,
     "name": "炒鳗鱼",
     "name_en": "Fried_Eel",
     "category": "菜肴",
@@ -12920,15 +16672,53 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fried_Eel.png",
     "gifting": {
-      "love": ["Jodi"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Jodi"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Emily", "Krobus", "Leo"],
-      "hate": ["Evelyn"]
+      "dislike": [
+        "Emily",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 480,
     "name": "鲑鱼",
     "name_en": "Salmon",
     "category": "鱼类",
@@ -12944,13 +16734,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 481,
     "name": "精炼石英",
     "name_en": "Refined_Quartz",
     "category": "矿物",
@@ -12961,13 +16788,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Clint"],
-      "dislike": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "hate": ["Sam"]
+      "neutral": [
+        "Clint"
+      ],
+      "dislike": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "hate": [
+        "Sam"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 482,
     "name": "鱿鱼",
     "name_en": "Squid",
     "category": "鱼类",
@@ -12977,14 +16841,52 @@ window.ITEMS_DATA = [
     "image": "images/Squid.png",
     "gifting": {
       "love": [],
-      "like": ["Elliott"],
-      "neutral": ["Sebastian", "Demetrius", "Willy", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn", "Pam"]
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn",
+        "Pam"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 483,
     "name": "干草",
     "name_en": "Hay",
     "category": "作物",
@@ -12997,11 +16899,46 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 484,
     "name": "大眼鱼",
     "name_en": "Walleye",
     "category": "鱼类",
@@ -13017,13 +16954,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 485,
     "name": "冬根",
     "name_en": "Winter_Root",
     "category": "采集",
@@ -13038,14 +17012,50 @@ window.ITEMS_DATA = [
     "image": "images/Winter_Root.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Leah", "Linus"],
-      "neutral": ["Alex", "Maru", "Penny", "Emily", "Abigail", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Kent", "Pam", "Clint", "Sandy"],
-      "dislike": ["Sam", "Shane", "Elliott", "Sebastian", "Haley", "Pierre", "Caroline", "Jas", "Vincent", "Jodi", "Willy", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "like": [
+        "Harvey",
+        "Leah",
+        "Linus"
+      ],
+      "neutral": [
+        "Alex",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Kent",
+        "Pam",
+        "Clint",
+        "Sandy"
+      ],
+      "dislike": [
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Pierre",
+        "Caroline",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Willy",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 486,
     "name": "晶球",
     "name_en": "Geode",
     "category": "矿物",
@@ -13057,12 +17067,47 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 487,
     "name": "五彩碎片",
     "name_en": "Prismatic_Shard",
     "category": "矿物",
@@ -13071,15 +17116,51 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Prismatic_Shard.png",
     "gifting": {
-      "love": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Haley"]
+      "hate": [
+        "Haley"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 488,
     "name": "粘土",
     "name_en": "Clay",
     "category": "矿物",
@@ -13091,12 +17172,48 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "hate": ["Sebastian", "Haley", "Abigail", "Marnie", "Evelyn", "George", "Jas", "Vincent"]
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "hate": [
+        "Sebastian",
+        "Haley",
+        "Abigail",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 489,
     "name": "垃圾",
     "name_en": "Trash_(item)",
     "category": "其他",
@@ -13109,28 +17226,98 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 490,
     "name": "草莓种子",
-    "name_en": "Trash_(item)",
+    "name_en": "Strawberry_Seeds",
     "category": "种子",
-    "price": 0,
+    "price": 100,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Trash_(item).png",
+    "image": "images/Strawberry_Seeds.png",
     "gifting": {
       "love": [],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 491,
     "name": "鳗鱼",
     "name_en": "Eel",
     "category": "鱼类",
@@ -13146,13 +17333,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 492,
     "name": "蟹笼",
     "name_en": "Crab_Pot",
     "category": "渔具",
@@ -13165,11 +17389,46 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 493,
     "name": "煤炭",
     "name_en": "Coal",
     "category": "矿物",
@@ -13180,13 +17439,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Clint"],
-      "dislike": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "hate": ["Sam"]
+      "neutral": [
+        "Clint"
+      ],
+      "dislike": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "hate": [
+        "Sam"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 494,
     "name": "大海参",
     "name_en": "Super_Cucumber",
     "category": "鱼类",
@@ -13200,15 +17496,53 @@ window.ITEMS_DATA = [
     },
     "image": "images/Super_Cucumber.png",
     "gifting": {
-      "love": ["Wizard"],
+      "love": [
+        "Wizard"
+      ],
       "like": [],
-      "neutral": ["Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Elliott", "Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Elliott",
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 495,
     "name": "马",
     "name_en": "Horse",
     "category": "动物",
@@ -13225,7 +17559,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 496,
     "name": "树液采集器",
     "name_en": "Tapper",
     "category": "农场工具",
@@ -13242,7 +17576,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 497,
     "name": "稀有种子",
     "name_en": "Rare_Seed",
     "category": "种子",
@@ -13255,11 +17589,46 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 498,
     "name": "美人鱼吊坠",
     "name_en": "Mermaid's_Pendant",
     "category": "戒指",
@@ -13276,7 +17645,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 499,
     "name": "回收机",
     "name_en": "Recycling_Machine",
     "category": "农场工具",
@@ -13293,7 +17662,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 500,
     "name": "青花鱼",
     "name_en": "Albacore",
     "category": "鱼类",
@@ -13309,13 +17678,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 501,
     "name": "木跃鱼",
     "name_en": "Woodskip",
     "category": "鱼类",
@@ -13331,13 +17737,50 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 502,
     "name": "黄金南瓜",
     "name_en": "Golden_Pumpkin",
     "category": "古物",
@@ -13346,7 +17789,42 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Golden_Pumpkin.png",
     "gifting": {
-      "love": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
@@ -13354,7 +17832,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 503,
     "name": "床",
     "name_en": "Single_Bed",
     "category": "家具",
@@ -13371,7 +17849,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 504,
     "name": "宝石复制机",
     "name_en": "Crystalarium",
     "category": "农场工具",
@@ -13388,7 +17866,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 505,
     "name": "棕色鸡",
     "name_en": "Brown_Chicken",
     "category": "动物",
@@ -13405,7 +17883,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 506,
     "name": "白色鸡",
     "name_en": "White_Chicken",
     "category": "动物",
@@ -13422,7 +17900,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 507,
     "name": "蓝色鸡",
     "name_en": "Blue_Chicken",
     "category": "动物",
@@ -13439,7 +17917,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 508,
     "name": "鲶鱼",
     "name_en": "Catfish",
     "category": "鱼类",
@@ -13453,15 +17931,53 @@ window.ITEMS_DATA = [
     },
     "image": "images/Catfish.png",
     "gifting": {
-      "love": ["Willy"],
+      "love": [
+        "Willy"
+      ],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 509,
     "name": "虫饵盒",
     "name_en": "Worm_Bin",
     "category": "农场工具",
@@ -13478,7 +17994,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 510,
     "name": "陶盘",
     "name_en": "Copper_Pan",
     "category": "农场工具",
@@ -13495,7 +18011,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 511,
     "name": "钢陶盘",
     "name_en": "Steel_Pan",
     "category": "农场工具",
@@ -13512,7 +18028,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 512,
     "name": "金陶盘",
     "name_en": "Gold_Pan",
     "category": "农场工具",
@@ -13529,7 +18045,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 513,
     "name": "铱陶盘",
     "name_en": "Iridium_Pan",
     "category": "农场工具",
@@ -13546,7 +18062,7 @@ window.ITEMS_DATA = [
     }
   },
   {
-    "id": 374,
+    "id": 514,
     "name": "枫糖棒",
     "name_en": "Maple_Bar",
     "category": "菜肴",
@@ -13555,15 +18071,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Maple_Bar.png",
     "gifting": {
-      "love": ["Sam"],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Sam"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 515,
     "name": "海藻汤",
     "name_en": "Algae_Soup",
     "category": "菜肴",
@@ -13573,14 +18126,51 @@ window.ITEMS_DATA = [
     "image": "images/Algae_Soup.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Penny", "Willy", "Krobus", "Leo"],
-      "hate": ["Kent"]
+      "dislike": [
+        "Penny",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Kent"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 516,
     "name": "红莓酱",
     "name_en": "Cranberry_Sauce",
     "category": "菜肴",
@@ -13590,14 +18180,50 @@ window.ITEMS_DATA = [
     "image": "images/Cranberry_Sauce.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 517,
     "name": "烩鱼汤",
     "name_en": "Fish_Stew",
     "category": "菜肴",
@@ -13607,14 +18233,50 @@ window.ITEMS_DATA = [
     "image": "images/Fish_Stew.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 518,
     "name": "南瓜汤",
     "name_en": "Pumpkin_Soup",
     "category": "菜肴",
@@ -13623,15 +18285,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Pumpkin_Soup.png",
     "gifting": {
-      "love": ["Sebastian"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Sebastian"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 519,
     "name": "南瓜派",
     "name_en": "Pumpkin_Pie",
     "category": "菜肴",
@@ -13640,15 +18339,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Pumpkin_Pie.png",
     "gifting": {
-      "love": ["Marnie"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Marnie"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 520,
     "name": "生鱼片",
     "name_en": "Sashimi",
     "category": "菜肴",
@@ -13657,15 +18393,54 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Sashimi.png",
     "gifting": {
-      "love": ["Sebastian"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
-      "neutral": ["Willy"],
-      "dislike": ["Krobus", "Leo"],
-      "hate": ["Emily", "Evelyn", "Kent"]
+      "love": [
+        "Sebastian"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [
+        "Willy"
+      ],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Emily",
+        "Evelyn",
+        "Kent"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 521,
     "name": "蟹黄膏",
     "name_en": "Crab_Cakes",
     "category": "菜肴",
@@ -13674,15 +18449,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Crab_Cakes.png",
     "gifting": {
-      "love": ["Elliott"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Elliott"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 522,
     "name": "椰汁汤",
     "name_en": "Tom_Kha_Soup",
     "category": "菜肴",
@@ -13691,15 +18503,52 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Tom_Kha_Soup.png",
     "gifting": {
-      "love": ["Elliott", "Penny"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Elliott",
+        "Penny"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
   {
-    "id": 374,
+    "id": 523,
     "name": "鱼肉卷",
     "name_en": "Fish_Taco",
     "category": "菜肴",
@@ -13708,28 +18557,1453 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fish_Taco.png",
     "gifting": {
-      "love": ["Caroline", "Gus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Caroline",
+        "Gus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Krobus", "Leo"],
-      "hate": ["Emily"]
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Emily"
+      ]
     }
   },
   {
-    "id": 374,
+    "id": 524,
     "name": "爆炒青椒",
-    "name_en": "Fish_Taco",
+    "name_en": "Pepper_Poppers",
     "category": "菜肴",
     "price": 200,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Fish_Taco.png",
+    "image": "images/Pepper_Poppers.png",
     "gifting": {
-      "love": ["Shane", "Maru"],
-      "like": ["Harvey", "Sam", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Shane",
+        "Maru"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 525,
+    "name": "大米布丁",
+    "name_en": "Rice_Pudding",
+    "category": "菜肴",
+    "price": 260,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rice_Pudding.png",
+    "gifting": {
+      "love": [
+        "Demetrius"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Harvey",
+        "Leah",
+        "Emily",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 526,
+    "name": "豆类火锅",
+    "name_en": "Bean_Hotpot",
+    "category": "菜肴",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bean_Hotpot.png",
+    "gifting": {
+      "love": [
+        "Demetrius"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 527,
+    "name": "法式田螺",
+    "name_en": "Escargot",
+    "category": "菜肴",
+    "price": 125,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Escargot.png",
+    "gifting": {
+      "love": [
+        "Gus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 528,
+    "name": "粉红蛋糕",
+    "name_en": "Pink_Cake",
+    "category": "菜肴",
+    "price": 480,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pink_Cake.png",
+    "gifting": {
+      "love": [
+        "Haley",
+        "Marnie",
+        "Jas",
+        "Vincent"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Harvey",
+        "Leah",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 529,
+    "name": "鲑鱼晚餐",
+    "name_en": "Salmon_Dinner",
+    "category": "菜肴",
+    "price": 300,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Salmon_Dinner.png",
+    "gifting": {
+      "love": [
+        "Alex"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Emily"
+      ]
+    }
+  },
+  {
+    "id": 530,
+    "name": "海泡布丁",
+    "name_en": "Seafoam_Pudding",
+    "category": "菜肴",
+    "price": 300,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Seafoam_Pudding.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Willy",
+        "Krobus"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ]
+    }
+  },
+  {
+    "id": 531,
+    "name": "海之菜肴",
+    "name_en": "Dish_O'_The_Sea",
+    "category": "菜肴",
+    "price": 220,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dish_O'_The_Sea.png",
+    "gifting": {
+      "love": [
+        "Linus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [
+        "Willy"
+      ],
+      "dislike": [
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 532,
+    "name": "红之盛宴",
+    "name_en": "Red_Plate",
+    "category": "菜肴",
+    "price": 400,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Red_Plate.png",
+    "gifting": {
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 533,
+    "name": "姜汁汽水",
+    "name_en": "Ginger_Ale",
+    "category": "菜肴",
+    "price": 200,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Ginger_Ale.png",
+    "gifting": {
+      "love": [
+        "Vincent"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 534,
+    "name": "惊喜鲤鱼",
+    "name_en": "Carp_Surprise",
+    "category": "菜肴",
+    "price": 150,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Carp_Surprise.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Leah",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 535,
+    "name": "救生汉堡",
+    "name_en": "Survival_Burger",
+    "category": "菜肴",
+    "price": 180,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Survival_Burger.png",
+    "gifting": {
+      "love": [
+        "Emily"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Leah",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 536,
+    "name": "巨无霸餐",
+    "name_en": "Super_Meal",
+    "category": "菜肴",
+    "price": 220,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Super_Meal.png",
+    "gifting": {
+      "love": [
+        "Harvey"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 537,
+    "name": "块茎拼盘",
+    "name_en": "Roots_Platter",
+    "category": "菜肴",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Roots_Platter.png",
+    "gifting": {
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 538,
+    "name": "矿工特供",
+    "name_en": "Miner's_Treat",
+    "category": "菜肴",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Miner's_Treat.png",
+    "gifting": {
+      "love": [
+        "Maru"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": []
+    }
+  },
+  {
+    "id": 539,
+    "name": "农夫午餐",
+    "name_en": "Farmer's_Lunch",
+    "category": "菜肴",
+    "price": 150,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Farmer's_Lunch.png",
+    "gifting": {
+      "love": [
+        "Marnie"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
+      "neutral": [],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Sebastian"
+      ]
+    }
+  },
+  {
+    "id": 540,
+    "name": "热带咖喱",
+    "name_en": "Tropical_Curry",
+    "category": "菜肴",
+    "price": 500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tropical_Curry.png",
+    "gifting": {
+      "love": ["Caroline", "Gus"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
       "neutral": [],
       "dislike": ["Willy", "Krobus", "Leo"],
       "hate": []
     }
   },
+  {
+    "id": 541,
+    "name": "水煮洋蓟",
+    "name_en": "Artichoke_Dip",
+    "category": "菜肴",
+    "price": 210,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Artichoke_Dip.png",
+    "gifting": {
+      "love": ["Caroline", "Gus"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 542,
+    "name": "虾鸡尾酒",
+    "name_en": "Shrimp_Cocktail",
+    "category": "菜肴",
+    "price": 160,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Shrimp_Cocktail.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 543,
+    "name": "香蕉布丁",
+    "name_en": "Banana_Pudding",
+    "category": "菜肴",
+    "price": 260,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Banana_Pudding.png",
+    "gifting": {
+      "love": ["Abigail"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 544,
+    "name": "芒果糯米饭",
+    "name_en": "Mango_Sticky_Rice",
+    "category": "菜肴",
+    "price": 250,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mango_Sticky_Rice.png",
+    "gifting": {
+      "love": ["Sandy"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Leo"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus"],
+      "hate": []
+    }
+  },
+  {
+    "id": 545,
+    "name": "蔓越莓糖果",
+    "name_en": "Cranberry_Candy",
+    "category": "菜肴",
+    "price": 175,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cranberry_Candy.png",
+    "gifting": {
+      "love": ["Vincent"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 546,
+    "name": "葡萄干布丁",
+    "name_en": "Plum_Pudding",
+    "category": "菜肴",
+    "price": 260,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Plum_Pudding.png",
+    "gifting": {
+      "love": ["Jas"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 547,
+    "name": "夏威夷芋泥",
+    "name_en": "Poi",
+    "category": "菜肴",
+    "price": 400,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Poi.png",
+    "gifting": {
+      "love": ["Leo"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus"],
+      "hate": []
+    }
+  },
+  {
+    "id": 548,
+    "name": "意式烤面包",
+    "name_en": "Bruschetta",
+    "category": "菜肴",
+    "price": 210,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bruschetta.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 549,
+    "name": "墨汁意大利饺",
+    "name_en": "Squid_Ink_Ravioli",
+    "category": "菜肴",
+    "price": 150,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Squid_Ink_Ravioli.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 550,
+    "name": "意式蕨菜炖饭",
+    "name_en": "Fiddlehead_Risotto",
+    "category": "菜肴",
+    "price": 350,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fiddlehead_Risotto.png",
+    "gifting": {
+      "love": ["Kent", "Clint"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 551,
+    "name": "虞美人籽松糕",
+    "name_en": "Poppyseed_Muffin",
+    "category": "菜肴",
+    "price": 250,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Poppyseed_Muffin.png",
+    "gifting": {
+      "love": ["Leah", "Penny"],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 552,
+    "name": "苔藓汤",
+    "name_en": "Moss_Soup",
+    "category": "菜肴",
+    "price": 80,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Moss_Soup.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 553,
+    "name": "蒜油",
+    "name_en": "Oil_of_Garlic",
+    "category": "菜肴",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Oil_of_Garlic.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 554,
+    "name": "虫肉块",
+    "name_en": "Bug_Steak",
+    "category": "怪物战利品",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bug_Steak.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 555,
+    "name": "工作小食",
+    "name_en": "Field_Snack",
+    "category": "菜肴",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Field_Snack.png",
+    "gifting": {
+      "love": [],
+      "like": ["Alex"],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 556,
+    "name": "生命药水",
+    "name_en": "Life_Elixir",
+    "category": "菜肴",
+    "price": 250,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Life_Elixir.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "neutral": [],
+      "dislike": ["Willy", "Krobus", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 557,
+    "name": "虾",
+    "name_en": "Shrimp",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 75
+    },
+    "image": "images/Shrimp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 558,
+    "name": "鲤鱼",
+    "name_en": "Carp",
+    "category": "鱼类",
+    "price": 30,
+    "has_quality": true,
+    "qualities": {
+      "普通": 30,
+      "银星": 37,
+      "金星":45,
+      "铱星":60
+    },
+    "image": "images/Carp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Linus"],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 559,
+    "name": "海参",
+    "name_en": "Sea_Cucumber",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Sea_Cucumber.png",
+    "gifting": {
+      "love": ["Willy"],
+      "like": [],
+      "neutral": ["Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Elliott", "Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 560,
+    "name": "野梅",
+    "name_en": "Wild_Plum",
+    "category": "采集",
+    "price": 80,
+    "has_quality": true,
+    "qualities": {
+      "普通": 80,
+      "银星": 100,
+      "金星": 120,
+      "铱星": 160
+    },
+    "image": "images/Wild_Plum.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "hate": []
+    }
+  },
+  {
+    "id": 561,
+    "name": "虹鳟鱼",
+    "name_en": "Rainbow_Trout",
+    "category": "鱼类",
+    "price": 65,
+    "has_quality": true,
+    "qualities": {
+      "普通": 65,
+      "银星": 81,
+      "金星": 97,
+      "铱星": 130
+    },
+    "image": "images/Rainbow_Trout.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 562,
+    "name": "绿藻",
+    "name_en": "Green_Algae",
+    "category": "其他",
+    "price": 15,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Green_Algae.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
+    }
+  },
+  {
+    "id": 563,
+    "name": "海草",
+    "name_en": "Seaweed",
+    "category": "其他",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Seaweed.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Sam", "Shane", "Leah", "Marnie"],
+      "hate": ["Harvey", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 564,
+    "name": "大米",
+    "name_en": "Rice",
+    "category": "工匠制品",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rice.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 565,
+    "name": "太阳鱼",
+    "name_en": "Sunfish",
+    "category": "鱼类",
+    "price": 30,
+    "has_quality": true,
+    "qualities": {
+      "普通": 30,
+      "银星": 37,
+      "金星": 45,
+      "铱星": 60
+    },
+    "image": "images/Sunfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 566,
+    "name": "醋",
+    "name_en": "Vinegar",
+    "category": "工匠制品",
+    "price": 200,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Vinegar.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 567,
+    "name": "山洞萝卜",
+    "name_en": "Cave_Carrot",
+    "category": "采集",
+    "price": 25,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cave_Carrot.png",
+    "gifting": {
+      "love": [],
+      "like": ["Dwarf"],
+      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Krobus", "Sandy", "Leo"],
+      "dislike": [],
+      "hate": []
+    }
+  }
 ];

@@ -82,6 +82,7 @@ let activeSearch = '';
 
 // 购物车: { itemId, name, quality, quantity, price, category, image, gifting }
 let cartItems = [];
+let currentUser = null; // 缓存当前用户
 
 const CATEGORY_ORDER = [
     "作物", "动物", "果树", "工匠制品", "家具", "墙纸", "地板",
@@ -91,6 +92,47 @@ const CATEGORY_ORDER = [
 ];
 
 const QUALITY_LABELS = ["普通", "银星", "金星", "铱星"];
+
+// ============== 加载购物车（后端 API） ==============
+async function loadCart() {
+    try {
+        const res = await fetch('api/cart.php');
+        const data = await res.json();
+        if (data.success && data.data && data.data.items) {
+            // 将后端购物车数据转换为前端 cartItems 格式
+            // 注意：这里只恢复 item_id/quality/quantity，名称等需要从 itemsData 获取
+            cartItems = data.data.items.map(ci => {
+                const itemData = itemsData.find(i => i.id === ci.item_id) || {};
+                const price = getItemPrice(itemData, ci.quality);
+                return {
+                    itemId: ci.item_id,
+                    name: itemData.name || ci.item_id,
+                    quality: ci.quality,
+                    quantity: ci.quantity,
+                    price: price,
+                    category: itemData.category || '',
+                    image: itemData.image || '',
+                    gifting: itemData.gifting || {}
+                };
+            });
+            updateCartBar();
+        }
+    } catch (e) {
+        console.error('加载购物车失败:', e);
+    }
+}
+
+async function syncCartToAPI(action, itemId, quality, quantity) {
+    try {
+        await fetch('api/cart.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action, item_id: String(itemId), quality: quality || '', quantity })
+        });
+    } catch (e) {
+        console.error('同步购物车失败:', e);
+    }
+}
 
 // ============== 收藏功能（后端 API） ==============
 async function getFavorites() {
@@ -163,6 +205,7 @@ function loadData() {
     document.getElementById('statHates').textContent = `💔 讨厌总数: ${totalHates}`;
 
     initUI();
+    loadCart(); // 从后端加载购物车
 }
 
 // ============== UI 初始化 ==============
@@ -185,6 +228,7 @@ function clearCart() {
     if (!confirm('确定要清空购物车吗？')) return;
     cartItems = [];
     updateCartBar();
+    syncCartToAPI('clear');
     // 重置所有数量输入
     document.querySelectorAll('.qty-input').forEach(el => { el.value = 0; });
     document.querySelectorAll('.subtotal').forEach(el => { el.textContent = ''; });
@@ -407,6 +451,7 @@ function updateCardPriceQuantity(item) {
         });
     }
     updateCartBar();
+    syncCartToAPI('update', item.id, quality, qty);
 }
 
 // ============== 购物车栏 ==============
@@ -464,6 +509,7 @@ function renderCartSidebar() {
             const removed = cartItems[idx];
             if (!removed) return;
             cartItems.splice(idx, 1);
+            syncCartToAPI('remove', removed.itemId, removed.quality);
 
             // 重置对应卡片上的数量输入
             const card = document.querySelector(`.item-card[data-item-id="${removed.itemId}"]`);
@@ -603,6 +649,7 @@ function showItemDetail(item) {
             if (qtyInput) qtyInput.value = cartTotal;
             updateCardPriceQuantity(item);
         }
+        syncCartToAPI('add', item.id, quality, qty);
         modal.remove();
         showToast(`✅ ${item.name} ×${qty} 已加入购物车`);
     });
@@ -686,29 +733,43 @@ function checkout() {
     document.body.appendChild(modal);
     modal.querySelector('.modal-close').addEventListener('click', () => modal.remove());
     modal.addEventListener('click', (e) => { if(e.target===modal) modal.remove(); });
-    modal.querySelector('#confirmCheckout').addEventListener('click', () => {
-        // 保存订单历史
-        const order = {
-            orderId: 'ORD' + Date.now(),
-            date: new Date().toISOString(),
-            items: JSON.parse(JSON.stringify(cartItems)),
-            totalQty: totalQty,
-            totalPrice: totalPrice,
-            totalLoves: totalLoves,
-            totalHates: totalHates
-        };
-        const orders = JSON.parse(localStorage.getItem('stardew_orders') || '[]');
-        orders.push(order);
-        localStorage.setItem('stardew_orders', JSON.stringify(orders));
-
-        cartItems = [];
-        updateCartBar();
-        // 重置所有数量输入
-        document.querySelectorAll('.qty-input').forEach(el => { el.value = 0; });
-        document.querySelectorAll('.subtotal').forEach(el => { el.textContent = ''; });
-        modal.remove();
-        // 跳转到配送页面
-        window.location.href = 'delivery.html';
+    modal.querySelector('#confirmCheckout').addEventListener('click', async () => {
+        // 创建订单
+        try {
+            const itemsPayload = cartItems.map(c => ({
+                item_id: String(c.itemId),
+                quality: c.quality || '',
+                quantity: c.quantity
+            }));
+            const res = await fetch('api/orders.php?action=create', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    action: 'create',
+                    delivery_type: 'pending',
+                    delivery_villager: '',
+                    items: itemsPayload,
+                    clear_cart: true
+                })
+            });
+            const data = await res.json();
+            if (data.success) {
+                // 订单创建成功，清空本地购物车
+                cartItems = [];
+                updateCartBar();
+                // 重置所有数量输入
+                document.querySelectorAll('.qty-input').forEach(el => { el.value = 0; });
+                document.querySelectorAll('.subtotal').forEach(el => { el.textContent = ''; });
+                modal.remove();
+                // 跳转到配送页面，传递订单号
+                window.location.href = 'delivery.html?order_id=' + data.data.order_id;
+            } else {
+                alert('订单创建失败: ' + (data.error || '未知错误'));
+            }
+        } catch (e) {
+            console.error('创建订单失败:', e);
+            alert('网络错误，请重试');
+        }
     });
 }
 

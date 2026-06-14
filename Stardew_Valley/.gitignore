@@ -1,24 +1,17 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.egg-info/
-.env
-venv/
-.venv/
+# 第三方库
+phpMyAdmin/
+ueditor-dev-1.5.0/
 
-# Logs
-*.log
-*.txt
-
-# IDE
-.vscode/
-.idea/
-
-# OS
+# 系统文件
 Thumbs.db
+Desktop.ini
 .DS_Store
 
-# Generated data cache (keep json but not scrap artifacts)
-*_checkpoint.json
-*_progress.log
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时脚本
+fix_ingredients.py
