@@ -97,8 +97,8 @@ async function getFavorites() {
     try {
         const res = await fetch('api/favorites.php');
         const data = await res.json();
-        if (data.success && data.data) {
-            return data.data.map(f => f.item_id);
+        if (data.success && data.data && data.data.favorites) {
+            return data.data.favorites;
         }
     } catch (e) {
         console.error('获取收藏失败:', e);
