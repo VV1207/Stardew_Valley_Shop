@@ -242,6 +242,345 @@
             image-rendering: crisp-edges;
             opacity: 0.6;
         }
+
+        /* ===== 新闻详情模态框 ===== */
+        .news-modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 10000;
+            overflow-y: auto;
+            padding: 30px 16px;
+            box-sizing: border-box;
+        }
+        .news-modal-overlay.open {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .news-modal-content {
+            background: white;
+            border-radius: 28px;
+            max-width: 800px;
+            width: 100%;
+            padding: 28px 30px;
+            border: 1px solid #e9e0d0;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .news-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 20px;
+            background: #f0ede5;
+            border: none;
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            z-index: 2;
+        }
+        .news-modal-close:hover {
+            background: #d4bd93;
+        }
+        .news-modal-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a04a, #e6c87a);
+            color: #3d2f1f;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 14px;
+            border-radius: 40px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .news-modal-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            line-height: 1.3;
+            margin: 8px 0 6px;
+            text-align: center;
+            background: linear-gradient(135deg, #8a6a2a, #c9a04a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .news-modal-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #8a7a5a;
+            margin-bottom: 16px;
+        }
+        .news-modal-meta {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #9a8a6a;
+            margin-bottom: 18px;
+            padding-bottom: 14px;
+            border-bottom: 1px dashed #e0d4b8;
+        }
+        .news-modal-meta span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .news-modal-hero {
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .news-modal-hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+        .news-modal-body {
+            font-size: 0.92rem;
+            line-height: 1.9;
+            color: #4a3f2c;
+        }
+        .news-modal-body p {
+            text-indent: 2em;
+            margin: 12px 0;
+        }
+        .news-modal-body .first-paragraph {
+            text-indent: 0;
+        }
+        .news-modal-body .first-paragraph::first-letter {
+            font-size: 2.6em;
+            font-weight: 800;
+            float: left;
+            line-height: 1;
+            margin-right: 8px;
+            color: #c9a04a;
+            font-family: 'Georgia', serif;
+        }
+        .news-modal-divider {
+            text-align: center;
+            margin: 22px 0 14px;
+            color: #c9a04a;
+            font-size: 1rem;
+            letter-spacing: 6px;
+        }
+        .news-modal-quote {
+            position: relative;
+            background: linear-gradient(135deg, #f8f0dc, #fcf6e8);
+            border-left: 4px solid #c9a04a;
+            border-radius: 14px;
+            padding: 18px 22px 48px;
+            margin: 18px 0;
+            font-style: italic;
+            overflow: hidden;
+        }
+        .news-modal-quote p {
+            text-indent: 0 !important;
+        }
+        .news-modal-quote .quote-author {
+            text-align: right;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #8a7a5a;
+            margin-top: 10px;
+            font-style: normal;
+        }
+        .news-modal-quote .quote-bg-img {
+            position: absolute;
+            bottom: 6px;
+            left: 8px;
+            width: 120px;
+            height: auto;
+            z-index: 1;
+            opacity: 0.35;
+            pointer-events: none;
+        }
+        .news-modal-quote p,
+        .news-modal-quote .quote-author {
+            position: relative;
+            z-index: 2;
+        }
+        .news-modal-slogan {
+            text-align: center;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #7c9f5e;
+            margin: 18px 0;
+        }
+        .news-modal-footer {
+            text-align: center;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 2px solid #e0d4b8;
+            font-size: 0.82rem;
+            color: #8a7a5a;
+        }
+        .news-modal-footer .footer-slogan {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #6a8a3a;
+            margin: 8px 0 4px;
+        }
+        .news-modal-dec-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin: 6px 0;
+            align-items: center;
+        }
+        .news-modal-dec-row img {
+            width: 22px;
+            height: 22px;
+            image-rendering: crisp-edges;
+            opacity: 0.65;
+        }
+        /* 模态框内互动区 */
+        .news-modal-interact {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
+            padding: 16px 0 0;
+            border-top: 1px solid #f0e8da;
+            flex-wrap: wrap;
+        }
+        .news-modal-interact .like-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: 1px solid #e0d4b8;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8a6a4a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .news-modal-interact .like-btn:hover {
+            background: #fdf6e7;
+            border-color: #c9a04a;
+        }
+        .news-modal-interact .like-btn.liked {
+            background: #fce8d0;
+            border-color: #c57f1e;
+            color: #b55a0a;
+        }
+        .news-modal-interact .like-count {
+            font-weight: 700;
+            min-width: 16px;
+            text-align: center;
+        }
+        .news-modal-interact .comment-area {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .news-modal-interact .comment-input {
+            flex: 1;
+            min-width: 120px;
+            padding: 8px 14px;
+            border: 1px solid #dcd0bc;
+            border-radius: 40px;
+            font-size: 0.82rem;
+            background: #faf8f0;
+            outline: none;
+        }
+        .news-modal-interact .comment-input:focus {
+            border-color: #88aa66;
+        }
+        .news-modal-interact .comment-submit {
+            background: #eadece;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #4e3e2c;
+            cursor: pointer;
+            transition: 0.2s;
+            white-space: nowrap;
+        }
+        .news-modal-interact .comment-submit:hover {
+            background: #d4bd93;
+        }
+        .news-modal-comment-list {
+            width: 100%;
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .news-modal-comment-item {
+            display: flex;
+            gap: 8px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            font-size: 0.82rem;
+            color: #4a3f2c;
+            background: #faf8f0;
+            margin-bottom: 6px;
+            align-items: flex-start;
+        }
+        .news-modal-comment-item .c-author {
+            font-weight: 700;
+            color: #7c9f5e;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-modal-comment-item .c-text {
+            flex: 1;
+            word-break: break-word;
+        }
+        .news-modal-comment-item .c-time {
+            font-size: 0.68rem;
+            color: #b9ab92;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-modal-comment-empty {
+            text-align: center;
+            color: #b9ab92;
+            font-size: 0.78rem;
+            padding: 12px;
+        }
+        /* 卡片标题可点击样式 */
+        .news-card-title[data-open-modal] {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+        }
+        .news-card-title[data-open-modal]::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #7c9f5e, #c9a04a);
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+        .news-card-title[data-open-modal]:hover::after {
+            width: 100%;
+        }
+        .news-card-title[data-open-modal]:hover {
+            color: #7c9f5e;
+        }
     </style>
 </head>
 <body>
@@ -298,8 +637,8 @@
             <!-- ===== 毕业特刊卡片（标准新闻卡片样式） ===== -->
             <div class="news-card" data-news-id="graduation2026">
                 <span class="badge-graduation">🎓 毕业特刊 · 2026</span>
-                <h3 class="news-card-title">
-                    <a href="news0101.html?id=graduation2026">🌾 星露谷农业学院2026届毕业典礼圆满结束！</a>
+                <h3 class="news-card-title" data-open-modal="graduation2026">
+                    🌾 星露谷农业学院2026届毕业典礼圆满结束！
                 </h3>
                 <div class="news-card-meta">📅 夏季 8 日 · 来自 小红书-weida的农场</div>
                 <p class="news-card-summary">
@@ -323,21 +662,21 @@
 
             <!-- ===== 普通新闻卡片 ===== -->
             <div class="news-card" data-news-id="spring-seeds">
-                <h3 class="news-card-title"><a href="news0101.html?id=spring-seeds">🌱 春季播种季到来！皮埃尔小店推出新作物种子</a></h3>
+<h3 class="news-card-title" data-open-modal="spring-seeds">🌱 春季播种季到来！皮埃尔小店推出新作物种子</h3>
                 <div class="news-card-meta">📅 春季 1 日 · 来自 镇政府</div>
                 <p class="news-card-summary">新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。防风草、绿豆、草莓……赶紧来选购吧！</p>
                 <div class="news-interact" data-news-id="spring-seeds"></div>
             </div>
 
             <div class="news-card" data-news-id="fishing-contest">
-                <h3 class="news-card-title"><a href="news0101.html?id=fishing-contest">🎣 威利的钓鱼大赛即将开幕</a></h3>
+<h3 class="news-card-title" data-open-modal="fishing-contest">🎣 威利的钓鱼大赛即将开幕</h3>
                 <div class="news-card-meta">📅 夏季 1 日 · 来自 鱼店</div>
                 <p class="news-card-summary">一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p>
                 <div class="news-interact" data-news-id="fishing-contest"></div>
             </div>
 
             <div class="news-card" data-news-id="secret-mushroom">
-                <h3 class="news-card-title"><a href="news0101.html?id=secret-mushroom">🍄 秘密森林发现新品种蘑菇</a></h3>
+<h3 class="news-card-title" data-open-modal="secret-mushroom">🍄 秘密森林发现新品种蘑菇</h3>
                 <div class="news-card-meta">📅 春季 15 日 · 来自 科学研究所</div>
                 <p class="news-card-summary">据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p>
                 <div class="news-interact" data-news-id="secret-mushroom"></div>
@@ -769,174 +1108,320 @@
                 <h2>👑 酱料女皇</h2>
                 <span class="news-column-motto">每周三 · 美食烹饪时间</span>
             </div>
-            <div class="news-card" data-news-id="spring-recipes">
-                <div class="news-card-badge">🔥 本周热推</div>
-                <h3 class="news-card-title"><a href="news0101.html?id=spring-recipes">🥘 春季限定食谱：防风草炖菜 + 野山葵酱</a></h3>
-                <div class="news-card-meta">📅 春季 7 日 · 来自 酱料女皇节目组</div>
-                <p class="news-card-summary">本周酱料女皇带来两道春季限定料理！利用新鲜的防风草和野山葵，简单几步就能做出一道温暖身心的春季炖菜。</p>
-                <div class="news-interact" data-news-id="spring-recipes"></div>
+
+            <!-- 节目简介卡片 -->
+            <div class="news-card" data-news-id="queen-intro">
+                <div class="news-card-badge" style="background:#c9a04a;color:#3d2f1f;">📺 节目介绍</div>
+                <h3 class="news-card-title">👑 《酱料女皇》—— 鹈鹕镇最受欢迎的烹饪节目</h3>
+                <div class="news-card-meta">📺 每周日首播 · 每周三重播</div>
+                <p class="news-card-summary">《酱料女皇》是教玩家学会烹饪食谱的电视频道。从春季7日起，前两年会在每周日播出新的食谱。在每周三会重播上一个星期天播出过的食谱。重播时会优先播出曾经播出过但玩家尚未学会的食谱。每周日播出的食谱共32种，以2年一轮重复播放。</p>
+                <div class="decoration-row">
+                    <img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Poppy.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Fairy_Rose.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Summer_Spangle.png" alt="" onerror="this.style.display='none'">
+                    <span>✦</span>
+                    <img src="images/24px-Sunflower.png" alt="" onerror="this.style.display='none'">
+                </div>
             </div>
-            <div class="news-card" data-news-id="strawberry-cake">
-                <h3 class="news-card-title"><a href="news0101.html?id=strawberry-cake">🍰 草莓蛋糕 —— 春季最甜蜜的礼物</a></h3>
-                <div class="news-card-meta">📅 春季 14 日 · 来自 酱料女皇节目组</div>
-                <p class="news-card-summary">用新采摘的草莓制作一款松软香甜的草莓蛋糕，送给心仪的村民，好感度大幅提升！食谱大公开。</p>
-                <div class="news-interact" data-news-id="strawberry-cake"></div>
-            </div>
-            <div class="news-card" data-news-id="artisan-goods">
-                <h3 class="news-card-title"><a href="news0101.html?id=artisan-goods">🧀 工匠制品入门：奶酪、蛋黄酱与果酱的制作技巧</a></h3>
-                <div class="news-card-meta">📅 夏季 5 日 · 来自 酱料女皇节目组</div>
-                <p class="news-card-summary">有了农场的产出，如何加工成更高价值的工匠制品？奶酪、蛋黄酱、果酱、腌菜……每种产品的配方与收益详解。</p>
-                <div class="news-interact" data-news-id="artisan-goods"></div>
-            </div>
-            <div class="news-card placeholder-card">
-                <span>📬 更多食谱即将刊登……</span>
-            </div>
+
+            <!-- 食谱卡片区由 JS 动态生成 -->
+            <div id="queenRecipeCards"></div>
         </div>
     </div>
 </div>
 
 <script>
-// ============== 用户登录信息 ==============
-const STORAGE_KEY = 'stardew_news_interact';
+// ============== 酱料女皇食谱数据 ==============
+const QUEEN_RECIPES = [
+{title:"🥘 蔬菜什锦的交响曲",name:"蔬菜什锦盖饭",date:"年1 春季7日",sortVal:1070,desc:"蔬菜什锦盖饭！这是一种能吃到健康蔬菜的最佳方式。用少许芝麻油炒一下蔬菜，再加入足够的新鲜生姜和大蒜。现在，深吸一口气……嗷，味道果然很不错。",subtitle:"鲜蔬在锅中共舞",img:"images/Stir_Fry.png",ingredients:[{name:"山洞萝卜",img:"images/Cave_Carrot.png",qty:1},{name:"普通蘑菇",img:"images/Common_Mushroom.png",qty:1},{name:"甘蓝菜",img:"images/Kale.png",qty:1},{name:"油",img:"images/Oil.png",qty:1}]},
+{title:"🥗 清脆卷心菜的华丽变身",name:"卷心菜沙拉",date:"年1 春季14日",sortVal:1140,desc:"卷心菜沙拉！想吃上一大盘清淡而柔软的卷心菜？不光是你有这样的想法。其实卷心菜沙拉可以做得更加美味。做这道菜，一定要选取多汁、新鲜的卷心菜。撒上一点醋和沙拉酱就可以了。啊，非常脆爽。",subtitle:"清脆如春风的第一口",img:"images/Coleslaw.png",ingredients:[{name:"红叶卷心菜",img:"images/Red_Cabbage.png",qty:1},{name:"醋",img:"images/Vinegar.png",qty:1},{name:"蛋黄酱",img:"images/Mayonnaise.png",qty:1}]},
+{title:"🌶️ 春日里的辛辣记忆",name:"萝卜沙拉",date:"年1 春季21日",sortVal:1210,desc:"萝卜沙拉！没有什么菜能够比得上一盘新鲜的胡椒萝卜。这让我想起来晚春的时候……我的母亲会将新鲜的萝卜切成片，然后撒上一点盐和胡椒粉，和全麦面包一起吃。啊，这些都是往事……我好像有点跑题了，仔细看好……",subtitle:"妈妈厨房里的春天记忆",img:"images/Radish_Salad.png",ingredients:[{name:"油",img:"images/Oil.png",qty:1},{name:"醋",img:"images/Vinegar.png",qty:1},{name:"萝卜",img:"images/Radish.png",qty:1}]},
+{title:"🍳 金色天使之蛋",name:"煎蛋卷",date:"年1 春季28日",sortVal:1280,desc:"煎蛋卷！这是一道很简单的菜，但是，一不小心就会做坏。一个完美的煎蛋卷简直就是一件艺术品。这是一个纯金色、闪闪发光的天使之蛋，接下来，我要向你们展示一下我的绝技……",subtitle:"完美金黄的艺术品",img:"images/Omelet.png",ingredients:[{name:"牛奶",img:"images/Milk.png",qty:1},{name:"蛋",img:"images/Egg.png",qty:1}]},
+{title:"🐟 猫咪都疯狂的烤鱼",name:"烤鱼",date:"年1 夏季7日",sortVal:2070,desc:"烤鱼！每当我在家做这道菜的时候，我那两只猫就会抓狂。我需要安排一位帮厨来看着它们，防止它们跳上来抢鱼吃。一定要选取新鲜的鱼，最好是你亲手钓的。好了，现在我要把鱼放到铺好的绿色蔬菜上……",subtitle:"连猫咪都抵挡不住的诱惑",img:"images/Baked_Fish.png",ingredients:[{name:"太阳鱼",img:"images/Sunfish.png",qty:1},{name:"鲷鱼",img:"images/Red_Snapper.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1}]},
+{title:"🥞 枫糖浆下的心灵抚慰",name:"薄煎饼",date:"年1 夏季14日",sortVal:2140,desc:"薄煎饼！有的时候，我会被精致、复杂的菜肴吸引……不过，一块简单的薄煎饼也可以抚慰我的心灵。你会喜欢在这一层层热煎饼上涂上黄油和枫糖浆。",subtitle:"枫糖浆滴落的温柔",img:"images/Pancakes.png",ingredients:[{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"蛋",img:"images/Egg.png",qty:1}]},
+{title:"🍣 芥末点缀的鲜味之魂",name:"生鱼寿司",date:"年1 夏季21日",sortVal:2210,desc:"生鱼片寿司！柔软的米饭将鱼的鲜味包裹其中。喜欢口味重点的，也许可以来一点芥末。说着说着，我就开始流口水了。哦，我太喜欢寿司了……",subtitle:"海的味道裹在米粒中",img:"images/Maki_Roll.png",ingredients:[{name:"任意鱼",img:"images/Albacore.png",qty:1},{name:"海草",img:"images/Seaweed.png",qty:1},{name:"大米",img:"images/Rice.png",qty:1}]},
+{title:"🍞 酵母与面粉的温柔对话",name:"面包",date:"年1 夏季28日",sortVal:2280,desc:"面包！制作面包可以说是一件非常复杂的事情，但是，我可以让它变得很简单。最重要的材料当然就是面粉了。不过，在和面之前，我们得让醒一下酵母。它们喜欢温水。我喜欢使用普通的糖，不过用蜂蜜或者枫糖浆也是可以的！",subtitle:"酵母苏醒后的魔法",img:"images/Bread.png",ingredients:[{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1}]},
+{title:"🌮 手工玉米的狂野呐喊",name:"墨西哥薄饼",date:"年1 秋季7日",sortVal:3070,desc:"墨西哥薄饼！看这个节目的时候，有多少人还在咬着用微波炉烤出来的傻瓜式玉米煎饼呢？丢人啊。那样吃薄饼还不如直接把玉米粒裹到破旧的抹布里。现在，都给我听好了。如果你尝了我手工制作的新鲜玉米煎饼，你就再也不会像以前一样……",subtitle:"玉米的狂野变身",img:"images/Tortilla.png",ingredients:[{name:"玉米",img:"images/Corn.png",qty:1}]},
+{title:"🍲 河鲜鲜味的绝妙演绎",name:"鳟鱼汤",date:"年1 秋季14日",sortVal:3140,desc:"鳟鱼汤！这刚捕捉上来的鳟鱼不知为何让我有点小激动。也许是河鲜的鲜味刺激到我了。总之，我今天要和你们分享一种鳟鱼汤的绝妙烹饪法……",subtitle:"河鲜带来的小确幸",img:"images/Trout_Soup.png",ingredients:[{name:"虹鳟鱼",img:"images/Rainbow_Trout.png",qty:1},{name:"绿藻",img:"images/Green_Algae.png",qty:1}]},
+{title:"🍠 糖浆裹裹的秋日甜梦",name:"琉璃山药",date:"年1 秋季21日",sortVal:3210,desc:"琉璃山药！现在是吃山药的好时节，品尝这些可爱的块茎时，没有比抹上又甜又稠的糖浆更好的了吧？你只需要准备一根干净、成熟的山药和一把糖。现在，看我怎么来做……",subtitle:"糖浆下的秋日温柔",img:"images/Glazed_Yams.png",ingredients:[{name:"山药",img:"images/Yam.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+{title:"🌿 洋蓟的营养秘密",name:"水煮洋蓟",date:"年1 秋季28日",sortVal:3280,desc:"水煮洋蓟！这是让洋蓟的营养进入你体内的绝妙方式。我自己的话，就不会用什么东西蘸着吃。我只是像喝奶昔一样将这道菜大口吃下去。非常美味。",subtitle:"一口吞下的营养秘密",img:"images/Artichoke_Dip.png",ingredients:[{name:"洋蓟",img:"images/Artichoke.png",qty:1},{name:"牛奶",img:"images/Milk.png",qty:1}]},
+{title:"🍮 冬日里的一口甜蜜",name:"葡萄干布丁",date:"年1 冬季7日",sortVal:4070,desc:"葡萄干布丁！面对这种甜份充足的美食，小杰克霍纳已经显得迫不及待了。但谁会责怪他呢？这葡萄干真的是又香又甜，再加上适度的酸味，完全可以打开你沉睡中的味蕾。你真的需要亲身体验一下……",subtitle:"酸甜交织的味蕾探险",img:"images/Plum_Pudding.png",ingredients:[{name:"野梅",img:"images/Wild_Plum.png",qty:2},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+{title:"🎂 寒夜中的浓香治愈",name:"巧克力蛋糕",date:"年1 冬季14日",sortVal:4140,desc:"巧克力蛋糕！在冬季的寒夜里，没有比品尝浓香的巧克力蛋糕更让人感到温暖的了吧？在我的帮助下，你很快就可以制作出最为精美的蛋糕。现在，你需要加入足够的糖……",subtitle:"寒冬夜里的浓香拥抱",img:"images/Chocolate_Cake.png",ingredients:[{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1},{name:"蛋",img:"images/Egg.png",qty:1}]},
+{title:"🥧 冬日星盛宴的金色主角",name:"南瓜派",date:"年1 冬季21日",sortVal:4210,desc:"南瓜派！在我家里，冬日星盛宴的时候，会吃南瓜派，这已成一个习俗。如果你不吃上一口从农场采摘下来的新鲜、美味的南瓜，就会觉得这个季节总缺少了些什么。加上一点肉豆蔻、桂皮和丁香，你的眼前就会浮现出一片金红之地……",subtitle:"冬日星盛宴的灵魂甜点",img:"images/Pumpkin_Pie.png",ingredients:[{name:"南瓜",img:"images/Pumpkin.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"牛奶",img:"images/Milk.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+{title:"🍬 天使眼泪般的新年糖果",name:"蔓越莓糖果",date:"年1 冬季28日",sortVal:4280,desc:"蔓越莓糖果！这是一款你过新年时需要的绝妙糖果。蔓越莓本身就带有苦味，但是，把它们浸到大量的糖水中之后，尝起来简直就像是天使的眼泪。现在，看我怎么来做……",subtitle:"新年钟声里的甜蜜泪水",img:"images/Cranberry_Candy.png",ingredients:[{name:"蔓越莓",img:"images/Cranberries.png",qty:1},{name:"苹果",img:"images/Apple.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+{title:"🍕 永恒经典的蒜香诱惑",name:"披萨",date:"年2 春季7日",sortVal:5070,desc:"披萨！披萨是永恒的烹饪经典，这也是有其原因的。金黄色的精美饼胚已经出炉了，先浇一层蒜香浓郁的番茄酱，然后，再浇上一层让人口水直流的奶酪。这才刚刚开始！让我们在上面撒些新鲜胡椒和番茄。哦，我的天！",subtitle:"永远排队的永恒经典",img:"images/Pizza.png",ingredients:[{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"西红柿",img:"images/Tomato.png",qty:1},{name:"奶酪",img:"images/Cheese.png",qty:1}]},
+{title:"🥔 简单中的极致美味",name:"薯饼",date:"年2 春季14日",sortVal:5140,desc:"薯饼！这道菜看似简单，不过，真的是非常美味！先将土豆切成丝，然后撒上适量的盐，再用你最喜欢的热油将土豆丝炸好。感觉很简单，是吧？好吧，我可以给你们一些建议，让你们做起来更加简单……",subtitle:"简单到令人惊讶的美味",img:"images/Hashbrowns.png",ingredients:[{name:"土豆",img:"images/Potato.png",qty:1},{name:"油",img:"images/Oil.png",qty:1}]},
+{title:"🥓 爱心满满的元气早餐",name:"完美早餐",date:"年2 春季21日",sortVal:5210,desc:"完美早餐！上周，我们教了你们如何制作土豆煎饼。这周，我要教你们如何将土豆煎饼和其它食材结合，做出一顿丰盛的爱心早餐。这个肉真的能填饱你的肚子，并且给你充足的能量，让你一整天工作都有劲。",subtitle:"给农夫的元气加油站",img:"images/Complete_Breakfast.png",ingredients:[{name:"煎鸡蛋",img:"images/Fried_Egg.png",qty:1},{name:"牛奶",img:"images/Milk.png",qty:1},{name:"薯饼",img:"images/Hashbrowns.png",qty:1},{name:"薄煎饼",img:"images/Pancakes.png",qty:1}]},
+{title:"🍀 连神明都无法抗拒的午餐",name:"幸运午餐",date:"年2 春季28日",sortVal:5280,desc:"幸运午餐！在古老的传说中，这是一顿连幸运和财富之神都无法阻挡的午餐。你吃完之后，就会将幸运之气引入你的肚内，这股幸运之气会给你带来好运直到午餐全部被消化。听起来怪怪的，是吧？我不能说我一定相信，但是，不管如何，这午餐确实是美味啊！",subtitle:"连命运之神都垂涎",img:"images/Lucky_Lunch.png",ingredients:[{name:"海参",img:"images/Sea_Cucumber.png",qty:1},{name:"墨西哥薄饼",img:"images/Tortilla.png",qty:1},{name:"蓝爵",img:"images/Blue_Jazz.png",qty:1}]},
+{title:"🐠 鲤鱼堆里的惊喜发现",name:"惊喜鲤鱼",date:"年2 夏季7日",sortVal:6070,desc:"嘿，你是否有过一大堆鲤鱼，但又不知道如何来处理？嗯，我也是。好吧，我找到了一个方法，可以解决这个普遍存在的问题。我把它称作……惊喜鲤鱼。做起来很简单，但需要很多的鲤鱼……",subtitle:"鲤鱼的华丽大变身",img:"images/Carp_Surprise.png",ingredients:[{name:"鲤鱼",img:"images/Carp.png",qty:4}]},
+{title:"🍩 甜甜圈盒中的森林味道",name:"枫糖棒",date:"年2 夏季14日",sortVal:6140,desc:"枫糖棒！为什么枫糖棒总是第一个从甜甜圈盒中消失？ 令人费解吧，那是因为你们做的普通枫糖棒吃起来就像一个甜甜的冰球。同意吗？好吧，稍后就给你们展示我的配方。从这些派中，你真的能吃出森林的味道。好了，你所需要的就是一些正宗、上乘的枫糖浆……",subtitle:"甜甜圈里的森林味道",img:"images/Maple_Bar.png",ingredients:[{name:"枫糖浆",img:"images/Maple_Syrup.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1}]},
+    {title:"🍰 甜瓜藏匿的粉色奇迹",name:"粉红蛋糕",date:"年2 夏季21日",sortVal:6210,desc:"有一位来自鹈鹕镇的观众最近写了一封信给我……我们来看看……她的名字是海莉。她写道：'上次我在祖祖市的时候，吃到了你做的粉色蛋糕，我马上就爱上它了。你能在下期节目中分享一下粉色蛋糕的配方吗？'。好吧，为什么不呢？这是一款非常棒的蛋糕。并且，你永远不会猜到其秘方是……甜瓜！",subtitle:"海莉的甜蜜心愿",img:"images/Pink_Cake.png",ingredients:[{name:"甜瓜",img:"images/Melon.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1},{name:"蛋",img:"images/Egg.png",qty:1}]},
+    {title:"🌰 榛子树下的家族盛宴",name:"烤榛子",date:"年2 夏季28日",sortVal:6280,desc:"烤榛子！我的房子后面有一颗古老而漂亮的榛子树，每年，我都要请全家人过来举行一次果仁烧烤宴会！一旦我们开始烧烤，周围的邻居就会闻香而来。烤榛子的浓香真的是不可阻挡啊。好了，来看看我的家族秘方……",subtitle:"邻居家飘来的焦香",img:"images/Roasted_Hazelnuts.png",ingredients:[{name:"榛子",img:"images/Hazelnut.png",qty:3}]},
+    {title:"🍇 新鲜多汁的田园协奏",name:"水果沙拉",date:"年2 秋季7日",sortVal:7070,desc:"水果沙拉！这是一道健康、美味的菜肴，可以让你每天都过得舒畅。最重要的就是要选取成熟的水果。可别给我提那些超市里卖的隔夜水果……我所说的是新鲜摘取的多汁、美味水果。好吧，现在仔细看好了……",subtitle:"只用最新鲜的甜蜜",img:"images/Fruit_Salad.png",ingredients:[{name:"蓝莓",img:"images/Blueberry.png",qty:1},{name:"甜瓜",img:"images/Melon.png",qty:1},{name:"杏子",img:"images/Apricot.png",qty:1}]},
+    {title:"🫐 秋日草丛中的紫色回忆",name:"黑莓脆皮饼",date:"年2 秋季14日",sortVal:7140,desc:"黑莓脆皮饼！这道菜总会让我想起星露谷。秋季的那几天，星露谷到处都是我人生中吃过最美味的黑莓。如果你家里有一些这样的黑莓，我极力建议你将它们做成这简单黑莓脆皮饼。",subtitle:"秋天草丛里的紫色宝藏",img:"images/Blackberry_Cobbler.png",ingredients:[{name:"黑莓",img:"images/Blackberry.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+    {title:"🦀 蟹壳里的细腻美味",name:"蟹黄糕",date:"年2 秋季21日",sortVal:7210,desc:"蟹黄糕！蟹肉本身就比较细腻，但是，将它与面包屑、鸡蛋搅拌混合之后，就变得非常入味了。这就是我喜欢吃蟹黄糕的原因。不过，在你敲碎蟹壳之前，先看一下我这个非常关键的调味料……",subtitle:"敲碎蟹壳的那一刻",img:"images/Crab_Cakes.png",ingredients:[{name:"螃蟹",img:"images/Crab.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"蛋",img:"images/Egg.png",qty:1},{name:"油",img:"images/Oil.png",qty:1}]},
+    {title:"🌾 蕨菜与香料的意式浪漫",name:"意式蕨菜炖饭",date:"年2 秋季28日",sortVal:7280,desc:"意式蕨菜炖饭！蕨菜看上去很漂亮，但是，直接吃的话，会感觉非常乏味。所以，你得多注意自己加入的香料。实话说，意式蕨菜炖饭要做好，还是非常难的。不过，在我的帮助下，你一定会成功做出一道美味的意式蕨菜炖饭。",subtitle:"蕨菜与香料的意式对话",img:"images/Fiddlehead_Risotto.png",ingredients:[{name:"油",img:"images/Oil.png",qty:1},{name:"蕨菜",img:"images/Fiddlehead_Fern.png",qty:1},{name:"蒜",img:"images/Garlic.png",qty:1}]},
+    {title:"🧁 英伦午后的红色小确幸",name:"虞美人籽松糕",date:"年2 冬季7日",sortVal:8070,desc:"虞美人籽松糕！一种经典的英式松糕，配上一杯热茶再好不过了。",subtitle:"英式午后的一抹绯红",img:"images/Poppyseed_Muffin.png",ingredients:[{name:"虞美人花",img:"images/Poppy.png",qty:1},{name:"大麦粉",img:"images/Wheat_Flour.png",qty:1},{name:"糖",img:"images/Sugar.png",qty:1}]},
+    {title:"🦐 深海精华的浓郁告白",name:"龙虾浓汤",date:"年2 冬季14日",sortVal:8140,desc:"虾浓汤！用新鲜虾熬制的浓汤，鲜美无比。",subtitle:"深海精华的温暖告白",img:"images/Lobster_Bisque.png",ingredients:[{name:"龙虾",img:"images/Lobster.png",qty:1},{name:"牛奶",img:"images/Milk.png",qty:1}]},
+    {title:"🍅 番茄与面包的简单幸福",name:"意式烤面包",date:"年2 冬季21日",sortVal:8210,desc:"意式烤面包！简单却美味的意式经典小吃。",subtitle:"番茄与面包的简单约定",img:"images/Bruschetta.png",ingredients:[{name:"面包",img:"images/Bread.png",qty:1},{name:"油",img:"images/Oil.png",qty:1},{name:"西红柿",img:"images/Tomato.png",qty:1}]},
+    {title:"🦐 冬日最暖心的一杯鲜味",name:"虾鸡尾酒",date:"年2 冬季28日",sortVal:8280,desc:"鲜虾鸡尾酒！这是另一道会让你和你的客人非常喜欢的开胃菜。我制作的鸡尾酒汁极其鲜美，我相信你一定会爱上它的。好了，第一步是……",subtitle:"杯中的海洋浪漫",img:"images/Shrimp_Cocktail.png",ingredients:[{name:"西红柿",img:"images/Tomato.png",qty:1},{name:"虾",img:"images/Shrimp.png",qty:1},{name:"野山葵",img:"images/Wild_Horseradish.png",qty:1}]}
+];
 
-function getInteractData() {
+// 按日期倒序排列
+QUEEN_RECIPES.sort((a, b) => b.sortVal - a.sortVal);
+
+// 季节颜色映射
+function getSeasonColor(dateStr) {
+    if (dateStr.indexOf('春') >= 0) return {bg:'#7c9f5e', text:'#fff', emoji:'🌱', label:'春季特辑'};
+    if (dateStr.indexOf('夏') >= 0) return {bg:'#e6a817', text:'#fff', emoji:'☀️', label:'夏季特辑'};
+    if (dateStr.indexOf('秋') >= 0) return {bg:'#d4781e', text:'#fff', emoji:'🍂', label:'秋季特辑'};
+    return {bg:'#5a8aaa', text:'#fff', emoji:'❄️', label:'冬季特辑'};
+}
+
+function renderQueenCards() {
+    const container = document.getElementById('queenRecipeCards');
+    if (!container) return;
+    let html = '<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">';
+    QUEEN_RECIPES.forEach((r, i) => {
+        const sc = getSeasonColor(r.date);
+        // 提取副标题：desc中第一个感叹号前的文字作为副标题
+        const subtitle = r.subtitle || r.name;
+        html += '<div class="news-card" data-news-id="queen-recipe-' + i + '" style="padding:14px 16px;">';
+        // 顶部：主标题行（左文字 + 右图片）
+        html += '  <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">';
+        html += '    <div style="flex:1;min-width:0;">';
+        html += '      <div class="news-card-badge" style="background:' + sc.bg + ';color:' + sc.text + ';display:inline-block;margin-bottom:4px;">' + sc.emoji + ' ' + sc.label + '</div>';
+        html += '      <h3 style="margin:2px 0 0;font-size:1.05rem;font-weight:800;color:#3f3522;">' + r.name + '</h3>';
+        html += '      <p style="margin:3px 0 0;font-size:0.82rem;color:#8a7a5a;font-style:italic;">' + subtitle + '</p>';
+        html += '    </div>';
+        html += '    <img src="' + r.img + '" alt="' + r.name + '" onerror="this.style.display=\'none\'" style="width:64px;height:64px;object-fit:contain;border-radius:8px;flex-shrink:0;">';
+        html += '  </div>';
+        html += '  <div class="news-card-meta" style="margin-bottom:8px;">📅 ' + r.date + ' · 来自 酱料女皇节目组</div>';
+        // 原料区
+        html += '  <div class="living-tip" style="background:#fdf8ee;border:2px dashed #e0d4b8;">';
+        html += '    <p style="text-indent:0;margin:0 0 6px;font-weight:700;color:#b08830;">🧪 所需原料</p>';
+        html += '    <div style="display:flex;flex-wrap:wrap;gap:8px;min-height:32px;">';
+        if (r.ingredients && r.ingredients.length > 0) {
+            r.ingredients.forEach(function(ing) {
+                html += '<div style="display:flex;align-items:center;gap:4px;background:#fff;border:1px solid #e0d4b8;border-radius:8px;padding:4px 8px;">';
+                html += '<img src="' + ing.img + '" alt="' + ing.name + '" onerror="this.style.display=\'none\'" style="width:24px;height:24px;object-fit:contain;">';
+                html += '<span style="font-size:0.78rem;color:#4a3f2c;">' + ing.name + '</span>';
+                html += '<span style="font-size:0.72rem;color:#b08830;font-weight:700;">×' + ing.qty + '</span>';
+                html += '</div>';
+            });
+        } else {
+            html += '<span style="color:#b9ab92;font-size:0.78rem;">（原料图片和名称待补充）</span>';
+        }
+        html += '    </div>';
+        html += '  </div>';
+        // 介绍语
+        html += '  <div class="living-tip">';
+        html += '    <p>' + r.desc + '</p>';
+        html += '  </div>';
+        html += '</div>';
+    });
+    html += '</div>';
+    html += '<div class="news-card placeholder-card" style="grid-column:1/-1;"><span>📬 更多食谱即将刊登……</span></div>';
+    container.innerHTML = html;
+}
+
+// ============== 新闻数据库 ==============
+const NEWS_DB = {
+    'graduation2026': {
+        badge: '🎓 毕业特刊 · 2026',
+        title: '🎓 星露谷农业学院<br>2026 届毕业典礼圆满结束！',
+        subtitle: '—— 种地不止，挖矿不息！',
+        meta: ['📅 夏季 8 日', '· 来自 小红书-weida的农场'],
+        heroImg: 'images/news1（1）.png',
+        contentHtml: `
+            <p class="first-paragraph">星露谷农业学院 2026 届毕业典礼在刘易斯的主持下盛大举行。尽管天气预报显示"90% 概率下雨"，但得益于法师施法，现场阳光明媚（代价是沙漠矿洞下起了雨）。本届毕业生以农业系、矿工系和钓鱼系为主力军，矿工系学生则创下平均下矿深度 300 层的新纪录。</p>
+            <div class="news-modal-dec-row"><img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Clay.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Cave_Jelly.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Clam.png" alt="" onerror="this.style.display='none'"><span>✦</span><img src="images/24px-Diamond.png" alt="" onerror="this.style.display='none'"></div>
+            <p>典礼上，刘易斯身着珍藏多年的镶金边紫色燕尾服致辞："愿你们的未来像铱金洒水器一样高效，像五彩碎片一样耀眼！"而特邀校友谢恩的演讲更是引发阵阵笑声："记住孩子们……啊……Joja 公司不是唯一出路……我的鸡舍还缺人手……"</p>
+            <p>毕业仪式上出现了诸多令人难忘的瞬间：农业系毕业生挥舞着金色镰刀列队入场，矿工系戴着自制铱金安全帽接受表彰，钓鱼系则抬着他们引以为豪的传说之鱼标本绕场一周。最令人动容的是潘妮带领全体毕业生合唱校歌《星露谷之夜》，唱到"当月光洒满鹈鹕镇的海岸"时，连一向严肃的德米特里厄斯教授都偷偷抹了抹眼角。</p>
+            <div class="news-modal-divider">✦ ✦ ✦</div>
+            <p>不过典礼也出现了小插曲——刘易斯镇长误将"优秀毕业生"证书颁给了广场中央自己的铜像，引发全场善意的哄笑。毕业生们纷纷表示，虽然即将各奔东西，但"永远记得在星露谷挥洒汗水的日子"。</p>
+            <p>随着最后一枚烟花在夜空绽放，2026 届毕业生齐声喊出学院口号：</p>
+            <div class="news-modal-slogan">🌾 "种地不止，挖矿不息！" 🌾</div>
+            <div class="news-modal-divider">━ 镇长寄语 ━</div>
+            <div class="news-modal-quote">
+                <img class="quote-bg-img" src="images/news1（2）.png" alt="" onerror="this.style.display='none'">
+                <p>亲爱的星露谷农业学院 2026 届毕业生们：当你们第一次踏入这片土地时，手中握着的是生锈的锄头。今天，你们带着铱金级的专业素养即将启航。</p>
+                <p>这些年，你们在田里培育过巨大作物，在矿洞实验室养殖猎奇动物，在星露谷图书馆的油灯下撰写过论文。无论你们是选择继承祖传农场、加入 Joja 企业，还是像法师一样探索自然的未知，请记住：真正的毕业不是获得文凭，而是在每一个季节都播下希望的种子。</p>
+                <p>当你们疲惫时，母校的篝火永远为你们点燃。愿尤巴的祝福与你们同在！</p>
+                <div class="quote-author">—— 星露谷农业学院荣誉院长 / 你们永远的镇长 刘易斯</div>
+            </div>
+            <div class="news-modal-dec-row"><img src="images/24px-Poppy.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Summer_Spangle.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Blue_Jazz.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Fairy_Rose.png" alt="" onerror="this.style.display='none'"><img src="images/24px-Sunflower.png" alt="" onerror="this.style.display='none'"></div>
+        `,
+        footerHtml: '<div class="footer-slogan">🌱 毕业快乐，农场主们！🌱</div><div>星露谷农业学院 · 2026 届 · 永远22岁</div>'
+    },
+    'spring-seeds': {
+        badge: '最新',
+        title: '🌱 春季播种季到来！皮埃尔小店推出新作物种子',
+        meta: ['📅 春季 1 日', '来自 镇政府'],
+        contentHtml: '<p>新的一年开始了！皮埃尔的杂货店现已上架春季作物种子。今年的新品包括防风草、绿豆、草莓、花椰菜等多种作物。无论是新手农夫还是资深农场主，都能在这里找到适合自己农场的种子。</p><p>皮埃尔特别推荐今年的"草莓大礼包"——购买即送高品质肥料一袋。数量有限，售完即止！</p><p>另外，今年的春季作物节将提前到春季第 5 日举行，届时将评选"最大防风草"，冠军可获得 1000 金币奖金！</p>'
+    },
+    'fishing-contest': {
+        title: '🎣 威利的钓鱼大赛即将开幕',
+        meta: ['📅 夏季 1 日', '来自 鱼店'],
+        contentHtml: '<p>一年一度的鹈鹕镇钓鱼大赛将在夏季第一天举行！冠军将获得神秘奖品，欢迎各位村民踊跃参加。</p><p>本次大赛由威利亲自裁判，比赛时间为上午 9 点至下午 5 点。参赛者需自备钓竿和鱼饵，在规定的海域进行钓鱼。评选标准为：总重量 + 稀有度综合评分。</p><p>威利透露，今年的神秘奖品是一把传说级别的鱼竿——"铱金钓竿"，据说能钓到深海中最稀有的鱼类。去年的冠军是一条重达 12.5 公斤的鲟鱼，今年能否有人打破纪录？让我们拭目以待！</p>'
+    },
+    'secret-mushroom': {
+        title: '🍄 秘密森林发现新品种蘑菇',
+        meta: ['📅 春季 15 日', '来自 科学研究所'],
+        contentHtml: '<p>据德米特里厄斯研究员报告，秘密森林深处发现了一种从未记载过的蘑菇品种，初步命名为"星露菌"，据说可以提升体力。</p><p>德米特里厄斯表示，这种蘑菇呈现出奇特的蓝色荧光，在夜间尤为明显。初步分析显示，其含有一种特殊的活性成分，能够显著提升食用者的体能恢复速度。</p><p>不过，德米特里厄斯也提醒广大村民：在进一步研究完成之前，请勿自行采食，以免发生意外。研究所将在夏季到来前发布详细的安全食用指南。</p>'
+    }
+};
+
+// ============== 新闻详情模态框 ==============
+function openNewsModal(newsId) {
+    const item = NEWS_DB[newsId];
+    const overlay = document.getElementById('newsModalOverlay');
+    const content = document.getElementById('newsModalContent');
+    if (!item || !overlay || !content) return;
+
+    const badgeHtml = item.badge ? '<div class="news-modal-badge">' + item.badge + '</div>' : '';
+    const subtitleHtml = item.subtitle ? '<div class="news-modal-subtitle">' + item.subtitle + '</div>' : '';
+    const metaHtml = item.meta ? '<div class="news-modal-meta">' + item.meta.map(function(m){ return '<span>' + m + '</span>'; }).join('') + '</div>' : '';
+    const heroHtml = item.heroImg ? '<div class="news-modal-hero"><img src="' + item.heroImg + '" alt="" onerror="this.style.display=\'none\'"></div>' : '';
+    const footerHtml = item.footerHtml ? '<div class="news-modal-footer">' + item.footerHtml + '</div>' : '';
+
+    const data = getInteractData();
+    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+    const user = getCurrentUser();
+    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+    const commentCount = nd.comments ? nd.comments.length : 0;
+
+    let interactHtml = '<div class="news-modal-interact" data-news-id="' + newsId + '">';
+    interactHtml += '<button class="' + likeClass + '" data-action="modal-like"><span>👍</span><span class="like-count">' + nd.likes + '</span><span>点赞</span></button>';
+    interactHtml += '<div class="comment-area"><input class="comment-input" placeholder="写下你的留言……" ' + (user ? '' : 'disabled title="请先登录"') + '><button class="comment-submit" data-action="modal-comment">💬 发送</button></div>';
+    interactHtml += '</div>';
+
+    // 评论列表
+    let commentsHtml = '<div class="news-modal-comment-list">';
+    if (nd.comments && nd.comments.length > 0) {
+        nd.comments.forEach(function(c) {
+            commentsHtml += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
+        });
+    } else {
+        commentsHtml += '<div class="news-modal-comment-empty">暂无留言，来说两句吧 😊</div>';
+    }
+    commentsHtml += '</div>';
+
+    content.innerHTML =
+        '<button class="news-modal-close" id="newsModalClose">✖</button>' +
+        badgeHtml +
+        '<h1 class="news-modal-title">' + item.title + '</h1>' +
+        subtitleHtml +
+        metaHtml +
+        heroHtml +
+        '<div class="news-modal-body">' + item.contentHtml + '</div>' +
+        footerHtml +
+        interactHtml +
+        commentsHtml;
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    // 绑定关闭事件
+    document.getElementById('newsModalClose').addEventListener('click', closeNewsModal);
+    overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) closeNewsModal();
+    });
+
+    // 绑定模态框内互动事件
+    bindModalInteractEvents(newsId);
+}
+
+function closeNewsModal() {
+    var overlay = document.getElementById('newsModalOverlay');
+    if (overlay) overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    // 刷新列表中的互动区域
+    document.querySelectorAll('.news-interact').forEach(function(container) {
+        renderInteract(container);
+    });
+}
+
+function bindModalInteractEvents(newsId) {
+    var overlay = document.getElementById('newsModalOverlay');
+    if (!overlay) return;
+
+    overlay.querySelector('[data-action="modal-like"]').addEventListener('click', function() {
+        var user = getCurrentUser();
+        if (!user) { showToast('🔑 请先登录才能点赞'); return; }
+        var data = getInteractData();
+        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+        nd.liked = !nd.liked;
+        nd.likes += nd.liked ? 1 : -1;
+        if (nd.likes < 0) nd.likes = 0;
+        data[newsId] = nd;
+        saveInteractData(data);
+        // 更新按钮
+        var btn = overlay.querySelector('[data-action="modal-like"]');
+        btn.className = nd.liked ? 'like-btn liked' : 'like-btn';
+        btn.querySelector('.like-count').textContent = nd.likes;
+        showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
+    });
+
+    overlay.querySelector('[data-action="modal-comment"]').addEventListener('click', function() {
+        var user = getCurrentUser();
+        if (!user) { showToast('🔑 请先登录才能留言'); return; }
+        var input = overlay.querySelector('.news-modal-interact .comment-input');
+        var text = input.value.trim();
+        if (!text) { showToast('📝 请输入留言内容'); return; }
+        var data = getInteractData();
+        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
+        if (!nd.comments) nd.comments = [];
+        nd.comments.push({ author: user.username, text: text, time: Date.now() });
+        data[newsId] = nd;
+        saveInteractData(data);
+        input.value = '';
+        // 更新评论列表
+        var list = overlay.querySelector('.news-modal-comment-list');
+        if (list) {
+            list.innerHTML = '';
+            nd.comments.forEach(function(c) {
+                list.innerHTML += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
+            });
+        }
+        showToast('✅ 留言发表成功');
+    });
+}
+
+// ============== 用户登录信息（通过 API） ==============
+let _cachedUser = null;
+
+async function getCurrentUser() {
     try {
-        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-    } catch { return {}; }
+        const res = await fetch('api/auth.php?action=me');
+        const data = await res.json();
+        if (data.success && data.loggedIn) {
+            _cachedUser = data.data.user;
+            return data.data.user;
+        }
+    } catch(e) { console.error('获取用户信息失败', e); }
+    _cachedUser = null;
+    return null;
 }
 
-function saveInteractData(data) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+async function apiLogout() {
+    try { await fetch('api/auth.php?action=logout', {method:'POST'}); } catch(e) {}
+    _cachedUser = null;
+    localStorage.removeItem('stardew_user');
 }
 
-function getCurrentUser() {
-    try {
-        const raw = localStorage.getItem('stardew_user');
-        return raw ? JSON.parse(raw) : null;
-    } catch { return null; }
-}
+// 同步加载用户状态（保持兼容）
+let _userReady = false;
+let _userPromise = getCurrentUser().then(u => { _userReady = true; return u; });
 
 function formatTime(ts) {
     const d = new Date(ts);
     const pad = n => String(n).padStart(2, '0');
     return `${pad(d.getMonth()+1)}/${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
-}
-
-// ============== 渲染互动区域 ==============
-function renderInteract(container) {
-    const newsId = container.dataset.newsId;
-    const data = getInteractData();
-    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
-    const user = getCurrentUser();
-    const username = user ? user.username : '匿名';
-
-    // 构建 HTML
-    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
-    const commentCount = nd.comments ? nd.comments.length : 0;
-
-    let html = `
-        <button class="${likeClass}" data-action="like">
-            <span>👍</span>
-            <span class="like-count">${nd.likes}</span>
-            <span>点赞</span>
-        </button>
-        <div class="comment-area">
-            <input class="comment-input" placeholder="写下你的留言……" ${user ? '' : 'disabled title="请先登录"'}>
-            <button class="comment-submit" data-action="comment">💬 发送</button>
-        </div>
-        <button class="comment-toggle" data-action="toggle-comments">
-            💬 ${commentCount > 0 ? commentCount + ' 条留言' : '留言'}
-        </button>
-    `;
-
-    // 如果有评论，默认隐藏
-    let commentsHtml = '';
-    if (nd.comments && nd.comments.length > 0) {
-        commentsHtml = '<div class="comment-list" style="display:none;">';
-        nd.comments.forEach(c => {
-            commentsHtml += `
-                <div class="comment-item">
-                    <span class="comment-author">👤 ${c.author}</span>
-                    <span class="comment-text">${c.text}</span>
-                    <span class="comment-time">${formatTime(c.time)}</span>
-                </div>
-            `;
-        });
-        commentsHtml += '</div>';
-    } else {
-        commentsHtml = '<div class="comment-list" style="display:none;"><div class="comment-empty">暂无留言，来说两句吧 😊</div></div>';
-    }
-
-    container.innerHTML = html + commentsHtml;
-}
-
-// ============== 绑定互动事件 ==============
-function bindInteractEvents() {
-    document.addEventListener('click', function(e) {
-        const target = e.target.closest('[data-action]');
-        if (!target) return;
-        const action = target.dataset.action;
-        const container = target.closest('.news-interact');
-        if (!container) return;
-        const newsId = container.dataset.newsId;
-        const data = getInteractData();
-        const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
-
-        if (action === 'like') {
-            const user = getCurrentUser();
-            if (!user) {
-                showToast('🔑 请先登录才能点赞');
-                return;
-            }
-            nd.liked = !nd.liked;
-            nd.likes += nd.liked ? 1 : -1;
-            if (nd.likes < 0) nd.likes = 0;
-            data[newsId] = nd;
-            saveInteractData(data);
-            renderInteract(container);
-            bindInteractEvents();
-            showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
-        }
-
-        else if (action === 'comment') {
-            const user = getCurrentUser();
-            if (!user) {
-                showToast('🔑 请先登录才能留言');
-                return;
-            }
-            const input = container.querySelector('.comment-input');
-            const text = input.value.trim();
-            if (!text) {
-                showToast('📝 请输入留言内容');
-                return;
-            }
-            if (!nd.comments) nd.comments = [];
-            nd.comments.push({ author: user.username, text: text, time: Date.now() });
-            data[newsId] = nd;
-            saveInteractData(data);
-            renderInteract(container);
-            bindInteractEvents();
-            input.value = '';
-            // 自动展开评论
-            const list = container.querySelector('.comment-list');
-            if (list) list.style.display = 'block';
-            const toggle = container.querySelector('[data-action="toggle-comments"]');
-            if (toggle) toggle.textContent = `💬 ${nd.comments.length} 条留言`;
-            showToast('✅ 留言发表成功');
-        }
-
-        else if (action === 'toggle-comments') {
-            const list = container.querySelector('.comment-list');
-            if (list) {
-                const isHidden = list.style.display === 'none' || !list.style.display;
-                list.style.display = isHidden ? 'block' : 'none';
-                const count = nd.comments ? nd.comments.length : 0;
-                target.textContent = isHidden
-                    ? `💬 ${count > 0 ? count + ' 条留言' : '留言 (收起)'}`
-                    : `💬 ${count > 0 ? count + ' 条留言' : '留言'}`;
-            }
-        }
-    });
 }
 
 // ============== Toast ==============
@@ -948,45 +1433,128 @@ function showToast(msg) {
     setTimeout(() => el.remove(), 2000);
 }
 
-// ============== 用户栏 ==============
-function initUserBar() {
+// ============== 渲染互动区域（通过 API） ==============
+async function renderInteract(container) {
+    const newsId = container.dataset.newsId;
+    try {
+        const res = await fetch('api/interact.php?news_id=' + encodeURIComponent(newsId));
+        const result = await res.json();
+        if (!result.success) return;
+        const nd = result.data;
+        const user = _cachedUser;
+        const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+        const commentCount = nd.comments ? nd.comments.length : 0;
+        let html = `
+            <button class="${likeClass}" data-action="like">
+                <span>👍</span>
+                <span class="like-count">${nd.likes}</span>
+                <span>点赞</span>
+            </button>
+            <div class="comment-area">
+                <input class="comment-input" placeholder="写下你的留言……" ${user ? '' : 'disabled title="请先登录"'}>
+                <button class="comment-submit" data-action="comment">💬 发送</button>
+            </div>
+            <button class="comment-toggle" data-action="toggle-comments">
+                💬 ${commentCount > 0 ? commentCount + ' 条留言' : '留言'}
+            </button>
+        `;
+        let commentsHtml = '';
+        if (nd.comments && nd.comments.length > 0) {
+            commentsHtml = '<div class="comment-list" style="display:none;">';
+            nd.comments.forEach(c => {
+                commentsHtml += `<div class="comment-item"><span class="comment-author">👤 ${c.author}</span><span class="comment-text">${c.text}</span><span class="comment-time">${c.time}</span></div>`;
+            });
+            commentsHtml += '</div>';
+        } else {
+            commentsHtml = '<div class="comment-list" style="display:none;"><div class="comment-empty">暂无留言，来说两句吧 😊</div></div>';
+        }
+        container.innerHTML = html + commentsHtml;
+    } catch(e) { console.error('渲染互动区域失败', e); }
+}
+
+// ============== 绑定互动事件 ==============
+function bindInteractEvents() {
+    document.addEventListener('click', async function(e) {
+        const target = e.target.closest('[data-action]');
+        if (!target) return;
+        const action = target.dataset.action;
+        const container = target.closest('.news-interact');
+        if (!container) return;
+        const newsId = container.dataset.newsId;
+
+        if (action === 'like') {
+            if (!_cachedUser) { showToast('🔑 请先登录才能点赞'); return; }
+            try {
+                const res = await fetch('api/interact.php?action=like', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({news_id: newsId})
+                });
+                const result = await res.json();
+                if (result.success) { renderInteract(container); showToast(result.message); }
+                else { showToast('❌ ' + result.error); }
+            } catch(e) { showToast('❌ 网络错误'); }
+        }
+        else if (action === 'comment') {
+            if (!_cachedUser) { showToast('🔑 请先登录才能留言'); return; }
+            const input = container.querySelector('.comment-input');
+            const text = input.value.trim();
+            if (!text) { showToast('📝 请输入留言内容'); return; }
+            try {
+                const res = await fetch('api/interact.php?action=comment', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({news_id: newsId, text: text})
+                });
+                const result = await res.json();
+                if (result.success) {
+                    input.value = '';
+                    renderInteract(container);
+                    showToast('✅ 留言发表成功');
+                } else { showToast('❌ ' + result.error); }
+            } catch(e) { showToast('❌ 网络错误'); }
+        }
+        else if (action === 'toggle-comments') {
+            const list = container.querySelector('.comment-list');
+            if (list) {
+                const isHidden = list.style.display === 'none' || !list.style.display;
+                list.style.display = isHidden ? 'block' : 'none';
+            }
+        }
+    });
+}
+
+// ============== 用户栏（通过 API） ==============
+async function initUserBar() {
     const bar = document.getElementById('userBar');
-    const userData = localStorage.getItem('stardew_user');
-    if (userData) {
-        const user = JSON.parse(userData);
+    await getCurrentUser();
+    if (_cachedUser) {
         bar.innerHTML = `
             <div class="user-info" id="userInfoDropdown">
-                <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                <div class="user-avatar" id="userAvatarBtn">👤 ${_cachedUser.username}</div>
                 <div class="user-dropdown">
                     <h4>📋 登录信息</h4>
-                    <p><strong>👤 用户名:</strong> ${user.username}</p>
-                    <p><strong>🏠 住址:</strong> ${user.address}</p>
-                    <p><strong>📧 邮箱:</strong> ${user.email || user.phone || '未填写'}</p>
-                    <p><strong>🕐 登录时间:</strong> ${new Date(user.loginTime).toLocaleString('zh-CN')}</p>
-                    <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                    <p><strong>👤 用户名:</strong> ${_cachedUser.username}</p>
+                    <p><strong>🏠 住址:</strong> ${_cachedUser.address || '未设置'}</p>
+                    <p><strong>📧 邮箱:</strong> ${_cachedUser.email || '未填写'}</p>
+                    <button class="logout-btn" id="logoutBtn">🚪 退出登录</button>
                 </div>
             </div>
         `;
+        document.getElementById('logoutBtn').addEventListener('click', logout);
         var avatarBtn = document.getElementById('userAvatarBtn');
         var dropdownWrap = document.getElementById('userInfoDropdown');
-        avatarBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            dropdownWrap.classList.toggle('dropdown-open');
-        });
-        document.addEventListener('click', function() {
-            dropdownWrap.classList.remove('dropdown-open');
-        });
-        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
+        avatarBtn.addEventListener('click', function(e) { e.stopPropagation(); dropdownWrap.classList.toggle('dropdown-open'); });
+        document.addEventListener('click', function() { dropdownWrap.classList.remove('dropdown-open'); });
+        dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) { e.stopPropagation(); });
     } else {
-        bar.innerHTML = `<a href="login.html" class="login-link">🔑 登录</a>`;
+        bar.innerHTML = `<a href="login.php" class="login-link">🔑 登录</a>`;
     }
 }
 
-function logout() {
+async function logout() {
     if (confirm('确定要退出登录吗？')) {
-        localStorage.removeItem('stardew_user');
+        await apiLogout();
         initUserBar();
         showToast('👋 已退出登录');
     }
@@ -995,6 +1563,9 @@ function logout() {
 // ============== 初始化 ==============
 document.addEventListener('DOMContentLoaded', () => {
     initUserBar();
+
+    // 渲染酱料女皇食谱卡片
+    renderQueenCards();
 
     // 渲染所有互动区域
     document.querySelectorAll('.news-interact').forEach(container => {
@@ -1019,6 +1590,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 columns[key].style.display = key === col ? 'block' : 'none';
             });
         });
+    });
+
+    // 新闻标题或卡片点击打开模态框
+    document.addEventListener('click', function(e) {
+        // 忽略互动区域内的点击（点赞、留言等）
+        if (e.target.closest('.news-interact')) return;
+        // 忽略"离地而居"卡片（内容已内联展示）
+        if (e.target.closest('.news-card-living')) return;
+
+        // 优先检查标题点击
+        var titleEl = e.target.closest('[data-open-modal]');
+        if (titleEl) {
+            var newsId = titleEl.dataset.openModal;
+            if (newsId && NEWS_DB[newsId]) {
+                openNewsModal(newsId);
+            }
+            return;
+        }
+
+        // 检查整个卡片点击（仅限有 NEWS_DB 数据的卡片）
+        var cardEl = e.target.closest('.news-card[data-news-id]');
+        if (cardEl) {
+            var cardId = cardEl.dataset.newsId;
+            if (cardId && NEWS_DB[cardId]) {
+                openNewsModal(cardId);
+            }
+        }
     });
 
     // 离地而居板块排序：最新期数排在最前面
@@ -1059,5 +1657,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </tr>
     </table>
 </footer>
+
+<!-- 新闻详情模态框容器 -->
+<div class="news-modal-overlay" id="newsModalOverlay">
+    <div class="news-modal-content" id="newsModalContent">
+        <!-- 由 JS 动态填充 -->
+    </div>
+</div>
+
 </body>
 </html>
