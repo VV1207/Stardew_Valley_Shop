@@ -72,8 +72,26 @@ function handleGetOrders() {
     
     $orders = [];
     while ($row = $result->fetch_assoc()) {
+        $orderId = (int)$row['id'];
+        // 加载每个订单的商品列表
+        $itemStmt = $conn->prepare("SELECT item_id, item_name, quality, quantity, price FROM order_items WHERE order_id = ?");
+        $itemStmt->bind_param("i", $orderId);
+        $itemStmt->execute();
+        $itemResult = $itemStmt->get_result();
+        $items = [];
+        while ($itemRow = $itemResult->fetch_assoc()) {
+            $items[] = [
+                'item_id' => $itemRow['item_id'],
+                'item_name' => $itemRow['item_name'],
+                'quality' => $itemRow['quality'],
+                'quantity' => (int)$itemRow['quantity'],
+                'price' => (int)$itemRow['price']
+            ];
+        }
+        $itemStmt->close();
+        
         $orders[] = [
-            'id' => (int)$row['id'],
+            'id' => $orderId,
             'order_number' => $row['order_number'],
             'delivery_type' => $row['delivery_type'],
             'delivery_villager' => $row['delivery_villager'],
@@ -81,7 +99,8 @@ function handleGetOrders() {
             'total_items' => (int)$row['total_items'],
             'total_price' => (int)$row['total_price'],
             'status' => $row['status'],
-            'created_at' => $row['created_at']
+            'created_at' => $row['created_at'],
+            'items' => $items
         ];
     }
     $stmt->close();
