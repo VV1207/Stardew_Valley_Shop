@@ -51,6 +51,7 @@
         <div id="errorMsg" style="display:none;"></div>
 
         <div class="items-grid" id="itemsGrid"></div>
+        <div id="pagination" class="pagination"></div>
     </div>
 
     <!-- 右侧购物车边栏 -->
@@ -79,6 +80,8 @@ let itemsData = [];
 let categories = [];
 let activeCategory = '全部';
 let activeSearch = '';
+let currentPage = 1;
+const ITEMS_PER_PAGE = 60;
 
 // 购物车: { itemId, name, quality, quantity, price, category, image, gifting }
 let cartItems = [];
@@ -102,7 +105,8 @@ async function loadCart() {
             // 将后端购物车数据转换为前端 cartItems 格式
             // 注意：这里只恢复 item_id/quality/quantity，名称等需要从 itemsData 获取
             cartItems = data.data.items.map(ci => {
-                const itemData = itemsData.find(i => i.id === ci.item_id) || {};
+                const numId = parseInt(ci.item_id, 10);
+                const itemData = itemsData.find(i => i.id === ci.item_id || i.id === numId || String(i.id) === String(ci.item_id)) || {};
                 const price = getItemPrice(itemData, ci.quality);
                 return {
                     itemId: ci.item_id,
@@ -150,11 +154,11 @@ async function getFavorites() {
 
 async function toggleFavorite(itemId) {
     try {
-        const res = await fetch('api/favorites.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ action: 'toggle', item_id: String(itemId) })
-        });
+          const res = await fetch('api/favorites.php?action=toggle', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ item_id: String(itemId) })
+          });
         const data = await res.json();
         if (data.success && data.data) {
             showToast(data.data.favorited ? '❤️ 已收藏' : '💔 已取消收藏');
@@ -216,6 +220,7 @@ function initUI() {
 
     document.getElementById('searchBox').addEventListener('input', (e) => {
         activeSearch = e.target.value.trim().toLowerCase();
+        currentPage = 1;
         renderItemsGrid();
     });
     document.getElementById('checkoutBtn').addEventListener('click', checkout);
@@ -296,11 +301,19 @@ async function renderItemsGrid() {
     }
     if (filtered.length === 0) {
         grid.innerHTML = '<div style="text-align:center;padding:40px;color:#8a7a62;grid-column:1/-1;">✨ 没有匹配的物品 ✨</div>';
+        document.getElementById('pagination').innerHTML = '';
         return;
     }
+    // 分页计算
+    const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+    const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+    const endIdx = Math.min(startIdx + ITEMS_PER_PAGE, filtered.length);
+    const pageItems = filtered.slice(startIdx, endIdx);
     const favorites = await getFavorites();
     grid.innerHTML = '';
-    filtered.forEach(item => {
+    pageItems.forEach(item => {
         const card = document.createElement('div');
         card.className = 'item-card';
         card.dataset.itemId = item.id;
@@ -323,7 +336,7 @@ async function renderItemsGrid() {
         }
 
         // 检查收藏状态
-        const isFav = favorites.includes(item.id);
+        const isFav = favorites.includes(String(item.id));
 
         card.innerHTML = `
             <div class="card-img">
@@ -411,6 +424,54 @@ async function renderItemsGrid() {
             });
         }
     });
+    // 渲染分页控件
+    renderPagination(totalPages, filtered.length);
+}
+
+function renderPagination(totalPages, totalItems) {
+    const container = document.getElementById('pagination');
+    if (!container) return;
+    if (totalPages <= 1) {
+        container.innerHTML = '';
+        return;
+    }
+    let html = `<div class="pagination-info">共 ${totalItems} 件商品，第 ${currentPage}/${totalPages} 页</div>`;
+    html += `<div class="pagination-btns">`;
+    html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(1)">⏮</button>`;
+    html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">◀</button>`;
+    // 页码按钮（最多显示7个）
+    let startPage = Math.max(1, currentPage - 3);
+    let endPage = Math.min(totalPages, startPage + 6);
+    if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
+    for (let i = startPage; i <= endPage; i++) {
+        html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+    }
+    html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">▶</button>`;
+    html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${totalPages})">⏭</button>`;
+    html += `<span class="page-jump">跳至 <input type="number" class="page-jump-input" id="pageJumpInput" min="1" max="${totalPages}" value="${currentPage}" onkeydown="if(event.key==='Enter')jumpToPage()"> / ${totalPages} 页 <button class="page-jump-btn" onclick="jumpToPage()">确定</button></span>`;
+    html += `</div>`;
+    container.innerHTML = html;
+}
+
+function goToPage(page) {
+    currentPage = page;
+    renderItemsGrid();
+    // 滚动到商品区域顶部
+    document.getElementById('itemsGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function jumpToPage() {
+    const input = document.getElementById('pageJumpInput');
+    if (!input) return;
+    let page = parseInt(input.value);
+    if (isNaN(page) || page < 1) page = 1;
+    const totalPages = Math.ceil(
+        (activeCategory === '全部' ? itemsData : itemsData.filter(i => i.category === activeCategory))
+            .filter(i => !activeSearch || i.name.toLowerCase().includes(activeSearch))
+            .length / ITEMS_PER_PAGE
+    );
+    if (page > totalPages) page = totalPages;
+    goToPage(page);
 }
 
 function updateCardPriceQuantity(item) {
@@ -688,8 +749,10 @@ function checkout() {
     for (const c of cartItems) {
         if (c.quantity <= 0) continue;
         const subtotal = c.price * c.quantity;
-        const loveCount = c.gifting?.love?.length || 0;
-        const hateCount = c.gifting?.hate?.length || 0;
+        // 确保 gifting 对象存在且包含 love 和 hate 数组
+        const giftObj = c.gifting || {};
+        const loveCount = Array.isArray(giftObj.love) ? giftObj.love.length : 0;
+        const hateCount = Array.isArray(giftObj.hate) ? giftObj.hate.length : 0;
         totalLoves += loveCount * c.quantity;
         totalHates += hateCount * c.quantity;
         const qualStr = c.quality ? ` (${c.quality})` : '';
@@ -738,17 +801,27 @@ function checkout() {
         try {
             const itemsPayload = cartItems.map(c => ({
                 item_id: String(c.itemId),
+                name: c.name || '',
                 quality: c.quality || '',
-                quantity: c.quantity
+                quantity: c.quantity,
+                price: c.price || 0,
+                loves: c.gifting?.love?.length || 0,
+                hates: c.gifting?.hate?.length || 0
             }));
+            const totalLovesVal = cartItems.reduce((s, c) => s + ((c.gifting?.love?.length || 0) * c.quantity), 0);
+            const totalHatesVal = cartItems.reduce((s, c) => s + ((c.gifting?.hate?.length || 0) * c.quantity), 0);
+            const totalPriceVal = cartItems.reduce((s, c) => s + (c.price * c.quantity), 0);
             const res = await fetch('api/orders.php?action=create', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     action: 'create',
-                    delivery_type: 'pending',
+                    delivery_type: 'pickup',
                     delivery_villager: '',
                     items: itemsPayload,
+                    total_price: totalPriceVal,
+                    total_loves: totalLovesVal,
+                    total_hates: totalHatesVal,
                     clear_cart: true
                 })
             });

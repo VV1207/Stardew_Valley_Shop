@@ -267,12 +267,6 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
     </footer>
 
     <script>
-        // 如果已登录，跳转回首页
-        const existingUser = localStorage.getItem('stardew_user');
-        if (existingUser) {
-            window.location.href = 'index.html';
-        }
-
         // 显示/隐藏密码
         function togglePassword(fieldId, btn) {
             var input = document.getElementById(fieldId);

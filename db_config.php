@@ -44,8 +44,9 @@ function initDatabase() {
     $conn->close();
 }
 
-// 启动会话
+// 启动会话（设置 cookie 路径为根目录，确保跨目录共享 session）
 if (session_status() === PHP_SESSION_NONE) {
+    session_set_cookie_params(0, '/');
     session_start();
 }
 ?>

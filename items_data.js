@@ -11765,52 +11765,17 @@ window.ITEMS_DATA = [
   {
     "id": 291,
     "name": "精灵珠宝",
-    "name_en": "Elvish Jewelry",
+    "name_en": "Elvish_Jewelry",
     "category": "古物",
     "price": 300,
     "has_quality": false,
     "qualities": {},
-    "image": "images/24px-Elvish_Jewelry.png",
+    "image": "images/Elvish_Jewelry.png",
     "gifting": {
       "love": [],
-      "like": [
-        "Dwarf",
-        "Penny",
-        "Abigail",
-        "Alex",
-        "Caroline",
-        "Clint",
-        "Demetrius",
-        "Elliott",
-        "Emily",
-        "Evelyn",
-        "George",
-        "Gus",
-        "Haley",
-        "Harvey",
-        "Jas",
-        "Jodi",
-        "Kent",
-        "Krobus",
-        "Leah",
-        "Leo",
-        "Lewis",
-        "Linus",
-        "Marnie",
-        "Maru",
-        "Pam",
-        "Pierre",
-        "Robin",
-        "Sam",
-        "Sandy",
-        "Sebastian",
-        "Shane",
-        "Vincent",
-        "Willy",
-        "Wizard"
-      ],
+      "like": ["Penny", "Dwarf"],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Krobus", "Sandy", "Leo"],
       "hate": []
     }
   },
@@ -12545,35 +12510,35 @@ window.ITEMS_DATA = [
   {
     "id": 306,
     "name": "蛇头骨",
-    "name_en": "Snake Skull",
-    "category": "古物",
-    "price": 150,
-    "has_quality": false,
-    "qualities": {},
-    "image": "",
-    "gifting": {
-      "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
-    }
-  },
-  {
-    "id": 307,
-    "name": "蛇脊椎",
-    "name_en": "Snake Vertebrae",
+    "name_en": "Snake_Skull",
     "category": "古物",
     "price": 100,
     "has_quality": false,
     "qualities": {},
-    "image": "",
+    "image": "images/Snake_Skull.png",
     "gifting": {
       "love": [],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 307,
+    "name": "蛇脊椎骨",
+    "name_en": "Snake_Vertebrae",
+    "category": "古物",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Snake_Vertebrae.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
     }
   },
   {
@@ -14002,32 +13967,42 @@ window.ITEMS_DATA = [
     "name_en": "Coral",
     "category": "采集物",
     "price": 80,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Coral.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 80,
+      "银星": 100,
+      "金星": 120,
+      "铱星": 160
+    },
+    "image": "images/Coral.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
+      "like": ["Evelyn"],
+      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey"]
     }
   },
   {
     "id": 347,
     "name": "海胆",
-    "name_en": "Sea Urchin",
+    "name_en": "Sea_Urchin",
     "category": "采集物",
     "price": 160,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Sea_Urchin.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 160,
+      "银星": 200,
+      "金星": 240,
+      "铱星": 320
+    },
+    "image": "images/Sea_Urchin.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
+      "like": ["Evelyn", "Leo"],
+      "neutral": ["Elliott"],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"]
     }
   },
   {
@@ -14155,35 +14130,45 @@ window.ITEMS_DATA = [
   {
     "id": 354,
     "name": "彩虹贝壳",
-    "name_en": "Rainbow Shell",
+    "name_en": "Rainbow_Shell",
     "category": "采集物",
     "price": 300,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Rainbow_Shell.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 375,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Rainbow_Shell.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
+      "like": ["Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "neutral": ["Elliott"],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey"]
     }
   },
   {
     "id": 355,
     "name": "鹦鹉螺",
-    "name_en": "Nautilus Shell",
+    "name_en": "Nautilus_Shell",
     "category": "采集物",
     "price": 120,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Nautilus_Shell.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150,
+      "金星": 180,
+      "铱星": 240
+    },
+    "image": "images/Nautilus_Shell.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
+      "like": ["Evelyn", "Leo"],
+      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
       "dislike": [],
-      "hate": []
+      "hate": ["Harvey"]
     }
   },
   {
@@ -14192,15 +14177,20 @@ window.ITEMS_DATA = [
     "name_en": "Mussel",
     "category": "采集物",
     "price": 30,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Mussel.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 30,
+      "银星": 37,
+      "金星": 45,
+      "铱星": 60
+    },
+    "image": "images/Mussel.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "like": ["Evelyn"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre"]
     }
   },
   {
@@ -14209,15 +14199,20 @@ window.ITEMS_DATA = [
     "name_en": "Clam",
     "category": "采集物",
     "price": 50,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Clam.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Clam.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "like": ["Evelyn"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre"]
     }
   },
   {
@@ -14227,14 +14222,19 @@ window.ITEMS_DATA = [
     "category": "采集物",
     "price": 50,
     "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Cockle.png",
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Cockle.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "like": ["Evelyn"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre"]
     }
   },
   // {
@@ -14320,15 +14320,18 @@ window.ITEMS_DATA = [
     "name_en": "Periwinkle",
     "category": "采集物",
     "price": 20,
-    "has_quality": false,
-    "qualities": {},
-    "image": "images/24px-Periwinkle.png",
+    "has_quality": true,
+    "qualities": {
+      "普通": 20,
+      "银星": 25
+    },
+    "image": "images/Periwinkle.png",
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
     }
   },
   {
@@ -14337,15 +14340,20 @@ window.ITEMS_DATA = [
     "name_en": "Oyster",
     "category": "采集物",
     "price": 40,
-    "has_quality": false,
-    "qualities": {},
-    "image": "",
+    "has_quality": true,
+    "qualities": {
+      "普通": 40,
+      "银星": 50,
+      "金星": 60,
+      "铱星": 80
+    },
+    "image": "images/Oyster.png",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
-      "hate": []
+      "like": ["Evelyn"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre"]
     }
   },
   {
@@ -20005,5 +20013,1081 @@ window.ITEMS_DATA = [
       "dislike": [],
       "hate": []
     }
+  },
+  {
+    "id": 568,
+    "name": "鳀鱼",
+    "name_en": "Anchovy",
+    "category": "鱼类",
+    "price": 30,
+    "has_quality": true,
+    "qualities": {
+      "普通": 30,
+      "银星": 37,
+      "金星": 45,
+      "铱星": 60
+    },
+    "image": "images/Anchovy.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 569,
+    "name": "绯红鱼",
+    "name_en": "Crimsonfish",
+    "category": "鱼类",
+    "price": 1500,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1500,
+      "银星": 1875,
+      "金星": 2250,
+      "铱星": 3000
+    },
+    "image": "images/Crimsonfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 570,
+    "name": "比目鱼",
+    "name_en": "Flounder",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Flounder.png",
+    "gifting": {
+      "love": [],
+      "like": ["Sebastian"],
+      "neutral": ["Elliott", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 571,
+    "name": "大比目鱼",
+    "name_en": "Halibut",
+    "category": "鱼类",
+    "price": 80,
+    "has_quality": true,
+    "qualities": {
+      "普通": 80,
+      "银星": 100,
+      "金星": 120,
+      "铱星": 160
+    },
+    "image": "images/Halibut.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 572,
+    "name": "鲱鱼",
+    "name_en": "Herring",
+    "category": "鱼类",
+    "price": 30,
+    "has_quality": true,
+    "qualities": {
+      "普通": 30,
+      "银星": 37,
+      "金星": 45,
+      "铱星": 60
+    },
+    "image": "images/Herring.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 573,
+    "name": "章鱼",
+    "name_en": "Octopus",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 187,
+      "金星": 225,
+      "铱星": 300
+    },
+    "image": "images/Octopus.png",
+    "gifting": {
+      "love": ["Willy"],
+      "like": ["Elliott"],
+      "neutral": ["Sebastian", "Demetrius", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn", "Pam"]
+    }
+  },
+  {
+    "id": 574,
+    "name": "河豚",
+    "name_en": "Pufferfish",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Pufferfish.png",
+    "gifting": {
+      "love": ["Abigail"],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 575,
+    "name": "红鲻鱼",
+    "name_en": "Red_Mullet",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Red_Mullet.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 576,
+    "name": "红鲷鱼",
+    "name_en": "Red_Snapper",
+    "category": "鱼类",
+    "price": 50,
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Red_Snapper.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 577,
+    "name": "沙丁鱼",
+    "name_en": "Sardine",
+    "category": "鱼类",
+    "price": 40,
+    "has_quality": true,
+    "qualities": {
+      "普通": 40,
+      "银星": 50,
+      "金星": 60,
+      "铱星": 80
+    },
+    "image": "images/Sardine.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 578,
+    "name": "绯红鱼之子",
+    "name_en": "Son_of_Crimsonfish",
+    "category": "鱼类",
+    "price": 1500,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1500,
+      "银星": 1875,
+      "金星": 2250,
+      "铱星": 3000
+    },
+    "image": "images/Son_of_Crimsonfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 579,
+    "name": "罗非鱼",
+    "name_en": "Tilapia",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Tilapia.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 580,
+    "name": "金枪鱼",
+    "name_en": "Tuna",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Tuna.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 581,
+    "name": "𩽾𩾌鱼",
+    "name_en": "Angler",
+    "category": "鱼类",
+    "price": 900,
+    "has_quality": true,
+    "qualities": {
+      "普通": 900,
+      "银星": 1125,
+      "金星": 1350,
+      "铱星": 1800
+    },
+    "image": "images/Angler.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 582,
+    "name": "雌𩽾𩾌鱼",
+    "name_en": "Ms._Angler",
+    "category": "鱼类",
+    "price": 900,
+    "has_quality": true,
+    "qualities": {
+      "普通": 900,
+      "银星": 1125,
+      "金星": 1350,
+      "铱星": 1800
+    },
+    "image": "images/Ms._Angler.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 583,
+    "name": "鲢鱼",
+    "name_en": "Chub",
+    "category": "鱼类",
+    "price": 50,
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Chub.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 584,
+    "name": "冰川鱼",
+    "name_en": "Glacierfish",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1125,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Glacierfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 585,
+    "name": "小冰川鱼",
+    "name_en": "Glacierfish_Jr",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1125,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Glacierfish_Jr.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 586,
+    "name": "小冰川鱼",
+    "name_en": "Lingcod",
+    "category": "鱼类",
+    "price": 120,
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150,
+      "金星": 180,
+      "铱星": 240
+    },
+    "image": "images/Lingcod.png",
+    "gifting": {
+      "love": [],
+      "like": ["Willy"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius",  "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 587,
+    "name": "蛇齿单线鱼",
+    "name_en": "Lingcod",
+    "category": "鱼类",
+    "price": 120,
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150,
+      "金星": 180,
+      "铱星": 240
+    },
+    "image": "images/Lingcod.png",
+    "gifting": {
+      "love": [],
+      "like": ["Willy"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius",  "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 588,
+    "name": "河鲈",
+    "name_en": "Perch",
+    "category": "鱼类",
+    "price": 55,
+    "has_quality": true,
+    "qualities": {
+      "普通": 55,
+      "银星": 68,
+      "金星": 82,
+      "铱星": 110
+    },
+    "image": "images/Perch.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 589,
+    "name": "狗鱼",
+    "name_en": "Pike",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Pike.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 590,
+    "name": "西鲱",
+    "name_en": "Shad",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 75,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Shad.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 591,
+    "name": "小嘴鲈鱼",
+    "name_en": "Smallmouth_Bass",
+    "category": "鱼类",
+    "price": 50,
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Smallmouth_Bass.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 592,
+    "name": "虎纹鳟鱼",
+    "name_en": "Tiger_Trout",
+    "category": "鱼类",
+    "price": 50,
+    "has_quality": true,
+    "qualities": {
+      "普通": 50,
+      "银星": 62,
+      "金星": 75,
+      "铱星": 100
+    },
+    "image": "images/Tiger_Trout.png",
+    "gifting": {
+      "love": [],
+      "like": ["Willy"],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 593,
+    "name": "大头鱼",
+    "name_en": "Bullhead",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Bullhead.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 594,
+    "name": "大嘴鲈鱼",
+    "name_en": "Largemouth_Bass",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Largemouth_Bass.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 595,
+    "name": "传说之鱼",
+    "name_en": "Legend",
+    "category": "鱼类",
+    "price": 5000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 5000,
+      "银星": 6250,
+      "金星": 7500,
+      "铱星": 10000
+    },
+    "image": "images/Legend.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 596,
+    "name": "传说之鱼二代",
+    "name_en": "Legend_II",
+    "category": "鱼类",
+    "price": 5000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 5000,
+      "银星": 6250,
+      "金星": 7500,
+      "铱星": 10000
+    },
+    "image": "images/Legend_II.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 597,
+    "name": "午夜鲤鱼",
+    "name_en": "Midnight_Carp",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 187,
+      "金星": 225,
+      "铱星": 300
+    },
+    "image": "images/Midnight_Carp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 598,
+    "name": "虾虎鱼",
+    "name_en": "Goby",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 187,
+      "金星": 225,
+      "铱星": 300
+    },
+    "image": "images/Goby.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 599,
+    "name": "鬼鱼",
+    "name_en": "Ghostfish",
+    "category": "鱼类",
+    "price": 45,
+    "has_quality": true,
+    "qualities": {
+      "普通": 45,
+      "银星": 56,
+      "金星": 67,
+      "铱星": 90
+    },
+    "image": "images/Ghostfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 600,
+    "name": "冰柱鱼",
+    "name_en": "Ice_Pip",
+    "category": "鱼类",
+    "price": 500,
+    "has_quality": true,
+    "qualities": {
+      "普通": 500,
+      "银星": 625,
+      "金星": 750,
+      "铱星": 1000
+    },
+    "image": "images/Ice_Pip.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 601,
+    "name": "岩浆鳗鱼",
+    "name_en": "Lava_Eel",
+    "category": "鱼类",
+    "price": 700,
+    "has_quality": true,
+    "qualities": {
+      "普通": 700,
+      "银星": 875,
+      "金星": 1050,
+      "铱星": 1400
+    },
+    "image": "images/Lava_Eel.png",
+    "gifting": {
+      "love": ["Dwarf",],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 602,
+    "name": "石鱼",
+    "name_en": "Stonefish",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 375,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Stonefish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 603,
+    "name": "变种鲤鱼",
+    "name_en": "Mutant_Carp",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1250,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Mutant_Carp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 604,
+    "name": "放射性鲤鱼",
+    "name_en": "Radioactive_Carp",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1250,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Radioactive_Carp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 605,
+    "name": "沙鱼",
+    "name_en": "Sandfish",
+    "category": "鱼类",
+    "price": 75,
+    "has_quality": true,
+    "qualities": {
+      "普通": 75,
+      "银星": 93,
+      "金星": 112,
+      "铱星": 150
+    },
+    "image": "images/Sandfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Penny", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 606,
+    "name": "蝎鲤鱼",
+    "name_en": "Scorpion_Carp",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 187,
+      "金星": 225,
+      "铱星": 300
+    },
+    "image": "images/Scorpion_Carp.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 607,
+    "name": "史莱姆鱼",
+    "name_en": "Slimejack",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Slimejack.png",
+    "gifting": {
+      "love": ["Penny"],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Penny", "Pam", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 608,
+    "name": "虚空鲑鱼",
+    "name_en": "Void_Salmon",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 187,
+      "金星": 225,
+      "铱星": 300
+    },
+    "image": "images/Void_Salmon.png",
+    "gifting": {
+      "love": ["Penny"],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 609,
+    "name": "水滴鱼",
+    "name_en": "Blobfish",
+    "category": "鱼类",
+    "price": 500,
+    "has_quality": true,
+    "qualities": {
+      "普通": 500,
+      "银星": 625,
+      "金星": 750,
+      "铱星": 1000
+    },
+    "image": "images/Blobfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 610,
+    "name": "午夜鱿鱼",
+    "name_en": "Midnight_Squid",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Midnight_Squid.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 611,
+    "name": "幽灵鱼",
+    "name_en": "Spook_Fish",
+    "category": "鱼类",
+    "price": 220,
+    "has_quality": true,
+    "qualities": {
+      "普通": 220,
+      "银星": 275,
+      "金星": 330,
+      "铱星": 440
+    },
+    "image": "images/Spook_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 612,
+    "name": "蜗牛",
+    "name_en": "Snail",
+    "category": "鱼类",
+    "price": 65,
+    "has_quality": true,
+    "qualities": {
+      "普通": 65,
+      "银星": 81
+    },
+    "image": "images/Snail.png",
+    "gifting": {
+      "love": ["Vincent"],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+    }
+  },
+  {
+    "id": 613,
+    "name": "蓝铁饼鱼",
+    "name_en": "Blue_Discus",
+    "category": "鱼类",
+    "price": 120,
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150,
+      "金星": 180,
+      "铱星": 240
+    },
+    "image": "images/Blue_Discus.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 614,
+    "name": "狮子鱼",
+    "name_en": "Lionfish",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 125,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Lionfish.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
+  },
+  {
+    "id": 615,
+    "name": "黄貂鱼",
+    "name_en": "Stingray",
+    "category": "鱼类",
+    "price": 180,
+    "has_quality": true,
+    "qualities": {
+      "普通": 180,
+      "银星": 225,
+      "金星": 270,
+      "铱星": 360
+    },
+    "image": "images/Stingray.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "hate": ["Haley", "Pierre", "Evelyn"]
+    }
   }
+  // {
+  //   "id": 616,
+  //   "name": "黄貂鱼",
+  //   "name_en": "Stingray",
+  //   "category": "鱼类",
+  //   "price": 180,
+  //   "has_quality": true,
+  //   "qualities": {
+  //     "普通": 180,
+  //     "银星": 225,
+  //     "金星": 270,
+  //     "铱星": 360
+  //   },
+  //   "image": "images/Stingray.png",
+  //   "gifting": {
+  //     "love": [],
+  //     "like": [],
+  //     "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Penny", "Penny", "Linus", "Leo"],
+  //     "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+  //     "hate": ["Haley", "Pierre", "Evelyn"]
+  //   }
+  // },
 ];

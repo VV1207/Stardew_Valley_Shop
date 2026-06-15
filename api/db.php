@@ -2,7 +2,10 @@
 /**
  * 数据库连接和辅助函数
  */
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_set_cookie_params(0, '/');
+    session_start();
+}
 
 define('DB_HOST', 'localhost');
 define('DB_PORT', 3316);

@@ -1276,8 +1276,8 @@ const NEWS_DB = {
     }
 };
 
-// ============== 新闻详情模态框 ==============
-function openNewsModal(newsId) {
+// ============== 新闻详情模态框（通过 API） ==============
+async function openNewsModal(newsId) {
     const item = NEWS_DB[newsId];
     const overlay = document.getElementById('newsModalOverlay');
     const content = document.getElementById('newsModalContent');
@@ -1289,28 +1289,7 @@ function openNewsModal(newsId) {
     const heroHtml = item.heroImg ? '<div class="news-modal-hero"><img src="' + item.heroImg + '" alt="" onerror="this.style.display=\'none\'"></div>' : '';
     const footerHtml = item.footerHtml ? '<div class="news-modal-footer">' + item.footerHtml + '</div>' : '';
 
-    const data = getInteractData();
-    const nd = data[newsId] || { likes: 0, liked: false, comments: [] };
-    const user = getCurrentUser();
-    const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
-    const commentCount = nd.comments ? nd.comments.length : 0;
-
-    let interactHtml = '<div class="news-modal-interact" data-news-id="' + newsId + '">';
-    interactHtml += '<button class="' + likeClass + '" data-action="modal-like"><span>👍</span><span class="like-count">' + nd.likes + '</span><span>点赞</span></button>';
-    interactHtml += '<div class="comment-area"><input class="comment-input" placeholder="写下你的留言……" ' + (user ? '' : 'disabled title="请先登录"') + '><button class="comment-submit" data-action="modal-comment">💬 发送</button></div>';
-    interactHtml += '</div>';
-
-    // 评论列表
-    let commentsHtml = '<div class="news-modal-comment-list">';
-    if (nd.comments && nd.comments.length > 0) {
-        nd.comments.forEach(function(c) {
-            commentsHtml += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
-        });
-    } else {
-        commentsHtml += '<div class="news-modal-comment-empty">暂无留言，来说两句吧 😊</div>';
-    }
-    commentsHtml += '</div>';
-
+    // 先显示模态框骨架（互动区域稍后由 API 填充）
     content.innerHTML =
         '<button class="news-modal-close" id="newsModalClose">✖</button>' +
         badgeHtml +
@@ -1320,8 +1299,8 @@ function openNewsModal(newsId) {
         heroHtml +
         '<div class="news-modal-body">' + item.contentHtml + '</div>' +
         footerHtml +
-        interactHtml +
-        commentsHtml;
+        '<div class="news-modal-interact" data-news-id="' + newsId + '"><p style="color:#9a8a7a;">加载互动数据中...</p></div>' +
+        '<div class="news-modal-comment-list"></div>';
 
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -1332,8 +1311,48 @@ function openNewsModal(newsId) {
         if (e.target === overlay) closeNewsModal();
     });
 
-    // 绑定模态框内互动事件
+    // 通过 API 加载互动数据并渲染
+    await renderModalInteract(newsId);
     bindModalInteractEvents(newsId);
+}
+
+// 通过 API 渲染模态框互动区域
+async function renderModalInteract(newsId) {
+    const interactContainer = document.querySelector('.news-modal-interact');
+    const commentList = document.querySelector('.news-modal-comment-list');
+    if (!interactContainer) return;
+
+    try {
+        const res = await fetch('api/interact.php?news_id=' + encodeURIComponent(newsId));
+        const result = await res.json();
+        if (!result.success) return;
+        const nd = result.data;
+        const user = _cachedUser;
+        const likeClass = nd.liked ? 'like-btn liked' : 'like-btn';
+        const commentCount = nd.comments ? nd.comments.length : 0;
+
+        interactContainer.innerHTML = `
+            <button class="${likeClass}" data-action="modal-like">
+                <span>👍</span><span class="like-count">${nd.likes}</span><span>点赞</span>
+            </button>
+            <div class="comment-area">
+                <input class="comment-input" placeholder="写下你的留言……" ${user ? '' : 'disabled title="请先登录"'}>
+                <button class="comment-submit" data-action="modal-comment">💬 发送</button>
+            </div>
+        `;
+
+        if (commentList) {
+            if (nd.comments && nd.comments.length > 0) {
+                let commentsHtml = '';
+                nd.comments.forEach(function(c) {
+                    commentsHtml += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + c.time + '</span></div>';
+                });
+                commentList.innerHTML = commentsHtml;
+            } else {
+                commentList.innerHTML = '<div class="news-modal-comment-empty">暂无留言，来说两句吧 😊</div>';
+            }
+        }
+    } catch(e) { console.error('加载互动数据失败', e); }
 }
 
 function closeNewsModal() {
@@ -1346,50 +1365,56 @@ function closeNewsModal() {
     });
 }
 
-function bindModalInteractEvents(newsId) {
+async function bindModalInteractEvents(newsId) {
     var overlay = document.getElementById('newsModalOverlay');
     if (!overlay) return;
 
-    overlay.querySelector('[data-action="modal-like"]').addEventListener('click', function() {
-        var user = getCurrentUser();
-        if (!user) { showToast('🔑 请先登录才能点赞'); return; }
-        var data = getInteractData();
-        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
-        nd.liked = !nd.liked;
-        nd.likes += nd.liked ? 1 : -1;
-        if (nd.likes < 0) nd.likes = 0;
-        data[newsId] = nd;
-        saveInteractData(data);
-        // 更新按钮
-        var btn = overlay.querySelector('[data-action="modal-like"]');
-        btn.className = nd.liked ? 'like-btn liked' : 'like-btn';
-        btn.querySelector('.like-count').textContent = nd.likes;
-        showToast(nd.liked ? '👍 已点赞' : '👎 已取消点赞');
-    });
+    var likeBtn = overlay.querySelector('[data-action="modal-like"]');
+    if (likeBtn) {
+        likeBtn.addEventListener('click', async function() {
+            if (!_cachedUser) { showToast('🔑 请先登录才能点赞'); return; }
+            try {
+                var res = await fetch('api/interact.php?action=like', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({news_id: newsId})
+                });
+                var result = await res.json();
+                if (result.success) {
+                    await renderModalInteract(newsId);
+                    bindModalInteractEvents(newsId);
+                    showToast(result.message);
+                } else {
+                    showToast('❌ ' + result.error);
+                }
+            } catch(e) { showToast('❌ 网络错误'); }
+        });
+    }
 
-    overlay.querySelector('[data-action="modal-comment"]').addEventListener('click', function() {
-        var user = getCurrentUser();
-        if (!user) { showToast('🔑 请先登录才能留言'); return; }
-        var input = overlay.querySelector('.news-modal-interact .comment-input');
-        var text = input.value.trim();
-        if (!text) { showToast('📝 请输入留言内容'); return; }
-        var data = getInteractData();
-        var nd = data[newsId] || { likes: 0, liked: false, comments: [] };
-        if (!nd.comments) nd.comments = [];
-        nd.comments.push({ author: user.username, text: text, time: Date.now() });
-        data[newsId] = nd;
-        saveInteractData(data);
-        input.value = '';
-        // 更新评论列表
-        var list = overlay.querySelector('.news-modal-comment-list');
-        if (list) {
-            list.innerHTML = '';
-            nd.comments.forEach(function(c) {
-                list.innerHTML += '<div class="news-modal-comment-item"><span class="c-author">👤 ' + c.author + '</span><span class="c-text">' + c.text + '</span><span class="c-time">' + formatTime(c.time) + '</span></div>';
-            });
-        }
-        showToast('✅ 留言发表成功');
-    });
+    var commentBtn = overlay.querySelector('[data-action="modal-comment"]');
+    if (commentBtn) {
+        commentBtn.addEventListener('click', async function() {
+            if (!_cachedUser) { showToast('🔑 请先登录才能留言'); return; }
+            var input = overlay.querySelector('.news-modal-interact .comment-input');
+            var text = input ? input.value.trim() : '';
+            if (!text) { showToast('📝 请输入留言内容'); return; }
+            try {
+                var res = await fetch('api/interact.php?action=comment', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({news_id: newsId, text: text})
+                });
+                var result = await res.json();
+                if (result.success) {
+                    await renderModalInteract(newsId);
+                    bindModalInteractEvents(newsId);
+                    showToast('✅ 留言发表成功');
+                } else {
+                    showToast('❌ ' + result.error);
+                }
+            } catch(e) { showToast('❌ 网络错误'); }
+        });
+    }
 }
 
 // ============== 用户登录信息（通过 API） ==============
@@ -1399,7 +1424,7 @@ async function getCurrentUser() {
     try {
         const res = await fetch('api/auth.php?action=me');
         const data = await res.json();
-        if (data.success && data.loggedIn) {
+        if (data.success && data.data && data.data.loggedIn !== false) {
             _cachedUser = data.data.user;
             return data.data.user;
         }
@@ -1548,7 +1573,7 @@ async function initUserBar() {
         document.addEventListener('click', function() { dropdownWrap.classList.remove('dropdown-open'); });
         dropdownWrap.querySelector('.user-dropdown').addEventListener('click', function(e) { e.stopPropagation(); });
     } else {
-        bar.innerHTML = `<a href="login.php" class="login-link">🔑 登录</a>`;
+        bar.innerHTML = `<a href="login.php?from=news.html" class="login-link">🔑 登录</a>`;
     }
 }
 

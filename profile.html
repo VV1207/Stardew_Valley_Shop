@@ -234,9 +234,23 @@ async function init() {
         return;
     }
 
-    // 加载物品数据
-    if (typeof window.ITEMS_DATA !== 'undefined' && window.ITEMS_DATA.length > 0) {
-        itemsData = window.ITEMS_DATA;
+    // 加载物品数据（确保 items_data.js 已加载）
+    function loadItemsData() {
+        if (typeof window.ITEMS_DATA !== 'undefined' && window.ITEMS_DATA.length > 0) {
+            itemsData = window.ITEMS_DATA;
+            return true;
+        }
+        return false;
+    }
+    
+    // 如果 itemsData 还没加载，等待一下
+    if (!loadItemsData()) {
+        await new Promise(resolve => {
+            const check = setInterval(() => {
+                if (loadItemsData()) { clearInterval(check); resolve(); }
+            }, 50);
+            setTimeout(() => { clearInterval(check); resolve(); }, 3000);
+        });
     }
 
     initTabs();
@@ -257,7 +271,39 @@ function initTabs() {
 }
 
 function findItem(itemId) {
-    return itemsData.find(i => i.id === itemId);
+    // 同时尝试字符串和整数比较，因为数据库中可能是字符串ID
+    const numId = parseInt(itemId, 10);
+    return itemsData.find(i => i.id === itemId || i.id === numId || String(i.id) === String(itemId));
+}
+
+// 获取物品图片和名称的辅助函数
+function getItemDisplayInfo(item) {
+    const itemData = findItem(item.item_id);
+    let imgHtml = '';
+    let displayName = item.item_name;
+    
+    if (itemData) {
+        // 使用 itemsData 中的正确名称（数据库中可能存的是ID数字）
+        displayName = itemData.name || item.item_name;
+        if (itemData.image) {
+            imgHtml = `<img src="${itemData.image}" alt="${displayName}" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:6px;border-radius:6px;background:#fdf6e7;" onerror="this.style.display='none'">`;
+        }
+    }
+    
+    // 如果名称看起来是纯数字（旧数据bug），尝试用ID查找
+    if (/^\d+$/.test(displayName) && itemData) {
+        displayName = itemData.name;
+    }
+    
+    if (!imgHtml) {
+        imgHtml = `<span style="width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-right:6px;border-radius:6px;background:#fdf6e7;font-size:16px;">📦</span>`;
+    }
+    
+    if (!displayName || /^\d+$/.test(displayName)) {
+        displayName = '物品#' + item.item_id;
+    }
+    
+    return { imgHtml, displayName };
 }
 
 // ============== 收藏（API） ==============
@@ -351,17 +397,18 @@ function renderOrdersList(orders) {
         const items = order.items || [];
         items.forEach(item => {
             const qualStr = item.quality ? ` (${item.quality})` : '';
-            // 尝试获取物品图片
-            const itemData = findItem(item.item_id);
-            const imgHtml = itemData && itemData.image ? `<img src="${itemData.image}" alt="${item.item_name}" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;margin-right:6px;border-radius:6px;background:#fdf6e7;" onerror="this.style.display='none'">` : '';
-            let displayName = item.item_name;
+            const display = getItemDisplayInfo(item);
+            let displayName = display.displayName;
             if (keyword) {
-                const idx = item.item_name.toLowerCase().indexOf(keyword);
+                const lowerName = displayName.toLowerCase();
+                const idx = lowerName.indexOf(keyword);
                 if (idx >= 0) {
-                    displayName = item.item_name.substring(0, idx) + '<span class="order-match-highlight">' + item.item_name.substring(idx, idx + keyword.length) + '</span>' + item.item_name.substring(idx + keyword.length);
+                    displayName = displayName.substring(0, idx) + '<span class="order-match-highlight">' + displayName.substring(idx, idx + keyword.length) + '</span>' + displayName.substring(idx + keyword.length);
                 }
             }
-            itemsHtml += `<div class="order-item-row"><span>${imgHtml}${displayName}${qualStr} × ${item.quantity}</span><span>💰 ${item.price * item.quantity} G</span></div>`;
+            const unitPrice = item.price;
+            const subtotal = unitPrice * item.quantity;
+            itemsHtml += `<div class="order-item-row"><span>${display.imgHtml}${displayName}${qualStr} (${unitPrice} G × ${item.quantity})</span><span>💰 ${subtotal} G</span></div>`;
         });
 
         // 评价区域

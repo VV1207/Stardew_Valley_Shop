@@ -97,10 +97,15 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
             $conn->close();
             unset($_SESSION['captcha']);
 
+            // 支持 from 参数，跳转回来源页面
+            $from = isset($_GET['from']) && $_GET['from'] !== '' ? $_GET['from'] : 'index.html';
+            // 防止 XSS：只允许本地跳转
+            if (strpos($from, 'http') !== false) $from = 'index.html';
+
             echo "<!DOCTYPE html><html><head><meta charset='UTF-8'></head><body>
             <script>
                 localStorage.setItem('stardew_user', '" . addslashes($user_data) . "');
-                window.location.href = 'index.html';
+                window.location.href = '" . addslashes($from) . "';
             </script>
             </body></html>";
             exit;
@@ -204,7 +209,7 @@ if (!isset($_SESSION['captcha'])) {
         <div class="server-error"><?php echo htmlspecialchars($error_msg); ?></div>
         <?php endif; ?>
 
-        <form id="loginForm" method="POST" action="login.php" novalidate>
+        <form id="loginForm" method="POST" action="login.php<?php echo isset($_GET['from']) && $_GET['from'] !== '' ? '?from=' . urlencode($_GET['from']) : ''; ?>" novalidate>
             <div class="form-group" id="nameGroup">
                 <label>👤 用户名 <span class="required">*</span></label>
                 <input type="text" id="username" name="username" placeholder="请输入用户名" maxlength="20" autocomplete="off"
@@ -249,12 +254,6 @@ if (!isset($_SESSION['captcha'])) {
     </footer>
 
     <script>
-        // 如果已登录，跳转回首页
-        const existingUser = localStorage.getItem('stardew_user');
-        if (existingUser) {
-            window.location.href = 'index.html';
-        }
-
         // 显示/隐藏密码
         function togglePassword() {
             var pwdInput = document.getElementById('password');

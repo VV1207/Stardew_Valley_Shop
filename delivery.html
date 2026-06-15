@@ -686,7 +686,7 @@
                 }
             }
 
-            const username = currentUser ? currentUser.username : '(未登录)';
+            const username = currentUser && currentUser.user ? currentUser.user.username : '(未登录)';
 
             // 显示结果弹窗
             const overlay = document.createElement('div');

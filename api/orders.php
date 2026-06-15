@@ -179,9 +179,9 @@ function handleCreateOrder() {
     }
     
     // 获取物品数据文件（用于查价格和名称）
-    $itemsDataFile = __DIR__ . '/../items_data.js';
+    $itemsDataFile = realpath(__DIR__ . '/../items_data.js');
     $itemsMap = [];
-    if (file_exists($itemsDataFile)) {
+    if ($itemsDataFile && file_exists($itemsDataFile)) {
         $jsContent = file_get_contents($itemsDataFile);
         // 提取 JSON 数组：items_data.js 格式为 window.ITEMS_DATA = [...]
         if (preg_match('/window\.ITEMS_DATA\s*=\s*(\[.*\]);/s', $jsContent, $m)) {
@@ -207,32 +207,16 @@ function handleCreateOrder() {
         $totalLoves = 0;
         $totalHates = 0;
         
-        // 先处理每个商品，查价格
+        // 前端直接传递商品名称、价格、喜爱/讨厌数
         $resolvedItems = [];
         foreach ($orderItems as $item) {
             $itemId = $item['item_id'] ?? '';
+            $itemName = $item['name'] ?? $itemId;
             $quality = $item['quality'] ?? '';
             $quantity = max(1, intval($item['quantity'] ?? 1));
-            
-            $price = 0;
-            $itemName = $itemId;
-            $loveCount = 0;
-            $hateCount = 0;
-            
-            if (isset($itemsMap[$itemId])) {
-                $dbItem = $itemsMap[$itemId];
-                $itemName = $dbItem['name'] ?? $itemId;
-                // 查价格
-                if (!empty($quality) && isset($dbItem['qualities'][$quality])) {
-                    $price = intval($dbItem['qualities'][$quality]);
-                } elseif (isset($dbItem['price'])) {
-                    $price = intval($dbItem['price']);
-                } elseif (isset($dbItem['qualities']) && is_array($dbItem['qualities']) && count($dbItem['qualities']) > 0) {
-                    $price = intval(reset($dbItem['qualities']));
-                }
-                $loveCount = count($dbItem['gifting']['love'] ?? []);
-                $hateCount = count($dbItem['gifting']['hate'] ?? []);
-            }
+            $price = intval($item['price'] ?? 0);
+            $loveCount = intval($item['loves'] ?? 0);
+            $hateCount = intval($item['hates'] ?? 0);
             
             $totalItems += $quantity;
             $totalPrice += $price * $quantity;
