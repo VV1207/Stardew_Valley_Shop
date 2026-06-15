@@ -426,7 +426,6 @@
         </div>
     </div>
 
-    <script src="items_data.js"></script>
     <script>
         // ======== 村民数据 ========
         const VILLAGERS = [
@@ -471,15 +470,10 @@
             { name: "Wizard",    img: "images/Wizard.png",     msg: "我用传送门帮你瞬间送过去，比任何配送员都快，凡人赶路太慢了。" }
         ];
 
-        // ======== 随机订单号 ========
-        function generateOrderNumber() {
-            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            let result = '';
-            for (let i = 0; i < 10; i++) {
-                result += chars.charAt(Math.floor(Math.random() * chars.length));
-            }
-            return result;
-        }
+        // ======== 从 URL 获取订单号 ========
+        const urlParams = new URLSearchParams(window.location.search);
+        const currentOrderId = urlParams.get('order_id') || null;
+        let currentUser = null;
 
         // ======== 自提时间 ========
         function getPickupTime() {
@@ -488,47 +482,70 @@
             return now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
         }
 
-        // ======== 登录检查 ========
-        function checkLogin() {
-            const userData = localStorage.getItem('stardew_user');
-            if (!userData) {
-                window.location.href = 'login.html';
-                return null;
+        // ======== 登录检查（API） ========
+        async function checkLogin() {
+            try {
+                const res = await fetch('api/auth.php?action=me');
+                const data = await res.json();
+                if (data.success && data.data && data.data.loggedIn !== false) {
+                    return data.data;
+                }
+            } catch (e) {
+                console.error('登录检查失败:', e);
             }
-            return JSON.parse(userData);
+            return null;
         }
 
-        const user = checkLogin();
-        if (!user) throw new Error('未登录');
-
-        // 初始化地址
-        document.getElementById('deliveryAddress').value = user.address || '鹈鹕镇事务中心';
-
-        // ======== 用户信息栏 ========
-        function initUserBar() {
+        // ======== 用户信息栏（API） ========
+        async function initUserBar() {
             const bar = document.getElementById('userBar');
-            bar.innerHTML = `
-                <div class="user-info" id="userInfoDropdown">
-                    <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
-                    <div class="user-dropdown">
-                        <h4>📋 登录信息</h4>
-                        <p><strong>👤 用户名:</strong> ${user.username}</p>
-                        <p><strong>🏠 住址:</strong> ${user.address}</p>
-                        <p><strong>📧 邮箱:</strong> ${user.email || '未填写'}</p>
-                        <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
-                    </div>
-                </div>
-            `;
-            // 鼠标悬停显示下拉框（移出后自动隐藏，由 CSS :hover 控制）
-            // 不需要额外 JS 事件 —— 纯 CSS 悬停即可
+            try {
+                const res = await fetch('api/auth.php?action=me');
+                const data = await res.json();
+                if (data.success && data.data && data.data.loggedIn !== false) {
+                    const user = data.data.user;
+                    bar.innerHTML = `
+                        <div class="user-info" id="userInfoDropdown">
+                            <div class="user-avatar" id="userAvatarBtn">👤 ${user.username}</div>
+                            <div class="user-dropdown">
+                                <h4>📋 登录信息</h4>
+                                <p><strong>👤 用户名:</strong> ${user.username}</p>
+                                <p><strong>📧 邮箱:</strong> ${user.email || '未填写'}</p>
+                                <p><strong>🕐 注册时间:</strong> ${new Date(user.created_at).toLocaleString('zh-CN')}</p>
+                                <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
+                            </div>
+                        </div>
+                    `;
+                    return;
+                }
+            } catch (e) {
+                console.error('获取用户信息失败:', e);
+            }
+            // 未登录
+            bar.innerHTML = `<a href="login.php" style="color:#578b34;font-weight:600;text-decoration:none;padding:8px 16px;">🔑 登录</a>`;
         }
 
-        function logout() {
-            localStorage.removeItem('stardew_user');
-            window.location.href = 'login.html';
+        async function logout() {
+            if (confirm('确定要退出登录吗？')) {
+                try {
+                    await fetch('api/auth.php?action=logout', { method: 'POST' });
+                } catch (e) {}
+                window.location.href = 'login.php';
+            }
         }
 
-        initUserBar();
+        // ======== 初始化 ========
+        async function initPage() {
+            currentUser = await checkLogin();
+            if (!currentUser) {
+                window.location.href = 'login.php';
+                return;
+            }
+            initUserBar();
+            renderVillagerGrid();
+        }
+
+        initPage();
 
         // ======== 选项卡切换 ========
         function switchTab(tab) {
@@ -589,7 +606,7 @@
         renderVillagerGrid();
 
         // ======== 确认配送 ========
-        function confirmDelivery() {
+        async function confirmDelivery() {
             if (!selectedVillager) return;
             const address = document.getElementById('deliveryAddress').value.trim();
             if (!address) {
@@ -597,7 +614,24 @@
                 return;
             }
 
-            const orderNum = generateOrderNumber();
+            // 调用 API 更新订单配送信息
+            if (currentOrderId) {
+                try {
+                    const res = await fetch('api/orders.php?action=update_delivery', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            order_id: currentOrderId,
+                            delivery_type: 'delivery',
+                            delivery_villager: selectedVillager.name,
+                            delivery_address: address
+                        })
+                    });
+                    await res.json();
+                } catch (e) {
+                    console.error('更新订单配送信息失败:', e);
+                }
+            }
 
             const avatarHTML = selectedVillager.img
                 ? `<img src="${selectedVillager.img}" alt="${selectedVillager.name}" class="result-villager-img">`
@@ -611,7 +645,7 @@
                     <div class="result-icon">🚚</div>
                     <h2>配送已确认！</h2>
                     <div class="result-detail">
-                        <p>📋 <strong>订单号:</strong> ${orderNum}</p>
+                        <p>📋 <strong>订单号:</strong> ${currentOrderId || '(未关联)'}</p>
                         <p>👤 <strong>配送员:</strong> ${avatarHTML} ${selectedVillager.name}</p>
                         <p>📍 <strong>配送地址:</strong> ${address}</p>
                         <p>💬 <strong>寄语:</strong> "${selectedVillager.msg}"</p>
@@ -630,9 +664,29 @@
         }
 
         // ======== 确认自提 ========
-        function confirmPickup() {
-            const orderNum = generateOrderNumber();
+        async function confirmPickup() {
             const pickupTime = getPickupTime();
+
+            // 调用 API 更新订单配送信息
+            if (currentOrderId) {
+                try {
+                    const res = await fetch('api/orders.php?action=update_delivery', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            order_id: currentOrderId,
+                            delivery_type: 'pickup',
+                            delivery_villager: '',
+                            delivery_address: ''
+                        })
+                    });
+                    await res.json();
+                } catch (e) {
+                    console.error('更新订单配送信息失败:', e);
+                }
+            }
+
+            const username = currentUser ? currentUser.username : '(未登录)';
 
             // 显示结果弹窗
             const overlay = document.createElement('div');
@@ -643,10 +697,10 @@
                     <h2>您的商品正在星尔玛打包中！</h2>
                     <p style="font-size:0.9rem;color:#5a4a32;margin-bottom:12px;">请在 <strong>5分钟</strong> 后前来领取</p>
                     <div class="result-detail">
-                        <p>📋 <strong>订单号:</strong> ${orderNum}</p>
+                        <p>📋 <strong>订单号:</strong> ${currentOrderId || '(未关联)'}</p>
                         <p>⏰ <strong>预计可取时间:</strong> ${pickupTime}</p>
                         <p>🏪 <strong>取货地点:</strong> 星尔玛 · 鹈鹕镇店</p>
-                        <p>👤 <strong>提货人:</strong> ${user.username}</p>
+                        <p>👤 <strong>提货人:</strong> ${username}</p>
                     </div>
                     <button class="back-btn" onclick="window.location.href='index.html'">返回商店</button>
                 </div>
