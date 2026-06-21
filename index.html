@@ -219,16 +219,7 @@ function renderPromoSidebar() {
     const container = document.getElementById('promoContent');
     if (!container || itemsData.length === 0) return;
 
-    // 最受欢迎（村民喜爱次数最多的前5）
-    const popular = [...itemsData]
-        .map(item => ({ item, loveCount: item.gifting?.love?.length || 0 }))
-        .filter(x => x.loveCount > 0)
-        .sort((a, b) => b.loveCount - a.loveCount)
-        .slice(0, 5);
-
-    // 限时热卖（随机选5个）
-    const shuffled = [...itemsData].sort(() => Math.random() - 0.5).slice(0, 5);
-
+    const usedIds = new Set();
     let html = '';
 
     // 精品推荐（价格最高的前10中随机选5个）
@@ -241,6 +232,7 @@ function renderPromoSidebar() {
 
     html += '<div class="promo-section-title">💎 精品推荐</div>';
     pick.forEach(item => {
+        usedIds.add(item.id);
         const price = getItemPrice(item, null);
         html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
             <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
@@ -253,9 +245,17 @@ function renderPromoSidebar() {
 
     html += '<hr class="promo-divider">';
 
-    // 村民最爱
+    // 村民最爱（排除已出现的物品，从剩余中选喜爱次数最多的前5）
+    const popular = [...itemsData]
+        .filter(item => !usedIds.has(item.id))
+        .map(item => ({ item, loveCount: item.gifting?.love?.length || 0 }))
+        .filter(x => x.loveCount > 0)
+        .sort((a, b) => b.loveCount - a.loveCount)
+        .slice(0, 5);
+
     html += '<div class="promo-section-title">❤️ 村民最爱</div>';
     popular.forEach(x => {
+        usedIds.add(x.item.id);
         const item = x.item;
         const loves = item.gifting.love || [];
         html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
@@ -269,7 +269,9 @@ function renderPromoSidebar() {
 
     html += '<hr class="promo-divider">';
 
-    // 限时热卖（随机选5个）
+    // 限时热卖（排除已出现的物品，随机选5个）
+    const shuffled = [...itemsData].filter(item => !usedIds.has(item.id)).sort(() => Math.random() - 0.5).slice(0, 5);
+
     html += '<div class="promo-section-title">🔥 限时热卖</div>';
     shuffled.forEach(item => {
         const price = getItemPrice(item, null);
