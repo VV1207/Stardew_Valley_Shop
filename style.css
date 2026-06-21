@@ -25,14 +25,12 @@ body {
 /* ---------- 头部标题（渐变绿色） ---------- */
 .header {
     text-align: center;
-    padding: 8px 16px 4px;
+    padding: 0 16px 4px;
+    margin-top: -20px;
 }
 .header h1 {
     font-size: 2rem;
-    background: linear-gradient(135deg, #3d6830, #8bba6b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #3d6830;
 }
 .header p {
     color: #6b5e4a;
@@ -500,12 +498,61 @@ td {
     flex-wrap: wrap;
     gap: 4px;
 }
-.villager-tag {
+.villager-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #d0dcc8;
     background: white;
-    padding: 2px 8px;
-    border-radius: 40px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.villager-icon:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+.villager-icon.vlove { border-color: #e74c3c; }
+.villager-icon.vlike { border-color: #3498db; }
+.villager-icon.vneutral { border-color: #95a5a6; }
+.villager-icon.vdislike { border-color: #e67e22; }
+.villager-icon.vhate { border-color: #8e44ad; }
+
+/* 村民头像悬浮名字提示 */
+.villager-tooltip-wrap {
+    position: relative;
+    display: inline-block;
+}
+.villager-name-tip {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3d2f1f;
+    color: #fff;
     font-size: 0.7rem;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+.villager-name-tip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #3d2f1f;
+}
+.villager-tooltip-wrap:hover .villager-name-tip {
+    opacity: 1;
+    visibility: visible;
 }
 .vlove     { background: #fde6e6; color: #b33; }
 .vlike     { background: #fef0d5; color: #b87a1a; }
@@ -546,12 +593,12 @@ td {
 .top-banner {
     background: rgba(255, 254, 245, 0.90);
     border-radius: 48px;
-    padding: 14px 20px 16px;
+    padding: 12px 16px 14px;
     margin-bottom: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border: 1px solid #e9e0d0;
     position: relative;
-    min-height: 160px;
+    min-height: 140px;
 }
 
 /* ---------- 顶部导航栏 ---------- */
@@ -564,13 +611,15 @@ td {
     position: relative;
     z-index: 500;
 }
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 .nav-brand {
     font-size: 1rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #3d6830, #6b9a3b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #3d6830;
     cursor: default;
     white-space: nowrap;
 }
@@ -582,13 +631,16 @@ td {
     display: inline-block;
     padding: 7px 18px;
     border-radius: 40px;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #4a3f2c;
     text-decoration: none;
     background: #f0ede5;
     border: 1px solid transparent;
     transition: all 0.25s ease;
+    min-width: 110px;
+    text-align: center;
+    white-space: nowrap;
 }
 .nav-link:hover {
     background: #7c9f5e;
@@ -604,6 +656,53 @@ td {
 }
 .nav-link:active {
     transform: translateY(0);
+}
+
+/* 导航链接悬浮提示面板 */
+.has-tooltip {
+    position: relative;
+}
+.nav-tooltip {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 20px;
+    padding: 14px 18px;
+    min-width: 280px;
+    max-width: 360px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e9e0d0;
+    font-size: 0.82rem;
+    color: #5a4f3e;
+    line-height: 1.6;
+    font-weight: 500;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 600;
+    white-space: normal;
+    text-align: left;
+}
+.nav-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 1px solid #e9e0d0;
+    border-bottom: none;
+    border-right: none;
+}
+.nav-link.has-tooltip:hover .nav-tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 /* ---------- 用户信息栏（在导航行右侧） ---------- */
@@ -645,23 +744,30 @@ td {
     z-index: 510;
 }
 .user-bar .user-avatar {
-    background: white;
-    padding: 7px 16px;
+    display: inline-block;
+    padding: 7px 18px;
     border-radius: 40px;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    color: #3d6830;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    border: 1px solid #dcd0bc;
+    color: #4a3f2c;
+    text-decoration: none;
+    background: #f0ede5;
+    border: 1px solid transparent;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.25s ease;
     user-select: none;
     position: relative;
     z-index: 520;
+    min-width: 110px;
+    text-align: center;
+    white-space: nowrap;
 }
 .user-bar .user-avatar:hover {
-    background: #f0f5e8;
-    border-color: #88aa66;
+    background: #7c9f5e;
+    color: white;
+    border-color: #6b8e4e;
+    box-shadow: 0 2px 8px rgba(99, 139, 67, 0.3);
+    transform: translateY(-1px);
 }
 .user-bar .user-dropdown {
     position: absolute;
@@ -710,6 +816,86 @@ td {
 }
 .user-bar .logout-btn:hover { background: #e2dbc9; }
 
+/* ---------- 促销/推荐侧边栏 ---------- */
+.promo-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #e9e0d0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 16px 12px;
+    align-self: flex-start;
+}
+.promo-header {
+    padding: 0 0 12px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #3d2f1f;
+    border-bottom: 1px solid #f0e8da;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.promo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 8px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+.promo-item:hover {
+    background: #f0f5e8;
+    border-color: #d0dcc8;
+}
+.promo-item img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #fdf6e7;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+.promo-item-info {
+    flex: 1;
+    min-width: 0;
+}
+.promo-item-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #3d2f1f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.promo-item-price {
+    font-size: 0.72rem;
+    color: #bc6f1c;
+    font-weight: 700;
+}
+.promo-item-tag {
+    font-size: 0.6rem;
+    background: #fce4cd;
+    color: #b5573a;
+    padding: 1px 6px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+.promo-section-title {
+    font-size: 0.75rem;
+    color: #7e8d64;
+    font-weight: 700;
+    margin: 14px 0 6px;
+    padding: 0 4px;
+}
+.promo-divider {
+    border: none;
+    border-top: 1px solid #f0e8da;
+    margin: 10px 0;
+}
+
 /* ---------- 登录页 ---------- */
 .login-container {
     background: white;
@@ -719,26 +905,87 @@ td {
     padding: 36px 32px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     border: 1px solid #e9e0d0;
+    position: relative;
+}
+
+/* ---------- 背景音乐唱片播放器 ---------- */
+.music-player {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 2000;
+    cursor: pointer;
+}
+.music-disc {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid #dcd0bc;
+    transition: transform 0.3s;
+    animation: none;
+}
+.music-disc.playing {
+    animation: discSpin 4s linear infinite;
+}
+.music-disc:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.music-disc img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+@keyframes discSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.music-toggle {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #578b34;
+    color: white;
+    border: 2px solid white;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.music-toggle:hover {
+    background: #3f6a24;
 }
 .login-header {
     text-align: center;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 .login-header h1 {
     font-size: 1.8rem;
-    background: linear-gradient(135deg, #3d6830, #8bba6b);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #3d6830;
+    margin-top: 0;
+    margin-bottom: 2px;
 }
 .login-header p {
     color: #6b5e4a;
-    margin-top: 6px;
+    margin-top: 2px;
     font-size: 0.9rem;
 }
 .login-header .avatar {
-    font-size: 3rem;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+}
+.login-header .avatar img {
+    width: 260px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* ---------- 表单组 ---------- */
@@ -747,7 +994,7 @@ td {
 }
 .form-group label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #4a3f2c;
     margin-bottom: 6px;
@@ -800,7 +1047,7 @@ td {
     padding: 12px;
     border-radius: 60px;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: background 0.2s;
     margin-top: 8px;

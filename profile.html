@@ -736,5 +736,17 @@ document.addEventListener('DOMContentLoaded', () => {
     initOrderSearch();
 });
 </script>
+<!-- 背景音乐播放器 -->
+<div id="musicContainer">
+<audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto" autoplay></audio>
+<audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto" autoplay></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+</div>
+<script src="music-player.js"></script>
 </body>
 </html>

@@ -40,8 +40,8 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
     if (empty($captcha_input)) {
         $field_errors['captcha'] = '请输入验证码';
         $valid = false;
-    } elseif (!isset($_SESSION['captcha']) || strtolower($captcha_input) !== $_SESSION['captcha']) {
-        $field_errors['captcha'] = '验证码错误，请重新输入';
+    } elseif (!isset($_SESSION['captcha']) || $captcha_input !== $_SESSION['captcha']) {
+        $field_errors['captcha'] = '验证码错误，请注意区分大小写';
         $valid = false;
     }
 
@@ -122,7 +122,7 @@ if (!isset($_SESSION['captcha'])) {
     for ($i = 0; $i < 4; $i++) {
         $captcha_code .= $chars[random_int(0, strlen($chars) - 1)];
     }
-    $_SESSION['captcha'] = strtolower($captcha_code);
+    $_SESSION['captcha'] = $captcha_code;
 }
 ?>
 <!DOCTYPE html>
@@ -200,9 +200,8 @@ if (!isset($_SESSION['captcha'])) {
 <body>
     <div class="login-container">
         <div class="login-header">
-            <div class="avatar">🌾</div>
-            <h1>欢迎回到星露谷</h1>
-            <p>请输入用户名、密码和验证码登录</p>
+            <div class="avatar"><img src="images/main_logo.png" alt="星露谷"></div>
+            <h1>🌾欢迎回到星尔玛🌾</h1>
         </div>
 
         <?php if ($show_error): ?>
@@ -229,10 +228,10 @@ if (!isset($_SESSION['captcha'])) {
             <div class="form-group" id="captchaGroup">
                 <label>🔤 验证码 <span class="required">*</span></label>
                 <div class="captcha-row">
-                    <input type="text" id="captcha" name="captcha" placeholder="请输入验证码" maxlength="4" autocomplete="off" style="text-transform:uppercase;">
+                    <input type="text" id="captcha" name="captcha" placeholder="请输入验证码" maxlength="4" autocomplete="off">
                     <img src="captcha.php" alt="验证码" id="captchaImg" title="点击刷新验证码" onclick="refreshCaptcha()">
                 </div>
-                <div class="captcha-hint">💡 点击图片可刷新验证码</div>
+                <div class="captcha-hint">💡 点击图片可刷新验证码 · ⚠️ 验证码区分大小写</div>
                 <div class="error-msg" id="captchaError">请输入验证码</div>
             </div>
 
@@ -253,7 +252,83 @@ if (!isset($_SESSION['captcha'])) {
         网页制作：陈薇羽 · 联系方式：1152629204@qq.com
     </footer>
 
+    <!-- 背景音乐播放器 -->
+    <audio id="bgMusic" src="audio/ConcernedApe - Stardew Valley Overture.mp3" loop preload="auto"></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+
     <script>
+        // 背景音乐控制 - 跨页面连续播放
+        var bgMusic = document.getElementById('bgMusic');
+        var musicDisc = document.getElementById('musicDisc');
+        var musicToggle = document.getElementById('musicToggle');
+        var musicPlayer = document.getElementById('musicPlayer');
+        var musicPlaying = false;
+        var STORAGE_KEY = 'stardew_bg_music';
+
+        function saveMusicState() {
+            var state = { currentTime: bgMusic.currentTime, playing: musicPlaying };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        }
+
+        function startMusic() {
+            if (musicPlaying) return;
+            bgMusic.volume = 0.3;
+            bgMusic.play().then(function() {
+                musicDisc.classList.add('playing');
+                musicToggle.textContent = '🔊';
+                musicPlaying = true;
+            }).catch(function() {});
+        }
+
+        function stopMusic() {
+            bgMusic.pause();
+            musicDisc.classList.remove('playing');
+            musicToggle.textContent = '🔇';
+            musicPlaying = false;
+        }
+
+        function toggleMusic() {
+            if (musicPlaying) {
+                stopMusic();
+            } else {
+                startMusic();
+            }
+        }
+
+        musicPlayer.addEventListener('click', toggleMusic);
+
+        // 页面加载时恢复音乐播放位置
+        document.addEventListener('DOMContentLoaded', function() {
+            var saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) {
+                try {
+                    var state = JSON.parse(saved);
+                    bgMusic.currentTime = state.currentTime || 0;
+                    if (state.playing) {
+                        startMusic();
+                    } else {
+                        musicToggle.textContent = '🔇';
+                    }
+                } catch(e) {
+                    startMusic();
+                }
+            } else {
+                startMusic();
+            }
+        });
+
+        // 页面离开时保存播放状态
+        window.addEventListener('beforeunload', saveMusicState);
+        // 也监听页面隐藏（移动端切换标签页等）
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'hidden') saveMusicState();
+        });
+
         // 显示/隐藏密码
         function togglePassword() {
             var pwdInput = document.getElementById('password');

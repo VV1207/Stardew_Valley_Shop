@@ -512,6 +512,7 @@
                                 <p><strong>👤 用户名:</strong> ${user.username}</p>
                                 <p><strong>📧 邮箱:</strong> ${user.email || '未填写'}</p>
                                 <p><strong>🕐 注册时间:</strong> ${new Date(user.created_at).toLocaleString('zh-CN')}</p>
+                                <a href="profile.html" class="profile-link">👤 个人中心</a>
                                 <button class="logout-btn" onclick="logout()">🚪 退出登录</button>
                             </div>
                         </div>
@@ -712,5 +713,17 @@
     <div style="text-align:center;margin-top:20px;">
         <a href="index.html" style="display:inline-block;background:#ddd2bb;padding:10px 28px;border-radius:40px;text-decoration:none;color:#3d2f1f;font-weight:600;font-size:0.9rem;transition:background 0.2s;" onmouseover="this.style.background='#c8baa0'" onmouseout="this.style.background='#ddd2bb'">← 返回商店首页</a>
     </div>
+<!-- 背景音乐播放器 -->
+<div id="musicContainer">
+    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto"></audio>
+    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto"></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+</div>
+<script src="music-player.js"></script>
 </body>
 </html>

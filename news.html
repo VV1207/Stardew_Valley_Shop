@@ -1562,6 +1562,7 @@ async function initUserBar() {
                     <p><strong>👤 用户名:</strong> ${_cachedUser.username}</p>
                     <p><strong>🏠 住址:</strong> ${_cachedUser.address || '未设置'}</p>
                     <p><strong>📧 邮箱:</strong> ${_cachedUser.email || '未填写'}</p>
+                    <a href="profile.html" class="profile-link">👤 个人中心</a>
                     <button class="logout-btn" id="logoutBtn">🚪 退出登录</button>
                 </div>
             </div>
@@ -1690,5 +1691,17 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 </div>
 
+<!-- 背景音乐播放器 -->
+<div id="musicContainer">
+<audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto" autoplay></audio>
+<audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto" autoplay></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+</div>
+<script src="music-player.js"></script>
 </body>
 </html>

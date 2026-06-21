@@ -13,26 +13,34 @@
     <!-- 导航栏 -->
     <nav class="top-nav">
         <div class="nav-brand">🌾 星尔玛</div>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link active">🏠 商店首页</a>
-            <a href="news.html" class="nav-link">📰 星闻露谷</a>
-            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link has-tooltip active">🏠 商店首页
+                    <div class="nav-tooltip">🌿 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
+                </a>
+                <a href="news.html" class="nav-link has-tooltip">📰 星闻露谷
+                    <div class="nav-tooltip">📰 获取星露谷最新动态、活动公告和趣味新闻，不要错过任何精彩内容！</div>
+                </a>
+                <a href="delivery.html" class="nav-link has-tooltip">📦 配送服务
+                    <div class="nav-tooltip">🚚 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
+                </a>
+            </div>
+            <div class="user-bar" id="userBar"></div>
         </div>
-        <div class="user-bar" id="userBar"></div>
     </nav>
 
     <div class="header">
         <h1>🌾 星露谷 · 全物品图谱商店 🌻</h1>
-        <p>查看所有物品售价 & 村民喜好 · 交互式购买</p>
-        <div class="stats-bar">
-            <span id="statItems">总物品: --</span>
-            <span id="statLoves">❤️ 最爱: --</span>
-            <span id="statHates">💔 讨厌: --</span>
-        </div>
     </div>
 </div>
 
 <div class="app-container">
+
+    <!-- 左侧促销/推荐侧边栏 -->
+    <div class="promo-sidebar" id="promoSidebar">
+        <div class="promo-header">🌟 今日推荐</div>
+        <div id="promoContent">加载中...</div>
+    </div>
 
     <div class="main-content">
         <div class="controls">
@@ -81,14 +89,14 @@ let categories = [];
 let activeCategory = '全部';
 let activeSearch = '';
 let currentPage = 1;
-const ITEMS_PER_PAGE = 60;
+const ITEMS_PER_PAGE = 16;
 
 // 购物车: { itemId, name, quality, quantity, price, category, image, gifting }
 let cartItems = [];
 let currentUser = null; // 缓存当前用户
 
 const CATEGORY_ORDER = [
-    "作物", "动物", "果树", "工匠制品", "家具", "墙纸", "地板",
+    "作物", "动物", "果树", "工匠制品",
     "矿物", "渔具", "武器", "帽子", "鞋类", "戒指", "菜肴",
     "农场工具", "古物", "怪物战利品", "书", "采集物", "鱼类",
     "饰品", "服装", "种子", "其他"
@@ -201,15 +209,87 @@ function loadData() {
     // 添加不在顺序中的分类
     catSet.forEach(c => { if (!CATEGORY_ORDER.includes(c) && !categories.includes(c) && c !== '采集' && c !== '农场用具') categories.push(c); });
 
-    // 更新统计信息
-    const totalLoves = itemsData.reduce((s,i) => s + (i.gifting?.love?.length || 0), 0);
-    const totalHates = itemsData.reduce((s,i) => s + (i.gifting?.hate?.length || 0), 0);
-    document.getElementById('statItems').textContent = `📦 总物品: ${itemsData.length}`;
-    document.getElementById('statLoves').textContent = `❤️ 最爱总数: ${totalLoves}`;
-    document.getElementById('statHates').textContent = `💔 讨厌总数: ${totalHates}`;
-
     initUI();
     loadCart(); // 从后端加载购物车
+    renderPromoSidebar();
+}
+
+// ============== 促销/推荐侧边栏 ==============
+function renderPromoSidebar() {
+    const container = document.getElementById('promoContent');
+    if (!container || itemsData.length === 0) return;
+
+    // 最受欢迎（村民喜爱次数最多的前5）
+    const popular = [...itemsData]
+        .map(item => ({ item, loveCount: item.gifting?.love?.length || 0 }))
+        .filter(x => x.loveCount > 0)
+        .sort((a, b) => b.loveCount - a.loveCount)
+        .slice(0, 5);
+
+    // 限时热卖（随机选5个）
+    const shuffled = [...itemsData].sort(() => Math.random() - 0.5).slice(0, 5);
+
+    let html = '';
+
+    // 精品推荐（价格最高的前10中随机选5个）
+    const topPrice = [...itemsData].sort((a, b) => {
+        const pa = getItemPrice(a, null);
+        const pb = getItemPrice(b, null);
+        return pb - pa;
+    }).slice(0, 10);
+    const pick = [...topPrice].sort(() => Math.random() - 0.5).slice(0, 5);
+
+    html += '<div class="promo-section-title">💎 精品推荐</div>';
+    pick.forEach(item => {
+        const price = getItemPrice(item, null);
+        html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
+            <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
+            <div class="promo-item-info">
+                <div class="promo-item-name">${item.name}</div>
+                <div class="promo-item-price">💰 ${price} G</div>
+            </div>
+        </div>`;
+    });
+
+    html += '<hr class="promo-divider">';
+
+    // 村民最爱
+    html += '<div class="promo-section-title">❤️ 村民最爱</div>';
+    popular.forEach(x => {
+        const item = x.item;
+        const loves = item.gifting.love || [];
+        html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
+            <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
+            <div class="promo-item-info">
+                <div class="promo-item-name">${item.name}</div>
+                <div class="promo-item-price">❤️ ${loves.length}人喜爱</div>
+            </div>
+        </div>`;
+    });
+
+    html += '<hr class="promo-divider">';
+
+    // 限时热卖（随机选5个）
+    html += '<div class="promo-section-title">🔥 限时热卖</div>';
+    shuffled.forEach(item => {
+        const price = getItemPrice(item, null);
+        const discount = Math.floor(Math.random() * 15 + 5);
+        html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
+            <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
+            <div class="promo-item-info">
+                <div class="promo-item-name">${item.name}</div>
+                <div class="promo-item-price">💰 ${price} G <span class="promo-item-tag">-${discount}%</span></div>
+            </div>
+        </div>`;
+    });
+
+    container.innerHTML = html;
+}
+
+// 根据 ID 查找物品并打开详情弹窗
+function showItemDetailById(id) {
+    const item = itemsData.find(i => i.id === id);
+    if (item) showItemDetail(item);
 }
 
 // ============== UI 初始化 ==============
@@ -430,27 +510,53 @@ async function renderItemsGrid() {
 
 function renderPagination(totalPages, totalItems) {
     const container = document.getElementById('pagination');
+    const containerBottom = document.getElementById('paginationBottom');
     if (!container) return;
-    if (totalPages <= 1) {
-        container.innerHTML = '';
-        return;
-    }
+    if (totalPages <= 0) totalPages = 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
     let html = `<div class="pagination-info">共 ${totalItems} 件商品，第 ${currentPage}/${totalPages} 页</div>`;
-    html += `<div class="pagination-btns">`;
-    html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(1)">⏮</button>`;
-    html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">◀</button>`;
-    // 页码按钮（最多显示7个）
-    let startPage = Math.max(1, currentPage - 3);
-    let endPage = Math.min(totalPages, startPage + 6);
-    if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
-    for (let i = startPage; i <= endPage; i++) {
-        html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+    if (totalPages > 1) {
+        html += `<div class="pagination-btns">`;
+        html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(1)">⏮</button>`;
+        html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">◀</button>`;
+        let startPage = Math.max(1, currentPage - 3);
+        let endPage = Math.min(totalPages, startPage + 6);
+        if (endPage - startPage < 6) startPage = Math.max(1, endPage - 6);
+        for (let i = startPage; i <= endPage; i++) {
+            html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+        }
+        html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">▶</button>`;
+        html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${totalPages})">⏭</button>`;
+        html += `<span class="page-jump">跳至 <input type="number" class="page-jump-input" id="pageJumpInput" min="1" max="${totalPages}" value="${currentPage}" onkeydown="if(event.key==='Enter')jumpToPage()"> / ${totalPages} 页 <button class="page-jump-btn" onclick="jumpToPage()">确定</button></span>`;
+        html += `</div>`;
+    } else {
+        html += `<div class="pagination-btns" style="opacity:0.5;"></div>`;
     }
-    html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">▶</button>`;
-    html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${totalPages})">⏭</button>`;
-    html += `<span class="page-jump">跳至 <input type="number" class="page-jump-input" id="pageJumpInput" min="1" max="${totalPages}" value="${currentPage}" onkeydown="if(event.key==='Enter')jumpToPage()"> / ${totalPages} 页 <button class="page-jump-btn" onclick="jumpToPage()">确定</button></span>`;
-    html += `</div>`;
     container.innerHTML = html;
+    // 底部分页（仅当有多页时显示，避免重复）
+    if (containerBottom) {
+        if (totalPages > 1) {
+            let htmlBottom = `<div class="pagination-info">共 ${totalItems} 件商品，第 ${currentPage}/${totalPages} 页</div>`;
+            htmlBottom += `<div class="pagination-btns">`;
+            htmlBottom += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(1)">⏮</button>`;
+            htmlBottom += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="goToPage(${currentPage - 1})">◀</button>`;
+            let startPage2 = Math.max(1, currentPage - 3);
+            let endPage2 = Math.min(totalPages, startPage2 + 6);
+            if (endPage2 - startPage2 < 6) startPage2 = Math.max(1, endPage2 - 6);
+            for (let i = startPage2; i <= endPage2; i++) {
+                htmlBottom += `<button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+            }
+            htmlBottom += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${currentPage + 1})">▶</button>`;
+            htmlBottom += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="goToPage(${totalPages})">⏭</button>`;
+            htmlBottom += `<span class="page-jump">跳至 <input type="number" class="page-jump-input2" id="pageJumpInput2" min="1" max="${totalPages}" value="${currentPage}" onkeydown="if(event.key==='Enter')jumpToPage2()"> / ${totalPages} 页 <button class="page-jump-btn" onclick="jumpToPage2()">确定</button></span>`;
+            htmlBottom += `</div>`;
+            containerBottom.innerHTML = htmlBottom;
+        } else {
+            containerBottom.innerHTML = '';
+        }
+    }
 }
 
 function goToPage(page) {
@@ -462,6 +568,20 @@ function goToPage(page) {
 
 function jumpToPage() {
     const input = document.getElementById('pageJumpInput');
+    if (!input) return;
+    let page = parseInt(input.value);
+    if (isNaN(page) || page < 1) page = 1;
+    const totalPages = Math.ceil(
+        (activeCategory === '全部' ? itemsData : itemsData.filter(i => i.category === activeCategory))
+            .filter(i => !activeSearch || i.name.toLowerCase().includes(activeSearch))
+            .length / ITEMS_PER_PAGE
+    );
+    if (page > totalPages) page = totalPages;
+    goToPage(page);
+}
+
+function jumpToPage2() {
+    const input = document.getElementById('pageJumpInput2');
     if (!input) return;
     let page = parseInt(input.value);
     if (isNaN(page) || page < 1) page = 1;
@@ -730,8 +850,8 @@ function renderGiftDetail(g) {
         const names = g[lv.key] || [];
         if (!names.length) continue;
         hasData = true;
-        html += `<div style="margin:4px 0;"><strong>${lv.label}</strong> <div class="villager-tags">` +
-            names.map(n => `<span class="villager-tag ${lv.cls}">${n}</span>`).join('') +
+    html += `<div style="margin:4px 0;"><strong>${lv.label}</strong> <div class="villager-tags">` +
+            names.map(n => `<span class="villager-tooltip-wrap"><img src="images/${n}_Icon.png" alt="${n}" class="villager-icon ${lv.cls}" onerror="this.style.display='none'"><span class="villager-name-tip">${n}</span></span>`).join('') +
             `</div></div>`;
     }
     return html || '<p style="color:#aaa;">暂无赠送数据</p>';
@@ -880,7 +1000,7 @@ async function initUserBar() {
     } catch (e) {
         console.error('获取用户信息失败:', e);
     }
-    bar.innerHTML = `<a href="login.php" class="login-link">🔑 登录</a>`;
+    bar.innerHTML = `<a href="login.php" class="nav-link">🔑 用户登录</a>`;
 }
 
 async function logout() {
@@ -913,5 +1033,19 @@ document.addEventListener('DOMContentLoaded', () => {
         </tr>
     </table>
 </footer>
+
+<!-- 背景音乐播放器 -->
+<div id="musicContainer">
+    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto" autoplay></audio>
+    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto" autoplay></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+</div>
+
+<script src="music-player.js"></script>
 </body>
 </html>

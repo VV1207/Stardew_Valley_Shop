@@ -12,7 +12,7 @@ for ($i = 0; $i < 4; $i++) {
 }
 
 // 存储到 session
-$_SESSION['captcha'] = strtolower($captcha_code);
+$_SESSION['captcha'] = $captcha_code;
 
 // 创建图片
 $width = 120;

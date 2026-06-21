@@ -201,9 +201,8 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
 <body>
     <div class="login-container">
         <div class="login-header">
-            <div class="avatar">🌱</div>
-            <h1>注册新账户</h1>
-            <p>加入星露谷，开启你的农场之旅</p>
+            <div class="avatar"><img src="images/main_logo.png" alt="星露谷"></div>
+            <h1>🌾注册新账户🌾</h1>
         </div>
 
         <?php if ($show_error): ?>
@@ -266,7 +265,82 @@ if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') 
         网页制作：陈薇羽 · 联系方式：1152629204@qq.com
     </footer>
 
+    <!-- 背景音乐播放器 -->
+    <audio id="bgMusic" src="audio/ConcernedApe - Stardew Valley Overture.mp3" loop preload="auto"></audio>
+    <div class="music-player" id="musicPlayer">
+        <div class="music-disc" id="musicDisc">
+            <img src="images/music_background.jpg" alt="唱片">
+        </div>
+        <div class="music-toggle" id="musicToggle">🔇</div>
+    </div>
+
     <script>
+        // 背景音乐控制 - 跨页面连续播放
+        var bgMusic = document.getElementById('bgMusic');
+        var musicDisc = document.getElementById('musicDisc');
+        var musicToggle = document.getElementById('musicToggle');
+        var musicPlayer = document.getElementById('musicPlayer');
+        var musicPlaying = false;
+        var STORAGE_KEY = 'stardew_bg_music';
+
+        function saveMusicState() {
+            var state = { currentTime: bgMusic.currentTime, playing: musicPlaying };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        }
+
+        function startMusic() {
+            if (musicPlaying) return;
+            bgMusic.volume = 0.3;
+            bgMusic.play().then(function() {
+                musicDisc.classList.add('playing');
+                musicToggle.textContent = '🔊';
+                musicPlaying = true;
+            }).catch(function() {});
+        }
+
+        function stopMusic() {
+            bgMusic.pause();
+            musicDisc.classList.remove('playing');
+            musicToggle.textContent = '🔇';
+            musicPlaying = false;
+        }
+
+        function toggleMusic() {
+            if (musicPlaying) {
+                stopMusic();
+            } else {
+                startMusic();
+            }
+        }
+
+        musicPlayer.addEventListener('click', toggleMusic);
+
+        // 页面加载时恢复音乐播放位置
+        document.addEventListener('DOMContentLoaded', function() {
+            var saved = localStorage.getItem(STORAGE_KEY);
+            if (saved) {
+                try {
+                    var state = JSON.parse(saved);
+                    bgMusic.currentTime = state.currentTime || 0;
+                    if (state.playing) {
+                        startMusic();
+                    } else {
+                        musicToggle.textContent = '🔇';
+                    }
+                } catch(e) {
+                    startMusic();
+                }
+            } else {
+                startMusic();
+            }
+        });
+
+        // 页面离开时保存播放状态
+        window.addEventListener('beforeunload', saveMusicState);
+        document.addEventListener('visibilitychange', function() {
+            if (document.visibilityState === 'hidden') saveMusicState();
+        });
+
         // 显示/隐藏密码
         function togglePassword(fieldId, btn) {
             var input = document.getElementById(fieldId);
