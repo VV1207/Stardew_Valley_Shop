@@ -1,4 +1,4 @@
-﻿// 星露谷全物品数据 - 自动生成
+// 星露谷全物品数据 - 自动生成
 window.ITEMS_DATA = [
   {
     "id": 1,
@@ -74,9 +74,45 @@ window.ITEMS_DATA = [
     "image": "images/Artichoke.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -499,9 +535,45 @@ window.ITEMS_DATA = [
     "image": "images/Fiddlehead_Fern.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -694,9 +766,45 @@ window.ITEMS_DATA = [
     "image": "images/Kale.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -890,9 +998,45 @@ window.ITEMS_DATA = [
     "image": "images/Radish.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -912,9 +1056,45 @@ window.ITEMS_DATA = [
     "image": "images/Red_Cabbage.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1220,10 +1400,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Yam.png",
     "gifting": {
-      "love": ["Linus"],
-      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Linus"
+      ],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "dislike": [
+        "Sam",
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -1299,10 +1516,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Blueberry.png",
     "gifting": {
-      "love": ["Haley"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Haley"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -1944,9 +2198,45 @@ window.ITEMS_DATA = [
     "image": "images/Blue_Jazz.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Sebastian", "George", "Clint"],
+      "dislike": [
+        "Sebastian",
+        "George",
+        "Clint"
+      ],
       "hate": []
     }
   },
@@ -5232,9 +5522,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -5254,9 +5581,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -5650,9 +6014,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -9609,7 +10010,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -9623,10 +10059,47 @@ window.ITEMS_DATA = [
     "image": "images/Tortilla.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Leah", "Willy", "Krobus", "Leo"],
-      "hate": ["Pierre", "Kent"]
+      "dislike": [
+        "Leah",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Pierre",
+        "Kent"
+      ]
     }
   },
   {
@@ -9640,10 +10113,47 @@ window.ITEMS_DATA = [
     "image": "images/Triple_Shot_Espresso.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus"],
-      "hate": ["Jas", "Vincent", "Leo"]
+      "dislike": [
+        "Willy",
+        "Krobus"
+      ],
+      "hate": [
+        "Jas",
+        "Vincent",
+        "Leo"
+      ]
     }
   },
   {
@@ -9869,10 +10379,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Eggplant_Parmesan.png",
     "gifting": {
-      "love": ["Jodi"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Jodi"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -9940,10 +10487,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Blueberry_Tart.png",
     "gifting": {
-      "love": ["Linus"],
-      "like": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Linus"
+      ],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -10016,11 +10600,50 @@ window.ITEMS_DATA = [
     },
     "image": "images/Wild_Horseradish.png",
     "gifting": {
-      "love": ["Krobus"],
-      "like": ["Harvey", "Leah", "Caroline", "Linus"],
-      "neutral": ["Maru", "Penny", "Emily", "Demetrius", "Kent", "Sandy"],
-      "dislike": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Evelyn", "George", "Jodi", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Leo"],
-      "hate": ["Haley", "Jas", "Vincent"]
+      "love": [
+        "Krobus"
+      ],
+      "like": [
+        "Harvey",
+        "Leah",
+        "Caroline",
+        "Linus"
+      ],
+      "neutral": [
+        "Maru",
+        "Penny",
+        "Emily",
+        "Demetrius",
+        "Kent",
+        "Sandy"
+      ],
+      "dislike": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Leo"
+      ],
+      "hate": [
+        "Haley",
+        "Jas",
+        "Vincent"
+      ]
     }
   },
   {
@@ -10086,11 +10709,49 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Spicy_Eel.png",
     "gifting": {
-      "love": ["Abigail"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Abigail"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Emily", "Willy", "Krobus", "Leo"],
-      "hate": ["Evelyn"]
+      "dislike": [
+        "Emily",
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
+      "hate": [
+        "Evelyn"
+      ]
     }
   },
   {
@@ -10103,10 +10764,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Blackberry_Cobbler.png",
     "gifting": {
-      "love": ["Abigail"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Abigail"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -12536,7 +13234,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -12553,7 +13286,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -13568,9 +14336,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -13590,9 +14395,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -13612,9 +14454,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -13634,9 +14513,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -13652,8 +14568,44 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Abigail"],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "dislike": [
+        "Abigail"
+      ],
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -13799,9 +14751,46 @@ window.ITEMS_DATA = [
     "image": "images/Common_Mushroom.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Leah", "Linus"],
-      "neutral": ["Alex", "Penny", "Emily", "Abigail", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Kent", "Gus", "Pam", "Clint", "Sandy"],
-      "dislike": ["Sam", "Shane", "Elliott", "Sebastian", "Haley", "Maru", "Pierre", "Caroline", "Jas", "Vincent", "Jodi", "Willy", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "like": [
+        "Harvey",
+        "Leah",
+        "Linus"
+      ],
+      "neutral": [
+        "Alex",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Sandy"
+      ],
+      "dislike": [
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Pierre",
+        "Caroline",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Willy",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -13820,10 +14809,47 @@ window.ITEMS_DATA = [
     },
     "image": "images/Hazelnuts.png",
     "gifting": {
-      "love": ["Kent"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Kent"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -14007,10 +15033,47 @@ window.ITEMS_DATA = [
     "image": "images/24px-Coral.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "dislike": [],
-      "hate": ["Harvey"]
+      "hate": [
+        "Harvey"
+      ]
     }
   },
   {
@@ -14024,10 +15087,47 @@ window.ITEMS_DATA = [
     "image": "images/24px-Sea_Urchin.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn", "Leo"],
-      "neutral": ["Elliott"],
+      "like": [
+        "Evelyn",
+        "Leo"
+      ],
+      "neutral": [
+        "Elliott"
+      ],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ]
     }
   },
   {
@@ -14062,10 +15162,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Roasted_Hazelnuts.png",
     "gifting": {
-      "love": ["Kent"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Kent"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -14163,10 +15300,47 @@ window.ITEMS_DATA = [
     "image": "images/Rainbow_Shell.png",
     "gifting": {
       "love": [],
-      "like": ["Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "neutral": ["Elliott"],
+      "like": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [
+        "Elliott"
+      ],
       "dislike": [],
-      "hate": ["Harvey"]
+      "hate": [
+        "Harvey"
+      ]
     }
   },
   {
@@ -14180,10 +15354,47 @@ window.ITEMS_DATA = [
     "image": "images/Nautilus_Shell.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn", "Leo"],
-      "neutral": ["Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
+      "like": [
+        "Evelyn",
+        "Leo"
+      ],
+      "neutral": [
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
       "dislike": [],
-      "hate": ["Harvey"]
+      "hate": [
+        "Harvey"
+      ]
     }
   },
   {
@@ -14203,9 +15414,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14224,10 +15472,48 @@ window.ITEMS_DATA = [
     "image": "images/Clam.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre"]
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre"
+      ]
     }
   },
   {
@@ -14246,10 +15532,48 @@ window.ITEMS_DATA = [
     "image": "images/24px-Cockle.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre"]
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre"
+      ]
     }
   },
   {
@@ -14269,9 +15593,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14282,16 +15643,53 @@ window.ITEMS_DATA = [
     "price": 100,
     "has_quality": true,
     "qualities": {
-      "普通":100,
-      "银星":125
+      "普通": 100,
+      "银星": 125
     },
     "image": "images/Crab.png",
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14307,11 +15705,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Lobster.png",
     "gifting": {
-      "love": ["Elliott"],
+      "love": [
+        "Elliott"
+      ],
       "like": [],
-      "neutral": ["Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14329,9 +15765,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14349,9 +15822,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -14370,10 +15880,48 @@ window.ITEMS_DATA = [
     "image": "images/Oyster.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre"]
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre"
+      ]
     }
   },
   {
@@ -17876,9 +19424,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -17898,9 +19483,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -19515,10 +21137,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Tropical_Curry.png",
     "gifting": {
-      "love": ["Caroline", "Gus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Caroline",
+        "Gus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19532,10 +21191,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Artichoke_Dip.png",
     "gifting": {
-      "love": ["Caroline", "Gus"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Caroline",
+        "Gus"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19550,9 +21246,45 @@ window.ITEMS_DATA = [
     "image": "images/Shrimp_Cocktail.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19566,10 +21298,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Banana_Pudding.png",
     "gifting": {
-      "love": ["Abigail"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Abigail"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19583,10 +21352,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Mango_Sticky_Rice.png",
     "gifting": {
-      "love": ["Sandy"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Leo"],
+      "love": [
+        "Sandy"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Leo"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus"],
+      "dislike": [
+        "Willy",
+        "Krobus"
+      ],
       "hate": []
     }
   },
@@ -19600,10 +21406,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Cranberry_Candy.png",
     "gifting": {
-      "love": ["Vincent"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Vincent"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19617,10 +21460,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Plum_Pudding.png",
     "gifting": {
-      "love": ["Jas"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Jas"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19634,10 +21514,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Poi.png",
     "gifting": {
-      "love": ["Leo"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Leo"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus"],
+      "dislike": [
+        "Willy",
+        "Krobus"
+      ],
       "hate": []
     }
   },
@@ -19652,9 +21569,45 @@ window.ITEMS_DATA = [
     "image": "images/Bruschetta.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19669,9 +21622,45 @@ window.ITEMS_DATA = [
     "image": "images/Squid_Ink_Ravioli.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19685,10 +21674,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Fiddlehead_Risotto.png",
     "gifting": {
-      "love": ["Kent", "Clint"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Gus", "Pam", "Linus", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Kent",
+        "Clint"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19702,10 +21728,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Poppyseed_Muffin.png",
     "gifting": {
-      "love": ["Leah", "Penny"],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "love": [
+        "Leah",
+        "Penny"
+      ],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19720,9 +21783,45 @@ window.ITEMS_DATA = [
     "image": "images/Moss_Soup.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19740,7 +21839,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -19757,7 +21891,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -19771,9 +21940,45 @@ window.ITEMS_DATA = [
     "image": "images/Field_Snack.png",
     "gifting": {
       "love": [],
-      "like": ["Alex"],
+      "like": [
+        "Alex"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19788,9 +21993,45 @@ window.ITEMS_DATA = [
     "image": "images/Life_Elixir.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy"],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy"
+      ],
       "neutral": [],
-      "dislike": ["Willy", "Krobus", "Leo"],
+      "dislike": [
+        "Willy",
+        "Krobus",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -19809,9 +22050,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -19824,16 +22102,52 @@ window.ITEMS_DATA = [
     "qualities": {
       "普通": 30,
       "银星": 37,
-      "金星":45,
-      "铱星":60
+      "金星": 45,
+      "铱星": 60
     },
     "image": "images/Carp.png",
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Linus"],
+      "neutral": [
+        "Linus"
+      ],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -19851,11 +22165,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Sea_Cucumber.png",
     "gifting": {
-      "love": ["Willy"],
+      "love": [
+        "Willy"
+      ],
       "like": [],
-      "neutral": ["Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Elliott", "Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Sebastian",
+        "Demetrius",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Elliott",
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -19874,9 +22226,46 @@ window.ITEMS_DATA = [
     "image": "images/Wild_Plum.png",
     "gifting": {
       "love": [],
-      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
-      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
-      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
+      "like": [
+        "Harvey",
+        "Shane",
+        "Elliott",
+        "Leah",
+        "Robin",
+        "Demetrius",
+        "Jodi",
+        "Kent",
+        "Pam",
+        "Linus",
+        "Sandy"
+      ],
+      "neutral": [
+        "Sam",
+        "Alex",
+        "Sebastian",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Evelyn",
+        "George",
+        "Willy",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Leo"
+      ],
+      "dislike": [
+        "Haley",
+        "Abigail",
+        "Jas",
+        "Vincent"
+      ],
       "hate": []
     }
   },
@@ -19897,9 +22286,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -19967,8 +22393,44 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Sam", "Shane", "Leah", "Marnie"],
-      "hate": ["Harvey", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "dislike": [
+        "Sam",
+        "Shane",
+        "Leah",
+        "Marnie"
+      ],
+      "hate": [
+        "Harvey",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -19984,7 +22446,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -20005,9 +22502,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20023,7 +22557,42 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -20038,8 +22607,44 @@ window.ITEMS_DATA = [
     "image": "images/Cave_Carrot.png",
     "gifting": {
       "love": [],
-      "like": ["Dwarf"],
-      "neutral": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Krobus", "Sandy", "Leo"],
+      "like": [
+        "Dwarf"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "dislike": [],
       "hate": []
     }
@@ -20054,10 +22659,47 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Price_Catalogue.png",
     "gifting": {
-      "love": ["Penny", "Pierre"],
-      "like": ["Elliott"],
+      "love": [
+        "Penny",
+        "Pierre"
+      ],
+      "like": [
+        "Elliott"
+      ],
       "neutral": [],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "hate": []
     }
   },
@@ -20071,10 +22713,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Mapping_Cave_Systems.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20088,10 +22768,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Way_Of_The_Wind_pt._1.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20105,10 +22823,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Way_Of_The_Wind_pt._2.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20122,10 +22878,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Monster_Compendium.png",
     "gifting": {
-      "love": ["Penny", "Abigail", "Krobus"],
-      "like": ["Elliott", "Sebastian"],
-      "neutral": ["Harvey", "Sam", "Shane", "Haley", "Leah", "Maru", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Abigail",
+        "Krobus"
+      ],
+      "like": [
+        "Elliott",
+        "Sebastian"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20139,10 +22933,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Monster_Compendium.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20156,9 +22988,46 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Jack_Be_Nimble,_Jack_Be_Thick.png",
     "gifting": {
-      "love": ["Alex", "Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "love": [
+        "Alex",
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
       "dislike": [],
       "hate": []
     }
@@ -20173,10 +23042,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Woody's_Secret.png",
     "gifting": {
-      "love": ["Penny", "Robin"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Robin"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20190,10 +23097,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Ways_Of_The_Wild.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20207,10 +23152,49 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Jewels_Of_The_Sea.png",
     "gifting": {
-      "love": ["Penny", "Willy"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Willy"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20224,10 +23208,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Dwarvish_Safety_Manual.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20241,10 +23263,49 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/The_Art_O'_Crabbing.png",
     "gifting": {
-      "love": ["Penny", "Willy"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Willy"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20258,10 +23319,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/The_Alleyway_Buffet.png",
     "gifting": {
-      "love": ["Penny", "Linus"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Linus"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20275,10 +23374,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/The_Diamond_Hunter.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20292,10 +23429,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Book_of_Mysteries.png",
     "gifting": {
-      "love": ["Penny", "Wizard"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny",
+        "Wizard"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20309,10 +23484,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Horse_The_Book.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20326,10 +23539,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Treasure_Appraisal_Guide.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20343,10 +23594,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Ol'_Slitherlegs.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20360,10 +23649,48 @@ window.ITEMS_DATA = [
     "qualities": {},
     "image": "images/Animal_Catalogue.png",
     "gifting": {
-      "love": ["Penny"],
-      "like": ["Elliott"],
-      "neutral": ["Harvey", "Sam", "Shane", "Sebastian", "Haley", "Leah", "Maru", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
-      "dislike": ["Alex"],
+      "love": [
+        "Penny"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "dislike": [
+        "Alex"
+      ],
       "hate": []
     }
   },
@@ -20384,9 +23711,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20405,10 +23769,48 @@ window.ITEMS_DATA = [
     "image": "images/Mussel.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre"]
+      "like": [
+        "Evelyn"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre"
+      ]
     }
   },
   {
@@ -20450,9 +23852,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20471,10 +23910,49 @@ window.ITEMS_DATA = [
     "image": "images/Flounder.png",
     "gifting": {
       "love": [],
-      "like": ["Sebastian"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "like": [
+        "Sebastian"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20494,9 +23972,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20516,9 +24031,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20536,11 +24088,50 @@ window.ITEMS_DATA = [
     },
     "image": "images/Octopus.png",
     "gifting": {
-      "love": ["Willy"],
-      "like": ["Elliott"],
-      "neutral": ["Sebastian", "Demetrius", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn", "Pam"]
+      "love": [
+        "Willy"
+      ],
+      "like": [
+        "Elliott"
+      ],
+      "neutral": [
+        "Sebastian",
+        "Demetrius",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn",
+        "Pam"
+      ]
     }
   },
   {
@@ -20558,11 +24149,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Pufferfish.png",
     "gifting": {
-      "love": ["Abigail"],
+      "love": [
+        "Abigail"
+      ],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20582,9 +24211,45 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20596,14 +24261,51 @@ window.ITEMS_DATA = [
     "has_quality": true,
     "qualities": {
       "普通": 65,
-      "银星": 81},
+      "银星": 81
+    },
     "image": "images/Snail.png",
     "gifting": {
-      "love": ["Vincent"],
+      "love": [
+        "Vincent"
+      ],
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20617,10 +24319,46 @@ window.ITEMS_DATA = [
     "image": "images/Driftwood.png",
     "gifting": {
       "love": [],
-      "like": ["Leah"],
+      "like": [
+        "Leah"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20637,7 +24375,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20654,7 +24427,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20668,10 +24476,46 @@ window.ITEMS_DATA = [
     "image": "images/Broken_Glasses.png",
     "gifting": {
       "love": [],
-      "like": ["Evelyn"],
+      "like": [
+        "Evelyn"
+      ],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20685,10 +24529,47 @@ window.ITEMS_DATA = [
     "image": "images/Joja_Cola.png",
     "gifting": {
       "love": [],
-      "like": ["Sam"],
-      "neutral": ["Pam"],
+      "like": [
+        "Sam"
+      ],
+      "neutral": [
+        "Pam"
+      ],
       "dislike": [],
-      "hate": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20705,7 +24586,42 @@ window.ITEMS_DATA = [
       "like": [],
       "neutral": [],
       "dislike": [],
-      "hate": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"]
+      "hate": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Sebastian",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ]
     }
   },
   {
@@ -20725,9 +24641,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20747,9 +24700,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20768,10 +24758,48 @@ window.ITEMS_DATA = [
     "image": "images/Lingcod.png",
     "gifting": {
       "love": [],
-      "like": ["Willy"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "like": [
+        "Willy"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20791,9 +24819,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20812,10 +24877,48 @@ window.ITEMS_DATA = [
     "image": "images/Sturgeon.png",
     "gifting": {
       "love": [],
-      "like": ["Willy"],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "like": [
+        "Willy"
+      ],
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20835,9 +24938,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20857,9 +24997,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20879,9 +25056,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20901,9 +25115,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20923,9 +25174,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20945,9 +25233,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20965,11 +25290,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Lava_Eel.png",
     "gifting": {
-      "love": ["Dwarf"],
+      "love": [
+        "Dwarf"
+      ],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -20989,9 +25352,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21009,11 +25409,49 @@ window.ITEMS_DATA = [
     },
     "image": "images/Sandfish.png",
     "gifting": {
-      "love": ["Penny"],
+      "love": [
+        "Penny"
+      ],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21033,9 +25471,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21055,9 +25530,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21077,9 +25589,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21099,9 +25648,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21121,9 +25707,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21143,9 +25766,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21165,9 +25825,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21187,9 +25884,46 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
     }
   },
   {
@@ -21209,9 +25943,3627 @@ window.ITEMS_DATA = [
     "gifting": {
       "love": [],
       "like": [],
-      "neutral": ["Elliott", "Sebastian", "Demetrius", "Willy", "Pam", "Linus", "Leo"],
-      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Leah", "Maru", "Penny", "Emily", "Abigail", "Caroline", "Lewis", "Marnie", "Robin", "George", "Jas", "Vincent", "Jodi", "Kent", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy"],
-      "hate": ["Haley", "Pierre", "Evelyn"]
+      "neutral": [
+        "Elliott",
+        "Sebastian",
+        "Demetrius",
+        "Willy",
+        "Pam",
+        "Linus",
+        "Leo"
+      ],
+      "dislike": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "George",
+        "Jas",
+        "Vincent",
+        "Jodi",
+        "Kent",
+        "Gus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy"
+      ],
+      "hate": [
+        "Haley",
+        "Pierre",
+        "Evelyn"
+      ]
+    }
+  },
+  {
+    "id": 627,
+    "name": "烟熏鲷鱼",
+    "name_en": "Smoked_Bream",
+    "category": "鱼类",
+    "price": 90,
+    "has_quality": true,
+    "qualities": {
+      "普通": 90,
+      "银星": 112,
+      "金星": 134,
+      "铱星": 180
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 628,
+    "name": "烟熏冰川鱼",
+    "name_en": "Smoked_Glacierfish",
+    "category": "鱼类",
+    "price": 2000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 2000,
+      "银星": 2500,
+      "金星": 3000,
+      "铱星": 4000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 629,
+    "name": "烟熏变种鲤鱼",
+    "name_en": "Smoked_Mutant_Carp",
+    "category": "鱼类",
+    "price": 2000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 2000,
+      "银星": 2500,
+      "金星": 3000,
+      "铱星": 4000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 630,
+    "name": "烟熏传说之鱼二代",
+    "name_en": "Smoked_Legend_II",
+    "category": "鱼类",
+    "price": 10000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 10000,
+      "银星": 12500,
+      "金星": 15000,
+      "铱星": 20000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 631,
+    "name": "烟熏雌𩽾𩾌鱼",
+    "name_en": "Smoked_Ms._Angler",
+    "category": "鱼类",
+    "price": 1800,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1800,
+      "银星": 2250,
+      "金星": 2700,
+      "铱星": 3600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 632,
+    "name": "烟熏绯红鱼之子",
+    "name_en": "Smoked_Son_of_Crimsonfish",
+    "category": "鱼类",
+    "price": 3000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 3000,
+      "银星": 3750,
+      "金星": 4500,
+      "铱星": 6000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 633,
+    "name": "烟熏小冰川鱼",
+    "name_en": "Smoked_Glacierfish_Jr",
+    "category": "鱼类",
+    "price": 2000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 2000,
+      "银星": 2500,
+      "金星": 3000,
+      "铱星": 4000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 634,
+    "name": "烟熏放射性鲤鱼",
+    "name_en": "Smoked_Radioactive_Carp",
+    "category": "鱼类",
+    "price": 2000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 2000,
+      "银星": 2500,
+      "金星": 3000,
+      "铱星": 4000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 635,
+    "name": "烟熏罗非鱼",
+    "name_en": "Smoked_Tilapia",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 636,
+    "name": "烟熏绯红鱼",
+    "name_en": "Smoked_Crimsonfish",
+    "category": "鱼类",
+    "price": 3000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 3000,
+      "银星": 3750,
+      "金星": 4500,
+      "铱星": 6000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 637,
+    "name": "烟熏螃蟹",
+    "name_en": "Smoked_Crab",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 638,
+    "name": "烟熏龙虾",
+    "name_en": "Smoked_Lobster",
+    "category": "鱼类",
+    "price": 240,
+    "has_quality": true,
+    "qualities": {
+      "普通": 240,
+      "银星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 639,
+    "name": "烟熏小龙虾",
+    "name_en": "Smoked_Crayfish",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 640,
+    "name": "烟熏麻哈脂鲤",
+    "name_en": "Smoked_Dorado",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 641,
+    "name": "烟熏鲑鱼",
+    "name_en": "Smoked_Salmon",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 642,
+    "name": "烟熏鱿鱼",
+    "name_en": "Smoked_Squid",
+    "category": "鱼类",
+    "price": 480,
+    "has_quality": true,
+    "qualities": {},
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 643,
+    "name": "烟熏大眼鱼",
+    "name_en": "Smoked_Walleye",
+    "category": "鱼类",
+    "price": 210,
+    "has_quality": true,
+    "qualities": {
+      "普通": 210,
+      "银星": 262,
+      "金星": 314,
+      "铱星": 420
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 644,
+    "name": "烟熏鳗鱼",
+    "name_en": "Smoked_Eel",
+    "category": "鱼类",
+    "price": 170,
+    "has_quality": true,
+    "qualities": {
+      "普通": 170,
+      "银星": 212,
+      "金星": 254,
+      "铱星": 340
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 645,
+    "name": "烟熏大海参",
+    "name_en": "Smoked_Super_Cucumber",
+    "category": "鱼类",
+    "price": 500,
+    "has_quality": true,
+    "qualities": {
+      "普通": 500,
+      "银星": 624,
+      "金星": 750,
+      "铱星": 1000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 646,
+    "name": "烟熏青花鱼",
+    "name_en": "Smoked_Albacore",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 647,
+    "name": "烟熏木跃鱼",
+    "name_en": "Smoked_Woodskip",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 648,
+    "name": "烟熏红鲷鱼",
+    "name_en": "Smoked_Red_Snapper",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 124,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 649,
+    "name": "烟熏沙丁鱼",
+    "name_en": "Smoked_Sardine",
+    "category": "鱼类",
+    "price": 80,
+    "has_quality": true,
+    "qualities": {
+      "普通": 80,
+      "银星": 100,
+      "金星": 120,
+      "铱星": 160
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 650,
+    "name": "烟熏鲶鱼",
+    "name_en": "Smoked_Catfish",
+    "category": "鱼类",
+    "price": 400,
+    "has_quality": true,
+    "qualities": {
+      "普通": 400,
+      "银星": 500,
+      "金星": 600,
+      "铱星": 800
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 651,
+    "name": "烟熏虾",
+    "name_en": "Smoked_Shrimp",
+    "category": "鱼类",
+    "price": 120,
+    "has_quality": true,
+    "qualities": {
+      "普通": 120,
+      "银星": 150
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 652,
+    "name": "烟熏鲤鱼",
+    "name_en": "Smoked_Carp",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 74,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 653,
+    "name": "烟熏海参",
+    "name_en": "Smoked_Sea_Cucumber",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 654,
+    "name": "烟熏虹鳟鱼",
+    "name_en": "Smoked_Rainbow_Trout",
+    "category": "鱼类",
+    "price": 130,
+    "has_quality": true,
+    "qualities": {
+      "普通": 130,
+      "银星": 162,
+      "金星": 194,
+      "铱星": 260
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 655,
+    "name": "烟熏太阳鱼",
+    "name_en": "Smoked_Sunfish",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 74,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 656,
+    "name": "烟熏𩽾𩾌鱼",
+    "name_en": "Smoked_Angler",
+    "category": "鱼类",
+    "price": 1800,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1800,
+      "银星": 2250,
+      "金星": 2700,
+      "铱星": 3600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 657,
+    "name": "烟熏传说之鱼",
+    "name_en": "Smoked_Legend",
+    "category": "鱼类",
+    "price": 10000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 10000,
+      "银星": 12500,
+      "金星": 15000,
+      "铱星": 20000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 658,
+    "name": "烟熏鳀鱼",
+    "name_en": "Smoked_Anchovy",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 74,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 659,
+    "name": "烟熏比目鱼",
+    "name_en": "Smoked_Flounder",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 660,
+    "name": "烟熏比目鱼",
+    "name_en": "Smoked_Halibut.png",
+    "category": "鱼类",
+    "price": 160,
+    "has_quality": true,
+    "qualities": {
+      "普通": 160,
+      "银星": 200,
+      "金星": 240,
+      "铱星": 320
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 661,
+    "name": "烟熏鲱鱼",
+    "name_en": "Smoked_Herring",
+    "category": "鱼类",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 74,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 662,
+    "name": "烟熏章鱼",
+    "name_en": "Smoked_Octopus",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 374,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 663,
+    "name": "烟熏河豚",
+    "name_en": "Smoked_Pufferfish",
+    "category": "鱼类",
+    "price": 400,
+    "has_quality": true,
+    "qualities": {
+      "普通": 400,
+      "银星": 500,
+      "金星": 600,
+      "铱星": 800
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 664,
+    "name": "烟熏红淄鱼",
+    "name_en": "Smoked_Red_Mullet.png",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 665,
+    "name": "烟熏蜗牛",
+    "name_en": "Smoked_Snail.png",
+    "category": "鱼类",
+    "price": 130,
+    "has_quality": true,
+    "qualities": {
+      "普通": 130,
+      "银星": 162
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 666,
+    "name": "烟熏金枪鱼",
+    "name_en": "Smoked_Tuna",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 667,
+    "name": "烟熏鲢鱼",
+    "name_en": "Smoked_Chub",
+    "category": "鱼类",
+    "price": 100,
+    "has_quality": true,
+    "qualities": {
+      "普通": 100,
+      "银星": 124,
+      "金星": 150,
+      "铱星": 200
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 668,
+    "name": "烟熏蛇齿单线鱼",
+    "name_en": "Smoked_Lingcod",
+    "category": "鱼类",
+    "price": 240,
+    "has_quality": true,
+    "qualities": {
+      "普通": 240,
+      "银星": 300,
+      "金星": 360,
+      "铱星": 480
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 669,
+    "name": "烟熏河鲈",
+    "name_en": "Smoked_Perch",
+    "category": "鱼类",
+    "price": 110,
+    "has_quality": true,
+    "qualities": {
+      "普通": 110,
+      "银星": 136,
+      "金星": 164,
+      "铱星": 220
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 670,
+    "name": "烟熏鲟鱼",
+    "name_en": "Smoked_Sturgeon",
+    "category": "鱼类",
+    "price": 400,
+    "has_quality": true,
+    "qualities": {
+      "普通": 400,
+      "银星": 500,
+      "金星": 600,
+      "铱星": 800
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 671,
+    "name": "烟熏午夜鲤鱼",
+    "name_en": "Smoked_Midnight_Carp",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 374,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 672,
+    "name": "烟熏狗鱼",
+    "name_en": "Smoked_Pike",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 673,
+    "name": "烟熏小嘴鲈鱼",
+    "name_en": "Smoked_Smallmouth_Bass",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 674,
+    "name": "烟熏虾虎鱼",
+    "name_en": "Smoked_Goby",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 374,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 675,
+    "name": "烟熏鬼鱼",
+    "name_en": "Smoked_Ghostfish",
+    "category": "鱼类",
+    "price": 90,
+    "has_quality": true,
+    "qualities": {
+      "普通": 90,
+      "银星": 112,
+      "金星": 134,
+      "铱星": 180
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 676,
+    "name": "烟熏冰柱鱼",
+    "name_en": "Smoked_Ice_Pip",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1250,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 677,
+    "name": "烟熏岩浆鳗鱼",
+    "name_en": "Smoked_Lava_Eel",
+    "category": "鱼类",
+    "price": 1400,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1400,
+      "银星": 1750,
+      "金星": 2100,
+      "铱星": 2800
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 678,
+    "name": "烟熏石鱼",
+    "name_en": "Smoked_Stonefish",
+    "category": "鱼类",
+    "price": 600,
+    "has_quality": true,
+    "qualities": {
+      "普通": 600,
+      "银星": 750,
+      "金星": 900,
+      "铱星": 1200
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 679,
+    "name": "烟熏沙鱼",
+    "name_en": "Smoked_Sandfish",
+    "category": "鱼类",
+    "price": 150,
+    "has_quality": true,
+    "qualities": {
+      "普通": 150,
+      "银星": 186,
+      "金星": 224,
+      "铱星": 300
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 680,
+    "name": "烟熏蝎鲤鱼",
+    "name_en": "Smoked_Scorpion_Carp",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 374,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 681,
+    "name": "烟熏史莱姆鱼",
+    "name_en": "Smoked_Slimejack",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 682,
+    "name": "烟熏虚空鲑鱼",
+    "name_en": "Smoked_Void_Salmon",
+    "category": "鱼类",
+    "price": 300,
+    "has_quality": true,
+    "qualities": {
+      "普通": 300,
+      "银星": 374,
+      "金星": 450,
+      "铱星": 600
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 683,
+    "name": "烟熏水滴鱼",
+    "name_en": "Smoked_Blobfish",
+    "category": "鱼类",
+    "price": 1000,
+    "has_quality": true,
+    "qualities": {
+      "普通": 1000,
+      "银星": 1250,
+      "金星": 1500,
+      "铱星": 2000
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 684,
+    "name": "烟熏午夜鱿鱼",
+    "name_en": "Smoked_Midnight_Squid",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 685,
+    "name": "烟熏幽灵鱼",
+    "name_en": "Smoked_Spook_Fish",
+    "category": "鱼类",
+    "price": 440,
+    "has_quality": true,
+    "qualities": {
+      "普通": 440,
+      "银星": 550,
+      "金星": 660,
+      "铱星": 880
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 686,
+    "name": "烟熏蓝铁饼鱼",
+    "name_en": "Smoked_Blue_Discus",
+    "category": "鱼类",
+    "price": 240,
+    "has_quality": true,
+    "qualities": {
+      "普通": 240,
+      "银星": 300,
+      "金星": 360,
+      "铱星": 480
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 687,
+    "name": "烟熏狮子鱼",
+    "name_en": "Smoked_Lionfish",
+    "category": "鱼类",
+    "price": 200,
+    "has_quality": true,
+    "qualities": {
+      "普通": 200,
+      "银星": 250,
+      "金星": 300,
+      "铱星": 400
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
+    }
+  },
+  {
+    "id": 688,
+    "name": "烟熏黄貂鱼",
+    "name_en": "Smoked_Stingray",
+    "category": "鱼类",
+    "price": 360,
+    "has_quality": true,
+    "qualities": {
+      "普通": 360,
+      "银星": 450,
+      "金星": 540,
+      "铱星": 720
+    },
+    "image": "images/Smoked_Fish.png",
+    "gifting": {
+      "love": [],
+      "like": [
+        "Harvey",
+        "Sam",
+        "Shane",
+        "Alex",
+        "Elliott",
+        "Haley",
+        "Leah",
+        "Maru",
+        "Penny",
+        "Emily",
+        "Abigail",
+        "Pierre",
+        "Caroline",
+        "Lewis",
+        "Marnie",
+        "Robin",
+        "Demetrius",
+        "Evelyn",
+        "George",
+        "Jodi",
+        "Kent",
+        "Willy",
+        "Gus",
+        "Pam",
+        "Linus",
+        "Clint",
+        "Wizard",
+        "Dwarf",
+        "Krobus",
+        "Sandy",
+        "Leo"
+      ],
+      "neutral": [],
+      "dislike": [],
+      "hate": [
+        "Sebastian",
+        "Jas",
+        "Vincent"
+      ]
     }
   }
 ];
