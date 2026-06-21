@@ -194,6 +194,14 @@ function loadData() {
 
     loadingEl.style.display = 'none';
 
+    // 去重：按 name 去重，保留第一个
+    const nameSet = new Set();
+    itemsData = itemsData.filter(item => {
+        if (nameSet.has(item.name)) return false;
+        nameSet.add(item.name);
+        return true;
+    });
+
     // 确保 gifting 字段存在
     itemsData.forEach(item => {
         if (!item.gifting) item.gifting = { love:[], like:[], neutral:[], dislike:[], hate:[] };
