@@ -194,11 +194,11 @@ function loadData() {
 
     loadingEl.style.display = 'none';
 
-    // 去重：按 name 去重，保留第一个
-    const nameSet = new Set();
+    // 去重：按 id 去重，保留第一个
+    const idSet = new Set();
     itemsData = itemsData.filter(item => {
-        if (nameSet.has(item.name)) return false;
-        nameSet.add(item.name);
+        if (idSet.has(item.id)) return false;
+        idSet.add(item.id);
         return true;
     });
 
@@ -228,15 +228,24 @@ function renderPromoSidebar() {
     if (!container || itemsData.length === 0) return;
 
     const usedIds = new Set();
+    const usedNames = new Set();
     let html = '';
 
-    // 精品推荐（价格最高的前10中随机选5个）
+    // 精品推荐（价格最高的前10中随机选5个，按名称去重）
     const topPrice = [...itemsData].sort((a, b) => {
         const pa = getItemPrice(a, null);
         const pb = getItemPrice(b, null);
         return pb - pa;
-    }).slice(0, 10);
-    const pick = [...topPrice].sort(() => Math.random() - 0.5).slice(0, 5);
+    });
+    const pick = [];
+    const shuffledTop = [...topPrice].sort(() => Math.random() - 0.5);
+    for (const item of shuffledTop) {
+        if (pick.length >= 5) break;
+        if (!usedNames.has(item.name)) {
+            pick.push(item);
+            usedNames.add(item.name);
+        }
+    }
 
     html += '<div class="promo-section-title">💎 精品推荐</div>';
     pick.forEach(item => {
@@ -253,17 +262,24 @@ function renderPromoSidebar() {
 
     html += '<hr class="promo-divider">';
 
-    // 村民最爱（排除已出现的物品，从剩余中选喜爱次数最多的前5）
-    const popular = [...itemsData]
-        .filter(item => !usedIds.has(item.id))
+    // 村民最爱（排除已出现的物品+名称，从剩余中选喜爱次数最多的前5，按名称去重）
+    const popularAll = [...itemsData]
+        .filter(item => !usedIds.has(item.id) && !usedNames.has(item.name))
         .map(item => ({ item, loveCount: item.gifting?.love?.length || 0 }))
         .filter(x => x.loveCount > 0)
-        .sort((a, b) => b.loveCount - a.loveCount)
-        .slice(0, 5);
+        .sort((a, b) => b.loveCount - a.loveCount);
+    const popular = [];
+    for (const x of popularAll) {
+        if (popular.length >= 5) break;
+        if (!usedNames.has(x.item.name)) {
+            popular.push(x);
+        }
+    }
 
     html += '<div class="promo-section-title">❤️ 村民最爱</div>';
     popular.forEach(x => {
         usedIds.add(x.item.id);
+        usedNames.add(x.item.name);
         const item = x.item;
         const loves = item.gifting.love || [];
         html += `<div class="promo-item" onclick="showItemDetailById(${item.id})">
@@ -277,8 +293,17 @@ function renderPromoSidebar() {
 
     html += '<hr class="promo-divider">';
 
-    // 限时热卖（排除已出现的物品，随机选5个）
-    const shuffled = [...itemsData].filter(item => !usedIds.has(item.id)).sort(() => Math.random() - 0.5).slice(0, 5);
+    // 限时热卖（排除已出现的物品+名称，随机选5个，按名称去重）
+    const shuffledAll = [...itemsData]
+        .filter(item => !usedIds.has(item.id) && !usedNames.has(item.name))
+        .sort(() => Math.random() - 0.5);
+    const shuffled = [];
+    for (const item of shuffledAll) {
+        if (shuffled.length >= 5) break;
+        if (!usedNames.has(item.name)) {
+            shuffled.push(item);
+        }
+    }
 
     html += '<div class="promo-section-title">🔥 限时热卖</div>';
     shuffled.forEach(item => {

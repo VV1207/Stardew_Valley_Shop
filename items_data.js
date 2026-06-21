@@ -1,4 +1,4 @@
-// 星露谷全物品数据 - 自动生成
+﻿// 星露谷全物品数据 - 自动生成
 window.ITEMS_DATA = [
   {
     "id": 1,
@@ -1873,10 +1873,10 @@ window.ITEMS_DATA = [
     },
     "image": "images/Strawberry.png",
     "gifting": {
-      "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
+      "love": ["Maru", "Demetrius"],
+      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "neutral": ["Sam", "Alex", "Sebastian", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "dislike": ["Haley", "Abigail", "Jas", "Vincent"],
       "hate": []
     }
   },
@@ -2073,13 +2073,8 @@ window.ITEMS_DATA = [
     "name_en": "Qi Fruit",
     "category": "作物",
     "price": 1,
-    "has_quality": true,
-    "qualities": {
-      "普通": 1,
-      "银星": 1,
-      "金星": 1,
-      "铱星": 2
-    },
+    "has_quality": false,
+    "qualities": {},
     "image": "images/Qi_Fruit.png",
     "gifting": {
       "love": [],
@@ -5744,18 +5739,18 @@ window.ITEMS_DATA = [
   },
   {
     "id": 110,
-    "name": "迷你冰箱",
-    "name_en": "Mini-Fridge",
-    "category": "家具",
-    "price": 3000,
+    "name": "蓝爵士种子",
+    "name_en": "Jazz_Seeds",
+    "category": "种子",
+    "price": 30,
     "has_quality": false,
     "qualities": {},
-    "image": "images/Mini-Fridge.png",
+    "image": "images/Jazz_Seeds.png",
     "gifting": {
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "hate": []
     }
   },
@@ -15283,9 +15278,9 @@ window.ITEMS_DATA = [
     "image": "",
     "gifting": {
       "love": [],
-      "like": [],
-      "neutral": [],
-      "dislike": [],
+      "like": ["Harvey", "Leah", "Maru", "Linus"],
+      "neutral": ["Alex", "Penny", "Emily", "Abigail", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Kent", "Gus", "Pam", "Clint", "Sandy"],
+      "dislike": ["Sam", "Shane", "Elliott", "Sebastian", "Haley", "Pierre", "Caroline", "Jas", "Vincent", "Jodi", "Willy", "Wizard", "Dwarf", "Krobus", "Leo"],
       "hate": []
     }
   },
@@ -18853,43 +18848,8 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": [],
-      "hate": [
-        "Harvey",
-        "Sam",
-        "Shane",
-        "Alex",
-        "Elliott",
-        "Sebastian",
-        "Haley",
-        "Leah",
-        "Maru",
-        "Penny",
-        "Emily",
-        "Abigail",
-        "Pierre",
-        "Caroline",
-        "Lewis",
-        "Marnie",
-        "Robin",
-        "Demetrius",
-        "Evelyn",
-        "George",
-        "Jas",
-        "Vincent",
-        "Jodi",
-        "Kent",
-        "Willy",
-        "Gus",
-        "Pam",
-        "Linus",
-        "Clint",
-        "Wizard",
-        "Dwarf",
-        "Krobus",
-        "Sandy",
-        "Leo"
-      ]
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
     }
   },
   {
@@ -19527,7 +19487,7 @@ window.ITEMS_DATA = [
   },
   {
     "id": 505,
-    "name": "棕色鸡",
+    "name": "鸡",
     "name_en": "Brown_Chicken",
     "category": "动物",
     "price": 800,
@@ -19544,7 +19504,7 @@ window.ITEMS_DATA = [
   },
   {
     "id": 506,
-    "name": "白色鸡",
+    "name": "鸡",
     "name_en": "White_Chicken",
     "category": "动物",
     "price": 800,
@@ -19561,7 +19521,7 @@ window.ITEMS_DATA = [
   },
   {
     "id": 507,
-    "name": "蓝色鸡",
+    "name": "鸡",
     "name_en": "Blue_Chicken",
     "category": "动物",
     "price": 800,
@@ -29564,6 +29524,1177 @@ window.ITEMS_DATA = [
         "Jas",
         "Vincent"
       ]
+    }
+  },
+  {
+    "id": 689,
+    "name": "蓝爵士种子",
+    "name_en": "Jazz_Seeds",
+    "category": "种子",
+    "price": 30,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Jazz_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 690,
+    "name": "胡萝卜种子",
+    "name_en": "Carrot_Seeds",
+    "category": "种子",
+    "price": 15,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Carrot_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 691,
+    "name": "花椰菜种子",
+    "name_en": "Cauliflower_Seeds",
+    "category": "种子",
+    "price": 80,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cauliflower_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 692,
+    "name": "花椰菜种子",
+    "name_en": "Cauliflower_Seeds",
+    "category": "种子",
+    "price": 80,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cauliflower_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 693,
+    "name": "大蒜种子",
+    "name_en": "Garlic_Seeds",
+    "category": "种子",
+    "price": 40,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Garlic_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 694,
+    "name": "青豆种子",
+    "name_en": "Bean_Starter",
+    "category": "种子",
+    "price": 60,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bean_Starter.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 695,
+    "name": "青豆",
+    "name_en": "Green_Bean",
+    "category": "作物",
+    "price": 40,
+    "has_quality": true,
+    "qualities": {
+      "普通": 40,
+      "银星": 50,
+      "金星": 60,
+      "铱星": 80
+    },
+    "image": "images/Green_Bean.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "neutral": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "hate": []
+    }
+  },
+  {
+    "id": 696,
+    "name": "甘蓝种子",
+    "name_en": "Kale_Seeds",
+    "category": "种子",
+    "price": 70,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Kale_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 697,
+    "name": "防风草种子",
+    "name_en": "Parsnip_Seeds",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Parsnip_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 698,
+    "name": "土豆种子",
+    "name_en": "Potato_Seeds",
+    "category": "种子",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Potato_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 699,
+    "name": "大黄种子",
+    "name_en": "Rhubarb_Seeds",
+    "category": "种子",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rhubarb_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 700,
+    "name": "稻苗",
+    "name_en": "Rice_Shoot",
+    "category": "种子",
+    "price": 40,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rice_Shoot.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 701,
+    "name": "蓝莓种子",
+    "name_en": "Blueberry_Seeds",
+    "category": "种子",
+    "price": 80,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Blueberry_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 702,
+    "name": "玉米种子",
+    "name_en": "Corn_Seeds",
+    "category": "种子",
+    "price": 150,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Corn_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 702,
+    "name": "啤酒花种子",
+    "name_en": "Hops_Starter",
+    "category": "种子",
+    "price": 60,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Hops_Starter.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 703,
+    "name": "辣椒种子",
+    "name_en": "Pepper_Seeds",
+    "category": "种子",
+    "price": 40,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pepper_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 704,
+    "name": "甜瓜种子",
+    "name_en": "Melon_Seeds",
+    "category": "种子",
+    "price": 80,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Melon_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 705,
+    "name": "虞美人种子",
+    "name_en": "Poppy_Seeds",
+    "category": "种子",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Poppy_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 706,
+    "name": "萝卜种子",
+    "name_en": "Radish_Seeds",
+    "category": "种子",
+    "price": 40,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Radish_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 707,
+    "name": "红叶卷心菜种子",
+    "name_en": "Red_Cabbage_Seeds",
+    "category": "种子",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Red_Cabbage_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 708,
+    "name": "杨桃种子",
+    "name_en": "Starfruit_Seeds",
+    "category": "种子",
+    "price": 400,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Starfruit_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 709,
+    "name": "夏季亮片种子",
+    "name_en": "Spangle_Seeds",
+    "category": "种子",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Spangle_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 710,
+    "name": "金皮西葫芦种子",
+    "name_en": "Summer_Squash_Seeds",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Summer_Squash_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 711,
+    "name": "金皮西葫芦",
+    "name_en": "Summer_Squash",
+    "category": "作物",
+    "price": 45,
+    "has_quality": true,
+    "qualities": {
+      "普通": 45,
+      "银星": 56,
+      "金星": 67,
+      "铱星": 90
+    },
+    "image": "images/Summer_Squash.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Shane", "Alex", "Elliott", "Sebastian", "Leah", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "neutral": [],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "hate": []
+    }
+  },
+  {
+    "id": 712,
+    "name": "向日葵种子",
+    "name_en": "Sunflower_Seeds",
+    "category": "种子",
+    "price": 200,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sunflower_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 713,
+    "name": "西红柿种子",
+    "name_en": "Tomato_Seeds",
+    "category": "种子",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Tomato_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 714,
+    "name": "小麦种子",
+    "name_en": "Wheat_Seeds",
+    "category": "种子",
+    "price": 10,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Wheat_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 715,
+    "name": "洋蓟种子",
+    "name_en": "Amaranth_Seeds",
+    "category": "种子",
+    "price": 70,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Amaranth_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 716,
+    "name": "洋蓟种子",
+    "name_en": "Artichoke_Seeds",
+    "category": "种子",
+    "price": 30,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Artichoke_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 717,
+    "name": "甜菜种子",
+    "name_en": "Beet_Seeds",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Beet_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 718,
+    "name": "小白菜种子",
+    "name_en": "Bok_Choy_Seeds",
+    "category": "种子",
+    "price": 50,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Bok_Choy_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 719,
+    "name": "西蓝花种子",
+    "name_en": "Broccoli_Seeds",
+    "category": "种子",
+    "price": 40,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Broccoli_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 720,
+    "name": "蔓越莓种子",
+    "name_en": "Cranberry_Seeds",
+    "category": "种子",
+    "price": 240,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cranberry_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 721,
+    "name": "茄子种子",
+    "name_en": "Eggplant_Seeds",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Eggplant_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 722,
+    "name": "玫瑰仙子种子",
+    "name_en": "Fairy_Seeds",
+    "category": "种子",
+    "price": 200,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Fairy_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 723,
+    "name": "葡萄种子",
+    "name_en": "Grape_Starter",
+    "category": "种子",
+    "price": 60,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Grape_Starter.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 724,
+    "name": "南瓜种子",
+    "name_en": "Pumpkin_Seeds",
+    "category": "种子",
+    "price": 100,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pumpkin_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 725,
+    "name": "山药种子",
+    "name_en": "Yam_Seeds",
+    "category": "种子",
+    "price": 60,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Yam_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 726,
+    "name": "霜瓜种子",
+    "name_en": "Powdermelon_Seeds",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Powdermelon_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 727,
+    "name": "霜瓜",
+    "name_en": "Powdermelon",
+    "category": "作物",
+    "price": 60,
+    "has_quality": true,
+    "qualities": {
+      "普通": 60,
+      "银星": 75,
+      "金星": 90,
+      "铱星": 120
+    },
+    "image": "images/Powdermelon.png",
+    "gifting": {
+      "love": [],
+      "like": ["Harvey", "Shane", "Elliott", "Leah", "Robin", "Demetrius", "Jodi", "Kent", "Pam", "Linus", "Sandy"],
+      "neutral": ["Sam", "Alex", "Sebastian", "Maru", "Penny", "Emily", "Pierre", "Caroline", "Lewis", "Marnie", "Evelyn", "George", "Willy", "Gus", "Clint", "Wizard", "Dwarf", "Krobus", "Leo"],
+      "dislike": ["Sam", "Haley", "Abigail", "Jas", "Vincent"],
+      "hate": []
+    }
+  },
+  {
+    "id": 728,
+    "name": "上古种子",
+    "name_en": "Ancient_Seeds",
+    "category": "种子",
+    "price": 1000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Ancient_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 729,
+    "name": "菠萝种子",
+    "name_en": "Pineapple_Seeds",
+    "category": "种子",
+    "price": 240,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pineapple_Seeds.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 730,
+    "name": "芋头块茎",
+    "name_en": "Taro_Tuber",
+    "category": "种子",
+    "price": 20,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Taro_Tuber.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 731,
+    "name": "齐豆",
+    "name_en": "Qi_Bean",
+    "category": "种子",
+    "price": 1,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Qi_Bean.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 732,
+    "name": "猫",
+    "name_en": "Cat_1",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_1.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 733,
+    "name": "猫",
+    "name_en": "Cat_2",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_2.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 734,
+    "name": "猫",
+    "name_en": "Cat_3",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_3.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 735,
+    "name": "猫",
+    "name_en": "Cat_4",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_4.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 736,
+    "name": "猫",
+    "name_en": "Cat_5",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Cat_5.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 737,
+    "name": "狗",
+    "name_en": "Dog_1",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dog_1.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 738,
+    "name": "狗",
+    "name_en": "Dog_2",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dog_2.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 739,
+    "name": "狗",
+    "name_en": "Dog_3",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dog_3.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 740,
+    "name": "狗",
+    "name_en": "Dog_4",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dog_4.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 741,
+    "name": "狗",
+    "name_en": "Dog_5",
+    "category": "动物",
+    "price": 40000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dog_5.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 742,
+    "name": "乌龟",
+    "name_en": "Turtle",
+    "category": "动物",
+    "price": 60000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Turtle.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 743,
+    "name": "乌龟",
+    "name_en": "Iridium_Turtle",
+    "category": "动物",
+    "price": 500000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Iridium_Turtle.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 744,
+    "name": "虚空鸡",
+    "name_en": "Void_Chicken",
+    "category": "动物",
+    "price": 5000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Void_Chicken.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 745,
+    "name": "金色的鸡",
+    "name_en": "Golden_Chicken",
+    "category": "动物",
+    "price": 100000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Golden_Chicken.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 746,
+    "name": "鸭",
+    "name_en": "Duck",
+    "category": "动物",
+    "price": 1200,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Duck.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 747,
+    "name": "兔子",
+    "name_en": "Rabbit",
+    "category": "动物",
+    "price": 8000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Rabbit.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 748,
+    "name": "恐龙",
+    "name_en": "Dinosaur",
+    "category": "动物",
+    "price": 1300,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Dinosaur.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 749,
+    "name": "牛",
+    "name_en": "White_Cow",
+    "category": "动物",
+    "price": 1500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/White_Cow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 750,
+    "name": "牛",
+    "name_en": "Brown_Cow",
+    "category": "动物",
+    "price": 1500,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Brown_Cow.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 751,
+    "name": "山羊",
+    "name_en": "Goat",
+    "category": "动物",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Goat.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 752,
+    "name": "绵羊",
+    "name_en": "Sheep",
+    "category": "动物",
+    "price": 8000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Sheep.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  // {
+  //   "id": 753,
+  //   "name": "绵羊",
+  //   "name_en": "Sheep",
+  //   "category": "动物",
+  //   "price": 8000,
+  //   "has_quality": false,
+  //   "qualities": {},
+  //   "image": "images/Sheep.png",
+  //   "gifting": {
+  //     "love": [],
+  //     "like": [],
+  //     "neutral": [],
+  //     "dislike": [],
+  //     "hate": []
+  //   }
+  // },
+  {
+    "id": 754,
+    "name": "猪",
+    "name_en": "Pig",
+    "category": "动物",
+    "price": 16000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pig.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
+    }
+  },
+  {
+    "id": 755,
+    "name": "鸵鸟",
+    "name_en": "Ostrich",
+    "category": "动物",
+    "price": 20800,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Ostrich.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": [],
+      "hate": []
     }
   }
 ];
