@@ -1443,3 +1443,367 @@ footer {
 .page-jump-btn:hover {
     background: #578b34;
 }
+
+
+/* delivery.html page styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+        }
+
+        /* 用户栏 */
+        .user-bar {
+            max-width: 960px;
+            margin: 0 auto 8px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .user-info {
+            position: relative;
+            cursor: pointer;
+        }
+        .user-info .user-avatar {
+            background: #ece3d5;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #3d2f1f;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .user-info .user-avatar:hover { background: #e0d5c4; }
+        .user-info .user-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 48px;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 260px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+            z-index: 200;
+        }
+        .user-info:hover .user-dropdown { display: block; }
+        .user-dropdown h4 { margin-bottom: 10px; color: #3d2f1f; font-size: 0.95rem; }
+        .user-dropdown p { font-size: 0.8rem; margin: 4px 0; color: #5a4a32; }
+        .logout-btn {
+            margin-top: 12px;
+            background: #e8ddd0;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .logout-btn:hover { background: #d4c7b6; }
+
+        /* 容器 */
+        .delivery-container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 40px;
+            padding: 32px 28px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+        }
+        .delivery-title {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .delivery-title h1 {
+            font-size: 1.6rem;
+            color: #3d2f1f;
+            margin-bottom: 4px;
+        }
+        .delivery-title p {
+            font-size: 0.85rem;
+            color: #7a6b5a;
+        }
+
+        /* 选项卡 */
+        .option-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .option-tab {
+            flex: 1;
+            text-align: center;
+            padding: 16px 10px;
+            background: #f6f3ee;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+        .option-tab.active {
+            background: #f0f7ea;
+            border-color: #578b34;
+        }
+        .option-tab .tab-icon { font-size: 1.8rem; margin-bottom: 4px; }
+        .option-tab .tab-label { font-weight: 700; color: #3d2f1f; font-size: 0.95rem; }
+        .option-tab .tab-desc { font-size: 0.75rem; color: #7a6b5a; }
+
+        /* 面板 */
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        /* 自提结果 */
+        .pickup-result {
+            text-align: center;
+            padding: 28px 10px;
+        }
+        .pickup-icon { font-size: 3rem; margin-bottom: 8px; }
+        .pickup-msg { font-size: 1rem; color: #3d2f1f; margin-bottom: 18px; }
+        .order-box {
+            display: inline-block;
+            background: #f6faf2;
+            padding: 14px 36px;
+            border-radius: 60px;
+            margin-bottom: 12px;
+        }
+        .order-label { font-size: 0.8rem; color: #7a6b5a; }
+        .order-number {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #3d6830;
+            letter-spacing: 3px;
+        }
+        .timer { font-size: 0.9rem; color: #7a6b5a; }
+        .pickup-eta {
+            display: inline-block;
+            background: linear-gradient(135deg, #f0f7ea, #e8f5e0);
+            border: 1.5px solid #a8d48c;
+            border-radius: 60px;
+            padding: 10px 28px;
+            margin-bottom: 6px;
+            font-size: 0.92rem;
+            color: #3d6830;
+            font-weight: 600;
+        }
+        .pickup-eta .eta-time {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #2e5218;
+        }
+
+        /* 配送面板 */
+        .delivery-panel-header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .delivery-panel-header h3 { font-size: 1.1rem; color: #3d2f1f; }
+        .delivery-panel-header p { font-size: 0.8rem; color: #7a6b5a; }
+
+        /* 寄语 */
+        .delivery-message {
+            background: #f6faf2;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 10px 0 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .delivery-message .msg-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: #eef5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .delivery-message .msg-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .delivery-message .msg-text {
+            font-size: 0.88rem;
+            color: #3d2f1f;
+            line-height: 1.5;
+            margin-bottom: 4px;
+        }
+        .delivery-message .msg-author {
+            font-size: 0.75rem;
+            color: #7a6b5a;
+            font-weight: 600;
+        }
+
+        /* 村民网格 */
+        .villager-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin: 14px 0;
+        }
+        .villager-card {
+            background: #faf8f5;
+            border-radius: 20px;
+            padding: 14px 8px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+        .villager-card:hover {
+            border-color: #b8d0a0;
+            background: #f4f8ee;
+        }
+        .villager-card.selected {
+            border-color: #578b34;
+            background: #eef8e6;
+            box-shadow: 0 0 0 3px rgba(87, 139, 52, 0.2);
+        }
+        .villager-card .villager-avatar {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 6px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #eef5e5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+        .villager-card .villager-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .villager-card .villager-name {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #3d2f1f;
+        }
+
+        /* 确认按钮 */
+        .confirm-btn {
+            display: block;
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            padding: 14px;
+            background: #578b34;
+            color: white;
+            border: none;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .confirm-btn:hover { background: #3f6a24; }
+        .confirm-btn:disabled {
+            background: #c4c4b8;
+            cursor: not-allowed;
+        }
+
+        /* 结果弹窗 */
+        .result-overlay {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(3px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .result-box {
+            background: white;
+            border-radius: 36px;
+            padding: 32px;
+            max-width: 480px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+        .result-box .result-icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+        .result-box h2 {
+            font-size: 1.3rem;
+            color: #3d2f1f;
+            margin-bottom: 16px;
+        }
+        .result-box .result-detail {
+            background: #f6faf2;
+            border-radius: 12px;
+            padding: 14px;
+            margin: 12px 0;
+            text-align: left;
+        }
+        .result-box .result-detail p {
+            font-size: 0.85rem;
+            color: #4a3f2c;
+            margin: 4px 0;
+        }
+        .result-box .result-detail strong {
+            color: #3d6830;
+        }
+        .result-box .back-btn {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 28px;
+            background: #578b34;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .result-box .back-btn:hover { background: #3f6a24; }
+
+        .result-villager-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 4px;
+            object-fit: cover;
+        }
+        .result-villager-emoji {
+            font-size: 1.3rem;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+
+        /* 地址输入 */
+        .address-section {
+            margin: 14px 0;
+        }
+        .address-section label {
+            display: block;
+            font-weight: 600;
+            color: #3d2f1f;
+            margin-bottom: 6px;
+            font-size: 0.9rem;
+        }
+        .address-section input {
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 40px;
+            border: 2px solid #dcd5c8;
+            font-size: 0.9rem;
+            transition: 0.2s;
+            outline: none;
+        }
+        .address-section input:focus {
+            border-color: #578b34;
+        }
+        .address-section input::placeholder {
+            color: #b5aa99;
+        }
