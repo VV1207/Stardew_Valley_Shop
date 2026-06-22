@@ -637,6 +637,8 @@ async function submitReviewUpdate(orderId) {
 }
 
 // ============== 用户反馈（API） ==============
+const feedbackTypeIcons = { '建议': '💡', '问题': '🐛', '体验': '🌟', '其他': '📝' };
+
 async function renderFeedback() {
     const container = document.getElementById('feedbackList');
     let feedbacks = [];
@@ -649,17 +651,26 @@ async function renderFeedback() {
     } catch (e) { console.error('加载反馈失败:', e); }
 
     if (feedbacks.length === 0) {
-        container.innerHTML = '';
+        container.innerHTML = '<div class="fav-empty">📭 暂无反馈记录<br><small>成为第一个提交反馈的村民吧！</small></div>';
         return;
     }
 
-    let html = '<h3 style="color:#3d2f1f;">📜 历史反馈</h3>';
+    let html = `<div class="feedback-list-header">
+        <h3>📜 社区反馈墙 <span class="feedback-count">共 ${feedbacks.length} 条</span></h3>
+        <p class="feedback-list-subtitle">来自鹈鹕镇各位村民的心声，你的每一条反馈都很珍贵 🌻</p>
+    </div>`;
     feedbacks.forEach(fb => {
+        const icon = feedbackTypeIcons[fb.type] || '📝';
+        const selfBadge = fb.is_self ? '<span class="feedback-self-badge">我</span>' : '';
+        const authorClass = fb.is_self ? 'feedback-author-self' : '';
         html += `
-            <div class="feedback-item">
+            <div class="feedback-item${fb.is_self ? ' feedback-item-self' : ''}">
                 <div class="fb-header">
-                    <span>${fb.type}</span>
-                    <span>${new Date(fb.created_at).toLocaleString('zh-CN')}</span>
+                    <div class="fb-header-left">
+                        <span class="feedback-type-tag">${icon} ${fb.type}</span>
+                        <span class="feedback-author ${authorClass}">👤 ${fb.username}${selfBadge}</span>
+                    </div>
+                    <span class="fb-date">${new Date(fb.created_at).toLocaleString('zh-CN')}</span>
                 </div>
                 <div class="fb-content">${fb.content}</div>
             </div>

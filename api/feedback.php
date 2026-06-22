@@ -2,7 +2,7 @@
 /**
  * 用户反馈 API
  * 
- * GET                           - 获取当前用户所有反馈
+ * GET                           - 获取所有用户的反馈（含用户名）
  * POST action=create            - 提交反馈
  */
 require_once __DIR__ . '/db.php';
@@ -16,7 +16,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 
 if ($method === 'GET') {
-    handleGetFeedback();
+    handleGetAllFeedbacks();
 } elseif ($method === 'POST' && $action === 'create') {
     handleCreateFeedback();
 } else {
@@ -35,25 +35,30 @@ function initFeedbackTable() {
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
 }
 
-function handleGetFeedback() {
+function handleGetAllFeedbacks() {
     $user = requireLogin();
     $conn = getDB();
     
-    $stmt = $conn->prepare("SELECT id, type, content, created_at FROM user_feedback WHERE user_id = ? ORDER BY created_at DESC");
-    $stmt->bind_param("i", $user['id']);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    // 获取所有用户的反馈，JOIN users 表获取用户名
+    $stmt = $conn->query("
+        SELECT f.id, f.type, f.content, f.created_at, f.user_id, u.username 
+        FROM user_feedback f 
+        LEFT JOIN users u ON f.user_id = u.id 
+        ORDER BY f.created_at DESC
+    ");
     
     $feedbacks = [];
-    while ($row = $result->fetch_assoc()) {
+    while ($row = $stmt->fetch_assoc()) {
         $feedbacks[] = [
             'id' => (int)$row['id'],
             'type' => $row['type'],
             'content' => $row['content'],
+            'username' => $row['username'] ?? '未知用户',
+            'user_id' => (int)$row['user_id'],
+            'is_self' => ((int)$row['user_id'] === (int)$user['id']),
             'created_at' => $row['created_at']
         ];
     }
-    $stmt->close();
     
     successResponse('获取成功', ['feedbacks' => $feedbacks]);
 }
