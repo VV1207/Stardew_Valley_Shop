@@ -2248,7 +2248,7 @@ window.ITEMS_DATA = [
       "金星": 435,
       "铱星": 580
     },
-    "image": "images/24px-Fairy_Rose.png",
+    "image": "images/Fairy_Rose.png",
     "gifting": {
       "love": [],
       "like": [],
@@ -3622,7 +3622,7 @@ window.ITEMS_DATA = [
     "id": 65,
     "name": "苹果",
     "name_en": "Apple",
-    "category": "果树",
+    "category": "作物",
     "price": 100,
     "has_quality": true,
     "qualities": {
@@ -3736,7 +3736,7 @@ window.ITEMS_DATA = [
     "id": 67,
     "name": "香蕉",
     "name_en": "Banana",
-    "category": "果树",
+    "category": "作物",
     "price": 150,
     "has_quality": true,
     "qualities": {
@@ -3795,7 +3795,7 @@ window.ITEMS_DATA = [
     "id": 68,
     "name": "樱桃",
     "name_en": "Cherry",
-    "category": "果树",
+    "category": "作物",
     "price": 80,
     "has_quality": true,
     "qualities": {
@@ -3852,7 +3852,7 @@ window.ITEMS_DATA = [
     "id": 69,
     "name": "芒果",
     "name_en": "Mango",
-    "category": "果树",
+    "category": "作物",
     "price": 130,
     "has_quality": true,
     "qualities": {
@@ -3912,7 +3912,7 @@ window.ITEMS_DATA = [
     "id": 70,
     "name": "橙子",
     "name_en": "Orange",
-    "category": "果树",
+    "category": "作物",
     "price": 100,
     "has_quality": true,
     "qualities": {
@@ -3970,7 +3970,7 @@ window.ITEMS_DATA = [
     "id": 71,
     "name": "桃子",
     "name_en": "Peach",
-    "category": "果树",
+    "category": "作物",
     "price": 140,
     "has_quality": true,
     "qualities": {
@@ -4028,7 +4028,7 @@ window.ITEMS_DATA = [
     "id": 72,
     "name": "石榴",
     "name_en": "Pomegranate",
-    "category": "果树",
+    "category": "作物",
     "price": 140,
     "has_quality": true,
     "qualities": {
@@ -4445,42 +4445,7 @@ window.ITEMS_DATA = [
       "love": [],
       "like": [],
       "neutral": [],
-      "dislike": [
-        "Harvey",
-        "Sam",
-        "Shane",
-        "Alex",
-        "Elliott",
-        "Sebastian",
-        "Haley",
-        "Leah",
-        "Maru",
-        "Penny",
-        "Emily",
-        "Abigail",
-        "Pierre",
-        "Caroline",
-        "Lewis",
-        "Marnie",
-        "Robin",
-        "Demetrius",
-        "Evelyn",
-        "George",
-        "Jas",
-        "Vincent",
-        "Jodi",
-        "Kent",
-        "Willy",
-        "Gus",
-        "Pam",
-        "Linus",
-        "Clint",
-        "Wizard",
-        "Dwarf",
-        "Krobus",
-        "Sandy",
-        "Leo"
-      ],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
       "hate": []
     }
   },
@@ -29861,4 +29826,123 @@ window.ITEMS_DATA = [
       "hate": []
     }
   },
+  {
+    "id": 798,
+    "name": "杏子树苗",
+    "name_en": "Apricot_Sapling",
+    "category": "果树",
+    "price": 2000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Apricot_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 799,
+    "name": "香蕉树苗",
+    "name_en": "Banana_Sapling",
+    "category": "果树",
+    "price": 1700,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Banana_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 800,
+    "name": "芒果幼苗",
+    "name_en": "Mango_Sapling",
+    "category": "果树",
+    "price": 1700,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Mango_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 801,
+    "name": "橙子树苗",
+    "name_en": "Orange_Sapling",
+    "category": "果树",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Orange_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 802,
+    "name": "桃子树苗",
+    "name_en": "Peach_Sapling",
+    "category": "果树",
+    "price": 6000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Peach_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 803,
+    "name": "苹果树苗",
+    "name_en": "Apple_Sapling",
+    "category": "果树",
+    "price": 4000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Apple_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  },
+  {
+    "id": 804,
+    "name": "石榴树苗",
+    "name_en": "Pomegranate_Sapling",
+    "category": "果树",
+    "price": 6000,
+    "has_quality": false,
+    "qualities": {},
+    "image": "images/Pomegranate_Sapling.png",
+    "gifting": {
+      "love": [],
+      "like": [],
+      "neutral": [],
+      "dislike": ["Harvey", "Sam", "Shane", "Alex", "Elliott", "Sebastian", "Haley", "Leah", "Maru", "Penny", "Emily", "Abigail", "Pierre", "Caroline", "Lewis", "Marnie", "Robin", "Demetrius", "Evelyn", "George", "Jas", "Vincent", "Jodi", "Kent", "Willy", "Gus", "Pam", "Linus", "Clint", "Wizard", "Dwarf", "Krobus", "Sandy", "Leo"],
+      "hate": []
+    }
+  }
 ];

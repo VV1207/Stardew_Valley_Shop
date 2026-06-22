@@ -8,10 +8,7 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
-            background: linear-gradient(160deg, #faf8f2 0%, #f0ebe1 100%);
             min-height: 100vh;
-            padding: 16px;
         }
 
         /* 用户栏 */
@@ -135,6 +132,22 @@
             letter-spacing: 3px;
         }
         .timer { font-size: 0.9rem; color: #7a6b5a; }
+        .pickup-eta {
+            display: inline-block;
+            background: linear-gradient(135deg, #f0f7ea, #e8f5e0);
+            border: 1.5px solid #a8d48c;
+            border-radius: 60px;
+            padding: 10px 28px;
+            margin-bottom: 6px;
+            font-size: 0.92rem;
+            color: #3d6830;
+            font-weight: 600;
+        }
+        .pickup-eta .eta-time {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #2e5218;
+        }
 
         /* 配送面板 */
         .delivery-panel-header {
@@ -357,14 +370,33 @@
     </style>
 </head>
 <body>
-    <!-- 用户信息栏 -->
-    <div class="user-bar" id="userBar"></div>
+<div class="top-banner">
+    <!-- 导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-brand"></div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link has-tooltip">🏠 商店首页
+                    <div class="nav-tooltip">🏠 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
+                </a>
+                <a href="news.html" class="nav-link has-tooltip">📰 星闻露谷
+                    <div class="nav-tooltip">📰 获取星露谷最新动态、活动公告和趣味新闻，不要错过任何精彩内容！</div>
+                </a>
+                <a href="delivery.html" class="nav-link has-tooltip active">📦 配送服务
+                    <div class="nav-tooltip">📦 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
+                </a>
+            </div>
+            <div class="user-bar" id="userBar"></div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1> 🌾 配送服务 🌾</h1>
+        <p>选择取货方式，让星尔玛为您送达</p>
+    </div>
+</div>
 
     <div class="delivery-container">
-        <div class="delivery-title">
-            <h1>📦 配送服务</h1>
-            <p>选择取货方式，让星尔玛为您送达</p>
-        </div>
 
         <!-- 选项卡 -->
         <div class="option-tabs">
@@ -383,12 +415,15 @@
         <!-- 自提面板 -->
         <div class="panel active" id="panelPickup">
             <div class="pickup-result">
-                <div class="pickup-icon">🏪</div>
+                <div class="pickup-icon">📦</div>
                 <div class="pickup-msg">
                     选择<strong>到店自提</strong>，商品将在星尔玛为您打包。<br>
                     请在下单后 <strong>5分钟</strong> 前来领取。
                 </div>
-                <button class="confirm-btn" onclick="confirmPickup()" style="max-width:260px;margin-top:16px;">
+                <div class="pickup-eta" id="pickupETA">
+                    ⏱️ 预计可取时间：<span class="eta-time" id="pickupETATime">--:--</span>
+                </div>
+                <button class="confirm-btn" onclick="confirmPickup()" style="max-width:260px;margin-top:10px;">
                     ✅ 确认自提
                 </button>
             </div>
@@ -416,7 +451,7 @@
             <!-- 配送地址 -->
             <div class="address-section">
                 <label>📍 配送地址</label>
-                <input type="text" id="deliveryAddress" placeholder="输入配送地址...">
+                <input type="text" id="deliveryAddress" placeholder="输入配送地址..." value="鹈鹕镇事务大厅">
             </div>
 
             <!-- 确认配送 -->
@@ -535,6 +570,15 @@
             }
         }
 
+        // ======== 更新自提预计时间 ========
+        function updatePickupETA() {
+            const now = new Date();
+            now.setMinutes(now.getMinutes() + 5);
+            const timeStr = now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit' });
+            const el = document.getElementById('pickupETATime');
+            if (el) el.textContent = timeStr;
+        }
+
         // ======== 初始化 ========
         async function initPage() {
             currentUser = await checkLogin();
@@ -544,6 +588,7 @@
             }
             initUserBar();
             renderVillagerGrid();
+            updatePickupETA();
         }
 
         initPage();
@@ -715,8 +760,8 @@
     </div>
 <!-- 背景音乐播放器 -->
 <div id="musicContainer">
-    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto"></audio>
-    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto"></audio>
+    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="none"></audio>
+    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="none"></audio>
     <div class="music-player" id="musicPlayer">
         <div class="music-disc" id="musicDisc">
             <img src="images/music_background.jpg" alt="唱片">

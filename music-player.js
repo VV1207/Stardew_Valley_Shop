@@ -68,8 +68,8 @@
         }
     });
 
-    // 页面加载时立即尝试自动播放
-    function tryAutoplay() {
+    // 页面加载时：恢复上次播放位置，但不自动播放
+    function restoreMusicState() {
         var saved = localStorage.getItem(STORAGE_KEY);
         if (saved) {
             try {
@@ -77,42 +77,20 @@
                 currentIdx = state.trackIndex || 0;
                 if (currentIdx >= playlist.length) currentIdx = 0;
                 playlist[currentIdx].currentTime = state.currentTime || 0;
-                if (state.playing !== false) {
-                    startMusic();
-                } else {
-                    musicToggle.textContent = '\u{1F507}';
-                }
-            } catch(e) {
-                startMusic();
-            }
-        } else {
-            startMusic();
+            } catch(e) {}
         }
+        // 确保唱片不旋转、音乐不播放
+        musicDisc.classList.remove('playing');
+        musicToggle.textContent = '\u{1F507}';
+        // 重置保存的播放状态为 false，防止跨页面自动播放
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            currentTime: playlist[currentIdx].currentTime,
+            playing: false,
+            trackIndex: currentIdx
+        }));
     }
 
-    // 多种时机尝试自动播放
-    // 1. DOMContentLoaded
-    document.addEventListener('DOMContentLoaded', tryAutoplay);
-    // 2. 如果 audio 已经 canplay
-    playlist.forEach(function(a) {
-        a.addEventListener('canplay', function() {
-            if (!musicPlaying) tryAutoplay();
-        });
-    });
-    // 3. 用户首次交互时强制播放（兜底）
-    function onFirstInteraction() {
-        if (!musicPlaying) startMusic();
-        document.removeEventListener('click', onFirstInteraction);
-        document.removeEventListener('keydown', onFirstInteraction);
-        document.removeEventListener('touchstart', onFirstInteraction);
-    }
-    document.addEventListener('click', onFirstInteraction);
-    document.addEventListener('keydown', onFirstInteraction);
-    document.addEventListener('touchstart', onFirstInteraction);
-    // 4. window load 事件
-    window.addEventListener('load', function() {
-        if (!musicPlaying) tryAutoplay();
-    });
+    document.addEventListener('DOMContentLoaded', restoreMusicState);
 
     window.addEventListener('beforeunload', saveMusicState);
     document.addEventListener('visibilitychange', function() {

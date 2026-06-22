@@ -8,7 +8,7 @@
     <style>
         .profile-container {
             max-width: 1000px;
-            margin: 100px auto 40px;
+            margin: 30px auto 40px;
             padding: 0 20px;
         }
         .profile-header {
@@ -131,15 +131,30 @@
 <body>
 <script defer src="items_data.js"></script>
 
-<nav class="top-nav">
-    <div class="nav-brand">🌾 星尔玛</div>
-    <div class="nav-links">
-        <a href="index.html" class="nav-link">🏠 商店首页</a>
-        <a href="news.html" class="nav-link">📰 星闻露谷</a>
-        <a href="delivery.html" class="nav-link">📦 配送服务</a>
+<div class="top-banner">
+    <nav class="top-nav">
+        <div class="nav-brand"></div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link has-tooltip">🏠 商店首页
+                    <div class="nav-tooltip">🏠 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
+                </a>
+                <a href="news.html" class="nav-link has-tooltip">📰 星闻露谷
+                    <div class="nav-tooltip">📰 获取星露谷最新动态、活动公告和趣味新闻，不要错过任何精彩内容！</div>
+                </a>
+                <a href="delivery.html" class="nav-link has-tooltip">📦 配送服务
+                    <div class="nav-tooltip">📦 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
+                </a>
+            </div>
+            <div class="user-bar" id="userBar"></div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1> 🌾 个人中心 🌾</h1>
+        <p>管理你的收藏、订单与反馈</p>
     </div>
-    <div class="user-bar" id="userBar"></div>
-</nav>
+</div>
 
 <div class="profile-container">
     <div class="profile-header" id="profileHeader">
@@ -335,7 +350,7 @@ async function renderFavorites() {
                 ${item.image ? `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'">` : '<div style="font-size:2rem;">📦</div>'}
                 <div class="fav-name">${item.name}</div>
                 <div class="fav-category">${item.category || ''}</div>
-                <div style="margin-top:6px;font-size:0.8rem;color:#bc6f1c;">💰 ${item.price || '?'} G</div>
+                <div style="margin-top:6px;font-size:0.8rem;color:#bc6f1c;"><img src="images/Gold.png" alt="G" class="gold-icon"> ${item.price || '?'} G</div>
             </div>
         `;
     });
@@ -408,7 +423,7 @@ function renderOrdersList(orders) {
             }
             const unitPrice = item.price;
             const subtotal = unitPrice * item.quantity;
-            itemsHtml += `<div class="order-item-row"><span>${display.imgHtml}${displayName}${qualStr} (${unitPrice} G × ${item.quantity})</span><span>💰 ${subtotal} G</span></div>`;
+            itemsHtml += `<div class="order-item-row"><span>${display.imgHtml}${displayName}${qualStr} (${unitPrice} G × ${item.quantity})</span><span><img src="images/Gold.png" alt="G" class="gold-icon"> ${subtotal} G</span></div>`;
         });
 
         // 评价区域
@@ -461,7 +476,7 @@ function renderOrdersList(orders) {
                     <span class="order-status ${statusClass}">${statusMap[order.status] || order.status}</span>
                     <span style="font-size:0.82rem;color:#6b5e4a;">${deliveryStr}</span>
                     <span class="order-date">${dateStr}</span>
-                    <span class="order-total">💎 ${order.total_price} G</span>
+                    <span class="order-total"><img src="images/Gold.png" alt="G" class="gold-icon"> ${order.total_price} G</span>
                 </div>
                 <div class="order-items">${itemsHtml}</div>
                 ${reviewHtml}
@@ -738,8 +753,8 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 <!-- 背景音乐播放器 -->
 <div id="musicContainer">
-<audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto" autoplay></audio>
-<audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto" autoplay></audio>
+<audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="none"></audio>
+<audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="none"></audio>
     <div class="music-player" id="musicPlayer">
         <div class="music-disc" id="musicDisc">
             <img src="images/music_background.jpg" alt="唱片">

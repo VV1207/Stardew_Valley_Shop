@@ -12,17 +12,17 @@
 <div class="top-banner">
     <!-- 导航栏 -->
     <nav class="top-nav">
-        <div class="nav-brand">🌾 星尔玛</div>
+        <div class="nav-brand"></div>
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html" class="nav-link has-tooltip active">🏠 商店首页
-                    <div class="nav-tooltip">🌿 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
+                    <div class="nav-tooltip">🏠 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
                 </a>
                 <a href="news.html" class="nav-link has-tooltip">📰 星闻露谷
                     <div class="nav-tooltip">📰 获取星露谷最新动态、活动公告和趣味新闻，不要错过任何精彩内容！</div>
                 </a>
                 <a href="delivery.html" class="nav-link has-tooltip">📦 配送服务
-                    <div class="nav-tooltip">🚚 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
+                    <div class="nav-tooltip">📦 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
                 </a>
             </div>
             <div class="user-bar" id="userBar"></div>
@@ -30,7 +30,8 @@
     </nav>
 
     <div class="header">
-        <h1>🌾 星露谷 · 全物品图谱商店 🌻</h1>
+        <h1> 🌾 星尔玛商店 🌾</h1>
+        <p>鹈鹕镇最全的平价商品</p>
     </div>
 </div>
 
@@ -50,7 +51,7 @@
 
         <div class="cart-summary-bar">
             <span class="total-items" id="cartTotalItems">🧺 购物车: 0 件</span>
-            <span class="total-price" id="cartTotalPrice">💰 0 G</span>
+            <span class="total-price" id="cartTotalPrice">0 G</span>
             <button class="checkout-btn" id="checkoutBtn">✨ 结账明细 ✨</button>
             <button class="checkout-btn" id="clearCartBtn" style="background:#9a8a7a;">🗑️ 清空</button>
         </div>
@@ -93,6 +94,7 @@ const ITEMS_PER_PAGE = 16;
 
 // 购物车: { itemId, name, quality, quantity, price, category, image, gifting }
 let cartItems = [];
+const GOLD_IMG = '<img src="images/Gold.png" alt="G" class="gold-icon">';
 let currentUser = null; // 缓存当前用户
 
 const CATEGORY_ORDER = [
@@ -255,7 +257,7 @@ function renderPromoSidebar() {
             <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
             <div class="promo-item-info">
                 <div class="promo-item-name">${item.name}</div>
-                <div class="promo-item-price">💰 ${price} G</div>
+                <div class="promo-item-price">${GOLD_IMG} ${price} G</div>
             </div>
         </div>`;
     });
@@ -313,7 +315,7 @@ function renderPromoSidebar() {
             <img src="${item.image || ''}" alt="${item.name}" onerror="this.src='';this.style.display='none'">
             <div class="promo-item-info">
                 <div class="promo-item-name">${item.name}</div>
-                <div class="promo-item-price">💰 ${price} G <span class="promo-item-tag">-${discount}%</span></div>
+                <div class="promo-item-price">${GOLD_IMG} ${price} G <span class="promo-item-tag">-${discount}%</span></div>
             </div>
         </div>`;
     });
@@ -464,7 +466,7 @@ async function renderItemsGrid() {
                 <span class="item-category">${item.category || ''}</span>
                 ${item.source ? `<div class="item-source">📌 ${item.source}</div>` : ''}
                 <div class="price-area">
-                    <span class="item-price">💰 ${defaultPrice} G</span>
+                    <span class="item-price">${GOLD_IMG} ${defaultPrice} G</span>
                     ${hasQuality ? `
                         <select class="quality-select" data-item-id="${item.id}">
                             ${qualityOptions}
@@ -638,7 +640,7 @@ function updateCardPriceQuantity(item) {
 
     // 更新显示价格
     const priceEl = card.querySelector('.item-price');
-    priceEl.textContent = `💰 ${price} G`;
+    priceEl.innerHTML = `${GOLD_IMG} ${price} G`;
 
     // 更新小计
     const qtyInput = card.querySelector('.qty-input');
@@ -675,7 +677,7 @@ function updateCartBar() {
     const totalItems = cartItems.reduce((s, c) => s + c.quantity, 0);
     const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
     document.getElementById('cartTotalItems').textContent = `🧺 购物车: ${totalItems} 件`;
-    document.getElementById('cartTotalPrice').textContent = `💰 ${totalPrice} G`;
+    document.getElementById('cartTotalPrice').innerHTML = `${GOLD_IMG} ${totalPrice} G`;
     renderCartSidebar();
 }
 
@@ -689,7 +691,7 @@ function renderCartSidebar() {
     const totalPrice = cartItems.reduce((s, c) => s + c.price * c.quantity, 0);
 
     countEl.textContent = `${totalItems} 件`;
-    totalPriceEl.textContent = `${totalPrice} G`;
+    totalPriceEl.innerHTML = `${GOLD_IMG} ${totalPrice} G`;
 
     if (cartItems.length === 0) {
         body.innerHTML = `<div class="cart-sidebar-empty">🛍️ 购物车还是空的</div>`;
@@ -708,7 +710,7 @@ function renderCartSidebar() {
                 <div class="sidebar-item-info">
                     <div class="sidebar-item-name">${item.name}${qualStr}</div>
                     <div class="sidebar-item-price">${item.price} G × ${item.quantity}</div>
-                    <div class="sidebar-item-subtotal">💰 ${subtotal} G</div>
+                    <div class="sidebar-item-subtotal">${GOLD_IMG} ${subtotal} G</div>
                 </div>
                 <button class="sidebar-item-remove" data-cart-idx="${idx}" title="移除此商品">✕</button>
             </div>
@@ -775,7 +777,7 @@ function showItemDetail(item) {
             <h2 style="color:#3d2f1f;">${item.name}</h2>
             <div class="modal-img">${item.image ? `<img src="${item.image}" alt="${item.name}" onerror="this.style.display='none'">` : '<div style="font-size:3rem;">📦</div>'}</div>
             <div class="modal-body">
-                <p><strong>💰 售价:</strong> <span id="modalPrice">${defaultPrice}</span> G
+                <p><strong><img src="images/Gold.png" alt="G" class="gold-icon"> 售价:</strong> <span id="modalPrice">${defaultPrice}</span> G
                     ${hasQuality ? ` <select id="modalQuality">${qualityOpts}</select>` : ''}
                 </p>
                 <p><strong>🏷️ 分类:</strong> ${item.category || '未知'}</p>
@@ -1071,8 +1073,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <!-- 背景音乐播放器 -->
 <div id="musicContainer">
-    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="auto" autoplay></audio>
-    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="auto" autoplay></audio>
+    <audio id="bgMusic1" src="audio/ConcernedApe - Cloud Country.mp3" preload="none"></audio>
+    <audio id="bgMusic2" src="audio/ConcernedApe - Summer (Nature's Crescendo).mp3" preload="none"></audio>
     <div class="music-player" id="musicPlayer">
         <div class="music-disc" id="musicDisc">
             <img src="images/music_background.jpg" alt="唱片">
