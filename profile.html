@@ -68,7 +68,10 @@
 
     <!-- ======== 用户反馈 ======== -->
     <div class="profile-section" id="sectionFeedback">
-        <div class="feedback-form">
+        <!-- 社区反馈墙（先展示其他用户的留言） -->
+        <div class="feedback-list" id="feedbackList"></div>
+        <!-- 给开发者的反馈表单（再填写留言） -->
+        <div class="feedback-form" style="margin-top:24px;">
             <h3 class="feedback-form-title">💬 给开发者的反馈</h3>
             <p class="feedback-form-desc">帮助我们改进星露谷商店！你的每一条反馈都很重要 🌻</p>
             <div class="form-group">
@@ -86,7 +89,6 @@
             </div>
             <button class="review-submit-btn" onclick="submitFeedback()">📨 提交反馈</button>
         </div>
-        <div class="feedback-list" id="feedbackList"></div>
     </div>
 </div>
 
