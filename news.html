@@ -1502,13 +1502,13 @@ async function renderInteract(container) {
         `;
         let commentsHtml = '';
         if (nd.comments && nd.comments.length > 0) {
-            commentsHtml = '<div class="comment-list" style="display:none;">';
+            commentsHtml = '<div class="comment-list">';
             nd.comments.forEach(c => {
                 commentsHtml += `<div class="comment-item"><span class="comment-author">👤 ${c.author}</span><span class="comment-text">${c.text}</span><span class="comment-time">${c.time}</span></div>`;
             });
             commentsHtml += '</div>';
         } else {
-            commentsHtml = '<div class="comment-list" style="display:none;"><div class="comment-empty">暂无留言，来说两句吧 😊</div></div>';
+            commentsHtml = '<div class="comment-list"><div class="comment-empty">暂无留言，来说两句吧 😊</div></div>';
         }
         container.innerHTML = html + commentsHtml;
     } catch(e) { console.error('渲染互动区域失败', e); }
