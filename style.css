@@ -29,8 +29,10 @@ body {
     margin-top: -20px;
 }
 .header h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #3d6830;
+    text-align: center;
+    font-weight: 900;
 }
 .header p {
     color: #6b5e4a;
@@ -320,8 +322,8 @@ body {
     height: 100px;
 }
 .card-img img {
-    max-width: 64px;
-    max-height: 64px;
+    max-width: 80px;
+    max-height: 80px;
     object-fit: contain;
     image-rendering: crisp-edges;
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.08));
@@ -335,13 +337,13 @@ body {
     flex-direction: column;
 }
 .item-name {
-    font-size: 0.9rem;
+    font-size: 0.98rem;
     font-weight: 700;
     color: #3d2f1f;
     margin-bottom: 2px;
 }
 .item-category {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: #7e8d64;
     background: #f0f5e8;
     padding: 1px 8px;
@@ -519,6 +521,16 @@ td {
 .villager-icon.vhate { border-color: #8e44ad; }
 
 /* 村民头像悬浮名字提示 */
+.gold-icon {
+    width: 14px !important;
+    height: 14px !important;
+    vertical-align: middle;
+    margin-right: 2px;
+    background: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    object-fit: contain;
+}
 .villager-tooltip-wrap {
     position: relative;
     display: inline-block;
@@ -617,11 +629,17 @@ td {
     gap: 12px;
 }
 .nav-brand {
-    font-size: 1rem;
-    font-weight: 800;
-    color: #3d6830;
-    cursor: default;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
     white-space: nowrap;
+    flex-shrink: 0;
+}
+.nav-logo {
+    height: 36px;
+    width: auto;
+    display: block;
 }
 .nav-links {
     display: flex;
@@ -851,8 +869,8 @@ td {
     border-color: #d0dcc8;
 }
 .promo-item img {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     object-fit: contain;
     background: #fdf6e7;
     border-radius: 10px;
@@ -863,7 +881,7 @@ td {
     min-width: 0;
 }
 .promo-item-name {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #3d2f1f;
     overflow: hidden;
@@ -871,7 +889,7 @@ td {
     white-space: nowrap;
 }
 .promo-item-price {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     color: #bc6f1c;
     font-weight: 700;
 }
@@ -1095,10 +1113,14 @@ footer {
     background: white;
     border-radius: 24px;
     border: 1px solid #e9e0d0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     position: sticky;
     top: 16px;
+    transition: box-shadow 0.3s;
+}
+.news-sidebar:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 .news-sidebar-title {
     padding: 14px 16px;
@@ -1106,7 +1128,9 @@ footer {
     font-size: 0.9rem;
     color: #3d2f1f;
     border-bottom: 1px solid #f0e8da;
-    background: #faf8f0;
+    background: linear-gradient(135deg, #faf8f0 0%, #f5f0e0 100%);
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 .news-sidebar-list {
     padding: 6px;
@@ -1118,18 +1142,20 @@ footer {
     padding: 10px 12px;
     border-radius: 16px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.25s ease;
     font-size: 0.85rem;
     font-weight: 500;
     color: #4a3f2c;
+    position: relative;
 }
 .news-sidebar-item:hover {
     background: #f0ede5;
 }
 .news-sidebar-item.active {
-    background: #7c9f5e;
+    background: linear-gradient(135deg, #7c9f5e 0%, #6a8a3a 100%);
     color: white;
-    box-shadow: 0 2px 8px rgba(99, 139, 67, 0.2);
+    box-shadow: 0 3px 12px rgba(99, 139, 67, 0.3);
+    transform: translateX(2px);
 }
 .news-sidebar-icon {
     font-size: 1.1rem;
@@ -1155,16 +1181,19 @@ footer {
     align-items: baseline;
     gap: 10px;
     margin-bottom: 16px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e0dcc8;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #7c9f5e 0%, #c9a04a 50%, transparent 100%) 1;
 }
 .news-column-header h2 {
     font-size: 1.3rem;
     color: #3d2f1f;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .news-column-motto {
     font-size: 0.78rem;
     color: #9a8a7a;
+    font-style: italic;
 }
 
 /* ---------- 新闻卡片 ---------- */
@@ -1174,13 +1203,15 @@ footer {
     padding: 16px 18px;
     margin-bottom: 12px;
     border: 1px solid #e9e0d0;
+    border-left: 4px solid #c9a04a;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s, border-left-color 0.3s;
     position: relative;
 }
 .news-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border-left-color: #7c9f5e;
 }
 .news-card-badge {
     display: inline-block;
@@ -1216,12 +1247,18 @@ footer {
     color: #b9ab92;
     font-size: 0.85rem;
     padding: 28px 18px;
-    background: #faf8f0;
+    background: linear-gradient(135deg, #faf8f0 0%, #f5f0e0 100%);
     border-style: dashed;
+    animation: placeholderPulse 3s ease-in-out infinite;
+}
+@keyframes placeholderPulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
 }
 .placeholder-card:hover {
     transform: none;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    color: #8a7a5a;
 }
 
 /* ---------- 响应式 ---------- */
