@@ -587,39 +587,56 @@
 
 <div class="top-banner">
     <nav class="top-nav">
-        <div class="nav-brand">🌾 星尔玛</div>
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">🏠 商店首页</a>
-            <a href="news.html" class="nav-link active">📬 星闻露谷</a>
-            <a href="delivery.html" class="nav-link">📦 配送服务</a>
+        <div class="nav-brand"></div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html" class="nav-link has-tooltip">🏠 商店首页
+                    <div class="nav-tooltip">🏠 浏览星露谷全部物品，搜索、筛选、加入购物车，轻松选购你喜欢的宝贝！</div>
+                </a>
+                <a href="news.html" class="nav-link has-tooltip active">📰 星闻露谷
+                    <div class="nav-tooltip">📰 获取星露谷最新动态、活动公告和趣味新闻，不要错过任何精彩内容！</div>
+                </a>
+                <a href="delivery.html" class="nav-link has-tooltip">📦 配送服务
+                    <div class="nav-tooltip">📦 查看你的订单配送状态，支持村民配送和自提，追踪每一个包裹！</div>
+                </a>
+            </div>
+            <div class="user-bar" id="userBar"></div>
         </div>
-        <div class="user-bar" id="userBar"></div>
     </nav>
 
     <div class="header">
-        <h1>📬 星闻露谷</h1>
+        <h1>🌾 星闻露谷 🌾</h1>
         <p>鹈鹕镇的大小事 · 最新资讯一手掌握</p>
     </div>
 </div>
 
 <div class="news-container">
-    <!-- 左侧分类导航 -->
+    <!-- ==================== 左侧分类导航栏 ==================== -->
+    <!-- 功能：三个栏目切换按钮，点击后右侧内容区切换显示对应栏目 -->
+    <!-- 结构：标题栏 + 按钮列表 + 底部说明 -->
     <div class="news-sidebar" id="newsSidebar">
+        <!-- 栏目标题，显示在侧栏顶部 -->
         <div class="news-sidebar-title">📬 新闻栏目</div>
+        <!-- 栏目按钮列表容器 -->
         <div class="news-sidebar-list">
+            <!-- 鹈鹕日报按钮：data-column="pelican" 对应右侧 id="col-pelican" 的内容区 -->
+            <!-- active 类表示当前选中状态（默认选中） -->
             <div class="news-sidebar-item active" data-column="pelican">
                 <span class="news-sidebar-icon">🐦</span>
                 <span class="news-sidebar-label">鹈鹕日报</span>
             </div>
+            <!-- 离地而居按钮：data-column="living" 对应右侧 id="col-living" 的内容区 -->
             <div class="news-sidebar-item" data-column="living">
                 <span class="news-sidebar-icon">🏡</span>
                 <span class="news-sidebar-label">离地而居</span>
             </div>
+            <!-- 酱料女皇按钮：data-column="queen" 对应右侧 id="col-queen" 的内容区 -->
             <div class="news-sidebar-item" data-column="queen">
                 <span class="news-sidebar-icon">👑</span>
                 <span class="news-sidebar-label">酱料女皇</span>
             </div>
         </div>
+        <!-- 底部说明文字 -->
         <div class="news-sidebar-footer">
             <p>📅 星露谷历<br>不定期出版</p>
         </div>
@@ -1599,19 +1616,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     bindInteractEvents();
 
-    // 侧栏切换
+    // ==================== 左侧栏栏目切换功能 ====================
+    // 功能：点击侧栏按钮，切换右侧内容区显示对应栏目
+    // 原理：通过 data-column 属性与 col-{name} id 的映射，控制 display 显隐
+    
+    // 获取所有侧栏按钮元素（.news-sidebar-item）
     const sidebarItems = document.querySelectorAll('.news-sidebar-item');
+    
+    // 建立栏目名 -> 内容区DOM元素的映射关系
+    // pelican = 鹈鹕日报，living = 离地而居，queen = 酱料女皇
     const columns = {
         pelican: document.getElementById('col-pelican'),
         living: document.getElementById('col-living'),
         queen: document.getElementById('col-queen')
     };
 
+    // 为每个侧栏按钮绑定点击事件
     sidebarItems.forEach(item => {
         item.addEventListener('click', () => {
+            // 1. 移除所有按钮的 active 选中状态
             sidebarItems.forEach(si => si.classList.remove('active'));
+            // 2. 给当前点击的按钮添加 active 选中状态（绿色高亮）
             item.classList.add('active');
+            // 3. 获取当前按钮对应的栏目名（如 "pelican"）
             const col = item.dataset.column;
+            // 4. 遍历所有内容区：匹配的显示（block），不匹配的隐藏（none）
             Object.keys(columns).forEach(key => {
                 columns[key].style.display = key === col ? 'block' : 'none';
             });
